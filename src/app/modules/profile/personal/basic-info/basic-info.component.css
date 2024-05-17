@@ -1,0 +1,9 @@
+/* Customize tooltip appearance */
+.tooltip {
+  background-color: #000; /* Black background */
+}
+
+.tooltip-inner {
+  color: #fff; /* White text */
+  font-size: 14px;
+}

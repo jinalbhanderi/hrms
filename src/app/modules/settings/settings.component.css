@@ -1,0 +1,21 @@
+/* Hide nested lists by default */
+.u_sidemenu-item-list {
+  display: none;
+}
+
+/* Show nested list when parent <li> is hovered */
+.u_sidemenu-has-list:hover .u_sidemenu-item-list {
+  display: block;
+}
+
+/* Basic styling for menu items */
+.u_sidemenu-item {
+  cursor: pointer;
+}
+
+.u_sidemenu-item p {
+  margin: 0;
+  padding: 10px;
+}
+
+

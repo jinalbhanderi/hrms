@@ -1,0 +1,81 @@
+<div class="u_settings-layout u_flex" style="height: calc(-62px + 100vh);">
+  <div class="u_settings-left-sidebar">
+    <ul class="u_sidemenu ">
+      <div class="" style="position: relative; overflow: hidden; width: 100%; height: 100%;">
+        <div style="position: absolute; inset: 0px; overflow: scroll; margin-right: -14px; margin-bottom: -14px;">
+          <li class="u_sidemenu-has-list u_sidemenu-item-active">
+            <div class="u_sidemenu-item">
+              <p>Employee</p>
+            </div>
+            <ul class="u_sidemenu-item-list">
+              <li routerLink="employee/import-sub-company">Import Sub Company</li>
+              <li routerLink="employee/import-employee">Import Employee</li>
+              <li routerLink="employee/import-location">Import Location</li>
+              <li routerLink="employee/import-employee-exit">Import Employee Exit</li>
+              <li routerLink="employee/update-employee">Update Employee</li>
+              <li routerLink="employee/import-statutory">Import Statutory</li>
+              <li routerLink="employee/import-personal-document">Import Personal Document</li>
+            </ul>
+          </li>
+          <li class="u_sidemenu-has-list u_sidemenu-item-active">
+            <div class="u_sidemenu-item">
+              <p>Leave</p>
+            </div>
+            <ul class="u_sidemenu-item-list">
+              <li routerLink="leave/import-leave">Import Leave Balance</li>
+              <li routerLink="leave/import-leave-policy">Import Leave Policy</li>
+            </ul>
+          </li>
+          <li class="u_sidemenu-has-list u_sidemenu-item-active">
+            <div class="u_sidemenu-item">
+              <p>Employee Fields</p>
+            </div>
+            <ul class="u_sidemenu-item-list">
+              <li routerLink="employee-field/category">Category</li>
+              <li routerLink="employee-field/department">Department</li>
+              <li routerLink="employee-field/sub-department">Sub Department</li>
+              <li routerLink="employee-field/job-title">Job Title</li>
+              <li routerLink="employee-field/personal-document">Personal Document</li>
+              <li routerLink="employee-field/degree">Degree</li>
+              <li routerLink="employee-field/relationship">Relationship</li>
+              <li routerLink="employee-field/employee-status">Employment Status</li>
+              <li routerLink="employee-field/employee-exit">Employee Exit</li>
+              <li routerLink="employee-field/location-activity">Location Activity</li>
+              <li routerLink="employee-field/letter-type">Letter Type</li>
+            </ul>
+          </li>
+          <li class="u_sidemenu-has-list u_sidemenu-item-active">
+            <div class="u_sidemenu-item">
+              <p>Org Structure</p>
+            </div>
+            <ul class="u_sidemenu-item-list">
+              <li routerLink="org-structure/business-unit">Business Unit</li>
+              <li routerLink="org-structure/cost-center">Cost Center</li>
+              <li routerLink="org-structure/bands">Bands</li>
+              <li routerLink="org-structure/segment">Segment</li>
+              <li routerLink="org-structure/hub">Hub</li>
+              <li routerLink="org-structure/region">Region</li>
+              <li routerLink="org-structure/territory">Territory</li>
+              <li routerLink="org-structure/zone">Zone</li>
+            </ul>
+          </li>
+        </div>
+        <div
+          style="position: absolute; height: 6px; transition: opacity 200ms ease 0s; opacity: 0; right: 2px; bottom: 2px; left: 2px; border-radius: 3px; visibility: hidden;">
+          <div class="u_scroll-bar"
+            style="position: relative; display: block; height: 100%; border-radius: 100px; background-color: rgb(209, 209, 209); width: 0px;">
+          </div>
+        </div>
+        <div
+          style="position: absolute; width: 6px; transition: opacity 200ms ease 0s; opacity: 0; right: 2px; bottom: 2px; top: 2px; border-radius: 3px; visibility: hidden;">
+          <div class="u_scroll-bar"
+            style="position: relative; display: block; width: 100%; border-radius: 100px; background-color: rgb(209, 209, 209); height: 0px;">
+          </div>
+        </div>
+      </div>
+    </ul>
+  </div>
+  <div style="height: 100%; width:100%">
+    <router-outlet></router-outlet>
+  </div>
+</div>
