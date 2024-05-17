@@ -24,10 +24,6 @@ import { PerformanceReportComponent } from './modules/performance-report/perform
 import { ReimbursementModule } from './modules/reimbursement/reimbursement.module';
 import { SettingsComponent } from './modules/settings/settings.component';
 import { SettingsModule } from "./modules/settings/settings.module";
-import { FormsModule } from '@angular/forms';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatInputModule} from '@angular/material/input';
-import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
     declarations: [
@@ -59,9 +55,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
         HelpDeskModule,
         OnboardingModule,
         ReimbursementModule,
-        SettingsModule,
-        FormsModule,
-        BrowserAnimationsModule,MatInputModule,MatFormFieldModule
+        SettingsModule
     ]
 })
 export class AppModule { }

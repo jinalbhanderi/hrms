@@ -10,7 +10,6 @@ import { SignatureComponent } from './signature/signature.component';
 import { ProfileUpdateRequestComponent } from './profile-update-request/profile-update-request.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { MyAssetsComponent } from './my-assets/my-assets.component';
-import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -23,6 +22,6 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     FeedbackComponent,
     MyAssetsComponent,
   ],
-  imports: [CommonModule, ProfileRoutingModule,MatFormFieldModule],
+  imports: [CommonModule, ProfileRoutingModule],
 })
 export class ProfileModule {}
