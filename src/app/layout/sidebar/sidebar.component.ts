@@ -106,4 +106,9 @@ export class SidebarComponent {
       this.helpdesk = false;
     }
   }
+  isSidebarOpen = true;
+
+  toggleSidebar() {
+    this.isSidebarOpen = !this.isSidebarOpen;
+  }
 }
