@@ -1,4 +1,7 @@
-import { Component, ElementRef, HostListener } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
+import { Component, ElementRef, HostListener, Inject, PLATFORM_ID } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { UserInfoModelComponent } from './user-info-model/user-info-model.component';
 
 @Component({
   selector: 'app-sidebar',
@@ -14,8 +17,10 @@ export class SidebarComponent {
   helpdesk: boolean = false;
   onboarding: boolean = false;
   reimbursement: boolean = false;
+  showUserInfoModal: boolean = false;
+  public modalOpen: boolean = false;
 
-  constructor(private elementRef: ElementRef) {}
+  constructor(private elementRef: ElementRef,  @Inject(PLATFORM_ID) private platformId: Object,    private modalService: NgbModal,) {}
 
   toggleMenu(menuType: string): void {
     // Collapse all other menu items and expand/collapse the selected menu item
@@ -106,9 +111,29 @@ export class SidebarComponent {
       this.helpdesk = false;
     }
   }
-  isSidebarOpen = true;
 
-  toggleSidebar() {
-    this.isSidebarOpen = !this.isSidebarOpen;
+  public showModal(): void {
+    try {
+      if (isPlatformBrowser(this.platformId)) {
+        this.modalService
+          .open(UserInfoModelComponent, {
+            size: '400px',
+            ariaLabelledBy: 'modal',
+            centered: false,
+            windowClass: 'modal-right',
+
+          })
+          .result.then(
+            (result: any) => {
+              this.modalOpen = true;
+              `Result ${result}`;
+            },
+            (reason: any) => {}
+          );
+      }
+    } catch (error) {
+      console.error('Error showing modal:', error);
+    }
   }
+
 }
