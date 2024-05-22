@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-basic-info',
@@ -9,6 +9,7 @@ export class BasicInfoComponent {
   showPopup = false;
   isCheckboxChecked: boolean = false;
   isESIChecked: boolean = false;
+
   toggleCheckbox() {
     this.isCheckboxChecked = !this.isCheckboxChecked;
   }
@@ -24,4 +25,7 @@ export class BasicInfoComponent {
   toggleNestedCheckboxes(event: any) {
     this.showNestedCheckboxes = event.target.checked;
   }
+
+
+
 }

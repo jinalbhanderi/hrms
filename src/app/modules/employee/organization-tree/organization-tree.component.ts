@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./organization-tree.component.css']
 })
 export class OrganizationTreeComponent {
+  
 
 }
