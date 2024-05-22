@@ -11,7 +11,7 @@ import { DashboardRightComponent } from './dashboard-right/dashboard-right.compo
   ],
   imports: [
     CommonModule,
-    DashboardRoutingModule
+    DashboardRoutingModule,
   ],
   exports:[DashboardRightComponent]
 })

@@ -24,6 +24,10 @@ import { PerformanceReportComponent } from './modules/performance-report/perform
 import { ReimbursementModule } from './modules/reimbursement/reimbursement.module';
 import { SettingsComponent } from './modules/settings/settings.component';
 import { SettingsModule } from "./modules/settings/settings.module";
+import { LayoutModule } from "./layout/layout.module";
+import { AuthModule } from './modules/auth/auth.module';
+import { PagenotfoundComponent } from './modules/pagenotfound/pagenotfound.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
     declarations: [
@@ -40,6 +44,7 @@ import { SettingsModule } from "./modules/settings/settings.module";
         ReportComponent,
         PerformanceReportComponent,
         SettingsComponent,
+        PagenotfoundComponent,
     ],
     providers: [],
     bootstrap: [AppComponent],
@@ -55,7 +60,11 @@ import { SettingsModule } from "./modules/settings/settings.module";
         HelpDeskModule,
         OnboardingModule,
         ReimbursementModule,
-        SettingsModule
+        SettingsModule,
+        LayoutModule,
+        NgbModule,
+        AuthModule,
+        
     ]
 })
 export class AppModule { }

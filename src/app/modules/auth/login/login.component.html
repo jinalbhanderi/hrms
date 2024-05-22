@@ -1,0 +1,75 @@
+<div class="u_account-inner__input u_align-center">
+  <div class="u_login-input__section">
+    <form [formGroup]="accountForm" (ngSubmit)="onSubmit()">
+      <div class="u_account-form">
+        <div class="u_section-header ">
+          <div class="u_border-header u_border-header-center">
+            <h1>Sign In Your Account</h1>
+          </div>
+          <p>Welcome Back! Please Sign In to access Superworks.</p>
+        </div>
+        <div class="u_input u_mb-20"
+          [class.u_input-error]="(submitted || accountForm.get('email')?.touched) && accountForm.get('email')?.invalid">
+          <input formControlName="email" name="email" placeholder=" ">
+          <label>Email Address <span>*</span></label>
+          <span *ngIf="submitted || accountForm.get('email')?.touched">
+            <span *ngIf="accountForm.get('email')?.errors?.['required']" class="u_required u_cp"
+              aria-describedby="popup-email">
+              <img src="/assets/images/auth/register6.svg" alt="Field is required" data-toggle="tooltip"
+                data-placement="top" title="Required*">
+            </span>
+            <span *ngIf="accountForm.get('email')?.errors?.['email']" class="u_required u_cp"
+              aria-describedby="popup-email">
+              <img src="/assets/images/auth/register6.svg" alt="Invalid email" data-toggle="tooltip"
+                data-placement="top" title="Invalid email">
+            </span>
+          </span>
+        </div>
+        <div class="u_input u_mb-20 u_input-password"
+          [class.u_input-error]="(submitted || accountForm.get('password')?.touched) && accountForm.get('password')?.invalid">
+          <input formControlName="password" name="password" [type]="passwordFieldType" placeholder=" "
+            autocomplete="off">
+          <label>Password <span>*</span></label>
+          <span *ngIf="submitted || accountForm.get('password')?.touched">
+            <span *ngIf="accountForm.get('password')?.errors?.['required']" class="u_required u_cp"
+              aria-describedby="popup-password">
+              <img src="/assets/images/auth/register6.svg" alt="Field is required" data-toggle="tooltip"
+                data-placement="top" title="Required*">
+            </span>
+            <span *ngIf="accountForm.get('password')?.errors?.['minlength']" class="u_required u_cp"
+              aria-describedby="popup-password">
+              <img src="/assets/images/auth/register6.svg" alt="Invalid password" data-toggle="tooltip"
+                data-placement="top" title="Password must be at least 8 characters">
+            </span>
+            <span *ngIf="accountForm.get('password')?.errors?.['pattern']" class="u_required u_cp"
+              aria-describedby="popup-password">
+              <img src="/assets/images/auth/register6.svg" alt="Invalid password" data-toggle="tooltip"
+                data-placement="top"
+                title="Password must contain at least one uppercase letter, one lowercase letter, one number, and one special character">
+            </span>
+          </span>
+          <div class="u_input-note u_ib">
+            <span class="u_rollover u_cp u_flex" aria-describedby="popup-26"
+              (click)="passwordFieldType = passwordFieldType === 'password' ? 'text' : 'password'">
+              <svg width="18" height="18" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class=""
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path class="u_fill"
+                  d="M6.938 8.66L2.314 4.075 4.406 2l29.28 29.037-2.092 2.074-4.895-4.854A16.293 16.293 0 0118 30.754c-7.974 0-14.608-5.69-16-13.198A16.069 16.069 0 016.94 8.66h-.002zm15.14 15.014l-2.166-2.147a4.47 4.47 0 01-5.052-.858 4.367 4.367 0 01-.865-5.01l-2.165-2.147a7.285 7.285 0 00.938 9.232 7.443 7.443 0 009.31.93zM12.045 5.47A16.372 16.372 0 0118 4.357c7.974 0 14.608 5.69 16 13.199a15.988 15.988 0 01-2.976 6.734l-5.708-5.66c.17-1.134.07-2.29-.293-3.377a7.323 7.323 0 00-1.793-2.886 7.406 7.406 0 00-2.91-1.777 7.455 7.455 0 00-3.404-.29l-4.87-4.827V5.47z"
+                  fill="#4E525F"></path>
+              </svg>
+            </span>
+          </div>
+        </div>
+        <div class="u_forgotpass"><span class="u_forgotpass__link u_cp" routerLink="/forgot-password">Forgot
+            Password?</span></div>
+        <div class="u_block u_relative"><button type="submit" class="u_account-btn u_w-full u_cp false">Login</button>
+        </div>
+      </div>
+    </form>
+    <p class="u_send-code u_t-center u_mt-20">Don’t have an account? <span class="u_cp" routerLink="/register">Sign
+        Up</span></p>
+  </div>
+  <div class="u_copyright u_flex u_content-center u_align-center">
+    <p class="u_t-center">Copyright © 2020-2024 Superworks Company. All rights reserved.</p>
+  </div>
+</div>

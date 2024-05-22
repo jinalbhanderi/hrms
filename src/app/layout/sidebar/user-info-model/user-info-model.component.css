@@ -1,0 +1,4 @@
+/* Custom CSS */
+.chat-icon:hover {
+  color: #268eff; /* Change the color to red on hover */
+}
