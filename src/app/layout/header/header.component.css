@@ -1,0 +1,10 @@
+/* Customize dropdown item font size */
+.dropdown-menu .dropdown-item {
+  font-size: 14px; /* Change this to your desired font size */
+}
+
+/* Example to change the background color of dropdown items */
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:focus {
+  background-color: #f8f9fa; /* Change this to your desired background color */
+}

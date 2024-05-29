@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, EventEmitter, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-basic-info',
@@ -9,6 +9,7 @@ export class BasicInfoComponent {
   showPopup = false;
   isCheckboxChecked: boolean = false;
   isESIChecked: boolean = false;
+selectedCity: any;
 
   toggleCheckbox() {
     this.isCheckboxChecked = !this.isCheckboxChecked;
@@ -26,6 +27,14 @@ export class BasicInfoComponent {
     this.showNestedCheckboxes = event.target.checked;
   }
 
-
-
+  out = new EventEmitter();
+  constructor() {}
+  cities = [
+    { id: 1, name: 'Vilnius' },
+    { id: 2, name: 'Kaunas' },
+    { id: 3, name: 'Pavilnys', disabled: true },
+    { id: 4, name: 'Pabradė' },
+    { id: 5, name: 'Klaipėda' },
+  ];
+  
 }

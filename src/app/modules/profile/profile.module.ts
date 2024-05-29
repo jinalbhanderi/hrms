@@ -10,6 +10,7 @@ import { SignatureComponent } from './signature/signature.component';
 import { ProfileUpdateRequestComponent } from './profile-update-request/profile-update-request.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { MyAssetsComponent } from './my-assets/my-assets.component';
+import { EditProfileComponent } from './edit-profile/edit-profile.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { MyAssetsComponent } from './my-assets/my-assets.component';
     ProfileUpdateRequestComponent,
     FeedbackComponent,
     MyAssetsComponent,
+    EditProfileComponent,
   ],
   imports: [CommonModule, ProfileRoutingModule],
 })

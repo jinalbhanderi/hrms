@@ -9,6 +9,7 @@ import { BalanceComponent } from './balance/balance.component';
 import { AdjustedBalanceComponent } from './adjusted-balance/adjusted-balance.component';
 import { MyCompOffComponent } from './my-comp-off/my-comp-off.component';
 import { CompOffComponent } from './comp-off/comp-off.component';
+import { AddLeaveComponent } from './add-leave/add-leave.component';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { CompOffComponent } from './comp-off/comp-off.component';
     AdjustedBalanceComponent,
     MyCompOffComponent,
     CompOffComponent,
+    AddLeaveComponent,
   ],
   imports: [
     CommonModule,

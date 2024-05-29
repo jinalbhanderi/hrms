@@ -27,12 +27,9 @@ import { CompOffPolicyComponent } from './comp-off-policy/comp-off-policy.compon
     LeavePolicyComponent,
     HolidaysPolicyComponent,
     PolicyDocumentsComponent,
-    CompOffPolicyComponent
+    CompOffPolicyComponent,
   ],
-  imports: [
-    CommonModule,
-    SettingsRoutingModule
-  ],
-  exports:[CompanyDetailsComponent]
+  imports: [CommonModule, SettingsRoutingModule],
+  exports: [CompanyDetailsComponent],
 })
-export class SettingsModule { }
+export class SettingsModule {}

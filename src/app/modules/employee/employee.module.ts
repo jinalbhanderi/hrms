@@ -8,7 +8,7 @@ import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { EmployeesProbationComponent } from './employees-probation/employees-probation.component';
 import { EmployeeExitsComponent } from './employee-exits/employee-exits.component';
 import { AgreementListComponent } from './agreement-list/agreement-list.component';
-import { CompensationListComponent } from './compensation-list/compensation-list.component';
+// import { CompensationListComponent } from './compensation-list/compensation-list.component';
 import { ProfileUpdateRequestsComponent } from './profile-update-requests/profile-update-requests.component';
 import { EmployeeExitRequestsComponent } from './employee-exit-requests/employee-exit-requests.component';
 import { SettlementListComponent } from './settlement-list/settlement-list.component';
@@ -22,7 +22,7 @@ import { SettlementListComponent } from './settlement-list/settlement-list.compo
     EmployeesProbationComponent,
     EmployeeExitsComponent,
     AgreementListComponent,
-    CompensationListComponent,
+    // CompensationListComponent,
     ProfileUpdateRequestsComponent,
     EmployeeExitRequestsComponent,
     SettlementListComponent

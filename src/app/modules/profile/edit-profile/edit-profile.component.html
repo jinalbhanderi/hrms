@@ -1,0 +1,83 @@
+<div class="u_sm active  ">
+  <div class="false u_sm-overlay"></div>
+  <div class="u_sm-layout" style="max-width: 800px;">
+    <div class="u_sm-header" id="u_sm-header">
+      <div class="u_sm-header-left">
+        <h4>Upload Photo / Edit
+          Photo</h4>
+      </div>
+      <div class="u_sm-header-right">
+        <div class="u_sm-close" (click)="dismiss()"><svg width="12" height="12"
+            viewBox="0 0 36 36" fill="none"
+            xmlns="http://www.w3.org/2000/svg" class
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path class="u_fill-stroke"
+              d="M18 14.557L7.08 3.637l-.142-.142-.142.141-3.16 3.16-.141.142.141.141L14.557 18 3.637 28.92l-.142.142.141.142 3.16 3.16.142.141.141-.141L18 21.443l10.92 10.92.142.142.142-.141 3.16-3.16.141-.142-.141-.141L21.443 18l10.92-10.922.142-.141-.141-.142-3.16-3.16-.142-.141-.141.141L18 14.557z"
+              stroke="73788B" fill="#007AFF" stroke-width="0.4"></path>
+          </svg></div>
+      </div>
+    </div>
+    <div class="u_sm-body" id="u_sm-body" style="max-height: calc(533px);">
+      <div class="u_upload-photo u_p-20">
+        <div class="u_row">
+          <div class="u_col-6 u_upload-photo-left">
+            <div
+              class="u_upload-photo-inner u_flex u_align-center u_content-center u_text-center u_flex-col"
+              role="button" tabindex="0"><svg width="36" height="36"
+                viewBox="0 0 36 36" fill="none"
+                xmlns="http://www.w3.org/2000/svg" class
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path class="u_fill"
+                  d="M18 18.526l6.168 6.222-2.057 2.075-2.658-2.681v8.191h-2.907V24.14l-2.657 2.684-2.057-2.075L18 18.526zM18 3c2.496 0 4.904.926 6.768 2.6a10.298 10.298 0 013.34 6.485 7.997 7.997 0 014.458 3.173 8.121 8.121 0 01-.903 10.308 7.966 7.966 0 01-4.94 2.335L26.722 25a8.84 8.84 0 00-2.494-6.17 8.685 8.685 0 00-6.065-2.637 8.679 8.679 0 00-6.158 2.406 8.835 8.835 0 00-2.721 6.071l-.006.33v2.901a7.965 7.965 0 01-4.94-2.335 8.12 8.12 0 01-.904-10.308 7.997 7.997 0 014.457-3.173 10.297 10.297 0 013.34-6.485A10.124 10.124 0 0118 3z"
+                  fill="#007AFF"></path>
+              </svg>
+              <p class="u_mt-15">Drag &amp; Drop
+                file here</p>
+              <p class="u_mt-15 u_mb-15">Or</p><label
+                class="u_relative u_block u_cp">Browse File<input type="file"
+                  class="img_file_input" accept="image/jpeg, image/png"
+                  autocomplete="off" tabindex="-1"
+                  style="display: none;"></label>
+            </div>
+          </div>
+          <div class="u_col-6 u_upload-photo-right">
+            <div class="u_flex u_align-center u_content-center u_flex-col">
+              <h6 class="u_mb-15">Preview</h6>
+              <div>
+                <div class="u_preview-avtar u_mb-20">
+                  <div class="u_avatar ">
+                    <div class="u_avatar-content "
+                      style="background-color: rgb(96, 177, 88); width: 100px; height: 100px;"><span
+                        class="u_m-auto"
+                        style="font-size: 3.33333rem; line-height: 3.33333rem;">AM</span></div>
+                  </div>
+                </div>
+                <div class="u_preview-avtar u_mb-20">
+                  <div class="u_avatar ">
+                    <div class="u_avatar-content "
+                      style="background-color: rgb(96, 177, 88); width: 60px; height: 60px;"><span
+                        class="u_m-auto"
+                        style="font-size: 2rem; line-height: 2rem;">AM</span></div>
+                  </div>
+                </div>
+                <div class="u_preview-avtar ">
+                  <div class="u_avatar ">
+                    <div class="u_avatar-content "
+                      style="background-color: rgb(96, 177, 88); width: 30px; height: 30px;"><span
+                        class="u_m-auto"
+                        style="font-size: 1rem; line-height: 1rem;">AM</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="u_modal-buttons"><button type="button"
+          class="u_btn white small u_btn__white"
+          (click)="close()">cancel</button><button type="button"
+          class="u_btn blue small u_btn__blue">save</button>
+      </div>
+    </div>
+  </div>
+</div>

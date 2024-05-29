@@ -7,6 +7,7 @@ import { ApprovalComponent } from './approval/approval.component';
 import { BalanceComponent } from './balance/balance.component';
 import { AdjustedBalanceComponent } from './adjusted-balance/adjusted-balance.component';
 import { CompOffComponent } from './comp-off/comp-off.component';
+import { AddLeaveComponent } from './add-leave/add-leave.component';
 
 const routes: Routes = [
   {path:'my-leave',component:MyLeaveComponent},
@@ -16,7 +17,7 @@ const routes: Routes = [
   {path:'balance',component:BalanceComponent},
   {path:'adjusted-balance',component:AdjustedBalanceComponent},
   {path:'comp-off',component:CompOffComponent},
-  // {path:'comp-offv',component:CompOffComponent},
+  {path:'add',component:AddLeaveComponent},
 ];
 
 @NgModule({

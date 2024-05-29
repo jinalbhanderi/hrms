@@ -61,7 +61,7 @@
               <span class="u_count"></span>
             </div>
           </li>
-          <li  routerLinkActive="u_active-menu">
+          <li  [ngClass]="{'u_active-menu': isParentActive}" >
             <div class="u_menu-item">
               <div data-class="u_tooltip" data-tip="Employee" (click)="toggleMenu('expand')">
                 <div class="u_menu-icon">
@@ -339,7 +339,7 @@
 
 <ul class="u_menu-item-popover" style="top: 181px;" *ngIf="isExpanded">
   <span class="u_menu-item-popover-arrow" style="top: 166px;"></span>
-  <li routerLinkActive="u_active-inner-menu" routerLink="/directory">Employee Directory</li>
+  <li routerLinkActive="u_active-inner-menu" [routerLinkActiveOptions]="{ exact: true }" routerLink="/directory">Employee Directory</li>
   <li routerLinkActive="u_active-inner-menu" routerLink="/organization-tree">Organization Tree</li>
   <li routerLinkActive="u_active-inner-menu" routerLink="/employees">Employee List</li>
   <li routerLinkActive="u_active-inner-menu" routerLink="/employees-probation">Internship / Probation List</li>
@@ -394,7 +394,7 @@
 
 <ul class="u_menu-item-popover" *ngIf="leave" style="top: 305px;">
   <span class="u_menu-item-popover-arrow" style="top: 10px;"></span>
-  <li routerLinkActive="u_active-inner-menu " routerLink="/my-leave" routerLink="my-leave">My Leave</li>
+  <li routerLinkActive="u_active-inner-menu " routerLink="/my-leave">My Leave</li>
   <li routerLinkActive="u_active-inner-menu " routerLink="/my-comp-off">My Comp-Off</li>
   <li routerLinkActive="u_active-inner-menu "  routerLink="/history">Leave History</li>
   <li routerLinkActive="u_active-inner-menu " routerLink="/approval">Leave Approval</li>
@@ -408,6 +408,7 @@
 <ul class="u_menu-item-popover" style="top: 209px;" *ngIf="helpdesk">
   <span class="u_menu-item-popover-arrow" style="top: 10px;"></span>
   <li routerLinkActive="u_active-inner-menu " routerLink="/my-tickets">My Tickets</li>
+  .
   <li routerLinkActive="u_active-inner-menu " routerLink="/assign-tickets">Assign Tickets</li>
   <li routerLinkActive="u_active-inner-menu "  routerLink="/follower-tickets">Follower Tickets</li>
   <li routerLinkActive="u_active-inner-menu " routerLink="/helpdesk/dashboard">Dashboard</li>

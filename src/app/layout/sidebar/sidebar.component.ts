@@ -2,6 +2,7 @@ import { isPlatformBrowser } from '@angular/common';
 import { Component, ElementRef, HostListener, Inject, PLATFORM_ID } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { UserInfoModelComponent } from './user-info-model/user-info-model.component';
+import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
   selector: 'app-sidebar',
@@ -19,9 +20,36 @@ export class SidebarComponent {
   reimbursement: boolean = false;
   showUserInfoModal: boolean = false;
   public modalOpen: boolean = false;
+  isParentActive = false;
 
-  constructor(private elementRef: ElementRef,  @Inject(PLATFORM_ID) private platformId: Object,    private modalService: NgbModal,) {}
+  constructor(
+    private elementRef: ElementRef,
+    @Inject(PLATFORM_ID) private platformId: Object,
+    private modalService: NgbModal,
+    private router: Router
+  ) {
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        this.checkIfParentIsActive();
+      }
+    });
+  }
+ checkIfParentIsActive(): void {
+    const parentRoutes = [
+      '/directory',
+      '/organization-tree',
+      '/employees',
+      '/employees-probation',
+      '/resignation',
+      '/agreement',
+      '/compensation-list',
+      '/profile-requests',
+      '/exit-requests',
+      '/settlement-list'
+    ];
 
+    this.isParentActive = parentRoutes.some(route => this.router.url.startsWith(route));
+  }
   toggleMenu(menuType: string): void {
     // Collapse all other menu items and expand/collapse the selected menu item
     if (menuType === 'expand') {
@@ -121,7 +149,6 @@ export class SidebarComponent {
             ariaLabelledBy: 'modal',
             centered: false,
             windowClass: 'modal-right',
-
           })
           .result.then(
             (result: any) => {
@@ -135,5 +162,4 @@ export class SidebarComponent {
       console.error('Error showing modal:', error);
     }
   }
-
 }

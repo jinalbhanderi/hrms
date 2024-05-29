@@ -73,13 +73,6 @@ const routes: Routes = [
           ),
       },
       {
-        path: '',
-        loadChildren: () =>
-          import('../modules/settings/settings.module').then(
-            (m) => m.SettingsModule
-          ),
-      },
-      {
         path: 'settings',
         loadChildren: () =>
           import('../modules/settings/settings.module').then(

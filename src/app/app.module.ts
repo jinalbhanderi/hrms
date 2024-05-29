@@ -28,45 +28,46 @@ import { LayoutModule } from "./layout/layout.module";
 import { AuthModule } from './modules/auth/auth.module';
 import { PagenotfoundComponent } from './modules/pagenotfound/pagenotfound.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgChartsModule } from 'ng2-charts';
 
 @NgModule({
-    declarations: [
-        AppComponent,
-        LayoutComponent,
-        SidebarComponent,
-        HeaderComponent,
-        FooterComponent,
-        DashboardComponent,
-        ProfileComponent,
-        InboxComponent,
-        ImportDataComponent,
-        DocumentComponent,
-        ReportComponent,
-        PerformanceReportComponent,
-        SettingsComponent,
-        PagenotfoundComponent,
-    ],
-    providers: [],
-    bootstrap: [AppComponent],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        DashboardModule,
-        EmployeeModule,
-        AttendanceModule,
-        OvertimeModule,
-        HolidaysModule,
-        LeaveModule,
-        HelpDeskModule,
-        OnboardingModule,
-        ReimbursementModule,
-        SettingsModule,
-        LayoutModule,
-        NgbModule,
-        AuthModule,
-        
-    ]
+  declarations: [
+    AppComponent,
+    LayoutComponent,
+    SidebarComponent,
+    HeaderComponent,
+    FooterComponent,
+    DashboardComponent,
+    ProfileComponent,
+    InboxComponent,
+    ImportDataComponent,
+    DocumentComponent,
+    ReportComponent,
+    PerformanceReportComponent,
+    SettingsComponent,
+    PagenotfoundComponent,
+  ],
+  providers: [],
+  bootstrap: [AppComponent],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    DashboardModule,
+    EmployeeModule,
+    AttendanceModule,
+    OvertimeModule,
+    HolidaysModule,
+    LeaveModule,
+    HelpDeskModule,
+    OnboardingModule,
+    ReimbursementModule,
+    SettingsModule,
+    LayoutModule,
+    NgbModule,
+    AuthModule,
+    NgChartsModule
+  ],
 })
-export class AppModule { }
+export class AppModule {}
 
 

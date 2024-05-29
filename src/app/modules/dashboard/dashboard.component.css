@@ -1,0 +1,12 @@
+/* styles.css or your-component.component.css */
+.modal-right{
+  position: fixed;
+  right: 0;
+  margin: 0;
+  top: 0;
+}
+
+.modal-right .modal-content {
+  height: 100vh; /* Adjust height as needed */
+  border-radius: 0;
+}
