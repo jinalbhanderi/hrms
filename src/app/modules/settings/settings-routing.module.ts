@@ -12,12 +12,13 @@ import { LeavePolicyComponent } from './leave-policy/leave-policy.component';
 import { HolidaysPolicyComponent } from './holidays-policy/holidays-policy.component';
 import { PolicyDocumentsComponent } from './policy-documents/policy-documents.component';
 import { CompOffPolicyComponent } from './comp-off-policy/comp-off-policy.component';
+import { PagenotfoundComponent } from '../pagenotfound/pagenotfound.component';
 
 const routes: Routes = [
-
-
-    { path: '', component: SettingsComponent,
-     children: [
+  {
+    path: '',
+    component: SettingsComponent,
+    children: [
       {
         path: 'general',
         loadChildren: () =>
@@ -26,27 +27,37 @@ const routes: Routes = [
       {
         path: 'employee-fields',
         loadChildren: () =>
-          import('./employee-fields/employee-fields.module').then((m) => m.EmployeeFieldsModule),
+          import('./employee-fields/employee-fields.module').then(
+            (m) => m.EmployeeFieldsModule
+          ),
       },
       {
         path: 'shift',
         loadChildren: () =>
-          import('./attendance-policy/attendance-policy.module').then((m) => m.AttendancePolicyModule),
+          import('./attendance-policy/attendance-policy.module').then(
+            (m) => m.AttendancePolicyModule
+          ),
       },
       {
         path: 'ot-policy',
         loadChildren: () =>
-          import('./overtime-policy/overtime-policy.module').then((m) => m.OvertimePolicyModule),
+          import('./overtime-policy/overtime-policy.module').then(
+            (m) => m.OvertimePolicyModule
+          ),
       },
       {
         path: 'onboarding-setting',
         loadChildren: () =>
-          import('./onboarding-setting/onboarding-setting.module').then((m) => m.OnboardingSettingModule),
+          import('./onboarding-setting/onboarding-setting.module').then(
+            (m) => m.OnboardingSettingModule
+          ),
       },
       {
         path: 'employee-exit',
         loadChildren: () =>
-          import('./employee-exit/employee-exit.module').then((m) => m.EmployeeExitModule),
+          import('./employee-exit/employee-exit.module').then(
+            (m) => m.EmployeeExitModule
+          ),
       },
       {
         path: 'feedback',
@@ -61,14 +72,18 @@ const routes: Routes = [
       {
         path: 'reimbursement-setting',
         loadChildren: () =>
-          import('./reimbursement-setting/reimbursement-setting.module').then((m) => m.ReimbursementSettingModule),
+          import('./reimbursement-setting/reimbursement-setting.module').then(
+            (m) => m.ReimbursementSettingModule
+          ),
       },
       {
         path: 'org-structure',
         loadChildren: () =>
-          import('./org-structure/org-structure.module').then((m) => m.OrgStructureModule),
+          import('./org-structure/org-structure.module').then(
+            (m) => m.OrgStructureModule
+          ),
       },
-      { path: 'company-details', component: CompanyDetailsComponent } ,
+      { path: 'company-details', component: CompanyDetailsComponent },
       { path: 'sub-company', component: SubCompanyComponent },
       { path: 'bank-details', component: BankDetailsComponent },
       { path: 'location', component: LocationComponent },
@@ -79,13 +94,13 @@ const routes: Routes = [
       { path: 'policy-documents', component: PolicyDocumentsComponent },
       { path: 'access-level', component: AccessLevelComponent },
       { path: 'product-access', component: ProductAccessComponent },
-    ]
+      { path: '**', component: PagenotfoundComponent },
+    ],
   },
-
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class SettingsRoutingModule { }
+export class SettingsRoutingModule {}

@@ -1,21 +1,25 @@
-/* Hide nested lists by default */
+/* Hide the checkbox */
+.u_sidemenu-checkbox {
+  display: none;
+}
+
+/* Default state: hide the dropdown content */
 .u_sidemenu-item-list {
   display: none;
 }
 
-/* Show nested list when parent <li> is hovered */
-.u_sidemenu-has-list:hover .u_sidemenu-item-list {
+/* Show the dropdown content when the checkbox is checked */
+.u_sidemenu-checkbox:checked ~ .u_sidemenu-item-list {
   display: block;
 }
 
-/* Basic styling for menu items */
+/* Style the label to look like a clickable menu item */
 .u_sidemenu-item {
   cursor: pointer;
 }
 
+/* Optional: Add some styles for the label to indicate it's clickable */
 .u_sidemenu-item p {
   margin: 0;
   padding: 10px;
 }
-
-

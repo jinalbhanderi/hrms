@@ -9,9 +9,9 @@ import { SignatureComponent } from './signature/signature.component';
 import { ProfileUpdateRequestComponent } from './profile-update-request/profile-update-request.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { MyAssetsComponent } from './my-assets/my-assets.component';
+import { PagenotfoundComponent } from '../pagenotfound/pagenotfound.component';
 
 const routes: Routes = [
-
   {
     path: '',
     component: ProfileComponent,
@@ -24,8 +24,7 @@ const routes: Routes = [
       },
       {
         path: 'job',
-        loadChildren: () =>
-          import('./job/job.module').then((m) => m.JobModule),
+        loadChildren: () => import('./job/job.module').then((m) => m.JobModule),
       },
       {
         path: 'documents',
@@ -35,16 +34,22 @@ const routes: Routes = [
       {
         path: 'my-finance',
         loadChildren: () =>
-          import('./my-finance/my-finance.module').then((m) => m.MyFinanceModule),
+          import('./my-finance/my-finance.module').then(
+            (m) => m.MyFinanceModule
+          ),
       },
       { path: 'emergency-contact', component: EmergencyContactComponent },
       { path: 'emp-org-structure', component: EmpOrgStructureComponent },
       { path: 'bank-info', component: BankInfoComponent },
       { path: 'policy', component: SettingsComponent },
       { path: 'signature', component: SignatureComponent },
-      { path: 'profile-update-request', component: ProfileUpdateRequestComponent },
+      {
+        path: 'profile-update-request',
+        component: ProfileUpdateRequestComponent,
+      },
       { path: 'feedback', component: FeedbackComponent },
       { path: 'assets', component: MyAssetsComponent },
+      { path: '**', component: PagenotfoundComponent },
     ],
   },
 ];

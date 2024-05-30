@@ -8,21 +8,22 @@ import { EducationComponent } from './education/education.component';
 import { PreviousEmployerComponent } from './previous-employer/previous-employer.component';
 import { HealthBenefitComponent } from './health-benefit/health-benefit.component';
 import { VaccinationStatusComponent } from './vaccination-status/vaccination-status.component';
+import { PagenotfoundComponent } from '../../pagenotfound/pagenotfound.component';
 
 const routes: Routes = [
-
-   { path: 'basic-info', component: BasicInfoComponent } ,
-   { path: 'family-info', component: FamilyInfoComponent } ,
-   { path: 'contact', component: ContactComponent } ,
-   { path: 'address', component: AddressComponent } ,
-   { path: 'education', component: EducationComponent } ,
-   { path: 'previous-employer', component: PreviousEmployerComponent } ,
-   { path: 'health-benefit', component: HealthBenefitComponent } ,
-   { path: 'vaccination-status', component: VaccinationStatusComponent } ,
+  { path: 'basic-info', component: BasicInfoComponent },
+  { path: 'family-info', component: FamilyInfoComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: 'address', component: AddressComponent },
+  { path: 'education', component: EducationComponent },
+  { path: 'previous-employer', component: PreviousEmployerComponent },
+  { path: 'health-benefit', component: HealthBenefitComponent },
+  { path: 'vaccination-status', component: VaccinationStatusComponent },
+  { path: '**', component: PagenotfoundComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class PersonalRoutingModule { }
+export class PersonalRoutingModule {}

@@ -1,119 +1,202 @@
 <div class="u_settings-layout u_flex" style="height: calc(-62px + 100vh);">
   <div class="u_settings-left-sidebar">
     <ul class="u_sidemenu p-0">
-      <div class="u_scroll-section " style="position: relative; overflow: hidden; width: 100%; height: 100%;">
-        <div style="position: absolute; inset: 0px; overflow: scroll; margin-right: -14px; margin-bottom: -14px;">
+      <div class="u_scroll-section "
+        style="position: relative; overflow: hidden; width: 100%; height: 100%;">
+        <div
+          style="position: absolute; inset: 0px; overflow: scroll; margin-right: -14px; margin-bottom: -14px;">
           <li class="u_sidemenu-has-list u_sidemenu-item-active">
-            <div class="u_sidemenu-item">
+            <input type="checkbox" id="attendance" class="u_sidemenu-checkbox">
+            <label class="u_sidemenu-item w-100" for="attendance">
               <p>Attendance Report</p>
-            </div>
+            </label>
             <ul class="u_sidemenu-item-list">
-              <li routerLinkActive="u_sidemenu-item-list-active" routerLink="attendance-report/daily-attendance">Daily Attendance</li>
-              <li routerLinkActive="u_sidemenu-item-list-active" routerLink="attendance-report/daily-attendance-location">Daily Attendance by Location</li>
-              <li routerLinkActive="u_sidemenu-item-list-active" routerLink="attendance-report/early-clock-out">Early Clock Out Summary</li>
-              <li routerLinkActive="u_sidemenu-item-list-active" routerLink="attendance-report/late-in">Late IN Summary</li>
-              <li routerLinkActive="u_sidemenu-item-list-active" routerLink="attendance-report/daily-attendance-with-break">Daily Attendance Report with Break</li>
-              <li routerLinkActive="u_sidemenu-item-list-active" routerLink="attendance-report/daily-attendance-by-department">Daily Attendance By Location By Department</li>
-              <li routerLinkActive="u_sidemenu-item-list-active" routerLink="attendance-report/regularization-report">Regularization Report</li>
-              <li routerLinkActive="u_sidemenu-item-list-active" routerLink="attendance-report/attendance-verification-report">Attendance Verification Report</li>
-              <li routerLinkActive="u_sidemenu-item-list-active" routerLink="attendance-report/attendance-type-report">Attendance Type Report</li>
-              <li routerLinkActive="u_sidemenu-item-list-active" routerLink="attendance-report/overtime-report">Overtime Report</li>
-              <li routerLinkActive="u_sidemenu-item-list-active" routerLink="attendance-report/break-hour-report">Break Hour Report</li>
+              <li routerLinkActive="u_sidemenu-item-list-active"
+                routerLink="attendance-report/daily-attendance">Daily
+                Attendance</li>
+              <li routerLinkActive="u_sidemenu-item-list-active"
+                routerLink="attendance-report/daily-attendance-location">Daily
+                Attendance by Location</li>
+              <li routerLinkActive="u_sidemenu-item-list-active"
+                routerLink="attendance-report/early-clock-out">Early Clock Out
+                Summary</li>
+              <li routerLinkActive="u_sidemenu-item-list-active"
+                routerLink="attendance-report/late-in">Late IN Summary</li>
+              <li routerLinkActive="u_sidemenu-item-list-active"
+                routerLink="attendance-report/daily-attendance-with-break">Daily
+                Attendance Report with Break</li>
+              <li routerLinkActive="u_sidemenu-item-list-active"
+                routerLink="attendance-report/daily-attendance-by-department">Daily
+                Attendance By Location By Department</li>
+              <li routerLinkActive="u_sidemenu-item-list-active"
+                routerLink="attendance-report/regularization-report">Regularization
+                Report</li>
+              <li routerLinkActive="u_sidemenu-item-list-active"
+                routerLink="attendance-report/attendance-verification-report">Attendance
+                Verification Report</li>
+              <li routerLinkActive="u_sidemenu-item-list-active"
+                routerLink="attendance-report/attendance-type-report">Attendance
+                Type Report</li>
+              <li routerLinkActive="u_sidemenu-item-list-active"
+                routerLink="attendance-report/overtime-report">Overtime
+                Report</li>
+              <li routerLinkActive="u_sidemenu-item-list-active"
+                routerLink="attendance-report/break-hour-report">Break Hour
+                Report</li>
             </ul>
           </li>
           <li class="u_sidemenu-has-list u_sidemenu-item-active">
-            <div class="u_sidemenu-item">
+            <input type="checkbox" id="leave-report"
+              class="u_sidemenu-checkbox">
+            <label class="u_sidemenu-item w-100" for="leave-report">
               <p>Leave Report</p>
-            </div>
+            </label>
             <ul class="u_sidemenu-item-list">
-              <li routerLinkActive="u_sidemenu-item-list-active" routerLink="leave-report/daily-leave">Daily Leave Report </li>
-              <li routerLinkActive="u_sidemenu-item-list-active" routerLink="leave-report/leave-booked-balanced">Leave Booked &amp; Balanced</li>
-              <li routerLinkActive="u_sidemenu-item-list-active" routerLink="leave-report/leave-type">Leave Type Wise</li>
-              <li routerLinkActive="u_sidemenu-item-list-active" routerLink="leave-report/leave-enhancement">Leave Encashment Report</li>
-              <li routerLinkActive="u_sidemenu-item-list-active" routerLink="leave-report/comp-off-report">Comp-Off Report</li>
+              <li routerLinkActive="u_sidemenu-item-list-active"
+                routerLink="leave-report/daily-leave">Daily Leave Report </li>
+              <li routerLinkActive="u_sidemenu-item-list-active"
+                routerLink="leave-report/leave-booked-balanced">Leave Booked
+                &amp; Balanced</li>
+              <li routerLinkActive="u_sidemenu-item-list-active"
+                routerLink="leave-report/leave-type">Leave Type Wise</li>
+              <li routerLinkActive="u_sidemenu-item-list-active"
+                routerLink="leave-report/leave-enhancement">Leave Encashment
+                Report</li>
+              <li routerLinkActive="u_sidemenu-item-list-active"
+                routerLink="leave-report/comp-off-report">Comp-Off Report</li>
             </ul>
           </li>
           <li class="u_sidemenu-has-list u_sidemenu-item-active">
-            <div class="u_sidemenu-item">
+            <input type="checkbox" id="custom-report"
+              class="u_sidemenu-checkbox">
+            <label class="u_sidemenu-item w-100" for="custom-report">
               <p>Custom Report</p>
-            </div>
+            </label>
             <ul class="u_sidemenu-item-list">
-              <li routerLinkActive="u_sidemenu-item-list-active" routerLink="custom-report/department-detail">Department Detail</li>
-              <li routerLinkActive="u_sidemenu-item-list-active" routerLink="custom-report/designation-detail">Job Title Detail</li>
-              <li routerLinkActive="u_sidemenu-item-list-active" routerLink="custom-report/location-wise">Location Wise</li>
-              <li routerLinkActive="u_sidemenu-item-list-active" routerLink="custom-report/gender-wise">Gender Wise</li>
-              <li routerLinkActive="u_sidemenu-item-list-active" routerLink="custom-report/department">Location Wise Department</li>
-              <li routerLinkActive="u_sidemenu-item-list-active" routerLink="custom-report/sub-department">Location Wise Sub Department</li>
-              <li routerLinkActive="u_sidemenu-item-list-active" routerLink="custom-report/zone">Zone Report</li>
-              <li routerLinkActive="u_sidemenu-item-list-active" routerLink="custom-report/inbox-audit-log">Inbox Audit Log</li>
+              <li routerLinkActive="u_sidemenu-item-list-active"
+                routerLink="custom-report/department-detail">Department
+                Detail</li>
+              <li routerLinkActive="u_sidemenu-item-list-active"
+                routerLink="custom-report/designation-detail">Job Title
+                Detail</li>
+              <li routerLinkActive="u_sidemenu-item-list-active"
+                routerLink="custom-report/location-wise">Location Wise</li>
+              <li routerLinkActive="u_sidemenu-item-list-active"
+                routerLink="custom-report/gender-wise">Gender Wise</li>
+              <li routerLinkActive="u_sidemenu-item-list-active"
+                routerLink="custom-report/department">Location Wise
+                Department</li>
+              <li routerLinkActive="u_sidemenu-item-list-active"
+                routerLink="custom-report/sub-department">Location Wise Sub
+                Department</li>
+              <li routerLinkActive="u_sidemenu-item-list-active"
+                routerLink="custom-report/zone">Zone Report</li>
+              <li routerLinkActive="u_sidemenu-item-list-active"
+                routerLink="custom-report/inbox-audit-log">Inbox Audit Log</li>
             </ul>
           </li>
-          <li routerLink="attendance-summary-report" routerLinkActive="u_sidemenu-item-active">
+          <li routerLink="attendance-summary-report"
+            routerLinkActive="u_sidemenu-item-active">
             <div class="u_sidemenu-item">
               <p>Attendance Summary Report</p>
             </div>
           </li>
-          <li routerLink="organizational-report" routerLinkActive="u_sidemenu-item-active">
+          <li routerLink="organizational-report"
+            routerLinkActive="u_sidemenu-item-active">
             <div class="u_sidemenu-item">
               <p>Organizational Report</p>
             </div>
           </li>
-          <li routerLink="compensation-report" routerLinkActive="u_sidemenu-item-active">
+          <li routerLink="compensation-report"
+            routerLinkActive="u_sidemenu-item-active">
             <div class="u_sidemenu-item">
               <p>Compensation Report</p>
             </div>
           </li>
-          <li routerLink="download-request-report" routerLinkActive="u_sidemenu-item-active">
+          <li routerLink="download-request-report"
+            routerLinkActive="u_sidemenu-item-active">
             <div class="u_sidemenu-item">
               <p>Download Request Report</p>
             </div>
           </li>
-          <li routerLink="upload-report" routerLinkActive="u_sidemenu-item-active">
+          <li routerLink="upload-report"
+            routerLinkActive="u_sidemenu-item-active">
             <div class="u_sidemenu-item">
               <p>Upload Report</p>
             </div>
           </li>
-          <li routerLink="company-hours-report" routerLinkActive="u_sidemenu-item-active">
+          <li routerLink="company-hours-report"
+            routerLinkActive="u_sidemenu-item-active">
             <div class="u_sidemenu-item">
               <p>Company Hours Report</p>
             </div>
           </li>
           <li class="u_sidemenu-has-list u_sidemenu-item-active">
-            <div class="u_sidemenu-item">
+            <input type="checkbox" id="employee-report"
+              class="u_sidemenu-checkbox">
+            <label class="u_sidemenu-item w-100" for="employee-report">
               <p>Employee Report</p>
-            </div>
+            </label>
             <ul class="u_sidemenu-item-list">
-              <li routerLinkActive="u_sidemenu-item-list-active"  routerLink="employee-report/status">Status</li>
-              <li routerLinkActive="u_sidemenu-item-list-active"  routerLink="employee-report/new-joinee">New Joinee</li>
-              <li routerLinkActive="u_sidemenu-item-list-active"  routerLink="employee-report/personal-info">Employee Information</li>
-              <li routerLinkActive="u_sidemenu-item-list-active"  routerLink="employee-report/personal-document">Personal Document Report</li>
-              <li routerLinkActive="u_sidemenu-item-list-active"  routerLink="employee-report/employee-exit">Employee Exit Report</li>
-              <li routerLinkActive="u_sidemenu-item-list-active"  routerLink="employee-report/emergency-contact">Emergency Contact</li>
-              <li routerLinkActive="u_sidemenu-item-list-active"  routerLink="employee-report/statutory">Statutory Report</li>
-              <li routerLinkActive="u_sidemenu-item-list-active"  routerLink="employee-report/covid-report">Vaccination Status</li>
-              <li routerLinkActive="u_sidemenu-item-list-active"  routerLink="employee-report/health-benefit-report">Health Benefit Report</li>
+              <li routerLinkActive="u_sidemenu-item-list-active"
+                routerLink="employee-report/status">Status</li>
+              <li routerLinkActive="u_sidemenu-item-list-active"
+                routerLink="employee-report/new-joinee">New Joinee</li>
+              <li routerLinkActive="u_sidemenu-item-list-active"
+                routerLink="employee-report/personal-info">Employee
+                Information</li>
+              <li routerLinkActive="u_sidemenu-item-list-active"
+                routerLink="employee-report/personal-document">Personal Document
+                Report</li>
+              <li routerLinkActive="u_sidemenu-item-list-active"
+                routerLink="employee-report/employee-exit">Employee Exit
+                Report</li>
+              <li routerLinkActive="u_sidemenu-item-list-active"
+                routerLink="employee-report/emergency-contact">Emergency
+                Contact</li>
+              <li routerLinkActive="u_sidemenu-item-list-active"
+                routerLink="employee-report/statutory">Statutory Report</li>
+              <li routerLinkActive="u_sidemenu-item-list-active"
+                routerLink="employee-report/covid-report">Vaccination
+                Status</li>
+              <li routerLinkActive="u_sidemenu-item-list-active"
+                routerLink="employee-report/health-benefit-report">Health
+                Benefit Report</li>
             </ul>
           </li>
           <li class="u_sidemenu-has-list u_sidemenu-item-active">
-            <div class="u_sidemenu-item">
+            <input type="checkbox" id="employee-statistics"
+              class="u_sidemenu-checkbox">
+            <label class="u_sidemenu-item w-100" for="employee-statistics">
               <p>Employee Statistics</p>
-            </div>
+            </label>
             <ul class="u_sidemenu-item-list">
-              <li routerLinkActive="u_sidemenu-item-list-active"  routerLink="employee-statistics/payroll">Statistics Report</li>
-              <li routerLinkActive="u_sidemenu-item-list-active"  routerLink="employee-statistics/login">Login Report</li>
+              <li routerLinkActive="u_sidemenu-item-list-active"
+                routerLink="employee-statistics/payroll">Statistics Report</li>
+              <li routerLinkActive="u_sidemenu-item-list-active"
+                routerLink="employee-statistics/login">Login Report</li>
             </ul>
           </li>
           <li class="u_sidemenu-has-list u_sidemenu-item-active">
-            <div class="u_sidemenu-item">
+            <input type="checkbox" id="bio" class="u_sidemenu-checkbox">
+            <label class="u_sidemenu-item w-100" for="bio">
               <p>Bio Metric Report</p>
-            </div>
+            </label>
             <ul class="u_sidemenu-item-list">
-              <li routerLinkActive="u_sidemenu-item-list-active" routerLink="biometric-report/info">Total Punches</li>
-              <li routerLinkActive="u_sidemenu-item-list-active" routerLink="biometric-report/punches">Fail Punches</li>
-              <li routerLinkActive="u_sidemenu-item-list-active" routerLink="biometric-report/assign">Assign Report</li>
-              <li routerLinkActive="u_sidemenu-item-list-active" routerLink="biometric-report/records">Records Report</li>
-              <li routerLinkActive="u_sidemenu-item-list-active" routerLink="biometric-report/device">Employee Present By Device Report</li>
-              <li routerLinkActive="u_sidemenu-item-list-active" routerLink="biometric-report/location">Employee Present By Location Report</li>
+              <li routerLinkActive="u_sidemenu-item-list-active"
+                routerLink="biometric-report/info">Total Punches</li>
+              <li routerLinkActive="u_sidemenu-item-list-active"
+                routerLink="biometric-report/punches">Fail Punches</li>
+              <li routerLinkActive="u_sidemenu-item-list-active"
+                routerLink="biometric-report/assign">Assign Report</li>
+              <li routerLinkActive="u_sidemenu-item-list-active"
+                routerLink="biometric-report/records">Records Report</li>
+              <li routerLinkActive="u_sidemenu-item-list-active"
+                routerLink="biometric-report/device">Employee Present By Device
+                Report</li>
+              <li routerLinkActive="u_sidemenu-item-list-active"
+                routerLink="biometric-report/location">Employee Present By
+                Location Report</li>
             </ul>
           </li>
         </div>

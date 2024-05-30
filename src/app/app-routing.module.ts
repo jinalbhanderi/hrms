@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { PagenotfoundComponent } from './modules/pagenotfound/pagenotfound.component';
 
 const routes: Routes = [
   {path: '',redirectTo: '/login',pathMatch: 'full'},

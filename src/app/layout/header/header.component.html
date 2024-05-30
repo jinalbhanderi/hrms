@@ -4,7 +4,16 @@
     <button class="u_hrms-sidebar-toggle"><span></span></button>
     <div class="u_flex u_align-center u_header-breadcrumb">
       <ul class="u_flex u_align-center u_flex-shrink p-0 m-0">
-        <li class="u_py-5">my status report</li>
+        <li class="u_py-5">
+          <!-- {{ currentRoute }} -->
+          <ng-container *ngFor="let part of routeParts; let i = index">
+            <span
+              [ngClass]="{'last-part': i === routeParts.length - 1, 'light-part': i !== routeParts.length - 1}">
+              {{ part }}
+            </span>
+            <ng-container *ngIf="i < routeParts.length - 1"> / </ng-container>
+          </ng-container>
+        </li>
       </ul>
     </div>
   </div>

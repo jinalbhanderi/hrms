@@ -6,30 +6,36 @@
           <div class="u_scroll-section auto-scroll"
             style="position: relative; overflow: hidden; width: 100%; height: 100%;">
             <div style="position: absolute; inset: 0px;" class="auto-scroll">
-              <li class="u_sidemenu-item-active" routerLink="company-details">
+              <li routerLinkActive="u_sidemenu-item-active"
+                routerLink="company-details">
                 <div class="u_sidemenu-item">
                   <p>Company details </p>
                 </div>
               </li>
-              <li class="  " routerLink="sub-company">
+              <li routerLink="sub-company"
+                routerLinkActive="u_sidemenu-item-active">
                 <div class="u_sidemenu-item">
                   <p>Sub Company</p>
                 </div>
               </li>
-              <li class="  " routerLink="bank-details">
+              <li routerLink="bank-details"
+                routerLinkActive="u_sidemenu-item-active">
                 <div class="u_sidemenu-item">
                   <p>Bank details</p>
                 </div>
               </li>
-              <li class="  " routerLink="location">
+              <li routerLink="location"
+                routerLinkActive="u_sidemenu-item-active">
                 <div class="u_sidemenu-item">
                   <p>Location</p>
                 </div>
               </li>
-              <li class="u_sidemenu-has-list u_sidemenu-item-active">
-                <div class="u_sidemenu-item">
+              <li class="u_sidemenu-has-list u_sidemenu-item-active"
+                routerLinkActive="u_sidemenu-item-active">
+                <input type="checkbox" id="general" class="u_sidemenu-checkbox">
+                <label class="u_sidemenu-item w-100" for="general">
                   <p>General Settings</p>
-                </div>
+                </label>
                 <ul class="u_sidemenu-item-list">
                   <li routerLink="general/basic">Basic</li>
                   <li routerLink="general/ip-restrictions">IP Restrictions</li>
@@ -39,15 +45,17 @@
                   <li routerLink="general/insurance-type">Insurance Type</li>
                 </ul>
               </li>
-              <li class="  " routerLink="email-alert">
+              <li routerLink="email-alert">
                 <div class="u_sidemenu-item">
                   <p>Email Alert</p>
                 </div>
               </li>
               <li class="u_sidemenu-has-list u_sidemenu-item-active">
-                <div class="u_sidemenu-item">
+                <input type="checkbox" id="employee-fields"
+                  class="u_sidemenu-checkbox">
+                <label class="u_sidemenu-item w-100" for="employee-fields">
                   <p>Employee fields</p>
-                </div>
+                </label>
                 <ul class="u_sidemenu-item-list">
                   <li routerLink="employee-fields/category">Category</li>
                   <li routerLink="employee-fields/department">Department</li>
@@ -66,9 +74,11 @@
                 </ul>
               </li>
               <li class="u_sidemenu-has-list u_sidemenu-item-active">
-                <div class="u_sidemenu-item">
+                <input type="checkbox" id="attendance"
+                  class="u_sidemenu-checkbox">
+                <label class="u_sidemenu-item w-100" for="attendance">
                   <p>Attendance Policy</p>
-                </div>
+                </label>
                 <ul class="u_sidemenu-item-list">
                   <li routerLink="shift/shift">Shift Policy</li>
                   <li routerLink="shift/shift-request">Shift Request Policy</li>
@@ -86,38 +96,42 @@
                 </ul>
               </li>
               <li class="u_sidemenu-has-list u_sidemenu-item-active">
-                <div class="u_sidemenu-item">
+                <input type="checkbox" id="overtime"
+                  class="u_sidemenu-checkbox">
+                <label class="u_sidemenu-item w-100" for="overtime">
                   <p>Overtime policy</p>
-                </div>
+                </label>
                 <ul class="u_sidemenu-item-list">
                   <li routerLink="ot-policy/policy">Overtime policy</li>
                   <li routerLink="ot-policy/pay-codes">Pay Codes</li>
                 </ul>
               </li>
-              <li class="  " routerLink="leave-policy">
+              <li routerLink="leave-policy">
                 <div class="u_sidemenu-item">
                   <p>Leave type/policy</p>
                 </div>
               </li>
-              <li class="  " routerLink="holidays-policy">
+              <li routerLink="holidays-policy">
                 <div class="u_sidemenu-item">
                   <p>Holidays policy</p>
                 </div>
               </li>
-              <li class="  " routerLink="comp-off-policy">
+              <li routerLink="comp-off-policy">
                 <div class="u_sidemenu-item">
                   <p>Comp-Off Policy</p>
                 </div>
               </li>
-              <li class="  " routerLink="policy-documents">
+              <li routerLink="policy-documents">
                 <div class="u_sidemenu-item">
                   <p>Policy Documents</p>
                 </div>
               </li>
               <li class="u_sidemenu-has-list u_sidemenu-item-active">
-                <div class="u_sidemenu-item">
+                <input type="checkbox" id="onboarding"
+                  class="u_sidemenu-checkbox">
+                <label class="u_sidemenu-item w-100" for="onboarding">
                   <p>Onboarding Setting</p>
-                </div>
+                </label>
                 <ul class="u_sidemenu-item-list">
                   <li
                     routerLink="onboarding-setting/onboarding-fields">Onboarding
@@ -128,9 +142,11 @@
                 </ul>
               </li>
               <li class="u_sidemenu-has-list u_sidemenu-item-active">
-                <div class="u_sidemenu-item">
+                <input type="checkbox" id="employee-exit"
+                  class="u_sidemenu-checkbox">
+                <label class="u_sidemenu-item w-100" for="employee-exit">
                   <p>Employee Exit</p>
-                </div>
+                </label>
                 <ul class="u_sidemenu-item-list">
                   <li routerLink="employee-exit/reasons">Employee Exit
                     Reason</li>
@@ -142,9 +158,11 @@
                 </ul>
               </li>
               <li class="u_sidemenu-has-list u_sidemenu-item-active">
-                <div class="u_sidemenu-item">
+                <input type="checkbox" id="feedback"
+                  class="u_sidemenu-checkbox">
+                <label class="u_sidemenu-item w-100" for="feedback">
                   <p>Feedback Settings</p>
-                </div>
+                </label>
                 <ul class="u_sidemenu-item-list">
                   <li routerLink="feedback/praise-settings">Badge</li>
                   <li routerLink="feedback/core-value">Core Value</li>
@@ -152,9 +170,11 @@
                 </ul>
               </li>
               <li class="u_sidemenu-has-list u_sidemenu-item-active">
-                <div class="u_sidemenu-item">
+                <input type="checkbox" id="help-desk"
+                  class="u_sidemenu-checkbox">
+                <label class="u_sidemenu-item w-100" for="help-desk">
                   <p>Help Desk Settings</p>
-                </div>
+                </label>
                 <ul class="u_sidemenu-item-list">
                   <li routerLink="help-desk/category-list">Category List</li>
                   <li routerLink="help-desk/status-list">Status List</li>
@@ -164,9 +184,11 @@
                 </ul>
               </li>
               <li class="u_sidemenu-has-list u_sidemenu-item-active">
-                <div class="u_sidemenu-item">
+                <input type="checkbox" id="reimbursement"
+                  class="u_sidemenu-checkbox">
+                <label class="u_sidemenu-item w-100" for="reimbursement">
                   <p>Reimbursement Settings</p>
-                </div>
+                </label>
                 <ul class="u_sidemenu-item-list">
                   <li
                     routerLink="reimbursement-setting/reimbursement-type">Reimbursement
@@ -175,20 +197,22 @@
                     Chain</li>
                 </ul>
               </li>
-              <li class="  " routerLink="access-level">
+              <li routerLink="access-level">
                 <div class="u_sidemenu-item">
                   <p>Access Level</p>
                 </div>
               </li>
-              <li class="  " routerLink="product-access">
+              <li routerLink="product-access">
                 <div class="u_sidemenu-item">
                   <p>Product Access</p>
                 </div>
               </li>
               <li class="u_sidemenu-has-list u_sidemenu-item-active">
-                <div class="u_sidemenu-item">
+                <input type="checkbox" id="structure"
+                  class="u_sidemenu-checkbox">
+                <label class="u_sidemenu-item w-100" for="structure">
                   <p>Org Structure</p>
-                </div>
+                </label>
                 <ul class="u_sidemenu-item-list">
                   <li routerLink="org-structure/zone">Zone</li>
                   <li routerLink="org-structure/business-unit">Business

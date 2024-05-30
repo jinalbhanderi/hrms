@@ -8,3 +8,21 @@
 .dropdown-menu .dropdown-item:focus {
   background-color: #f8f9fa; /* Change this to your desired background color */
 }
+/* specific-component.component.css */
+.u_py-5 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+li {
+  list-style: none;
+}
+
+.light-part {
+  color: #73788b; /* Light gray color */
+}
+
+.last-part {
+  color: #1e2538; /* Black color */
+  font-weight: bold;
+}

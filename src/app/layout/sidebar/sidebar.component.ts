@@ -21,6 +21,7 @@ export class SidebarComponent {
   showUserInfoModal: boolean = false;
   public modalOpen: boolean = false;
   isParentActive = false;
+popTemplate: any;
 
   constructor(
     private elementRef: ElementRef,
@@ -30,26 +31,26 @@ export class SidebarComponent {
   ) {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
-        this.checkIfParentIsActive();
+        // this.checkIfParentIsActive();
       }
     });
   }
- checkIfParentIsActive(): void {
-    const parentRoutes = [
-      '/directory',
-      '/organization-tree',
-      '/employees',
-      '/employees-probation',
-      '/resignation',
-      '/agreement',
-      '/compensation-list',
-      '/profile-requests',
-      '/exit-requests',
-      '/settlement-list'
-    ];
+//  checkIfParentIsActive(): void {
+//     const parentRoutes = [
+//       '/directory',
+//       '/organization-tree',
+//       '/employees',
+//       '/employees-probation',
+//       '/resignation',
+//       '/agreement',
+//       '/compensation-list',
+//       '/profile-requests',
+//       '/exit-requests',
+//       '/settlement-list'
+//     ];
 
-    this.isParentActive = parentRoutes.some(route => this.router.url.startsWith(route));
-  }
+//     this.isParentActive = parentRoutes.some(route => this.router.url.startsWith(route));
+//   }
   toggleMenu(menuType: string): void {
     // Collapse all other menu items and expand/collapse the selected menu item
     if (menuType === 'expand') {

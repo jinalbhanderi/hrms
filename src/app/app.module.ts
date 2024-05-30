@@ -29,6 +29,7 @@ import { AuthModule } from './modules/auth/auth.module';
 import { PagenotfoundComponent } from './modules/pagenotfound/pagenotfound.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgChartsModule } from 'ng2-charts';
+import { PopoverModule } from 'ngx-bootstrap/popover';
 
 @NgModule({
   declarations: [
@@ -65,7 +66,8 @@ import { NgChartsModule } from 'ng2-charts';
     LayoutModule,
     NgbModule,
     AuthModule,
-    NgChartsModule
+    NgChartsModule,
+    PopoverModule.forRoot()
   ],
 })
 export class AppModule {}
