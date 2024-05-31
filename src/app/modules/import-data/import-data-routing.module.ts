@@ -7,6 +7,7 @@ const routes: Routes = [
     path: '',
     component: ImportDataComponent,
     children: [
+      { path: '', redirectTo: 'employee', pathMatch: 'full' },
       {
         path: 'employee',
         loadChildren: () =>
@@ -20,12 +21,16 @@ const routes: Routes = [
       {
         path: 'employee-field',
         loadChildren: () =>
-          import('./employee-field/employee-field.module').then((m) => m.EmployeeFieldModule),
+          import('./employee-field/employee-field.module').then(
+            (m) => m.EmployeeFieldModule
+          ),
       },
       {
         path: 'org-structure',
         loadChildren: () =>
-          import('./org-structure/org-structure.module').then((m) => m.OrgStructureModule),
+          import('./org-structure/org-structure.module').then(
+            (m) => m.OrgStructureModule
+          ),
       },
     ],
   },

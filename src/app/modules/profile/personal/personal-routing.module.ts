@@ -11,6 +11,7 @@ import { VaccinationStatusComponent } from './vaccination-status/vaccination-sta
 import { PagenotfoundComponent } from '../../pagenotfound/pagenotfound.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: 'basic-info', pathMatch: 'full' },
   { path: 'basic-info', component: BasicInfoComponent },
   { path: 'family-info', component: FamilyInfoComponent },
   { path: 'contact', component: ContactComponent },

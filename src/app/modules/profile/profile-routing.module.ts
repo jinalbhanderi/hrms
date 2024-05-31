@@ -17,6 +17,8 @@ const routes: Routes = [
     component: ProfileComponent,
 
     children: [
+      { path: '', redirectTo: 'personal', pathMatch: 'full' },
+
       {
         path: 'personal',
         loadChildren: () =>

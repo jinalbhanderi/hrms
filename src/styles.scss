@@ -575,6 +575,8 @@ body .rc-time-picker-panel {
   }
 }
 
+
+
 .u_layout .u_left-sidebar-menubar .u_menu li.u_active-menu-item:before,
 .u_layout .u_left-sidebar-menubar .u_menu li.u_active-menu:before,
 .u_layout .u_left-sidebar-menubar .u_menu li:hover:before {
@@ -37431,7 +37433,7 @@ body #popup-root .u_billing-report-datepicker-content {
   margin: 0 10px;
 }
 
-.u_sidemenu li.u_sidemenu-item-active .u_sidemenu-item p,
+.u_sidemenu li.sidemenu-item-active .u_sidemenu-item p,
 .u_sidemenu li:hover .u_sidemenu-item p {
   color: #007aff;
 }
@@ -37455,7 +37457,7 @@ body #popup-root .u_billing-report-datepicker-content {
 }
 
 .u_sidemenu li.u_sidemenu-item-active p {
-  font-weight: 700 !important;
+  // font-weight: 700 !important;
 }
 
 .u_sidemenu li.u_sidemenu-item-active p .u_fill {

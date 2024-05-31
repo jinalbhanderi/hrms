@@ -12,20 +12,20 @@ import { EmployeeExitRequestsComponent } from './employee-exit-requests/employee
 import { SettlementListComponent } from './settlement-list/settlement-list.component';
 
 const routes: Routes = [
-  {path:'directory' ,component:EmployeeDirectoryComponent},
-  {path:'organization-tree' ,component:OrganizationTreeComponent},
-  {path:'employees' ,component:EmployeeListComponent},
-  {path:'employees-probation' ,component:EmployeesProbationComponent},
-  {path:'resignation' ,component:EmployeeExitsComponent},
-  {path:'agreement' ,component:AgreementListComponent},
+  { path: 'directory', component: EmployeeDirectoryComponent },
+  { path: 'organization-tree', component: OrganizationTreeComponent },
+  { path: 'employees', component: EmployeeListComponent },
+  { path: 'employees-probation', component: EmployeesProbationComponent },
+  { path: 'resignation', component: EmployeeExitsComponent },
+  { path: 'agreement', component: AgreementListComponent },
   // {path:'compensation-list' ,component:CompensationListComponent},
-  {path:'profile-requests' ,component:ProfileUpdateRequestsComponent},
-  {path:'exit-requests' ,component:EmployeeExitRequestsComponent},
-  {path:'settlement-list' ,component:SettlementListComponent},
+  { path: 'profile-requests', component: ProfileUpdateRequestsComponent },
+  { path: 'exit-requests', component: EmployeeExitRequestsComponent },
+  { path: 'settlement-list', component: SettlementListComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class EmployeeRoutingModule { }
+export class EmployeeRoutingModule {}

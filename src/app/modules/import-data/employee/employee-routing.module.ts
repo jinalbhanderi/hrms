@@ -9,13 +9,17 @@ import { ImportStatutoryComponent } from './import-statutory/import-statutory.co
 import { ImportPersonalDocumentComponent } from './import-personal-document/import-personal-document.component';
 
 const routes: Routes = [
-  {path:'import-sub-company',component: ImportSubCompanyComponent},
-  {path:'import-employee',component:ImportEmployeeComponent },
-  {path:'import-location',component: ImportLocationComponent},
-  {path:'import-employee-exit',component:ImportEmployeeExitComponent },
-  {path:'update-employee',component: UpdateEmployeeComponent},
-  {path:'import-statutory',component:ImportStatutoryComponent },
-  {path:'import-personal-document',component:ImportPersonalDocumentComponent },
+  { path: '', redirectTo: 'import-employee', pathMatch: 'full' },
+  { path: 'import-sub-company', component: ImportSubCompanyComponent },
+  { path: 'import-employee', component: ImportEmployeeComponent },
+  { path: 'import-location', component: ImportLocationComponent },
+  { path: 'import-employee-exit', component: ImportEmployeeExitComponent },
+  { path: 'update-employee', component: UpdateEmployeeComponent },
+  { path: 'import-statutory', component: ImportStatutoryComponent },
+  {
+    path: 'import-personal-document',
+    component: ImportPersonalDocumentComponent,
+  },
 ];
 
 @NgModule({

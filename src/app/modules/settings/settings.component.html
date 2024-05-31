@@ -6,46 +6,54 @@
           <div class="u_scroll-section auto-scroll"
             style="position: relative; overflow: hidden; width: 100%; height: 100%;">
             <div style="position: absolute; inset: 0px;" class="auto-scroll">
-              <li routerLinkActive="u_sidemenu-item-active"
+              <li routerLinkActive="sidemenu-item-active"
                 routerLink="company-details">
                 <div class="u_sidemenu-item">
                   <p>Company details </p>
                 </div>
               </li>
               <li routerLink="sub-company"
-                routerLinkActive="u_sidemenu-item-active">
+                routerLinkActive="sidemenu-item-active">
                 <div class="u_sidemenu-item">
                   <p>Sub Company</p>
                 </div>
               </li>
               <li routerLink="bank-details"
-                routerLinkActive="u_sidemenu-item-active">
+                routerLinkActive="sidemenu-item-active">
                 <div class="u_sidemenu-item">
                   <p>Bank details</p>
                 </div>
               </li>
-              <li routerLink="location"
-                routerLinkActive="u_sidemenu-item-active">
+              <li routerLink="location" routerLinkActive="sidemenu-item-active">
                 <div class="u_sidemenu-item">
                   <p>Location</p>
                 </div>
               </li>
               <li class="u_sidemenu-has-list u_sidemenu-item-active"
-                routerLinkActive="u_sidemenu-item-active">
+                routerLinkActive="sidemenu-item-active">
                 <input type="checkbox" id="general" class="u_sidemenu-checkbox">
                 <label class="u_sidemenu-item w-100" for="general">
                   <p>General Settings</p>
                 </label>
                 <ul class="u_sidemenu-item-list">
-                  <li routerLink="general/basic">Basic</li>
-                  <li routerLink="general/ip-restrictions">IP Restrictions</li>
-                  <li routerLink="general/logged-in-ip">Login Restrictions</li>
-                  <li routerLink="general/profile-update-settings">Profile
+                  <li routerLink="general/basic"
+                    routerLinkActive="u_sidemenu-item-list-active">Basic</li>
+                  <li routerLink="general/ip-restrictions"
+                    routerLinkActive="u_sidemenu-item-list-active">IP
+                    Restrictions</li>
+                  <li routerLink="general/logged-in-ip"
+                    routerLinkActive="u_sidemenu-item-list-active">Login
+                    Restrictions</li>
+                  <li routerLink="general/profile-update-settings"
+                    routerLinkActive="u_sidemenu-item-list-active">
+                    Profile
                     Update Requests</li>
-                  <li routerLink="general/insurance-type">Insurance Type</li>
+                  <li routerLink="general/insurance-type"
+                    routerLinkActive="u_sidemenu-item-list-active">Insurance
+                    Type</li>
                 </ul>
               </li>
-              <li routerLink="email-alert">
+              <li routerLink="email-alert" routerLinkActive="sidemenu-item-active">
                 <div class="u_sidemenu-item">
                   <p>Email Alert</p>
                 </div>
@@ -57,20 +65,35 @@
                   <p>Employee fields</p>
                 </label>
                 <ul class="u_sidemenu-item-list">
-                  <li routerLink="employee-fields/category">Category</li>
-                  <li routerLink="employee-fields/department">Department</li>
-                  <li routerLink="employee-fields/sub-department">Sub
+                  <li routerLink="employee-fields/category"
+                    routerLinkActive="u_sidemenu-item-list-active">Category</li>
+                  <li routerLink="employee-fields/department"
+                    routerLinkActive="u_sidemenu-item-list-active">Department
+                  </li>
+                  <li routerLink="employee-fields/sub-department"
+                    routerLinkActive="u_sidemenu-item-list-active">Sub
                     Department</li>
-                  <li routerLink="employee-fields/job-title">Job Title</li>
-                  <li routerLink="employee-fields/documents">Personal
+                  <li routerLink="employee-fields/job-title"
+                    routerLinkActive="u_sidemenu-item-list-active">Job
+                    Title</li>
+                  <li routerLink="employee-fields/documents"
+                    routerLinkActive="u_sidemenu-item-list-active">Personal
                     Documents</li>
-                  <li routerLink="employee-fields/degree">Degree</li>
-                  <li
-                    routerLink="employee-fields/relationship">Relationship</li>
-                  <li routerLink="employee-fields/status">Employment Status</li>
-                  <li routerLink="employee-fields/location-activity">Location
+                  <li routerLink="employee-fields/degree"
+                    routerLinkActive="u_sidemenu-item-list-active">Degree</li>
+                  <li routerLink="employee-fields/relationship"
+                    routerLinkActive="u_sidemenu-item-list-active">
+                    Relationship</li>
+                  <li routerLink="employee-fields/status"
+                    routerLinkActive="u_sidemenu-item-list-active">Employment
+                    Status</li>
+                  <li routerLink="employee-fields/location-activity"
+                    routerLinkActive="u_sidemenu-item-list-active">
+                    Location
                     Activity</li>
-                  <li routerLink="employee-fields/letter-type">Letter Type</li>
+                  <li routerLink="employee-fields/letter-type"
+                    routerLinkActive="u_sidemenu-item-list-active">Letter
+                    Type</li>
                 </ul>
               </li>
               <li class="u_sidemenu-has-list u_sidemenu-item-active">
@@ -80,19 +103,42 @@
                   <p>Attendance Policy</p>
                 </label>
                 <ul class="u_sidemenu-item-list">
-                  <li routerLink="shift/shift">Shift Policy</li>
-                  <li routerLink="shift/shift-request">Shift Request Policy</li>
-                  <li routerLink="shift/weekend">Weekend Policy</li>
-                  <li routerLink="shift/break">Break Policy</li>
-                  <li routerLink="shift/penalisation">Penalisation Policy</li>
-                  <li routerLink="shift/scheduler">Shift Scheduler</li>
-                  <li routerLink="shift/geo-fencing">Geo Fencing</li>
-                  <li routerLink="shift/wfh-od">On Duty Policy</li>
-                  <li routerLink="shift/clock-in-method">Clock In Method</li>
-                  <li routerLink="shift/attendance-type">Attendance Type</li>
-                  <li routerLink="shift/attendance-setting">Attendance
+                  <li routerLink="shift/shift"
+                    routerLinkActive="u_sidemenu-item-list-active">Shift
+                    Policy</li>
+                  <li routerLink="shift/shift-request"
+                    routerLinkActive="u_sidemenu-item-list-active">Shift Request
+                    Policy</li>
+                  <li routerLink="shift/weekend"
+                    routerLinkActive="u_sidemenu-item-list-active">Weekend
+                    Policy</li>
+                  <li routerLink="shift/break"
+                    routerLinkActive="u_sidemenu-item-list-active">Break
+                    Policy</li>
+                  <li routerLink="shift/penalisation"
+                    routerLinkActive="u_sidemenu-item-list-active">Penalisation
+                    Policy</li>
+                  <li routerLink="shift/scheduler"
+                    routerLinkActive="u_sidemenu-item-list-active">Shift
+                    Scheduler</li>
+                  <li routerLink="shift/geo-fencing"
+                    routerLinkActive="u_sidemenu-item-list-active">Geo
+                    Fencing</li>
+                  <li routerLink="shift/wfh-od"
+                    routerLinkActive="u_sidemenu-item-list-active">On Duty
+                    Policy</li>
+                  <li routerLink="shift/clock-in-method"
+                    routerLinkActive="u_sidemenu-item-list-active">Clock In
+                    Method</li>
+                  <li routerLink="shift/attendance-type"
+                    routerLinkActive="u_sidemenu-item-list-active">Attendance
+                    Type</li>
+                  <li routerLink="shift/attendance-setting"
+                    routerLinkActive="u_sidemenu-item-list-active">Attendance
                     Settings</li>
-                  <li routerLink="shift/biometrics">Biometrics Device</li>
+                  <li routerLink="shift/biometrics"
+                    routerLinkActive="u_sidemenu-item-list-active">Biometrics
+                    Device</li>
                 </ul>
               </li>
               <li class="u_sidemenu-has-list u_sidemenu-item-active">
@@ -102,26 +148,30 @@
                   <p>Overtime policy</p>
                 </label>
                 <ul class="u_sidemenu-item-list">
-                  <li routerLink="ot-policy/policy">Overtime policy</li>
-                  <li routerLink="ot-policy/pay-codes">Pay Codes</li>
+                  <li routerLink="ot-policy/policy"
+                    routerLinkActive="u_sidemenu-item-list-active">Overtime
+                    policy</li>
+                  <li routerLink="ot-policy/pay-codes"
+                    routerLinkActive="u_sidemenu-item-list-active">Pay
+                    Codes</li>
                 </ul>
               </li>
-              <li routerLink="leave-policy">
+              <li routerLink="leave-policy" routerLinkActive="sidemenu-item-active">
                 <div class="u_sidemenu-item">
                   <p>Leave type/policy</p>
                 </div>
               </li>
-              <li routerLink="holidays-policy">
+              <li routerLink="holidays-policy" routerLinkActive="sidemenu-item-active">
                 <div class="u_sidemenu-item">
                   <p>Holidays policy</p>
                 </div>
               </li>
-              <li routerLink="comp-off-policy">
+              <li routerLink="comp-off-policy" routerLinkActive="sidemenu-item-active">
                 <div class="u_sidemenu-item">
                   <p>Comp-Off Policy</p>
                 </div>
               </li>
-              <li routerLink="policy-documents">
+              <li routerLink="policy-documents" routerLinkActive="sidemenu-item-active">
                 <div class="u_sidemenu-item">
                   <p>Policy Documents</p>
                 </div>
@@ -133,11 +183,12 @@
                   <p>Onboarding Setting</p>
                 </label>
                 <ul class="u_sidemenu-item-list">
-                  <li
-                    routerLink="onboarding-setting/onboarding-fields">Onboarding
+                  <li routerLink="onboarding-setting/onboarding-fields"
+                    routerLinkActive="u_sidemenu-item-list-active">
+                    Onboarding
                     Fields</li>
-                  <li
-                    routerLink="onboarding-setting/onboarding-templates">Onboarding
+                  <li routerLink="onboarding-setting/onboarding-templates"
+                    routerLinkActive="u_sidemenu-item-list-active">Onboarding
                     Templates</li>
                 </ul>
               </li>
@@ -148,13 +199,14 @@
                   <p>Employee Exit</p>
                 </label>
                 <ul class="u_sidemenu-item-list">
-                  <li routerLink="employee-exit/reasons">Employee Exit
+                  <li routerLink="employee-exit/reasons"
+                    routerLinkActive="u_sidemenu-item-list-active">Employee Exit
                     Reason</li>
-                  <li
-                    routerLink="employee-exit/employee-exit-task-list">Employee
+                  <li routerLink="employee-exit/employee-exit-task-list"
+                    routerLinkActive="u_sidemenu-item-list-active">Employee
                     Exit Task List</li>
                   <li
-                    routerLink="employee-exit/employee-exit-setting">Setting</li>
+                    routerLink="employee-exit/employee-exit-setting" routerLinkActive="u_sidemenu-item-list-active">Setting</li>
                 </ul>
               </li>
               <li class="u_sidemenu-has-list u_sidemenu-item-active">
@@ -164,9 +216,9 @@
                   <p>Feedback Settings</p>
                 </label>
                 <ul class="u_sidemenu-item-list">
-                  <li routerLink="feedback/praise-settings">Badge</li>
-                  <li routerLink="feedback/core-value">Core Value</li>
-                  <li routerLink="feedback/feedback-type">Feedback Type</li>
+                  <li routerLink="feedback/praise-settings" routerLinkActive="u_sidemenu-item-list-active">Badge</li>
+                  <li routerLink="feedback/core-value" routerLinkActive="u_sidemenu-item-list-active">Core Value</li>
+                  <li routerLink="feedback/feedback-type" routerLinkActive="u_sidemenu-item-list-active">Feedback Type</li>
                 </ul>
               </li>
               <li class="u_sidemenu-has-list u_sidemenu-item-active">
@@ -176,10 +228,10 @@
                   <p>Help Desk Settings</p>
                 </label>
                 <ul class="u_sidemenu-item-list">
-                  <li routerLink="help-desk/category-list">Category List</li>
-                  <li routerLink="help-desk/status-list">Status List</li>
-                  <li routerLink="help-desk/activity">Activity List</li>
-                  <li routerLink="help-desk/advance-settings">Advance
+                  <li routerLink="help-desk/category-list" routerLinkActive="u_sidemenu-item-list-active">Category List</li>
+                  <li routerLink="help-desk/status-list" routerLinkActive="u_sidemenu-item-list-active">Status List</li>
+                  <li routerLink="help-desk/activity" routerLinkActive="u_sidemenu-item-list-active">Activity List</li>
+                  <li routerLink="help-desk/advance-settings" routerLinkActive="u_sidemenu-item-list-active">Advance
                     Settings</li>
                 </ul>
               </li>
@@ -191,18 +243,18 @@
                 </label>
                 <ul class="u_sidemenu-item-list">
                   <li
-                    routerLink="reimbursement-setting/reimbursement-type">Reimbursement
+                    routerLink="reimbursement-setting/reimbursement-type" routerLinkActive="u_sidemenu-item-list-active">Reimbursement
                     Type</li>
-                  <li routerLink="reimbursement-setting/approval-chain">Approval
+                  <li routerLink="reimbursement-setting/approval-chain" routerLinkActive="u_sidemenu-item-list-active">Approval
                     Chain</li>
                 </ul>
               </li>
-              <li routerLink="access-level">
+              <li routerLink="access-level" routerLinkActive="sidemenu-item-active">
                 <div class="u_sidemenu-item">
                   <p>Access Level</p>
                 </div>
               </li>
-              <li routerLink="product-access">
+              <li routerLink="product-access" routerLinkActive="sidemenu-item-active">
                 <div class="u_sidemenu-item">
                   <p>Product Access</p>
                 </div>
@@ -214,15 +266,14 @@
                   <p>Org Structure</p>
                 </label>
                 <ul class="u_sidemenu-item-list">
-                  <li routerLink="org-structure/zone">Zone</li>
-                  <li routerLink="org-structure/business-unit">Business
-                    unit</li>
-                  <li routerLink="org-structure/cost-center">Cost Center</li>
-                  <li routerLink="org-structure/bands">Bands</li>
-                  <li routerLink="org-structure/segment">Segment</li>
-                  <li routerLink="org-structure/hub">Hub</li>
-                  <li routerLink="org-structure/territory">Territory</li>
-                  <li routerLink="org-structure/region">Region</li>
+                  <li routerLink="org-structure/zone" routerLinkActive="u_sidemenu-item-list-active">Zone</li>
+                  <li routerLink="org-structure/business-unit" routerLinkActive="u_sidemenu-item-list-active">Business unit</li>
+                  <li routerLink="org-structure/cost-center" routerLinkActive="u_sidemenu-item-list-active">Cost Center</li>
+                  <li routerLink="org-structure/bands" routerLinkActive="u_sidemenu-item-list-active">Bands</li>
+                  <li routerLink="org-structure/segment" routerLinkActive="u_sidemenu-item-list-active">Segment</li>
+                  <li routerLink="org-structure/hub" routerLinkActive="u_sidemenu-item-list-active">Hub</li>
+                  <li routerLink="org-structure/territory" routerLinkActive="u_sidemenu-item-list-active">Territory</li>
+                  <li routerLink="org-structure/region" routerLinkActive="u_sidemenu-item-list-active">Region</li>
                 </ul>
               </li>
             </div>

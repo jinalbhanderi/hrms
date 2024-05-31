@@ -19,6 +19,8 @@ const routes: Routes = [
     path: '',
     component: SettingsComponent,
     children: [
+      { path: '', redirectTo: 'company-details', pathMatch: 'full' },
+
       {
         path: 'general',
         loadChildren: () =>

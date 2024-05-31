@@ -6,10 +6,11 @@ import { UserInfoModelComponent } from './sidebar/user-info-model/user-info-mode
 import { YourTimingComponent } from './header/your-timing/your-timing.component';
 import { PopoverModule } from 'ngx-bootstrap/popover';
 import { FormsModule } from '@angular/forms';
+import { NgbDropdown } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [UserInfoModelComponent, YourTimingComponent],
-  imports: [CommonModule, LayoutRoutingModule,FormsModule],
+  imports: [CommonModule, LayoutRoutingModule, FormsModule, NgbDropdown],
   exports: [UserInfoModelComponent, YourTimingComponent],
 })
 export class LayoutModule {}

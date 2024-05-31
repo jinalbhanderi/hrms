@@ -13,42 +13,65 @@ const routes: Routes = [
     path: '',
     component: ReportComponent,
     children: [
+      { path: '', redirectTo: 'attendance-report', pathMatch: 'full' },
+
       {
         path: 'attendance-report',
         loadChildren: () =>
-          import('./attendance-report/attendance-report.module').then((m) => m.AttendanceReportModule),
+          import('./attendance-report/attendance-report.module').then(
+            (m) => m.AttendanceReportModule
+          ),
       },
       {
         path: 'leave-report',
         loadChildren: () =>
-          import('./leave-report/leave-report.module').then((m) => m.LeaveReportModule),
+          import('./leave-report/leave-report.module').then(
+            (m) => m.LeaveReportModule
+          ),
       },
       {
         path: 'custom-report',
         loadChildren: () =>
-          import('./custom-report/custom-report.module').then((m) => m.CustomReportModule),
+          import('./custom-report/custom-report.module').then(
+            (m) => m.CustomReportModule
+          ),
       },
       {
         path: 'employee-report',
         loadChildren: () =>
-          import('./employee-report/employee-report.module').then((m) => m.EmployeeReportModule),
+          import('./employee-report/employee-report.module').then(
+            (m) => m.EmployeeReportModule
+          ),
       },
       {
         path: 'employee-statistics',
         loadChildren: () =>
-          import('./employee-statistics/employee-statistics.module').then((m) => m.EmployeeStatisticsModule),
+          import('./employee-statistics/employee-statistics.module').then(
+            (m) => m.EmployeeStatisticsModule
+          ),
       },
       {
         path: 'biometric-report',
         loadChildren: () =>
-          import('./biometric-report/biometric-report.module').then((m) => m.BiometricReportModule),
+          import('./biometric-report/biometric-report.module').then(
+            (m) => m.BiometricReportModule
+          ),
       },
-      {path:'attendance-summary-report' ,component:AttendanceSummaryReportComponent},
-      {path:'organizational-report' ,component:OrganizationalReportComponent},
-      {path:'compensation-report' ,component:CompensationReportComponent},
-      {path:'download-request-report' ,component:DownloadRequestReportComponent},
-      {path:'upload-report' ,component:UploadReportComponent},
-      {path:'company-hours-report' ,component:CompanyHoursReportComponent},
+      {
+        path: 'attendance-summary-report',
+        component: AttendanceSummaryReportComponent,
+      },
+      {
+        path: 'organizational-report',
+        component: OrganizationalReportComponent,
+      },
+      { path: 'compensation-report', component: CompensationReportComponent },
+      {
+        path: 'download-request-report',
+        component: DownloadRequestReportComponent,
+      },
+      { path: 'upload-report', component: UploadReportComponent },
+      { path: 'company-hours-report', component: CompanyHoursReportComponent },
     ],
   },
 ];

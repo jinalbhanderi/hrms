@@ -12,21 +12,31 @@ import { OvertimeReportComponent } from './overtime-report/overtime-report.compo
 import { BreakHourReportComponent } from './break-hour-report/break-hour-report.component';
 
 const routes: Routes = [
-  {path:'daily-attendance',component:DailyAttendanceComponent},
-  {path:'daily-attendance-location',component: DailyAttendanceComponent},
-  {path:'early-clock-out',component:EarlyClockOutComponent},
-  {path:'late-in',component:LateInComponent},
-  {path:'daily-attendance-with-break',component:DailyAttendanceWithBreakComponent},
-  {path:'daily-attendance-by-department',component: DailyAttendanceByDepartmentComponent},
-  {path:'regularization-report',component: RegularizationReportComponent},
-  {path:'attendance-verification-report',component:AttendanceVerificationReportComponent},
-  {path:'attendance-type-report',component: AttendanceTypeReportComponent},
-  {path:'overtime-report',component: OvertimeReportComponent},
-  {path:'break-hour-report',component:BreakHourReportComponent},
+  { path: '', redirectTo: 'daily-attendance', pathMatch: 'full' },
+  { path: 'daily-attendance', component: DailyAttendanceComponent },
+  { path: 'daily-attendance-location', component: DailyAttendanceComponent },
+  { path: 'early-clock-out', component: EarlyClockOutComponent },
+  { path: 'late-in', component: LateInComponent },
+  {
+    path: 'daily-attendance-with-break',
+    component: DailyAttendanceWithBreakComponent,
+  },
+  {
+    path: 'daily-attendance-by-department',
+    component: DailyAttendanceByDepartmentComponent,
+  },
+  { path: 'regularization-report', component: RegularizationReportComponent },
+  {
+    path: 'attendance-verification-report',
+    component: AttendanceVerificationReportComponent,
+  },
+  { path: 'attendance-type-report', component: AttendanceTypeReportComponent },
+  { path: 'overtime-report', component: OvertimeReportComponent },
+  { path: 'break-hour-report', component: BreakHourReportComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AttendanceReportRoutingModule { }
+export class AttendanceReportRoutingModule {}
