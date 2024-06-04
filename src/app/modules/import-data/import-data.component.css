@@ -11,6 +11,7 @@
 /* Show the dropdown content when the checkbox is checked */
 .u_sidemenu-checkbox:checked ~ .u_sidemenu-item-list {
   display: block;
+  max-height: 500px;
 }
 
 /* Style the label to look like a clickable menu item */

@@ -12,6 +12,7 @@ import { AgreementListComponent } from './agreement-list/agreement-list.componen
 import { ProfileUpdateRequestsComponent } from './profile-update-requests/profile-update-requests.component';
 import { EmployeeExitRequestsComponent } from './employee-exit-requests/employee-exit-requests.component';
 import { SettlementListComponent } from './settlement-list/settlement-list.component';
+import { AddNewEmployeeComponent } from './add-new-employee/add-new-employee.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { SettlementListComponent } from './settlement-list/settlement-list.compo
     // CompensationListComponent,
     ProfileUpdateRequestsComponent,
     EmployeeExitRequestsComponent,
-    SettlementListComponent
+    SettlementListComponent,
+    AddNewEmployeeComponent
   ],
   imports: [
     CommonModule,

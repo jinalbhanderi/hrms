@@ -1,4 +1,5 @@
 import { Component, EventEmitter, HostListener } from '@angular/core';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-basic-info',
@@ -9,7 +10,7 @@ export class BasicInfoComponent {
   showPopup = false;
   isCheckboxChecked: boolean = false;
   isESIChecked: boolean = false;
-selectedCity: any;
+  selectedCity: any;
 
   toggleCheckbox() {
     this.isCheckboxChecked = !this.isCheckboxChecked;
@@ -26,6 +27,9 @@ selectedCity: any;
   toggleNestedCheckboxes(event: any) {
     this.showNestedCheckboxes = event.target.checked;
   }
+  closePopup() {
+    this.showPopup = false;
+  }
 
   out = new EventEmitter();
   constructor() {}
@@ -36,5 +40,14 @@ selectedCity: any;
     { id: 4, name: 'Pabradė' },
     { id: 5, name: 'Klaipėda' },
   ];
-  
+
+  toppings = new FormControl('');
+  toppingList: string[] = [
+    'Extra cheese',
+    'Mushroom',
+    'Onion',
+    'Pepperoni',
+    'Sausage',
+    'Tomato',
+  ];
 }

@@ -1,2 +1,6 @@
 /* app.component.css */
 @import "~bootstrap/dist/css/bootstrap.min.css";
+.example-additional-selection {
+  opacity: 0.75;
+  font-size: 0.75em;
+}

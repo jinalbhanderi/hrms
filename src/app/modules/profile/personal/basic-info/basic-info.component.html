@@ -1,6 +1,6 @@
 <div class="u_profile-layout-wpr">
   <div class="u_scroll-section undefined" style="position: relative; overflow: hidden; width: 100%; height: 100%;">
-    <div style="position: absolute; inset: 0px; overflow: scroll; margin-right: -14px; margin-bottom: -14px;">
+    <div style="position: absolute; inset: 0px; overflow: auto;">
       <form autocomplete="off">
         <div class="u_content-header">
           <div class="u_flex u_align-center">
@@ -10,28 +10,29 @@
         </div>
         <div class="u_content-form u_p-20">
           <div class="u_row">
-            <div class="u_col-4 u_mb-25 ">
+             <div class="u_col-4 u_mb-25">
               <div class="form-group-wrapper">
                 <div class="form-group-main border-0 position-relative">
-                  <input type="text" class="form-control px-3" placeholder="Enter your Username" />
-                  <label class="position-absolute m-0 bg-white">Enter your
-                    Username</label>
+                  <ng-select placeholder="Company Name">
+                    <ng-option>Kautilyam</ng-option>
+                    <ng-option>Syfrox</ng-option>
+                  </ng-select>
+                  <label class="position-absolute m-0 bg-white">Company Name <span class="text-danger">*</span></label>
                 </div>
               </div>
             </div>
-            <div class="u_col-4 u_mb-25 ">
-              <div class="family-new u_input">
-                <div class=" input-new">
-                  <input type="text" placeholder=" " name="employeeId" autocomplete="off" value="Kautilyam">
-                  <label>Legal Entity Company Name <span>*</span></label>
+            <div class="u_col-4 u_mb-25">
+              <div class="form-group-wrapper">
+                <div class="form-group-main border-0 position-relative">
+                  <ng-select placeholder="Legal Entity Company Name">
+                    <ng-option>Kautilyam</ng-option>
+                    <ng-option>Syfrox</ng-option>
+                  </ng-select>
+                  <label class="position-absolute m-0 bg-white">Legal Entity Company Name <span class="text-danger">*</span></label>
                 </div>
-                <select name="employeeId">
-                  <option>Kautilyam</option>
-                  <option>Syfrox</option>
-                </select>
               </div>
             </div>
-            <div class="u_col-4 u_mb-25 ">
+            <div class="u_col-4 u_mb-25">
               <div class="u_input"><input type="text" placeholder=" " name="employeeId" autocomplete="off"
                   value="1015"><label>Employee ID
                   <span>*</span></label></div>
@@ -68,13 +69,13 @@
                 </div>
               </div>
             </div>
-            <div class="u_col-4 u_mb-25 ">
+            <div class="u_col-4 u_mb-25">
               <div class="u_input u_input-password"><input type="text" placeholder=" " name="middleName"
                   autocomplete="off" value="Mansukhbhai"><label>Middle Name
                 </label>
-                <div class=" u_input-note u_ib fs-3">
+                <div class="u_input-note u_ib fs-3">
                   <i class="bi bi-info-circle-fill text-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
-                    title="Middle name can only contain alphabets, numbers, dots, and spaces. "></i>
+                    title="Middle name can only contain alphabets, numbers, dots, and spaces."></i>
                 </div>
               </div>
             </div>
@@ -99,59 +100,58 @@
                 <label>Date of Birth <span>*</span></label>
               </div>
             </div>
-            <div class="u_col-4 u_mb-25 ">
-              <div class="family-new u_input">
-                <div class="input-new">
-                  <input type="text" placeholder=" " name="employeeId" autocomplete="off"
-                    value="Unmarried"><label>Marital Status</label>
+            <div class="u_col-4 u_mb-25">
+              <div class="form-group-wrapper">
+                <div class="form-group-main border-0 position-relative">
+                  <ng-select placeholder="Marital Status">
+                    <ng-option>Married</ng-option>
+                    <ng-option>Unmarried</ng-option>
+                  </ng-select>
+                  <label class="position-absolute m-0 bg-white">Marital Status</label>
                 </div>
-                <select name="employeeId">
-                  <option>Married</option>
-                  <option>Unmarried</option>
-                </select>
               </div>
             </div>
-            <div class="u_col-4 u_mb-25 ">
-              <div class="family-new u_input">
-                <div class="input-new">
-                  <input type="text" placeholder=" " name="employeeId" autocomplete="off" value="Male"><label>Gender
-                    <span>*</span></label>
+            <div class="u_col-4 u_mb-25">
+              <div class="form-group-wrapper">
+                <div class="form-group-main border-0 position-relative">
+                  <ng-select placeholder="Gender">
+                    <ng-option>Male</ng-option>
+                    <ng-option>Female</ng-option>
+                    <ng-option value>Other</ng-option>
+                  </ng-select>
+                  <label class="position-absolute m-0 bg-white">Gender
+                    <span class="text-danger">*</span></label>
                 </div>
-                <select name="employeeId">
-                  <option>Male</option>
-                  <option>Female</option>
-                  <option value>Other</option>
-                </select>
               </div>
             </div>
-            <div class="u_col-4 u_mb-25 ">
+            <div class="u_col-4 u_mb-25">
               <div class="u_input"><input type="text" placeholder=" " name="bornPlace" autocomplete="off"
                   value="Surat"><label>Place of Birth
                 </label></div>
             </div>
-            <div class="u_col-4 u_mb-25 ">
+            <div class="u_col-4 u_mb-25">
               <div class="u_input"><input type="text" placeholder=" " name="nationality" autocomplete="off"
                   value="Indian"><label>Nationality </label></div>
             </div>
-            <div class="u_col-4 u_mb-25 ">
-              <div class="family-new u_input">
-                <div class="input-new">
-                  <input type="text" placeholder=" " name="employeeId" autocomplete="off" value="B+"><label>Blood Group
-                    <span>*</span></label>
+            <div class="u_col-4 u_mb-25">
+              <div class="form-group-wrapper">
+                <div class="form-group-main border-0 position-relative">
+                  <ng-select placeholder="Blood Group">
+                    <ng-option>O-</ng-option>
+                    <ng-option>O+</ng-option>
+                    <ng-option>A+</ng-option>
+                    <ng-option>A-</ng-option>
+                    <ng-option>B-</ng-option>
+                    <ng-option>B+</ng-option>
+                    <ng-option>AB+</ng-option>
+                    <ng-option>AB-</ng-option>
+                  </ng-select>
+                  <label class="position-absolute m-0 bg-white">Blood Group
+                    <span class="text-danger">*</span></label>
                 </div>
-                <select name="employeeId">
-                  <option>O-</option>
-                  <option>O+</option>
-                  <option>A-</option>
-                  <option>A+</option>
-                  <option>B-</option>
-                  <option>B+</option>
-                  <option>AB-</option>
-                  <option>AB+</option>
-                </select>
               </div>
             </div>
-            <div class="u_col-4 u_mb-25 ">
+            <div class="u_col-4 u_mb-25">
               <div class="u_input"><input type="text" placeholder=" " name="ledgerCode" autocomplete="off"
                   value><label>Ledger
                   Code </label></div>
@@ -164,7 +164,7 @@
             Add New
           </button>
         </div>
-        <app-language-modal *ngIf="showPopup"></app-language-modal>
+        <app-language-modal *ngIf="showPopup" (close)="closePopup()"></app-language-modal>
         <div class>
           <div class="u_content-subheader u_p-20">
             <h5 class="u_flex u_align-center"><span class="u_mr-10">Statutory

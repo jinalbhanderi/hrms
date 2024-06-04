@@ -23,13 +23,14 @@ import { ReportComponent } from './modules/report/report.component';
 import { PerformanceReportComponent } from './modules/performance-report/performance-report.component';
 import { ReimbursementModule } from './modules/reimbursement/reimbursement.module';
 import { SettingsComponent } from './modules/settings/settings.component';
-import { SettingsModule } from "./modules/settings/settings.module";
-import { LayoutModule } from "./layout/layout.module";
+import { SettingsModule } from './modules/settings/settings.module';
+import { LayoutModule } from './layout/layout.module';
 import { AuthModule } from './modules/auth/auth.module';
 import { PagenotfoundComponent } from './modules/pagenotfound/pagenotfound.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgChartsModule } from 'ng2-charts';
-import { PopoverModule } from 'ngx-bootstrap/popover';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSelectModule } from '@angular/material/select';
 
 @NgModule({
   declarations: [
@@ -67,9 +68,8 @@ import { PopoverModule } from 'ngx-bootstrap/popover';
     NgbModule,
     AuthModule,
     NgChartsModule,
-    PopoverModule.forRoot()
+    BrowserAnimationsModule,
+    MatSelectModule
   ],
 })
 export class AppModule {}
-
-

@@ -10,6 +10,7 @@ import { AgreementListComponent } from './agreement-list/agreement-list.componen
 import { ProfileUpdateRequestsComponent } from './profile-update-requests/profile-update-requests.component';
 import { EmployeeExitRequestsComponent } from './employee-exit-requests/employee-exit-requests.component';
 import { SettlementListComponent } from './settlement-list/settlement-list.component';
+import { AddNewEmployeeComponent } from './add-new-employee/add-new-employee.component';
 
 const routes: Routes = [
   { path: 'directory', component: EmployeeDirectoryComponent },
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path: 'profile-requests', component: ProfileUpdateRequestsComponent },
   { path: 'exit-requests', component: EmployeeExitRequestsComponent },
   { path: 'settlement-list', component: SettlementListComponent },
+  { path: 'employees/add-new-employee', component: AddNewEmployeeComponent },
 ];
 
 @NgModule({

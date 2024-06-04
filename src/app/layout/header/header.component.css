@@ -26,3 +26,10 @@ li {
   color: #1e2538; /* Black color */
   font-weight: bold;
 }
+.no-arrow::after {
+  display: none;
+}
+
+.u_dropdown-menu {
+  padding-left: 10px; /* Adjust this value as needed */
+}

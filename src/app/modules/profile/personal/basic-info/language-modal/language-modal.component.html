@@ -11,7 +11,7 @@
               <h4>Known Language</h4>
             </div>
             <div class="u_task-header-right u_flex u_align-center">
-              <div class="u_close-btn__blue">
+              <div class="u_close-btn__blue"  (click)="closeModal()">
                 <i class="bi bi-x-lg text-primary fs-3 fw-bold" ></i>
               </div>
             </div>
@@ -159,10 +159,10 @@
                   </div>
                 </div>
               </div>
-              <div class="u_modal-buttons"><button type="button"
-                  class="u_btn white small u_btn__white">cancel</button><button type="button"
-                  class="u_btn u_btn__smallBtn u_btn__blue "> Save &amp; New</button><button type="button"
-                  class="u_btn blue small u_btn__blue">save</button></div>
+              <div class="u_modal-buttons">
+                <button type="submit" class="u_btn white small u_btn__white" (click)="closeModal()">cancel</button>
+                <button type="submit" class="u_btn u_btn__smallBtn u_btn__blue " (click)="closeModal()"> Save &amp; New</button>
+                <button type="submit" class="u_btn blue small u_btn__blue" (click)="closeModal()">save</button></div>
             </form>
           </div>
           <div class="u_side-modal-footer" id="u_side-modal-footer"></div>
