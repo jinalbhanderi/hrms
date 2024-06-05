@@ -1,0 +1,82 @@
+<div class="u_sm active  ">
+    <div class="false u_sm-overlay"></div>
+    <div class="u_sm-layout" style="max-width: 640px;">
+        <div class="u_sm-header" id="u_sm-header">
+            <div class="u_sm-header-left">
+                <h4>Edit Signature</h4>
+            </div>
+            <div class="u_sm-header-right">
+                <div class="u_sm-close" [mat-dialog-close]="true"><svg width="12" height="12" viewBox="0 0 36 36" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" class="" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <path class="u_fill-stroke"
+                            d="M18 14.557L7.08 3.637l-.142-.142-.142.141-3.16 3.16-.141.142.141.141L14.557 18 3.637 28.92l-.142.142.141.142 3.16 3.16.142.141.141-.141L18 21.443l10.92 10.92.142.142.142-.141 3.16-3.16.141-.142-.141-.141L21.443 18l10.92-10.922.142-.141-.141-.142-3.16-3.16-.142-.141-.141.141L18 14.557z"
+                            stroke="73788B" fill="#007AFF" stroke-width="0.4"></path>
+                    </svg></div>
+            </div>
+        </div>
+        <div class="u_sm-body" id="u_sm-body" style="max-height: calc(507px);">
+            <div class="u_signature-steps">
+                <div class="u_signature-steps-btn u_flex u_align-center">
+                    <div class="u_flex u_align-center"><span
+                            class="u_signature-steps-btn-inner u_flex u_align-center u_content-center u_sn u_active u_event-none "><span>
+                                Type It In</span></span></div>
+                </div>
+            </div>
+            <div class="u_px-15 u_py-20">
+                <div class="u_flex u_content-between u_signature-create-container">
+                    <div class="u_signature-create-fullName u_mb-15 ">
+                        <div class="u_input"><input type="text" placeholder="" name="signatureName" autocomplete="off"
+                                value="Abhishek Mayani"><label>Full Name <span>*</span></label></div>
+                    </div>
+                    <div class="u_signature-create-initial u_mb-15 ">
+                        <div class="u_input"><input type="text" placeholder="" name="signatureInitial"
+                                autocomplete="off" value="Abhishek"><label>Initials <span>*</span></label></div>
+                    </div>
+                </div>
+                <div class="u_signature-preview u_mb-15">
+                    <h6>Signature Preview:</h6>
+                </div>
+                <div class="u_flex u_content-between u_signature-create-container u_mb-10">
+                    <div class="u_signature-create-fullName u_mb-10">
+                        <div class="u_signature-create-title u_pb-10"> Full Name <span
+                                class="u_signature-create-title-astrisk">*</span></div>
+                        <div class="u_signature-create u_mb-15"><canvas id="myCanvasName"></canvas></div><span
+                            class="u_signature-create-clearBtn u_cp"><span> Clear </span></span>
+                    </div>
+                    <div class="u_signature-create-initial u_mb-10">
+                        <div class="u_signature-create-title u_pb-10 "> Initials <span
+                                class="u_signature-create-title-astrisk">*</span></div>
+                        <div class="u_signature-create-initials u_mb-15"><canvas id="myCanvasInitial"></canvas></div>
+                        <span class="u_signature-create-clearBtn u_cp"><span> Clear </span></span>
+                    </div>
+                </div>
+                <div class="u_signature-create-fullName">
+                    <div class="u_signature-create-fontFamily">
+                        <div class="form-group-wrapper">
+                            <div class="form-group-main border-0 position-relative">
+                                <ng-select placeholder="Font Family">
+                                    <ng-option>Comic Sans MS</ng-option>
+                                    <ng-option>Impact</ng-option>
+                                    <ng-option>Ink Free</ng-option>
+                        
+                                </ng-select>
+                                <label class="position-absolute m-0 bg-white">Font Family
+                                    <span class="text-danger">*</span></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="u_sm-footer" id="u_sm-footer">
+            <div class="u_flex u_align-center u_content-end">
+                <div class="u_flex u_align-center">
+                    <div class="u_signature-btn-width u_mr-15"><button type="button"
+                            class="u_btn white small u_btn__white" [mat-dialog-close]="true">cancel</button></div>
+                    <div class="u_signature-btn-width u_mr-15"><button type="button"
+                            class="u_btn blue small u_btn__blue" [mat-dialog-close]="true">Update</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

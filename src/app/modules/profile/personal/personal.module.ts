@@ -7,9 +7,20 @@ import { NgSelectModule } from '@ng-select/ng-select';
 import { BasicInfoComponent } from './basic-info/basic-info.component';
 import { LanguageModalComponent } from './basic-info/language-modal/language-modal.component';
 import { PersonalRoutingModule } from './personal-routing.module';
+import { AddressComponent } from './address/address.component';
+import { FamilyInfoComponent } from './family-info/family-info.component';
+import { EducationComponent } from './education/education.component';
+import { PreviousEmployerComponent } from './previous-employer/previous-employer.component';
 
 @NgModule({
-  declarations: [LanguageModalComponent, BasicInfoComponent],
+  declarations: [
+    LanguageModalComponent,
+    BasicInfoComponent,
+    AddressComponent,
+    FamilyInfoComponent,
+    EducationComponent,
+    PreviousEmployerComponent,
+  ],
   imports: [
     CommonModule,
     PersonalRoutingModule,
@@ -18,7 +29,7 @@ import { PersonalRoutingModule } from './personal-routing.module';
     MatFormFieldModule,
     MatSelectModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
 })
 export class PersonalModule {}

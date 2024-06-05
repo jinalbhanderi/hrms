@@ -7,39 +7,29 @@
             <h5>Timeline &amp; Feedback</h5>
           </div>
           <div class="u_route-tabs u_bb-light" id="u_route-tabs">
-            <ul class="u_route-tabs-wpr u_flex u_align-center">
+            <!-- <ul class="u_route-tabs-wpr u_flex u_align-center">
               <li><a aria-current="page" class="u_flex u_align-center active"
                  >Praise</a></li>
               <li><a class="u_flex u_align-center">Feedback Received</a>
               </li>
               <li><a class="u_flex u_align-center" >Feedback Requests</a>
               </li>
+            </ul> -->
+            <ul class="nav nav-tabs ">
+              <li class="nav-item">
+                <a class="nav-link" routerLink="praise" routerLinkActive="u_flex u_align-center active" aria-current="page">Praise</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="feedback-received" routerLinkActive="u_flex u_align-center active">Feedback Received</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="feedback-requests" routerLinkActive="u_flex u_align-center active">Feedback Requests</a>
+              </li>
             </ul>
           </div>
-          <div class="u_timeline-section">
-            <div class="u_header-filters" id="u_header-filters">
-              <div class="u_header-filters-title">
-                <h5>0 <span>Praise</span></h5>
-              </div>
-            </div>
-            <div class="u_layout-scrollview">
-              <div class="u_scroll-section "
-                style="position: relative; overflow: hidden; width: 100%; height: 100%;">
-                <div
-                  style="position: absolute; inset: 0px; overflow: auto;">
-                  <div class="u_timeline-body">
-                    <div class="u_timeline-no-data">
-                      <div class="u_errorpage ">
-                        <div class="u_errorpage-image"><img src="/images/profile/no-praise.svg"
-                            alt="No Praises given yet">
-                          <h2>No Praises given yet</h2>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div style="height: 100%; width: 100%;">
+            <router-outlet></router-outlet>
+
           </div>
         </div>
         <div class="u_timeline-activity ">

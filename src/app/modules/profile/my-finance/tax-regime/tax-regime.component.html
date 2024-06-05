@@ -6,38 +6,15 @@
           <h5>1 My Tax Regime</h5>
         </div>
         <div class="u_flex u_align-center">
-          <div class="u_header-filters-list">
-            <div class="u_flex u_align-center u_content-end">
-              <div class="u_filter-content  ">
-                <div class="u_filter-content-inner">
-                  <div class="u_filter u_filter-select active">
-                    <div class=" css-2b097c-container"><span aria-live="polite" aria-atomic="false"
-                        aria-relevant="additions text" class="css-7pg0cj-a11yText"></span>
-                      <div class="u_select__control css-yk16xz-control">
-                        <div class=" u_select__value-container--has-value css-1hwfws3">
-                          <div class="u_select__single-value css-1uccc91-singleValue">
-                            <div class=" pending-sel reg_sell u_flex u_align-center">
-
-                              <select class="pending-sell">
-                                <option value>All</option>
-                                <option value>New Regime</option>
-                                <option value>Old Regime</option>
-                              </select>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+            <ng-select placeholder="" [(ngModel)]="selectedValue">
+              <ng-option>All</ng-option>
+              <ng-option>Old Regime</ng-option>
+              <ng-option>New Regime</ng-option>
+            </ng-select>         
         </div>
       </div>
       <div class="u_payroll-history">
-        <div class="u_scroll-section "
-          style="position: relative; overflow: hidden; width: 100%; height: 100%;">
+        <div class="u_scroll-section " style="position: relative; overflow: hidden; width: 100%; height: 100%;">
           <div style="position: absolute; inset: 0px; overflow: auto;">
             <div class="u_table-resource u_reports-status-table u_table-resource-nowrap u_table-resource-no-sticky">
               <table>

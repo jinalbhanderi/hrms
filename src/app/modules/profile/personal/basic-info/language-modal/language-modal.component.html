@@ -21,140 +21,60 @@
               <div class="u_p-20">
                 <div class="u_row">
                   <div class="u_col-6 u_mb-25">
-                    <div class="u_input u_input-select">
-                      <div class="u_input-select-inner css-2b097c-container"><span aria-live="polite"
-                          aria-atomic="false" aria-relevant="additions text" class="css-7pg0cj-a11yText"></span>
-                        <div class="u_select__control css-yk16xz-control d-flex justify-content-between">
-                          <div class="u_select__value-container css-1hwfws3">
-                            <div class="u_select__placeholder css-1wa3eu0-placeholder"> </div>
-                            <div class="css-1g6gooi">
-                              <div class="u_select__input" style="display: inline-block;"><input autocapitalize="none"
-                                  autocomplete="off" autocorrect="off" id="react-select-32-input" spellcheck="false"
-                                  tabindex="0" type="text" aria-autocomplete="list" value=""
-                                  style="box-sizing: content-box; width: 2px; background: 0px center; border: 0px; font-size: inherit; opacity: 1; outline: 0px; padding: 0px; color: inherit;">
-                                <div
-                                  style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: 14px; font-family: Mulish, sans-serif; font-weight: 500; font-style: normal; letter-spacing: normal; text-transform: none;">
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="u_select__indicators css-1wy0on6"><span
-                              class="u_select__indicator-separator css-1okebmr-indicatorSeparator"></span>
-                            <div class="u_select__indicator u_select__dropdown-indicator css-tlfecz-indicatorContainer"
-                              aria-hidden="true"><i class="bi bi-chevron-down"></i></div>
-                          </div>
-                        </div>
-                      </div><label>Language <span>*</span></label>
+                    <div class="form-group-wrapper">
+                      <div class="form-group-main border-0 position-relative">
+                      <ng-select [items]="languages" bindLabel="label" placeholder="Select a language">
+                      </ng-select>
+                        <label class="position-absolute m-0 bg-white">Language <span class="text-danger">*</span></label>
+                      </div>
                     </div>
                   </div>
                   <div class="u_col-6 u_mb-25">
-                    <div class="u_input u_input-select">
-                      <div class="u_input-select-inner css-2b097c-container"><span aria-live="polite"
-                          aria-atomic="false" aria-relevant="additions text" class="css-7pg0cj-a11yText"></span>
-                        <div class="u_select__control css-yk16xz-control d-flex justify-content-between">
-                          <div class="u_select__value-container css-1hwfws3">
-                            <div class="u_select__placeholder css-1wa3eu0-placeholder"> </div>
-                            <div class="css-1g6gooi">
-                              <div class="u_select__input" style="display: inline-block;"><input autocapitalize="none"
-                                  autocomplete="off" autocorrect="off" id="react-select-33-input" spellcheck="false"
-                                  tabindex="0" type="text" aria-autocomplete="list" value=""
-                                  style="box-sizing: content-box; width: 2px; background: 0px center; border: 0px; font-size: inherit; opacity: 1; outline: 0px; padding: 0px; color: inherit;">
-                                <div
-                                  style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: 14px; font-family: Mulish, sans-serif; font-weight: 500; font-style: normal; letter-spacing: normal; text-transform: none;">
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="u_select__indicators css-1wy0on6"><span
-                              class="u_select__indicator-separator css-1okebmr-indicatorSeparator"></span>
-                            <div class="u_select__indicator u_select__dropdown-indicator css-tlfecz-indicatorContainer"
-                              aria-hidden="true"><i class="bi bi-chevron-down"></i></div>
-                          </div>
-                        </div>
-                      </div><label>Reading <span>*</span></label>
+                    <div class="form-group-wrapper">
+                      <div class="form-group-main border-0 position-relative">
+                        <ng-select placeholder="Reading">
+                          <ng-option>Poor</ng-option>
+                          <ng-option>Good</ng-option>
+                          <ng-option>Excellent</ng-option>
+                        </ng-select>
+                        <label class="position-absolute m-0 bg-white">Reading <span class="text-danger">*</span></label>
+                      </div>
                     </div>
                   </div>
                   <div class="u_col-6 u_mb-25">
-                    <div class="u_input u_input-select">
-                      <div class="u_input-select-inner css-2b097c-container"><span aria-live="polite"
-                          aria-atomic="false" aria-relevant="additions text" class="css-7pg0cj-a11yText"></span>
-                        <div class="u_select__control css-yk16xz-control d-flex justify-content-between">
-                          <div class="u_select__value-container css-1hwfws3">
-                            <div class="u_select__placeholder css-1wa3eu0-placeholder"> </div>
-                            <div class="css-1g6gooi">
-                              <div class="u_select__input" style="display: inline-block;"><input autocapitalize="none"
-                                  autocomplete="off" autocorrect="off" id="react-select-34-input" spellcheck="false"
-                                  tabindex="0" type="text" aria-autocomplete="list" value=""
-                                  style="box-sizing: content-box; width: 2px; background: 0px center; border: 0px; font-size: inherit; opacity: 1; outline: 0px; padding: 0px; color: inherit;">
-                                <div
-                                  style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: 14px; font-family: Mulish, sans-serif; font-weight: 500; font-style: normal; letter-spacing: normal; text-transform: none;">
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="u_select__indicators css-1wy0on6"><span
-                              class="u_select__indicator-separator css-1okebmr-indicatorSeparator"></span>
-                            <div class="u_select__indicator u_select__dropdown-indicator css-tlfecz-indicatorContainer"
-                              aria-hidden="true"><i class="bi bi-chevron-down"></i></div>
-                          </div>
-                        </div>
-                      </div><label>Speaking <span>*</span></label>
+                    <div class="form-group-wrapper">
+                      <div class="form-group-main border-0 position-relative">
+                        <ng-select placeholder="Speaking">
+                          <ng-option>Poor</ng-option>
+                          <ng-option>Good</ng-option>
+                          <ng-option>Excellent</ng-option>
+                        </ng-select>
+                        <label class="position-absolute m-0 bg-white">Speaking <span class="text-danger">*</span></label>
+                      </div>
                     </div>
                   </div>
                   <div class="u_col-6 u_mb-25">
-                    <div class="u_input u_input-select">
-                      <div class="u_input-select-inner css-2b097c-container"><span aria-live="polite"
-                          aria-atomic="false" aria-relevant="additions text" class="css-7pg0cj-a11yText"></span>
-                        <div class="u_select__control css-yk16xz-control d-flex justify-content-between">
-                          <div class="u_select__value-container css-1hwfws3">
-                            <div class="u_select__placeholder css-1wa3eu0-placeholder"> </div>
-                            <div class="css-1g6gooi">
-                              <div class="u_select__input" style="display: inline-block;"><input autocapitalize="none"
-                                  autocomplete="off" autocorrect="off" id="react-select-35-input" spellcheck="false"
-                                  tabindex="0" type="text" aria-autocomplete="list" value=""
-                                  style="box-sizing: content-box; width: 2px; background: 0px center; border: 0px; font-size: inherit; opacity: 1; outline: 0px; padding: 0px; color: inherit;">
-                                <div
-                                  style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: 14px; font-family: Mulish, sans-serif; font-weight: 500; font-style: normal; letter-spacing: normal; text-transform: none;">
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="u_select__indicators css-1wy0on6"><span
-                              class="u_select__indicator-separator css-1okebmr-indicatorSeparator"></span>
-                            <div class="u_select__indicator u_select__dropdown-indicator css-tlfecz-indicatorContainer"
-                              aria-hidden="true">
-                              <i class="bi bi-chevron-down"></i>
-                            </div>
-                          </div>
-                        </div>
-                      </div><label>Writing <span>*</span></label>
+                    <div class="form-group-wrapper">
+                      <div class="form-group-main border-0 position-relative">
+                        <ng-select placeholder="Writing">
+                          <ng-option>Poor</ng-option>
+                          <ng-option>Good</ng-option>
+                          <ng-option>Excellent</ng-option>
+                        </ng-select>
+                        <label class="position-absolute m-0 bg-white">Writing <span class="text-danger">*</span></label>
+                      </div>
                     </div>
                   </div>
                   <div class="u_col-6 u_mb-10">
-                    <div class="u_input u_input-select">
-                      <div class="u_input-select-inner css-2b097c-container"><span aria-live="polite"
-                          aria-atomic="false" aria-relevant="additions text" class="css-7pg0cj-a11yText"></span>
-                        <div class="u_select__control css-yk16xz-control d-flex justify-content-between">
-                          <div class="u_select__value-container css-1hwfws3">
-                            <div class="u_select__placeholder css-1wa3eu0-placeholder"> </div>
-                            <div class="css-1g6gooi">
-                              <div class="u_select__input" style="display: inline-block;"><input autocapitalize="none"
-                                  autocomplete="off" autocorrect="off" id="react-select-36-input" spellcheck="false"
-                                  tabindex="0" type="text" aria-autocomplete="list" value=""
-                                  style="box-sizing: content-box; width: 2px; background: 0px center; border: 0px; font-size: inherit; opacity: 1; outline: 0px; padding: 0px; color: inherit;">
-                                <div
-                                  style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: 14px; font-family: Mulish, sans-serif; font-weight: 500; font-style: normal; letter-spacing: normal; text-transform: none;">
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="u_select__indicators css-1wy0on6"><span
-                              class="u_select__indicator-separator css-1okebmr-indicatorSeparator"></span>
-                            <div class="u_select__indicator u_select__dropdown-indicator css-tlfecz-indicatorContainer"
-                              aria-hidden="true"><i class="bi bi-chevron-down"></i></div>
-                          </div>
-                        </div>
-                      </div><label>Understanding <span>*</span></label>
+                    <div class="form-group-wrapper">
+                      <div class="form-group-main border-0 position-relative">
+                        <ng-select placeholder="Understanding">
+                          <ng-option>Poor</ng-option>
+                          <ng-option>Good</ng-option>
+                          <ng-option>Excellent</ng-option>
+                        </ng-select>
+                        <label class="position-absolute m-0 bg-white">Understanding <span class="text-danger">*</span></label>
+                      </div>
                     </div>
                   </div>
                 </div>

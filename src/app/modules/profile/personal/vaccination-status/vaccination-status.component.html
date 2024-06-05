@@ -9,22 +9,30 @@
           <div class="u_row u_vaccination">
             <div class="u_col-6 u_mb-20 u_vaccination-form">
               <h6 class="u_mb-15">Have you been vaccinated?</h6>
-              <div class="u_radio-group u_flex u_flex-wrap u_align-center ">
+              <div class="u_radio-group u_flex u_flex-wrap u_align-center">
                 <div class="u_flex u_mr-15 u_mb-15">
-                  <div class="u_radio-btn "><input type="radio" label="Partially"
-                      checked><label>Partially</label></div>
+                  <div class="u_radio-btn">
+                    <input type="radio" id="partially" name="vaccination_status" value="Partially" checked>
+                    <label for="partially">Partially</label>
+                  </div>
                 </div>
                 <div class="u_flex u_mr-15 u_mb-15">
-                  <div class="u_radio-btn "><input type="radio" label="Fully"><label>Fully</label></div>
+                  <div class="u_radio-btn">
+                    <input type="radio" id="fully" name="vaccination_status" value="Fully">
+                    <label for="fully">Fully</label>
+                  </div>
                 </div>
                 <div class="u_flex u_mr-15 u_mb-15">
-                  <div class="u_radio-btn "><input type="radio" label="Don’t want to disclose"><label>Don’t
-                      want to
-                      disclose</label></div>
+                  <div class="u_radio-btn">
+                    <input type="radio" id="disclose" name="vaccination_status" value="Don’t want to disclose">
+                    <label for="disclose">Don’t want to disclose</label>
+                  </div>
                 </div>
                 <div class="u_flex u_mr-15 u_mb-15">
-                  <div class="u_radio-btn "><input type="radio" label="No Vaccinated"><label>No
-                      Vaccinated</label></div>
+                  <div class="u_radio-btn">
+                    <input type="radio" id="not_vaccinated" name="vaccination_status" value="No Vaccinated">
+                    <label for="not_vaccinated">No Vaccinated</label>
+                  </div>
                 </div>
               </div>
               <div class="u_flex u_align-center">

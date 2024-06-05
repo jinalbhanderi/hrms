@@ -40,6 +40,11 @@ const routes: Routes = [
             (m) => m.MyFinanceModule
           ),
       },
+      {
+        path: 'feedback',
+        loadChildren: () =>
+          import('./feedback/feedback.module').then((m) => m.FeedbackModule),
+      },
       { path: 'emergency-contact', component: EmergencyContactComponent },
       { path: 'emp-org-structure', component: EmpOrgStructureComponent },
       { path: 'bank-info', component: BankInfoComponent },
@@ -49,7 +54,7 @@ const routes: Routes = [
         path: 'profile-update-request',
         component: ProfileUpdateRequestComponent,
       },
-      { path: 'feedback', component: FeedbackComponent },
+      // { path: 'feedback', component: FeedbackComponent },
       { path: 'assets', component: MyAssetsComponent },
       { path: '**', component: PagenotfoundComponent },
     ],

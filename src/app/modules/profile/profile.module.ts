@@ -11,6 +11,13 @@ import { ProfileUpdateRequestComponent } from './profile-update-request/profile-
 import { FeedbackComponent } from './feedback/feedback.component';
 import { MyAssetsComponent } from './my-assets/my-assets.component';
 import { EditProfileComponent } from './edit-profile/edit-profile.component';
+import { NgSelectModule } from '@ng-select/ng-select';
+import { AddBankAccountComponent } from './bank-info/add-bank-account/add-bank-account.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { EditSignatureComponent } from './signature/edit-signature/edit-signature.component';
+import { CreateSignatureComponent } from './signature/create-signature/create-signature.component';
+import { MatTabsModule } from '@angular/material/tabs';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,7 +30,16 @@ import { EditProfileComponent } from './edit-profile/edit-profile.component';
     FeedbackComponent,
     MyAssetsComponent,
     EditProfileComponent,
+    AddBankAccountComponent,
+    EditSignatureComponent,
+    CreateSignatureComponent,
   ],
-  imports: [CommonModule, ProfileRoutingModule],
+  imports: [
+    CommonModule,
+    ProfileRoutingModule,
+    NgSelectModule,
+    MatDialogModule,
+    MatTabsModule,
+  FormsModule]
 })
 export class ProfileModule {}
