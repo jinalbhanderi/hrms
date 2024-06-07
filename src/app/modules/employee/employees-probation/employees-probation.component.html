@@ -11,45 +11,31 @@
         <div class="u_flex u_align-center u_content-end">
           <div class="u_filter-content  ">
             <div class="u_filter-content-inner">
-              <div class="u_filter u_filter-search "><span
-                  class="u_search-icon u_cp">
-                  <svg width="14" height="14" viewBox="0 0 36 36" fill="none"
-                    xmlns="http://www.w3.org/2000/svg" class
+              <div class="u_filter u_filter-search "><span class="u_search-icon u_cp">
+                  <svg width="14" height="14" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class
                     xmlns:xlink="http://www.w3.org/1999/xlink">
                     <path class="u_fill"
                       d="M33.474 30.95l-6.042-6.024a14.075 14.075 0 003.003-8.708 14.218 14.218 0 10-14.217 14.217 14.075 14.075 0 008.708-3.003l6.025 6.042a1.776 1.776 0 002.523 0 1.777 1.777 0 000-2.523zM5.554 16.219a10.663 10.663 0 1121.327 0 10.663 10.663 0 01-21.327 0z"
                       fill="#4E525F"></path>
                   </svg>
                 </span>
-                <input type="text" tabindex="0" class="u_input"
-                  placeholder="Search" autocomplete="off" value>
+                <input type="text" tabindex="0" class="u_input" placeholder="Search" autocomplete="off" value>
               </div>
               <div class="u_filter u_filter-select ">
-                <div class=" css-2b097c-container"><span aria-live="polite"
-                    aria-atomic="false"
-                    aria-relevant="additions text"
-                    class="css-7pg0cj-a11yText"></span>
-                  <div class="u_select__control css-yk16xz-control">
-                    <div class=" css-1hwfws3">
-                      <div class="dropdown-container input-bg ">
-                        <input type="text" placeholder="Employment Status"
-                          style="text-indent: 0; padding: 5px;">
-                        <div class="dropdown-content">
-                          <ul>
-                            <li data-value="Probation">Probation</li>
-                            <li data-value="Internship">Internship</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
+                <div class=" css-2b097c-container"><span aria-live="polite" aria-atomic="false"
+                    aria-relevant="additions text" class="css-7pg0cj-a11yText"></span>
+                  <div class="dropdown-container input-bg ">
+                    <ng-select placeholder="Employment Status">
+                      <ng-option>Probation</ng-option>
+                      <ng-option>Internship</ng-option>
+                    </ng-select>
                   </div>
                 </div>
+
               </div>
               <div class="u_filter u_filter-daterange">
-                <div class="u_filter-container "
-                  aria-describedby="popup-119"><span class="u_calendar-icon">
-                    <svg width="14" height="14" viewBox="0 0 36 36" fill="none"
-                      xmlns="http://www.w3.org/2000/svg" class
+                <div class="u_filter-container " aria-describedby="popup-119"><span class="u_calendar-icon">
+                    <svg width="14" height="14" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class
                       xmlns:xlink="http://www.w3.org/1999/xlink">
                       <path class="u_fill"
                         d="M31.36 34H4.637c-.143-.034-.289-.062-.43-.102C2.791 33.494 2.001 32.44 2 30.94 2 23.494 1.998 16.048 2.01 8.602c0-.389.07-.792.19-1.162.342-1.06 1.546-1.886 2.64-1.836v.337c0 1.124-.004 2.25 0 3.374.01 1.874 1.367 3.231 3.283 3.277.66.015 1.322.016 1.981 0 1.927-.05 3.286-1.42 3.29-3.306.002-1.124 0-2.25 0-3.374v-.333h9.211v3.675c.003 1.95 1.387 3.32 3.384 3.34.606.007 1.214.008 1.822 0 1.964-.023 3.342-1.385 3.348-3.307.003-1.125 0-2.25 0-3.375v-.414c.458.145.876.218 1.234.4 1.13.578 1.61 1.532 1.608 2.765-.007 7.405-.003 14.81-.004 22.214 0 .177-.003.355-.021.53-.079.746-.416 1.363-.983 1.868-.466.415-1.03.605-1.631.725ZM17.979 16.748H7.206c-.979 0-1.473.482-1.473 1.44v11.31c0 .958.496 1.44 1.475 1.44H28.72c1 0 1.487-.477 1.488-1.457V18.2c0-.979-.487-1.453-1.49-1.454h-10.74Z"
@@ -64,12 +50,9 @@
                 </div>
               </div>
               <div class="u_filter u_filter-daterange">
-                <div class="u_filter-container u_filter-daterange-active"
-                  aria-describedby="popup-120"><span
-                    class="u_calendar-icon"><svg width="14" height="14"
-                      viewBox="0 0 36 36" fill="none"
-                      xmlns="http://www.w3.org/2000/svg" class
-                      xmlns:xlink="http://www.w3.org/1999/xlink">
+                <div class="u_filter-container u_filter-daterange-active" aria-describedby="popup-120"><span
+                    class="u_calendar-icon"><svg width="14" height="14" viewBox="0 0 36 36" fill="none"
+                      xmlns="http://www.w3.org/2000/svg" class xmlns:xlink="http://www.w3.org/1999/xlink">
                       <path class="u_fill"
                         d="M31.36 34H4.637c-.143-.034-.289-.062-.43-.102C2.791 33.494 2.001 32.44 2 30.94 2 23.494 1.998 16.048 2.01 8.602c0-.389.07-.792.19-1.162.342-1.06 1.546-1.886 2.64-1.836v.337c0 1.124-.004 2.25 0 3.374.01 1.874 1.367 3.231 3.283 3.277.66.015 1.322.016 1.981 0 1.927-.05 3.286-1.42 3.29-3.306.002-1.124 0-2.25 0-3.374v-.333h9.211v3.675c.003 1.95 1.387 3.32 3.384 3.34.606.007 1.214.008 1.822 0 1.964-.023 3.342-1.385 3.348-3.307.003-1.125 0-2.25 0-3.375v-.414c.458.145.876.218 1.234.4 1.13.578 1.61 1.532 1.608 2.765-.007 7.405-.003 14.81-.004 22.214 0 .177-.003.355-.021.53-.079.746-.416 1.363-.983 1.868-.466.415-1.03.605-1.631.725ZM17.979 16.748H7.206c-.979 0-1.473.482-1.473 1.44v11.31c0 .958.496 1.44 1.475 1.44H28.72c1 0 1.487-.477 1.488-1.457V18.2c0-.979-.487-1.453-1.49-1.454h-10.74Z"
                         fill="#007AFF"></path>
@@ -83,27 +66,20 @@
               </div>
             </div>
           </div>
-          <div class="u_filter u_filter-toggle"><span
-              class="u_toggle-view u_active"><svg width="14" height="14"
-                viewBox="0 0 36 36" fill="none"
-                xmlns="http://www.w3.org/2000/svg" class
+          <div class="u_filter u_filter-toggle"><span class="u_toggle-view u_active"><svg width="14" height="14"
+                viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class
                 xmlns:xlink="http://www.w3.org/1999/xlink">
                 <path class="u_fill" fill-rule="evenodd" clip-rule="evenodd"
                   d="M2 20.534h5.333v-5.511L2 15.022v5.512ZM2 9.51h5.333V4H2v5.511Zm0 22.045h5.333v-5.511H2v5.51Zm10.667-11.022H34v-5.511l-21.333-.001v5.512Zm0-11.023H34V4H12.667v5.511Zm0 22.045H34v-5.511H12.667v5.51Z"
                   fill="#4E525F"></path>
-              </svg></span><span class="u_toggle-view "><svg width="14"
-                height="14" viewBox="0 0 36 36" fill="none"
-                xmlns="http://www.w3.org/2000/svg" class
-                xmlns:xlink="http://www.w3.org/1999/xlink">
-                <path class="u_fill"
-                  d="M2 19.778h8V34H2V19.778ZM14 2h8v32h-8V2Zm12 8.889h8V34h-8V10.889Z"
+              </svg></span><span class="u_toggle-view "><svg width="14" height="14" viewBox="0 0 36 36" fill="none"
+                xmlns="http://www.w3.org/2000/svg" class xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path class="u_fill" d="M2 19.778h8V34H2V19.778ZM14 2h8v32h-8V2Zm12 8.889h8V34h-8V10.889Z"
                   fill="#4E525F"></path>
               </svg></span></div>
           <div class="u_filter" aria-describedby="popup-19790">
-            <p class="u_flex u_align-center u_cp"
-              aria-describedby="popup-19791"><span class="u_filter-icon"><svg
-                  width="18" height="18" viewBox="0 0 36 36" fill="none"
-                  xmlns="http://www.w3.org/2000/svg" class
+            <p class="u_flex u_align-center u_cp" aria-describedby="popup-19791"><span class="u_filter-icon"><svg
+                  width="18" height="18" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class
                   xmlns:xlink="http://www.w3.org/1999/xlink">
                   <path class="u_fill"
                     d="M19.6 15.062h8L18 24.543l-9.6-9.481h8V4h3.2v11.062zM5.2 29.284h25.6V18.222H34v12.642c0 .42-.169.821-.469 1.118a1.61 1.61 0 01-1.131.462H3.6a1.61 1.61 0 01-1.131-.462A1.57 1.57 0 012 30.864V18.222h3.2v11.062z"
@@ -114,149 +90,39 @@
       </div>
       <div class="u_header-filters-list">
         <div class="u_flex u_align-center u_content-end">
-          <div class="u_filter-content u_filter-content-mobile ">
-            <div class="u_filter-content-inner">
-              <div class="u_filter u_filter-select ">
-                <div class=" css-2b097c-container"><span aria-live="polite"
-                    aria-atomic="false"
-                    aria-relevant="additions text"
-                    class="css-7pg0cj-a11yText"></span>
-                  <div class="u_select__control css-yk16xz-control">
-                    <div class="u_select__value-container css-1hwfws3">
-                      <div
-                        class="u_select__single-value css-1uccc91-singleValue">
-                        <div class="u_flex u_align-center"><svg width="14"
-                            height="14" viewBox="0 0 36 36" fill="none"
-                            xmlns="http://www.w3.org/2000/svg" class="u_mr-8"
-                            xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <path class="u_fill"
-                              d="M13.2 21.2V26h9.6v-4.8H34v11.2a1.6 1.6 0 01-1.6 1.6H3.6A1.6 1.6 0 012 32.4V21.2h11.2zm3.2-3.2h3.2v4.8h-3.2V18zM10 8.4V3.6A1.6 1.6 0 0111.6 2h12.8A1.6 1.6 0 0126 3.6v4.8h6.4A1.6 1.6 0 0134 10v8H22.8v-3.2h-9.6V18H2v-8a1.6 1.6 0 011.6-1.6H10zm3.2-3.2v3.2h9.6V5.2h-9.6z"
-                              fill="#4E525F"></path>
-                          </svg><span class="u_text-c u_color-font">Select
-                            Company</span></div>
-                      </div>
-                      <div class="css-1g6gooi">
-                        <div class="u_select__input"
-                          style="display: inline-block;"><input
-                            autocapitalize="none"
-                            autocomplete="off" autocorrect="off"
-                            id="react-select-102-input" spellcheck="false"
-                            tabindex="0" type="text" aria-autocomplete="list"
-                            value
-                            style="box-sizing: content-box; width: 2px; background: 0px center; border: 0px; font-size: inherit; opacity: 1; outline: 0px; padding: 0px; color: inherit;">
-                          <div
-                            style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: 12px; font-family: Arial; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="u_select__indicators css-1wy0on6"><span
-                        class="u_select__indicator-separator css-1okebmr-indicatorSeparator"></span>
-                      <div
-                        class="u_select__indicator u_select__dropdown-indicator css-tlfecz-indicatorContainer"
-                        aria-hidden="true"><svg height="20" width="20"
-                          viewBox="0 0 20 20" aria-hidden="true"
-                          focusable="false" class="css-8mmkcg">
-                          <path
-                            d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z">
-                          </path>
-                        </svg></div>
-                    </div>
-                  </div><input name="companyId" type="hidden" value>
-                </div>
-              </div>
-              <div class="u_filter u_filter-department">
-                <div class="u_filter-container " aria-describedby="popup-19716">
-                  <p><svg width="14" height="14" viewBox="0 0 36 36" fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="u_mr-10"
-                      xmlns:xlink="http://www.w3.org/1999/xlink">
-                      <path class="u_fill"
-                        d="M31.09 28.063H34v2.883H2v-2.883h2.91V6.441c0-.382.152-.748.425-1.019.273-.27.643-.422 1.029-.422h14.545c.386 0 .756.152 1.029.422.272.27.426.637.426 1.02v21.621h2.909V13.65h4.363c.386 0 .756.152 1.029.422.273.27.426.637.426 1.02v12.972zM10.728 16.532v2.882h5.819v-2.883h-5.819zm0-5.766v2.883h5.819v-2.883h-5.819z"
-                        fill="#4E525F"></path>
-                    </svg>Department</p>
-                </div>
-              </div>
-              <div class="u_filter u_filter-department">
-                <div class="u_filter-container " aria-describedby="popup-19717">
-                  <p><svg width="14" height="14" viewBox="0 0 36 36" fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="u_mr-10"
-                      xmlns:xlink="http://www.w3.org/1999/xlink">
-                      <path class="u_fill"
-                        d="M31.09 28.063H34v2.883H2v-2.883h2.91V6.441c0-.382.152-.748.425-1.019.273-.27.643-.422 1.029-.422h14.545c.386 0 .756.152 1.029.422.272.27.426.637.426 1.02v21.621h2.909V13.65h4.363c.386 0 .756.152 1.029.422.273.27.426.637.426 1.02v12.972zM10.728 16.532v2.882h5.819v-2.883h-5.819zm0-5.766v2.883h5.819v-2.883h-5.819z"
-                        fill="#4E525F"></path>
-                    </svg>Sub
-                    Department</p>
-                </div>
-              </div>
-              <div class="u_filter u_filter-department">
-                <div class="u_filter-container " aria-describedby="popup-19718">
-                  <p><svg width="14" height="14" viewBox="0 0 36 36" fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="u_mr-10"
-                      xmlns:xlink="http://www.w3.org/1999/xlink">
-                      <path class="u_fill"
-                        d="M13.2 21.2V26h9.6v-4.8H34v11.2a1.6 1.6 0 01-1.6 1.6H3.6A1.6 1.6 0 012 32.4V21.2h11.2zm3.2-3.2h3.2v4.8h-3.2V18zM10 8.4V3.6A1.6 1.6 0 0111.6 2h12.8A1.6 1.6 0 0126 3.6v4.8h6.4A1.6 1.6 0 0134 10v8H22.8v-3.2h-9.6V18H2v-8a1.6 1.6 0 011.6-1.6H10zm3.2-3.2v3.2h9.6V5.2h-9.6z"
-                        fill="#4E525F"></path>
-                    </svg>Job
-                    Title</p>
-                </div>
-              </div>
-              <div class="u_filter u_filter-department">
-                <div class="u_filter-container " aria-describedby="popup-19719">
-                  <p><svg width="14" height="14" viewBox="0 0 36 36" fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="u_mr-10"
-                      xmlns:xlink="http://www.w3.org/1999/xlink">
-                      <path class="u_fill"
-                        d="M27.762 24.627L18.333 34l-9.428-9.373a13.232 13.232 0 01-3.649-6.786 13.182 13.182 0 01.759-7.659 13.272 13.272 0 014.91-5.948A13.39 13.39 0 0118.334 2c2.637 0 5.215.777 7.408 2.234a13.272 13.272 0 014.91 5.948 13.183 13.183 0 01.76 7.659 13.232 13.232 0 01-3.65 6.786zm-9.429-3.481c1.572 0 3.08-.62 4.19-1.726a5.874 5.874 0 001.736-4.165c0-1.563-.624-3.061-1.735-4.166a5.944 5.944 0 00-4.19-1.725c-1.572 0-3.08.62-4.19 1.725a5.873 5.873 0 00-1.737 4.166c0 1.562.625 3.06 1.736 4.165a5.944 5.944 0 004.19 1.726zm0-2.946c-.785 0-1.54-.31-2.095-.863a2.937 2.937 0 010-4.165 2.972 2.972 0 014.19 0 2.937 2.937 0 010 4.165 2.972 2.972 0 01-2.095.863z"
-                        fill="#4E525F"></path>
-                    </svg>Location</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="u_filter "><span class="u_filter-btn u_filter-icon"
-              aria-describedby="popup-19720"><span
-                class="u_font u_mr-3">Filter:</span><svg width="16" height="16"
-                viewBox="0 0 36 36" fill="none"
-                xmlns="http://www.w3.org/2000/svg" class
+          <div class="u_filter "><span class="u_filter-btn u_filter-icon" aria-describedby="popup-19720"
+              (click)="openModal()">
+              <span class="u_font u_mr-3">Filter:</span>
+              <svg width="16" height="16" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class
                 xmlns:xlink="http://www.w3.org/1999/xlink">
                 <path class="u_fill"
                   d="M32.567 2.042v4.44H3.423v-4.44h29.144zM15.018 33.92v-.443c0-4.37-.005-8.74.007-13.109a1.534 1.534 0 00-.434-1.116c-3.15-3.42-6.29-6.848-9.432-10.274-.133-.144-.264-.288-.435-.476h26.54c-.155.171-.276.306-.4.44-3.163 3.45-6.324 6.9-9.494 10.344-.277.302-.405.62-.403 1.033.01 2.74.003 5.48.01 8.22a.591.591 0 01-.226.504c-1.826 1.552-3.646 3.113-5.468 4.67-.068.06-.142.111-.265.206z"
                   fill="#4E525F"></path>
-              </svg></span></div>
+              </svg>
+            </span>
+          </div>
         </div>
       </div>
     </div>
   </div>
   <div class="u_layout-scrollview">
-    <div class="u_scroll-section "
-      style="position: relative; overflow: hidden; width: 100%; height: 100%;">
-      <div
-        style="position: absolute; inset: 0px; overflow: scroll; margin-right: -14px; margin-bottom: -14px;">
-        <div
-          class="u_table-resource u_table-resource u_table-resource-nowrap u_table-resource-hover">
+    <div class="u_scroll-section " style="position: relative; overflow: hidden; width: 100%; height: 100%;">
+      <div style="position: absolute; inset: 0px; overflow: scroll; margin-right: -14px; margin-bottom: -14px;">
+        <div class="u_table-resource u_table-resource u_table-resource-nowrap u_table-resource-hover">
           <table>
             <thead>
               <tr>
                 <th class>
                   <div class="u_ib u_cp">
                     <div class="u_flex">Employee
-                      Name<div class="u_sort u_pl-10"><span
-                          class="u_sort-top"><svg width="10" height="10"
-                            viewBox="0 0 36 36" fill="none"
-                            xmlns="http://www.w3.org/2000/svg" class
+                      Name<div class="u_sort u_pl-10"><span class="u_sort-top"><svg width="10" height="10"
+                            viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class
                             xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <path class="u_fill" d="M26 18L10 34V2l16 16z"
-                              fill="#e4e4e4"></path>
-                          </svg></span><span class="u_sort-down"><svg width="10"
-                            height="10" viewBox="0 0 36 36"
+                            <path class="u_fill" d="M26 18L10 34V2l16 16z" fill="#e4e4e4"></path>
+                          </svg></span><span class="u_sort-down"><svg width="10" height="10" viewBox="0 0 36 36"
                             fill="none" xmlns="http://www.w3.org/2000/svg" class
                             xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <path class="u_fill" d="M26 18L10 34V2l16 16z"
-                              fill="#e4e4e4"></path>
+                            <path class="u_fill" d="M26 18L10 34V2l16 16z" fill="#e4e4e4"></path>
                           </svg></span></div>
                     </div>
                   </div>
@@ -290,78 +156,56 @@
                 </th>
                 <th class>
                   <div class="u_ib u_cp">
-                    <div class="u_flex">Start Date<div
-                        class="u_sort u_pl-10"><span class="u_sort-top"><svg
-                            width="10"
-                            height="10" viewBox="0 0 36 36" fill="none"
-                            xmlns="http://www.w3.org/2000/svg" class
+                    <div class="u_flex">Start Date<div class="u_sort u_pl-10"><span class="u_sort-top"><svg width="10"
+                            height="10" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class
                             xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <path class="u_fill" d="M26 18L10 34V2l16 16z"
-                              fill="#e4e4e4"></path>
-                          </svg></span><span class="u_sort-down"><svg width="10"
-                            height="10" viewBox="0 0 36 36"
+                            <path class="u_fill" d="M26 18L10 34V2l16 16z" fill="#e4e4e4"></path>
+                          </svg></span><span class="u_sort-down"><svg width="10" height="10" viewBox="0 0 36 36"
                             fill="none" xmlns="http://www.w3.org/2000/svg" class
                             xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <path class="u_fill" d="M26 18L10 34V2l16 16z"
-                              fill="#e4e4e4"></path>
+                            <path class="u_fill" d="M26 18L10 34V2l16 16z" fill="#e4e4e4"></path>
                           </svg></span></div>
                     </div>
                   </div>
                 </th>
                 <th class>
                   <div class="u_ib u_cp">
-                    <div class="u_flex">End Date<div
-                        class="u_sort u_pl-10"><span class="u_sort-top"><svg
-                            width="10"
-                            height="10" viewBox="0 0 36 36" fill="none"
-                            xmlns="http://www.w3.org/2000/svg" class
+                    <div class="u_flex">End Date<div class="u_sort u_pl-10"><span class="u_sort-top"><svg width="10"
+                            height="10" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class
                             xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <path class="u_fill" d="M26 18L10 34V2l16 16z"
-                              fill="#4E525F"></path>
-                          </svg></span><span class="u_sort-down"><svg width="10"
-                            height="10" viewBox="0 0 36 36"
+                            <path class="u_fill" d="M26 18L10 34V2l16 16z" fill="#4E525F"></path>
+                          </svg></span><span class="u_sort-down"><svg width="10" height="10" viewBox="0 0 36 36"
                             fill="none" xmlns="http://www.w3.org/2000/svg" class
                             xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <path class="u_fill" d="M26 18L10 34V2l16 16z"
-                              fill="#e4e4e4"></path>
+                            <path class="u_fill" d="M26 18L10 34V2l16 16z" fill="#e4e4e4"></path>
                           </svg></span></div>
                     </div>
                   </div>
                 </th>
                 <th class>
                   <div class="u_ib u_cp">
-                    <div class="u_flex">Status<div class="u_sort u_pl-10"><span
-                          class="u_sort-top"><svg width="10"
-                            height="10" viewBox="0 0 36 36" fill="none"
-                            xmlns="http://www.w3.org/2000/svg" class
+                    <div class="u_flex">Status<div class="u_sort u_pl-10"><span class="u_sort-top"><svg width="10"
+                            height="10" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class
                             xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <path class="u_fill" d="M26 18L10 34V2l16 16z"
-                              fill="#e4e4e4"></path>
-                          </svg></span><span class="u_sort-down"><svg width="10"
-                            height="10" viewBox="0 0 36 36"
+                            <path class="u_fill" d="M26 18L10 34V2l16 16z" fill="#e4e4e4"></path>
+                          </svg></span><span class="u_sort-down"><svg width="10" height="10" viewBox="0 0 36 36"
                             fill="none" xmlns="http://www.w3.org/2000/svg" class
                             xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <path class="u_fill" d="M26 18L10 34V2l16 16z"
-                              fill="#e4e4e4"></path>
+                            <path class="u_fill" d="M26 18L10 34V2l16 16z" fill="#e4e4e4"></path>
                           </svg></span></div>
                     </div>
                   </div>
                 </th>
                 <th class>
                   <div class="u_ib u_cp">
-                    <div class="u_flex">Length<div class="u_sort u_pl-10"><span
-                          class="u_sort-top"><svg width="10"
-                            height="10" viewBox="0 0 36 36" fill="none"
-                            xmlns="http://www.w3.org/2000/svg" class
+                    <div class="u_flex">Length<div class="u_sort u_pl-10"><span class="u_sort-top"><svg width="10"
+                            height="10" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class
                             xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <path class="u_fill" d="M26 18L10 34V2l16 16z"
-                              fill="#e4e4e4"></path>
-                          </svg></span><span class="u_sort-down"><svg width="10"
-                            height="10" viewBox="0 0 36 36"
+                            <path class="u_fill" d="M26 18L10 34V2l16 16z" fill="#e4e4e4"></path>
+                          </svg></span><span class="u_sort-down"><svg width="10" height="10" viewBox="0 0 36 36"
                             fill="none" xmlns="http://www.w3.org/2000/svg" class
                             xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <path class="u_fill" d="M26 18L10 34V2l16 16z"
-                              fill="#e4e4e4"></path>
+                            <path class="u_fill" d="M26 18L10 34V2l16 16z" fill="#e4e4e4"></path>
                           </svg></span></div>
                     </div>
                   </div>
@@ -382,14 +226,11 @@
               <tr class=" ">
                 <td class>
                   <div class="u_flex u_align-center">
-                    <div class="u_cp u_flex-shrink"
-                      aria-describedby="popup-19757">
+                    <div class="u_cp u_flex-shrink" aria-describedby="popup-19757">
                       <div class="u_avatar "><img draggable="false"
                           src="https://thumbor.superworks.com/unsafe/48x48/filters:quality(80)/https://files.superworks.com/profileImages/38hDRGt7Hj.jpeg"
-                          alt="Jay" class="u_avatar-image "
-                          style="width: 36px; height: 36px;"></div>
-                    </div><span
-                      class="u_one-line u_table-one-line u_pl-10 u_cp">Jay
+                          alt="Jay" class="u_avatar-image " style="width: 36px; height: 36px;"></div>
+                    </div><span class="u_one-line u_table-one-line u_pl-10 u_cp">Jay
                       Borad</span>
                   </div>
                 </td>
@@ -407,28 +248,21 @@
                 <td class>
                   <div class="u_table-resource-action">
                     <div class="u_cp u_table-resource-menu"><span
-                        class="u_more-menu-icon u_flex u_align-center u_content-end"><svg
-                          width="20" height="20"
-                          viewBox="0 0 36 36" fill="none"
-                          xmlns="http://www.w3.org/2000/svg" class
+                        class="u_more-menu-icon u_flex u_align-center u_content-end"><svg width="20" height="20"
+                          viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class
                           xmlns:xlink="http://www.w3.org/1999/xlink">
                           <path class="u_fill"
                             d="M5.2 15c1.767 0 3.2 1.393 3.2 3.111 0 1.718-1.433 3.111-3.2 3.111-1.767 0-3.2-1.393-3.2-3.11C2 16.391 3.433 15 5.2 15zM18 15c1.767 0 3.2 1.393 3.2 3.111 0 1.718-1.433 3.111-3.2 3.111-1.767 0-3.2-1.393-3.2-3.11C14.8 16.391 16.233 15 18 15zM30.8 15c1.767 0 3.2 1.393 3.2 3.111 0 1.718-1.433 3.111-3.2 3.111-1.767 0-3.2-1.393-3.2-3.11 0-1.72 1.433-3.112 3.2-3.112z"
                             fill="#4E525F"></path>
                         </svg></span></div>
-                    <div class="u_table-resource-buttons"><span
-                        class="u_icon-rollover u_cp u_ml-5 "
-                        aria-describedby="popup-19758"><svg width="16"
-                          height="16" viewBox="0 0 36 36" fill="none"
-                          xmlns="http://www.w3.org/2000/svg" class
-                          xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <div class="u_table-resource-buttons"><span class="u_icon-rollover u_cp u_ml-5 "
+                        aria-describedby="popup-19758"><svg width="16" height="16" viewBox="0 0 36 36" fill="none"
+                          xmlns="http://www.w3.org/2000/svg" class xmlns:xlink="http://www.w3.org/1999/xlink">
                           <path class="u_fill"
                             d="M18.8 3C13.2 3 8.24 6.022 5.68 10.635L2 6.977v10.339h10.4l-4.48-4.454C10 8.885 14 6.182 18.8 6.182c6.56 0 12 5.407 12 11.93 0 6.52-5.44 11.929-12 11.929-5.28 0-9.6-3.34-11.36-7.953H4.08c1.76 6.362 7.68 11.134 14.72 11.134 8.48 0 15.2-6.84 15.2-15.11C34 9.84 27.12 3 18.8 3zm-2.4 7.953v8.113l7.52 4.453 1.28-2.067-6.4-3.818v-6.68h-2.4z"
                             fill="#007AFF"></path>
-                        </svg></span><span class="u_icon-rollover u_cp u_ml-5 "
-                        aria-describedby="popup-19759"><svg
-                          width="16" height="16" viewBox="0 0 36 36" fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
+                        </svg></span><span class="u_icon-rollover u_cp u_ml-5 " aria-describedby="popup-19759"><svg
+                          width="16" height="16" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"
                           class xmlns:xlink="http://www.w3.org/1999/xlink">
                           <path class="u_fill"
                             d="M19.629 8.818l7.553 7.555L9.554 34H2v-7.555L19.629 8.816v.002zM22.146 6.3l3.777-3.779a1.78 1.78 0 012.518 0L33.48 7.56a1.78 1.78 0 010 2.518L29.7 13.854 22.147 6.3z"
@@ -440,16 +274,13 @@
               <tr class=" ">
                 <td class>
                   <div class="u_flex u_align-center">
-                    <div class="u_cp u_flex-shrink"
-                      aria-describedby="popup-19760">
+                    <div class="u_cp u_flex-shrink" aria-describedby="popup-19760">
                       <div class="u_avatar ">
                         <div class="u_avatar-content "
-                          style="background-color: rgb(98, 183, 231); width: 36px; height: 36px;"><span
-                            class="u_m-auto"
+                          style="background-color: rgb(98, 183, 231); width: 36px; height: 36px;"><span class="u_m-auto"
                             style="font-size: 1.2rem; line-height: 1.2rem;">MG</span></div>
                       </div>
-                    </div><span
-                      class="u_one-line u_table-one-line u_pl-10 u_cp">Mitul
+                    </div><span class="u_one-line u_table-one-line u_pl-10 u_cp">Mitul
                       Gondaliya</span>
                   </div>
                 </td>
@@ -467,28 +298,21 @@
                 <td class>
                   <div class="u_table-resource-action">
                     <div class="u_cp u_table-resource-menu"><span
-                        class="u_more-menu-icon u_flex u_align-center u_content-end"><svg
-                          width="20" height="20"
-                          viewBox="0 0 36 36" fill="none"
-                          xmlns="http://www.w3.org/2000/svg" class
+                        class="u_more-menu-icon u_flex u_align-center u_content-end"><svg width="20" height="20"
+                          viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class
                           xmlns:xlink="http://www.w3.org/1999/xlink">
                           <path class="u_fill"
                             d="M5.2 15c1.767 0 3.2 1.393 3.2 3.111 0 1.718-1.433 3.111-3.2 3.111-1.767 0-3.2-1.393-3.2-3.11C2 16.391 3.433 15 5.2 15zM18 15c1.767 0 3.2 1.393 3.2 3.111 0 1.718-1.433 3.111-3.2 3.111-1.767 0-3.2-1.393-3.2-3.11C14.8 16.391 16.233 15 18 15zM30.8 15c1.767 0 3.2 1.393 3.2 3.111 0 1.718-1.433 3.111-3.2 3.111-1.767 0-3.2-1.393-3.2-3.11 0-1.72 1.433-3.112 3.2-3.112z"
                             fill="#4E525F"></path>
                         </svg></span></div>
-                    <div class="u_table-resource-buttons"><span
-                        class="u_icon-rollover u_cp u_ml-5 "
-                        aria-describedby="popup-19761"><svg width="16"
-                          height="16" viewBox="0 0 36 36" fill="none"
-                          xmlns="http://www.w3.org/2000/svg" class
-                          xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <div class="u_table-resource-buttons"><span class="u_icon-rollover u_cp u_ml-5 "
+                        aria-describedby="popup-19761"><svg width="16" height="16" viewBox="0 0 36 36" fill="none"
+                          xmlns="http://www.w3.org/2000/svg" class xmlns:xlink="http://www.w3.org/1999/xlink">
                           <path class="u_fill"
                             d="M18.8 3C13.2 3 8.24 6.022 5.68 10.635L2 6.977v10.339h10.4l-4.48-4.454C10 8.885 14 6.182 18.8 6.182c6.56 0 12 5.407 12 11.93 0 6.52-5.44 11.929-12 11.929-5.28 0-9.6-3.34-11.36-7.953H4.08c1.76 6.362 7.68 11.134 14.72 11.134 8.48 0 15.2-6.84 15.2-15.11C34 9.84 27.12 3 18.8 3zm-2.4 7.953v8.113l7.52 4.453 1.28-2.067-6.4-3.818v-6.68h-2.4z"
                             fill="#007AFF"></path>
-                        </svg></span><span class="u_icon-rollover u_cp u_ml-5 "
-                        aria-describedby="popup-19762"><svg
-                          width="16" height="16" viewBox="0 0 36 36" fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
+                        </svg></span><span class="u_icon-rollover u_cp u_ml-5 " aria-describedby="popup-19762"><svg
+                          width="16" height="16" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"
                           class xmlns:xlink="http://www.w3.org/1999/xlink">
                           <path class="u_fill"
                             d="M19.629 8.818l7.553 7.555L9.554 34H2v-7.555L19.629 8.816v.002zM22.146 6.3l3.777-3.779a1.78 1.78 0 012.518 0L33.48 7.56a1.78 1.78 0 010 2.518L29.7 13.854 22.147 6.3z"
@@ -500,16 +324,13 @@
               <tr class=" ">
                 <td class>
                   <div class="u_flex u_align-center">
-                    <div class="u_cp u_flex-shrink"
-                      aria-describedby="popup-19763">
+                    <div class="u_cp u_flex-shrink" aria-describedby="popup-19763">
                       <div class="u_avatar ">
                         <div class="u_avatar-content "
-                          style="background-color: rgb(255, 105, 97); width: 36px; height: 36px;"><span
-                            class="u_m-auto"
+                          style="background-color: rgb(255, 105, 97); width: 36px; height: 36px;"><span class="u_m-auto"
                             style="font-size: 1.2rem; line-height: 1.2rem;">DK</span></div>
                       </div>
-                    </div><span
-                      class="u_one-line u_table-one-line u_pl-10 u_cp">Devarshi
+                    </div><span class="u_one-line u_table-one-line u_pl-10 u_cp">Devarshi
                       Kathiriya</span>
                   </div>
                 </td>
@@ -527,28 +348,21 @@
                 <td class>
                   <div class="u_table-resource-action">
                     <div class="u_cp u_table-resource-menu"><span
-                        class="u_more-menu-icon u_flex u_align-center u_content-end"><svg
-                          width="20" height="20"
-                          viewBox="0 0 36 36" fill="none"
-                          xmlns="http://www.w3.org/2000/svg" class
+                        class="u_more-menu-icon u_flex u_align-center u_content-end"><svg width="20" height="20"
+                          viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class
                           xmlns:xlink="http://www.w3.org/1999/xlink">
                           <path class="u_fill"
                             d="M5.2 15c1.767 0 3.2 1.393 3.2 3.111 0 1.718-1.433 3.111-3.2 3.111-1.767 0-3.2-1.393-3.2-3.11C2 16.391 3.433 15 5.2 15zM18 15c1.767 0 3.2 1.393 3.2 3.111 0 1.718-1.433 3.111-3.2 3.111-1.767 0-3.2-1.393-3.2-3.11C14.8 16.391 16.233 15 18 15zM30.8 15c1.767 0 3.2 1.393 3.2 3.111 0 1.718-1.433 3.111-3.2 3.111-1.767 0-3.2-1.393-3.2-3.11 0-1.72 1.433-3.112 3.2-3.112z"
                             fill="#4E525F"></path>
                         </svg></span></div>
-                    <div class="u_table-resource-buttons"><span
-                        class="u_icon-rollover u_cp u_ml-5 "
-                        aria-describedby="popup-19764"><svg width="16"
-                          height="16" viewBox="0 0 36 36" fill="none"
-                          xmlns="http://www.w3.org/2000/svg" class
-                          xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <div class="u_table-resource-buttons"><span class="u_icon-rollover u_cp u_ml-5 "
+                        aria-describedby="popup-19764"><svg width="16" height="16" viewBox="0 0 36 36" fill="none"
+                          xmlns="http://www.w3.org/2000/svg" class xmlns:xlink="http://www.w3.org/1999/xlink">
                           <path class="u_fill"
                             d="M18.8 3C13.2 3 8.24 6.022 5.68 10.635L2 6.977v10.339h10.4l-4.48-4.454C10 8.885 14 6.182 18.8 6.182c6.56 0 12 5.407 12 11.93 0 6.52-5.44 11.929-12 11.929-5.28 0-9.6-3.34-11.36-7.953H4.08c1.76 6.362 7.68 11.134 14.72 11.134 8.48 0 15.2-6.84 15.2-15.11C34 9.84 27.12 3 18.8 3zm-2.4 7.953v8.113l7.52 4.453 1.28-2.067-6.4-3.818v-6.68h-2.4z"
                             fill="#007AFF"></path>
-                        </svg></span><span class="u_icon-rollover u_cp u_ml-5 "
-                        aria-describedby="popup-19765"><svg
-                          width="16" height="16" viewBox="0 0 36 36" fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
+                        </svg></span><span class="u_icon-rollover u_cp u_ml-5 " aria-describedby="popup-19765"><svg
+                          width="16" height="16" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"
                           class xmlns:xlink="http://www.w3.org/1999/xlink">
                           <path class="u_fill"
                             d="M19.629 8.818l7.553 7.555L9.554 34H2v-7.555L19.629 8.816v.002zM22.146 6.3l3.777-3.779a1.78 1.78 0 012.518 0L33.48 7.56a1.78 1.78 0 010 2.518L29.7 13.854 22.147 6.3z"
@@ -565,27 +379,19 @@
   </div>
   <div class>
     <div class="u_pagination " id="u_pagination">
-      <div class="u_pagination-record u_flex u_align-center"><span
-          class="u_pagination-title u_mr-10">Entries</span>
+      <div class="u_pagination-record u_flex u_align-center"><span class="u_pagination-title u_mr-10">Entries</span>
         <div class="u_pagination-record-wpr">
-          <div class=" css-2b097c-container"><span aria-live="polite"
-              aria-atomic="false" aria-relevant="additions text"
+          <div class=" css-2b097c-container"><span aria-live="polite" aria-atomic="false" aria-relevant="additions text"
               class="css-7pg0cj-a11yText"></span>
             <div class="u_record__control css-yk16xz-control">
-              <div
-                class="u_record__value-container u_record__value-container--has-value css-1hwfws3">
-                <div
-                  class="u_record__single-value css-1uccc91-singleValue">40</div><input
-                  id="react-select-103-input"
-                  readonly tabindex="0" aria-autocomplete="list"
-                  class="css-62g3xt-dummyInput" value>
+              <div class="u_record__value-container u_record__value-container--has-value css-1hwfws3">
+                <div class="u_record__single-value css-1uccc91-singleValue">40</div><input id="react-select-103-input"
+                  readonly tabindex="0" aria-autocomplete="list" class="css-62g3xt-dummyInput" value>
               </div>
               <div class="u_record__indicators css-1wy0on6"><span
                   class="u_record__indicator-separator css-1okebmr-indicatorSeparator"></span>
-                <div
-                  class="u_record__indicator u_record__dropdown-indicator css-tlfecz-indicatorContainer"
-                  aria-hidden="true"><svg height="20" width="20"
-                    viewBox="0 0 20 20" aria-hidden="true"
+                <div class="u_record__indicator u_record__dropdown-indicator css-tlfecz-indicatorContainer"
+                  aria-hidden="true"><svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true"
                     focusable="false" class="css-8mmkcg">
                     <path
                       d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z">
@@ -597,32 +403,18 @@
         </div>
       </div>
       <ul class="u_flex">
-        <li class="previous disabled"><a
-            class="u_pagination-link u_pagination-link-previous" tabindex="0"
-            role="button"
-            aria-disabled="true" aria-label="Previous page" rel="prev"><svg
-              width="15" height="15" viewBox="0 0 36 36"
-              fill="none" xmlns="http://www.w3.org/2000/svg" class
-              xmlns:xlink="http://www.w3.org/1999/xlink">
-              <path class="u_fill"
-                d="M15.11 18l12.446 12.445L24 34 8 18 24 2l3.556 3.555L15.11 18z"
-                fill="#4E525F">
+        <li class="previous disabled"><a class="u_pagination-link u_pagination-link-previous" tabindex="0" role="button"
+            aria-disabled="true" aria-label="Previous page" rel="prev"><svg width="15" height="15" viewBox="0 0 36 36"
+              fill="none" xmlns="http://www.w3.org/2000/svg" class xmlns:xlink="http://www.w3.org/1999/xlink">
+              <path class="u_fill" d="M15.11 18l12.446 12.445L24 34 8 18 24 2l3.556 3.555L15.11 18z" fill="#4E525F">
               </path>
             </svg></a></li>
-        <li class="selected"><a role="button"
-            class="u_pagination-link u_pagination-link-active" tabindex="0"
-            aria-label="Page 1 is your current page"
-            aria-current="page">1</a></li>
-        <li class="next disabled"><a
-            class="u_pagination-link u_pagination-link-next" tabindex="0"
-            role="button"
-            aria-disabled="true" aria-label="Next page" rel="next"><svg
-              width="15" height="15" viewBox="0 0 36 36"
-              fill="none" xmlns="http://www.w3.org/2000/svg" class
-              xmlns:xlink="http://www.w3.org/1999/xlink">
-              <path class="u_fill"
-                d="M20.445 18L8 5.555 11.555 2l16 16-16 16L8 30.445 20.445 18z"
-                fill="#4E525F">
+        <li class="selected"><a role="button" class="u_pagination-link u_pagination-link-active" tabindex="0"
+            aria-label="Page 1 is your current page" aria-current="page">1</a></li>
+        <li class="next disabled"><a class="u_pagination-link u_pagination-link-next" tabindex="0" role="button"
+            aria-disabled="true" aria-label="Next page" rel="next"><svg width="15" height="15" viewBox="0 0 36 36"
+              fill="none" xmlns="http://www.w3.org/2000/svg" class xmlns:xlink="http://www.w3.org/1999/xlink">
+              <path class="u_fill" d="M20.445 18L8 5.555 11.555 2l16 16-16 16L8 30.445 20.445 18z" fill="#4E525F">
               </path>
             </svg></a></li>
       </ul>

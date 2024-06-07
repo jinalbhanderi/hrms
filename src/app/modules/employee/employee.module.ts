@@ -13,6 +13,18 @@ import { ProfileUpdateRequestsComponent } from './profile-update-requests/profil
 import { EmployeeExitRequestsComponent } from './employee-exit-requests/employee-exit-requests.component';
 import { SettlementListComponent } from './settlement-list/settlement-list.component';
 import { AddNewEmployeeComponent } from './add-new-employee/add-new-employee.component';
+import { NgSelectModule } from '@ng-select/ng-select';
+import { FilterComponent } from './employee-list/filter/filter.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { FilterOfProbaionComponent } from './employees-probation/filter-of-probaion/filter-of-probaion.component';
+import { EmployeeExitDetailsComponent } from './employee-exits/employee-exit-details/employee-exit-details.component';
+import { AddEmployeeExitComponent } from './employee-exits/add-employee-exit/add-employee-exit.component';
+import { FormsModule } from '@angular/forms';
+import { FilterOfExitComponent } from './employee-exits/filter-of-exit/filter-of-exit.component';
+import { RevokeReasonComponent } from './employee-exits/revoke-reason/revoke-reason.component';
+import { AddAgreementComponent } from './agreement-list/add-agreement/add-agreement.component';
+import { AgreementsDetailsComponent } from './agreement-list/agreements-details/agreements-details.component';
+import { ActivityLogsOfAgreementComponent } from './agreement-list/activity-logs-of-agreement/activity-logs-of-agreement.component';
 
 
 @NgModule({
@@ -27,11 +39,24 @@ import { AddNewEmployeeComponent } from './add-new-employee/add-new-employee.com
     ProfileUpdateRequestsComponent,
     EmployeeExitRequestsComponent,
     SettlementListComponent,
-    AddNewEmployeeComponent
+    AddNewEmployeeComponent,
+    FilterComponent,
+    FilterOfProbaionComponent,
+    EmployeeExitDetailsComponent,
+    AddEmployeeExitComponent,
+    FilterOfExitComponent,
+    RevokeReasonComponent,
+    AddAgreementComponent,
+    AgreementsDetailsComponent,
+    ActivityLogsOfAgreementComponent,
   ],
   imports: [
     CommonModule,
-    EmployeeRoutingModule
+    EmployeeRoutingModule,
+    NgSelectModule,
+    MatDialogModule,
+    FormsModule,
+    NgSelectModule
   ]
 })
 export class EmployeeModule { }

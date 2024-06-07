@@ -23,6 +23,7 @@ import { PresentDefaultsComponent } from './present-defaults/present-defaults.co
 import { NonWorkingDayComponent } from './non-working-day/non-working-day.component';
 import { WorkingDayComponent } from './working-day/working-day.component';
 import { ShiftCalendarComponent } from './shift-calendar/shift-calendar.component';
+import { TimesheetComponent } from './my-attendance/timesheet/timesheet.component';
 
 
 @NgModule({
@@ -47,11 +48,13 @@ import { ShiftCalendarComponent } from './shift-calendar/shift-calendar.componen
     PresentDefaultsComponent,
     NonWorkingDayComponent,
     WorkingDayComponent,
-    ShiftCalendarComponent
+    ShiftCalendarComponent,
+    TimesheetComponent
   ],
   imports: [
     CommonModule,
-    AttendanceRoutingModule
+    AttendanceRoutingModule,
+    
   ]
 })
 export class AttendanceModule { }

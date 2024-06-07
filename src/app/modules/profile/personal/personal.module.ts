@@ -11,6 +11,8 @@ import { AddressComponent } from './address/address.component';
 import { FamilyInfoComponent } from './family-info/family-info.component';
 import { EducationComponent } from './education/education.component';
 import { PreviousEmployerComponent } from './previous-employer/previous-employer.component';
+import { ActivityLogComponent } from './basic-info/activity-log/activity-log.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,7 @@ import { PreviousEmployerComponent } from './previous-employer/previous-employer
     FamilyInfoComponent,
     EducationComponent,
     PreviousEmployerComponent,
+    ActivityLogComponent,
   ],
   imports: [
     CommonModule,
@@ -30,6 +33,7 @@ import { PreviousEmployerComponent } from './previous-employer/previous-employer
     MatSelectModule,
     FormsModule,
     ReactiveFormsModule,
+    MatDialogModule
   ],
 })
 export class PersonalModule {}

@@ -10,6 +10,10 @@ import { AdjustedBalanceComponent } from './adjusted-balance/adjusted-balance.co
 import { MyCompOffComponent } from './my-comp-off/my-comp-off.component';
 import { CompOffComponent } from './comp-off/comp-off.component';
 import { AddLeaveComponent } from './add-leave/add-leave.component';
+import { AdjustBalanceComponent } from './my-leave/adjust-balance/adjust-balance.component';
+import { NgSelectModule } from '@ng-select/ng-select';
+import { MatDialogModule } from '@angular/material/dialog';
+import { AddAdjustBalanceComponent } from './adjusted-balance/add-adjust-balance/add-adjust-balance.component';
 
 
 @NgModule({
@@ -22,10 +26,14 @@ import { AddLeaveComponent } from './add-leave/add-leave.component';
     MyCompOffComponent,
     CompOffComponent,
     AddLeaveComponent,
+    AdjustBalanceComponent,
+    AddAdjustBalanceComponent
   ],
   imports: [
     CommonModule,
-    LeaveRoutingModule
+    LeaveRoutingModule,
+    NgSelectModule,
+    MatDialogModule
   ]
 })
 export class LeaveModule { }

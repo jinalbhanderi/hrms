@@ -8,6 +8,7 @@ import { CompensationReportComponent } from './compensation-report/compensation-
 import { DownloadRequestReportComponent } from './download-request-report/download-request-report.component';
 import { UploadReportComponent } from './upload-report/upload-report.component';
 import { CompanyHoursReportComponent } from './company-hours-report/company-hours-report.component';
+import { NgSelectModule } from '@ng-select/ng-select';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { CompanyHoursReportComponent } from './company-hours-report/company-hour
   ],
   imports: [
     CommonModule,
-    ReportRoutingModule
+    ReportRoutingModule,
+    NgSelectModule
   ]
 })
 export class ReportModule { }

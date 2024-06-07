@@ -13,6 +13,7 @@ import { AttendanceVerificationReportComponent } from './attendance-verification
 import { AttendanceTypeReportComponent } from './attendance-type-report/attendance-type-report.component';
 import { OvertimeReportComponent } from './overtime-report/overtime-report.component';
 import { BreakHourReportComponent } from './break-hour-report/break-hour-report.component';
+import { NgSelectModule } from '@ng-select/ng-select';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { BreakHourReportComponent } from './break-hour-report/break-hour-report.
   ],
   imports: [
     CommonModule,
-    AttendanceReportRoutingModule
+    AttendanceReportRoutingModule,
+    NgSelectModule
   ]
 })
 export class AttendanceReportModule { }

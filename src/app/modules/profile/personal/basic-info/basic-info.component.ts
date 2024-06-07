@@ -1,5 +1,7 @@
 import { Component, EventEmitter } from '@angular/core';
 import { FormControl } from '@angular/forms';
+import { MatDialog } from '@angular/material/dialog';
+import { ActivityLogComponent } from './activity-log/activity-log.component';
 
 @Component({
   selector: 'app-basic-info',
@@ -32,7 +34,7 @@ export class BasicInfoComponent {
   }
 
   out = new EventEmitter();
-  constructor() {}
+  constructor(public dialog: MatDialog) {}
   cities = [
     { id: 1, name: 'Vilnius' },
     { id: 2, name: 'Kaunas' },
@@ -50,4 +52,12 @@ export class BasicInfoComponent {
     'Sausage',
     'Tomato',
   ];
+
+  openModal(): void {
+    const dialogRef = this.dialog.open(ActivityLogComponent, {});
+
+    dialogRef.afterClosed().subscribe((result) => {
+      console.log('The dialog was closed');
+    });
+  }
 }
