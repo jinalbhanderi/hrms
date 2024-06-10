@@ -1,0 +1,64 @@
+<div class="u_sm active  ">
+    <div class="false u_sm-overlay"></div>
+    <div class="u_sm-layout" style="max-width: 800px;">
+        <div class="u_sm-header" id="u_sm-header">
+            <div class="u_sm-header-left">
+                <h4>Add Reimbursement Type</h4>
+            </div>
+            <div class="u_sm-header-right">
+                <div class="u_sm-close" [mat-dialog-close]="true"><svg width="12" height="12" viewBox="0 0 36 36" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" class="" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <path class="u_fill-stroke"
+                            d="M18 14.557L7.08 3.637l-.142-.142-.142.141-3.16 3.16-.141.142.141.141L14.557 18 3.637 28.92l-.142.142.141.142 3.16 3.16.142.141.141-.141L18 21.443l10.92 10.92.142.142.142-.141 3.16-3.16.141-.142-.141-.141L21.443 18l10.92-10.922.142-.141-.141-.142-3.16-3.16-.142-.141-.141.141L18 14.557z"
+                            stroke="73788B" fill="#007AFF" stroke-width="0.4"></path>
+                    </svg></div>
+            </div>
+        </div>
+        <div class="u_sm-body" id="u_sm-body" style="max-height: calc(528px);">
+            <form>
+                <div class="u_p-15">
+                    <div class="u_row">
+                        <div class="u_col-4 u_mb-15">
+                            <div class="u_input"><input type="text" placeholder=" " name="code" autocomplete="off"
+                                    value=""><label>Expense Code <span>*</span></label></div>
+                        </div>
+                        <div class="u_col-4 u_mb-15">
+                            <div class="u_input"><input type="text" placeholder=" " name="name" autocomplete="off"
+                                    value=""><label>Expense Name <span>*</span></label></div>
+                        </div>
+                        <div class="u_col-4 u_mb-15">
+                            <div class="u_input"><input type="number" placeholder=" " name="amount" autocomplete="off"
+                                    min="0" max="200" value=""><label>Highest Amount </label></div>
+                        </div>
+                        <div class="u_col-12 u_mb-15">
+                            <div class="u_input u_input-textarea"><textarea class="u_textarea u_textarea-five-rows"
+                                    name="description" placeholder=" "></textarea><label>Description </label></div>
+                        </div>
+                        <div class="u_col-12 u_mb-15">
+                            <div class="u_checkbox undefined   "><input id="isActive" type="checkbox" name="isActive"
+                                    label="Mark this as Active"><label for="isActive"><span>Mark this as
+                                        Active</span></label></div>
+                        </div>
+                        <div class="u_col-12 u_mb-15">
+                            <div class="u_checkbox undefined   "><input id="isRequireAttachment" type="checkbox"
+                                    name="isRequireAttachment" label="Attachment Require"><label
+                                    for="isRequireAttachment"><span>Attachment Require</span></label></div>
+                        </div>
+                        <div class="u_col-12 u_mb-15">
+                            <div class="u_checkbox undefined   "><input id="isShowHighestAmount" type="checkbox"
+                                    name="isShowHighestAmount"
+                                    label="Do you want to show Highest Amount in Reimbursement?"><label
+                                    for="isShowHighestAmount"><span>Do you want to show Highest Amount in
+                                        Reimbursement?</span></label></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="u_modal-buttons">
+                    <div class="u_flex u_align-center u_content-between"><button type="button"
+                            class="u_btn white small u_btn__white" [mat-dialog-close]="true">Cancel</button><button type="button"
+                            class="u_btn blue small u_btn__blue" [mat-dialog-close]="true">Save</button></div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -7,8 +7,16 @@ import { Component } from '@angular/core';
 })
 export class SocialComponent {
   currentComponent: string = '';
+  postForm: boolean = false;
+  data: boolean = false;
 
   showComponent(component: string) {
     this.currentComponent = component;
+  }
+  openPostform() {
+    this.postForm = !this.postForm;
+  }
+  openData() {
+    this.data = !this.data;
   }
 }

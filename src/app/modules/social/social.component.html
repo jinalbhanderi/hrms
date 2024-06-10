@@ -7,21 +7,21 @@
             style="position: relative; overflow: hidden; width: 100%; height: 100%;">
             <div style="position: absolute; inset: 0px; overflow: scroll; margin-right: -14px; margin-bottom: -14px;">
               <ul class="u_post-filter u_sidemenu">
-                <li class="u_sidemenu-item-active">
+                <li routerLinkActive="u_sidemenu-item-active">
                   <div class="u_sidemenu-item">
-                    <p><span class="u_flex u_align-center"><i class="u_flex" (click)="showComponent('A')"><svg width="14" height="14"
-                            viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <p><span class="u_flex u_align-center" routerLink="/announcement/company-feed"><i
+                          class="u_flex"><svg width="14" height="14" viewBox="0 0 36 36" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <path class="u_fill"
                               d="M29.2 34H6.8A4.8 4.8 0 012 29.2V3.6A1.6 1.6 0 013.6 2H26a1.6 1.6 0 011.6 1.6v19.2H34v6.4a4.8 4.8 0 01-4.8 4.8zm-1.6-8v3.2a1.6 1.6 0 003.2 0V26h-3.2zM8.4 10v3.2h12.8V10H8.4zm0 6.4v3.2h12.8v-3.2H8.4zm0 6.4V26h8v-3.2h-8z"
                               fill="#4E525F"></path>
                           </svg></i>Company Feed</span></p>
                   </div>
                 </li>
-                <li>
+                <li routerLinkActive="u_sidemenu-item-active">
                   <div class="u_sidemenu-item">
-                    <p><span class="u_flex u_align-center" (click)="showComponent('By')"><i class="u_flex"><svg width="14" height="14"
-                            viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    <p><span class="u_flex u_align-center" routerLink="/announcement/my-feed"><i class="u_flex"><svg
+                            width="14" height="14" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink">
                             <path class="u_fill"
                               d="M29.2 34H6.8A4.8 4.8 0 012 29.2V3.6A1.6 1.6 0 013.6 2H26a1.6 1.6 0 011.6 1.6v19.2H34v6.4a4.8 4.8 0 01-4.8 4.8zm-1.6-8v3.2a1.6 1.6 0 003.2 0V26h-3.2zM8.4 10v3.2h12.8V10H8.4zm0 6.4v3.2h12.8v-3.2H8.4zm0 6.4V26h8v-3.2h-8z"
@@ -29,10 +29,10 @@
                           </svg></i>My Feed</span></p>
                   </div>
                 </li>
-                <li>
+                <li routerLinkActive="u_sidemenu-item-active">
                   <div class="u_sidemenu-item">
-                    <p><span class="u_flex u_align-center" (click)="showComponent('C')"><i class="u_flex"><svg width="14" height="14"
-                            viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    <p><span class="u_flex u_align-center" routerLink="/announcement/draft"><i class="u_flex"><svg
+                            width="14" height="14" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink">
                             <path class="u_fill"
                               d="M30.526 23.189v9.224c0 .42-.166.825-.461 1.122a1.566 1.566 0 01-1.113.465H3.575a1.572 1.572 0 01-1.118-.477A1.603 1.603 0 012 32.39V13.2h9.509c.42 0 .823-.169 1.12-.469.298-.3.465-.707.465-1.131V2h15.85c.874 0 1.582.728 1.582 1.587v6.024l-14.261 14.4-.01 6.781 6.73.01 7.541-7.613zm1.233-10.296L34 15.155 21.674 27.6l-2.244-.003.003-2.26 12.326-12.444zM2 10l7.924-7.995V10H2z"
@@ -40,10 +40,10 @@
                           </svg></i>Draft</span></p>
                   </div>
                 </li>
-                <li>
+                <li routerLinkActive="u_sidemenu-item-active">
                   <div class="u_sidemenu-item">
-                    <p><span class="u_flex u_align-center"><i class="u_flex"><svg width="14" height="14"
-                            viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    <p><span class="u_flex u_align-center" routerLink="/announcement/bookmarks"><i class="u_flex"><svg
+                            width="14" height="14" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink">
                             <path class="u_fill"
                               d="M7.556 2h21.777c.413 0 .809.163 1.1.454.292.29.456.685.456 1.096v29.674a.773.773 0 0 1-.8.776.78.78 0 0 1-.392-.119l-11.253-7.033L7.192 33.88A.78.78 0 0 1 6 33.224V3.55c0-.411.164-.805.456-1.096.291-.29.687-.454 1.1-.454Z"
@@ -51,10 +51,10 @@
                           </svg></i>Bookmarks</span></p>
                   </div>
                 </li>
-                <li>
+                <li routerLinkActive="u_sidemenu-item-active">
                   <div class="u_sidemenu-item">
-                    <p><span class="u_flex u_align-center"><i class="u_flex"><svg width="14" height="14"
-                            viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    <p><span class="u_flex u_align-center" routerLink="/announcement/mentions"><i class="u_flex"><svg
+                            width="14" height="14" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink">
                             <path class="u_fill"
                               d="M30.8 18a12.8 12.8 0 1 0-5.7 10.651l1.777 2.663A15.926 15.926 0 0 1 18 34C9.163 34 2 26.837 2 18S9.163 2 18 2s16 7.163 16 16v2.4a5.6 5.6 0 0 1-10.234 3.146A8 8 0 1 1 22.8 11.6H26v8.8a2.4 2.4 0 0 0 4.8 0V18ZM18 13.2a4.8 4.8 0 1 0 0 9.6 4.8 4.8 0 0 0 0-9.6Z"
@@ -103,13 +103,14 @@
                               d="M15.714 15.714V2h4.572v13.714H34v4.572H20.286V34h-4.572V20.286H2v-4.572h13.714z"
                               fill="#007AFF"></path>
                           </svg>
-                          <p>What's on your mind?</p>
+                          <p (click)="openPostform()">What's on your mind?</p>
                         </div>
                       </div>
                     </div>
-                    <div class="u_postForm-right">
-                      <div class="u_post-events-title "><span><svg width="18" height="18" viewBox="0 0 36 36"
-                            fill="none" xmlns="http://www.w3.org/2000/svg"
+                    <div class="u_postForm-right" >
+                      <div class="u_post-events-title " (click)="openData()">
+                        <span>
+                          <svg width="18" height="18" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink">
                             <path class="u_fill"
                               d="M20.476 25.562 10.425 15.516c-.146-.146-.33-.22-.512-.183a.722.722 0 0 0-.512.22.465.465 0 0 0-.146.219l-7.2 17.205a.711.711 0 0 0 0 .548c.073.183.22.329.365.402a.691.691 0 0 0 .293.073h.146l.036-.036h.074l17.325-7.27c.183-.073.292-.219.365-.402a.585.585 0 0 0-.036-.548.642.642 0 0 0-.147-.182ZM5.052 29.543l1.389 1.389-2.376.986.987-2.375Zm9.796-2.118-2.778 1.132-4.679-4.64 1.133-2.776 6.324 6.284ZM12.764 15.699l-.256.256 1.024 1.022.255-.255c.914-.914 1.536-2.083 1.828-3.361a7.262 7.262 0 0 0-.11-3.544l-.11-.365-1.388.438.11.33c.292.912.292 1.899.109 2.812a5.498 5.498 0 0 1-1.462 2.667Z"
@@ -120,50 +121,285 @@
                             <path class="u_fill"
                               d="m34 20.557-2.266-.694-.695-2.265-1.718 1.608-2.302-.548.548 2.301-1.608 1.717 2.266.694.694 2.265 1.718-1.607 2.303.548-.548-2.302L34 20.557ZM22.194 13.8l.695 2.264 1.718-1.607 2.302.547-.548-2.301 1.608-1.717-2.266-.694-.694-2.265-1.718 1.608-2.303-.548.548 2.301-1.608 1.717 2.266.694ZM21.447 15.556l-4.471 4.47-1.008-1.008 4.471-4.469 1.008 1.008Z"
                               fill="#FFA700"></path>
-                          </svg></span>
+                          </svg>
+                        </span>
                         <p>Events</p>
                         <div class="u_tag" style="background-color: rgba(255, 167, 0, 0.1);">
                           <p style="color: rgb(255, 167, 0);">0</p>
                         </div>
                       </div>
                       <div class="u_announcement-filter-options">
-                        <div class="u_post-filter u_filter-responsive false false">
-                          <div class="u_post-type css-2b097c-container"><span aria-live="polite" aria-atomic="false"
-                              aria-relevant="additions text" class="css-7pg0cj-a11yText"></span>
-                            <div class="u_select__control css-yk16xz-control">
-                              <div class="u_select__value-container u_select__value-container--has-value css-1hwfws3">
-                                <div class="u_select__single-value css-1uccc91-singleValue">
-                                  <div class="u_flex u_align-center"><svg width="14" height="14" viewBox="0 0 36 36"
-                                      fill="none" xmlns="http://www.w3.org/2000/svg"
-                                      xmlns:xlink="http://www.w3.org/1999/xlink">
-                                      <path class="u_fill"
-                                        d="M32.567 2.042v4.44H3.423v-4.44h29.144zM15.018 33.92v-.443c0-4.37-.005-8.74.007-13.109a1.534 1.534 0 00-.434-1.116c-3.15-3.42-6.29-6.848-9.432-10.274-.133-.144-.264-.288-.435-.476h26.54c-.155.171-.276.306-.4.44-3.163 3.45-6.324 6.9-9.494 10.344-.277.302-.405.62-.403 1.033.01 2.74.003 5.48.01 8.22a.591.591 0 01-.226.504c-1.826 1.552-3.646 3.113-5.468 4.67-.068.06-.142.111-.265.206z"
-                                        fill="#4E525F"></path>
-                                    </svg>
-                                    <p class="u_one-line">All</p>
-                                  </div>
-                                </div><input id="react-select-2-input" readonly="" tabindex="0" aria-autocomplete="list"
-                                  class="css-62g3xt-dummyInput" value="">
-                              </div>
-                              <div class="u_select__indicators css-1wy0on6"><span
-                                  class="u_select__indicator-separator css-1okebmr-indicatorSeparator"></span>
-                                <div
-                                  class="u_select__indicator u_select__dropdown-indicator css-tlfecz-indicatorContainer"
-                                  aria-hidden="true"><svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true"
-                                    focusable="false" class="css-8mmkcg">
-                                    <path
-                                      d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z">
-                                    </path>
-                                  </svg></div>
-                              </div>
-                            </div><input name="postType" type="hidden" value="1">
+                        <div class="u_filter u_filter-select ">
+                          <div class=" css-2b097c-container">
+                            <span aria-live="polite" aria-atomic="false" aria-relevant="additions text"
+                              class="css-7pg0cj-a11yText"></span>
+                            <div class="dropdown-container input-bg ">
+                              <ng-select placeholder="Company">
+                                <ng-option>All</ng-option>
+                                <ng-option>Announcement</ng-option>
+                                <ng-option>Post</ng-option>
+                                <ng-option>Poll</ng-option>
+                                <ng-option>Praise</ng-option>
+                                <ng-option>Wishes</ng-option>
+                              </ng-select>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
+
+
+
+                <div class="u_post-form" *ngIf="postForm">
+                  <div class="u_pb-10 u_post-form-inner">
+                    <div class="u_post-form-filter">
+                      <p class="u_flex-shrink">Post to:</p>
+                      <div class="u_post-filter">
+                        <div class="u_post-type u_ml-10 css-2b097c-container"><span aria-live="polite"
+                            aria-atomic="false" aria-relevant="additions text" class="css-7pg0cj-a11yText"></span>
+                          <div class="u_select__control css-yk16xz-control">
+                            <div class="u_select__value-container u_select__value-container--has-value css-1hwfws3">
+                              <div class="u_select__single-value css-1uccc91-singleValue">
+                                <div class="u_flex u_align-center"><svg width="16" height="16" viewBox="0 0 36 36"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg" class=""
+                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <path class="u_fill"
+                                      d="M9.62 24.128h.06c.359 0 .64-.317.64-.704V11.362c0-.388-.281-.705-.64-.705H4.017c-1.107 0-2.016 1-2.016 2.227v9.025c0 1.219.909 2.22 2.016 2.22h.373l2.29 6.862c.345 1.029 1.248 1.726 2.246 1.726.282 0 .557-.056.826-.162l.122-.05c.595-.246 1.075-.732 1.344-1.366a2.839 2.839 0 0 0 .07-2.015L9.62 24.128ZM29.232 3.027a.61.61 0 0 0-.716.303c-3.034 5.333-8.25 8.518-13.966 8.518H11.6v11.09h2.95c5.709 0 10.925 3.177 13.96 8.518l.005.007a.635.635 0 0 0 .538.324.567.567 0 0 0 .186-.028c.268-.092.454-.367.454-.677V3.703c0-.31-.186-.592-.46-.676ZM30.972 12.375v10.037C32.749 21.586 34 19.648 34 17.394s-1.25-4.192-3.028-5.019Z"
+                                      fill="#9A5BFF"></path>
+                                  </svg>
+                                  <p class="u_one-line">Announcement</p>
+                                </div>
+                              </div><input id="react-select-15-input" readonly="" tabindex="0" aria-autocomplete="list"
+                                class="css-62g3xt-dummyInput" value="">
+                            </div>
+                            <div class="u_select__indicators css-1wy0on6"><span
+                                class="u_select__indicator-separator css-1okebmr-indicatorSeparator"></span>
+                              <div
+                                class="u_select__indicator u_select__dropdown-indicator css-tlfecz-indicatorContainer"
+                                aria-hidden="true"><svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true"
+                                  focusable="false" class="css-8mmkcg">
+                                  <path
+                                    d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z">
+                                  </path>
+                                </svg></div>
+                            </div>
+                          </div><input name="postType" type="hidden" value="announcement">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="u_announcement-form">
+                    <div class="u_input"><input type="text" name="title" placeholder="Title"
+                        class="u_announcement-title" value="">
+                    </div>
+                    <div class="u_desc ">
+                      <div class="u_input">
+                        <div class="u_flex u_draft-editor false">
+                          <div class="u_editor-container " style="min-height: 115px;">
+                            <div class="DraftEditor-root">
+                              <div class="public-DraftEditorPlaceholder-root" style="display: block;">
+                                <div class="public-DraftEditorPlaceholder-inner" id="placeholder-0.9814203517648283"
+                                  style="white-space: pre-wrap;">Add description</div>
+                              </div>
+                              <div class="DraftEditor-editorContainer">
+                                <div aria-autocomplete="list" aria-describedby="placeholder-0.9814203517648283"
+                                  aria-expanded="false" class="notranslate public-DraftEditor-content"
+                                  contenteditable="true" role="combobox" spellcheck="false"
+                                  style="outline: none; user-select: text; white-space: pre-wrap; overflow-wrap: break-word;">
+                                  <div data-contents="true">
+                                    <div class="" data-block="true" data-editor="0.9814203517648283"
+                                      data-offset-key="8nbic-0-0">
+                                      <div data-offset-key="8nbic-0-0"
+                                        class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"><span
+                                          data-offset-key="8nbic-0-0"><br data-text="true"></span></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="u_draft-emoji-wrapper"></div>
+                            <p class="u_text-limit">0 / 2500</p>
+                          </div>
+                          <div class="u_emoji u_w-full">
+                            <div class="t16lpgj">
+                              <div class="u_flex">
+                                <div class="bi09khh"><button class="bc4rxid" type="button" role="button"
+                                    aria-label="BOLD text"><svg height="24" viewBox="0 0 24 24" width="24"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path
+                                        d="M15.6 10.79c.97-.67 1.65-1.77 1.65-2.79 0-2.26-1.75-4-4-4H7v14h7.04c2.09 0 3.71-1.7 3.71-3.79 0-1.52-.86-2.82-2.15-3.42zM10 6.5h3c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5h-3v-3zm3.5 9H10v-3h3.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5z">
+                                      </path>
+                                      <path d="M0 0h24v24H0z" fill="none"></path>
+                                    </svg></button></div>
+                                <div class="bi09khh"><button class="bc4rxid" type="button" role="button"
+                                    aria-label="ITALIC text"><svg height="24" viewBox="0 0 24 24" width="24"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M0 0h24v24H0z" fill="none"></path>
+                                      <path d="M10 4v3h2.21l-3.42 8H6v3h8v-3h-2.21l3.42-8H18V4z"></path>
+                                    </svg></button></div>
+                                <div class="bi09khh"><button class="bc4rxid" type="button" role="button"
+                                    aria-label="UNDERLINE text"><svg height="24" viewBox="0 0 24 24" width="24"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M0 0h24v24H0z" fill="none"></path>
+                                      <path
+                                        d="M12 17c3.31 0 6-2.69 6-6V3h-2.5v8c0 1.93-1.57 3.5-3.5 3.5S8.5 12.93 8.5 11V3H6v8c0 3.31 2.69 6 6 6zm-7 2v2h14v-2H5z">
+                                      </path>
+                                    </svg></button></div>
+                                <div class="bi09khh"><button class="bc4rxid" type="button" role="button"
+                                    aria-label="create code-block"><svg height="24" viewBox="0 0 24 24" width="24"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M0 0h24v24H0V0z" fill="none"></path>
+                                      <path
+                                        d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z">
+                                      </path>
+                                    </svg></button></div>
+                                <div class="bi09khh"><button class="bc4rxid" type="button" role="button"
+                                    aria-label="create unordered-list-item"><svg height="24" viewBox="0 0 24 24"
+                                      width="24" xmlns="http://www.w3.org/2000/svg">
+                                      <path
+                                        d="M4 10.5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5zm0-6c-.83 0-1.5.67-1.5 1.5S3.17 7.5 4 7.5 5.5 6.83 5.5 6 4.83 4.5 4 4.5zm0 12c-.83 0-1.5.68-1.5 1.5s.68 1.5 1.5 1.5 1.5-.68 1.5-1.5-.67-1.5-1.5-1.5zM7 19h14v-2H7v2zm0-6h14v-2H7v2zm0-8v2h14V5H7z">
+                                      </path>
+                                      <path d="M0 0h24v24H0V0z" fill="none"></path>
+                                    </svg></button></div>
+                                <div class="bi09khh"><button class="bc4rxid" type="button" role="button"
+                                    aria-label="create ordered-list-item"><svg height="24" viewBox="0 0 24 24"
+                                      width="24" xmlns="http://www.w3.org/2000/svg">
+                                      <path
+                                        d="M2 17h2v.5H3v1h1v.5H2v1h3v-4H2v1zm1-9h1V4H2v1h1v3zm-1 3h1.8L2 13.1v.9h3v-1H3.2L5 10.9V10H2v1zm5-6v2h14V5H7zm0 14h14v-2H7v2zm0-6h14v-2H7v2z">
+                                      </path>
+                                      <path d="M0 0h24v24H0z" fill="none"></path>
+                                    </svg></button></div>
+                                <div class="bi09khh"><button class="bc4rxid" type="button" role="button"
+                                    aria-label="create blockquote"><svg height="24" viewBox="0 0 24 24" width="24"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path>
+                                      <path d="M0 0h24v24H0z" fill="none"></path>
+                                    </svg></button></div>
+                                <div class="u_p-5 u_flex u_item-center">
+                                  <div class="e183m4hm"><button class="e8k2yoa" type="button"><svg width="20"
+                                        height="20" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                        class="" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <path class="u_fill"
+                                          d="M18 2c8.837 0 16 7.163 16 16s-7.163 16-16 16S2 26.837 2 18 9.163 2 18 2zm0 3.2a12.8 12.8 0 100 25.6 12.8 12.8 0 000-25.6zm8 14.4a8 8 0 01-16 0h16z"
+                                          fill="#73788B"></path>
+                                        <circle class="u_fill" cx="12.773" cy="13.815" r="2.24" fill="#73788B">
+                                        </circle>
+                                        <circle class="u_fill" cx="23.227" cy="13.815" r="2.24" fill="#73788B">
+                                        </circle>
+                                      </svg></button>
+                                    <div class="e6amujp"></div>
+                                  </div>
+                                </div>
+                                <div class="u_attach-editor"><input type="file" class="u_attach-more-input u_cp"
+                                    title="" id="u_upload" accept="video/*,image/*" autocomplete="off" multiple=""><svg
+                                    width="18" height="18" viewBox="0 0 36 36" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" class=""
+                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <path class="u_fill"
+                                      d="M23.512 11.503l-9.708 9.523a1.682 1.682 0 00-.524 1.196 1.655 1.655 0 00.503 1.205 1.72 1.72 0 001.228.493 1.743 1.743 0 001.22-.514l9.71-9.52a5.002 5.002 0 001.508-3.572c0-1.34-.542-2.624-1.508-3.571a5.202 5.202 0 00-3.641-1.48 5.202 5.202 0 00-3.642 1.48l-9.71 9.523a8.413 8.413 0 00-1.906 2.731 8.277 8.277 0 00-.041 6.491 8.407 8.407 0 001.87 2.755 8.598 8.598 0 002.81 1.835 8.732 8.732 0 006.619-.042 8.592 8.592 0 002.785-1.87l9.71-9.52 2.427 2.38-9.71 9.523a12.033 12.033 0 01-3.898 2.554 12.221 12.221 0 01-9.197 0 12.035 12.035 0 01-3.898-2.554 11.772 11.772 0 01-2.604-3.823 11.587 11.587 0 010-9.02 11.771 11.771 0 012.604-3.822l9.712-9.521A8.673 8.673 0 0122.268 2c2.25.02 4.403.905 5.994 2.465a8.336 8.336 0 012.513 5.879 8.331 8.331 0 01-2.409 5.92l-9.708 9.526a5.157 5.157 0 01-1.67 1.095 5.238 5.238 0 01-3.943 0 5.159 5.159 0 01-1.67-1.096 5.044 5.044 0 01-1.117-1.639 4.966 4.966 0 010-3.866 5.046 5.046 0 011.117-1.638l9.71-9.523 2.427 2.38z"
+                                      fill="#73788B"></path>
+                                  </svg></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="u_post-share-options">
+                      <div class="u_input u_post-datepicker-input">
+                        <div class="u_datepicker u_post-datepicker u_post-share-option u_datetime-picker">
+                          <div class="react-datepicker-wrapper">
+                            <div class="react-datepicker__input-container"><input type="text"
+                                placeholder="Pin this on top till (Date)" autocomplete="off"
+                                class="u_post-datepicker u_post-share-option u_datetime-picker" value=""></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="u_post-share-option">
+                        <div class="u_post-tags-add"><svg width="16" height="16" viewBox="0 0 36 36" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" class="" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path class="u_fill"
+                              d="M18 2c8.837 0 16 7.163 16 16s-7.163 16-16 16S2 26.837 2 18 9.163 2 18 2zm0 3.2a12.8 12.8 0 100 25.6 12.8 12.8 0 000-25.6zm8 14.4a8 8 0 01-16 0h16z"
+                              fill="#60B158"></path>
+                            <circle class="u_fill" cx="12.773" cy="13.815" r="2.24" fill="#60B158"></circle>
+                            <circle class="u_fill" cx="23.227" cy="13.815" r="2.24" fill="#60B158"></circle>
+                          </svg>
+                          <p class="u_pl-8"> Feeling</p>
+                        </div>
+                      </div>
+                      <div class="u_post-tags-add" aria-describedby="popup-808"><svg width="14" height="14"
+                          viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class=""
+                          xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <path class="u_fill"
+                            d="M32.857 2H20.286c-.303 0-.594.12-.808.335L2.335 19.477a1.143 1.143 0 000 1.616v.001l12.571 12.571c.447.447 1.17.447 1.616 0l17.143-17.142c.214-.215.335-.506.334-.81V3.144C34 2.512 33.488 2 32.857 2zM26 12.285a2.286 2.286 0 110-4.571 2.286 2.286 0 010 4.571z"
+                            fill="#FFA700"></path>
+                        </svg>
+                        <p class="u_pl-8"> Add Tag</p>
+                      </div>
+                    </div>
+                    <div class="u_post-share">
+                      <div class="u_flex">
+                        <div class="u_radio-btn u_ib u_mr-10 u_cp"><input type="radio" id="lvu89fnoy"
+                            label="Share to everyone" name="do40xnkpf" class="u_ib u_mr-10 u_cp" checked=""><label
+                            for="lvu89fnoy">Share to everyone</label>
+                        </div>
+                        <div class="u_radio-btn u_ib u_cp"><input type="radio" id="bdjcys0iq" label="Custom Share"
+                            name="lux5zy27o" class="u_ib u_cp"><label for="bdjcys0iq">Custom Share</label></div>
+                      </div>
+                    </div>
+                    <div class="u_post-commentOption ">
+                      <div class="u_checkbox u_ib   "><input id="3cwx60l9y" type="checkbox"
+                          label="Disable all comments from this post" name="isDisableComment" class="u_ib"><label
+                          for="3cwx60l9y"><span>Disable all comments from this post</span></label></div>
+                      <div class="u_checkbox u_ib   "><input id="t14voqal3" type="checkbox" label="Reading confirmation"
+                          name="isReadConformation" class="u_ib"><label for="t14voqal3"><span>Reading
+                            confirmation</span></label>
+                      </div>
+                      <div class="u_checkbox u_ib   "><input id="4g19vse77" type="checkbox"
+                          label="Do you want to share on Notice Board?" name="isShareOnNoticeBoard" class="u_ib"><label
+                          for="4g19vse77"><span>Do you want to share on Notice
+                            Board?</span></label></div>
+                      <div class="u_checkbox u_ib   "><input id="ymlf0ijb0" type="checkbox" label="Send in mail"
+                          name="isSendEmail" class="u_ib"><label for="ymlf0ijb0"><span>Send in mail</span></label>
+                      </div>
+                    </div>
+                    <div class="u_modal-buttons u_p-15 "><button type="button"
+                        class="u_btn u_btn u_btn__smallBtn u_btn__white u_ml-10 white small u_btn u_btn__smallBtn u_btn__white u_ml-10 u_btn__white">cancel</button><button
+                        class="u_btn u_btn__smallBtn u_btn__blueFill u_ml-10">Save as draft</button><button
+                        class="u_btn u_btn__smallBtn u_btn__blue u_ml-10">Publish</button></div>
+                  </div>
+                </div>
+
+
+
+                <div class="u_announcement-tab u_mt-10" *ngIf="data">
+                  <div class="u_announcement-tab-wpr">
+                    <div class="u_flex u_align-center"><span class="u_announcement-tab-title">Today: </span>
+                      <ul class="u_flex">
+                        <li class="active"><span>Birthday</span></li>
+                        <li class="u_cp"><span>Work Anniversaries</span></li>
+                        <li class="u_cp"><span>New joinees</span></li>
+                      </ul>
+                    </div><span class="u_tab-close u_flex"><svg width="14" height="14" viewBox="0 0 36 36" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" class="" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <path class="u_fill-stroke"
+                          d="M18 14.557L7.08 3.637l-.142-.142-.142.141-3.16 3.16-.141.142.141.141L14.557 18 3.637 28.92l-.142.142.141.142 3.16 3.16.142.141.141-.141L18 21.443l10.92 10.92.142.142.142-.141 3.16-3.16.141-.142-.141-.141L21.443 18l10.92-10.922.142-.141-.141-.142-3.16-3.16-.142-.141-.141.141L18 14.557z"
+                          stroke="73788B" fill="#007AFF" stroke-width="0.4"></path>
+                      </svg></span>
+                  </div>
+                  <div class="u_birthday-list">
+                    <div class="u_birthday-list-img u_post-not-found u_w-full u_pb-10"><img
+                        src="/images/dashboard/no-birthday.svg" alt="No one's birthday to celebrate today!"
+                        title="No one's birthday to celebrate today!">
+                      <h6>No one's birthday to celebrate today!</h6>
+                    </div>
+                  </div>
+                </div>
+
                 <!-- <app-company-feed></app-company-feed> -->
+                <router-outlet></router-outlet>
               </div>
             </div>
           </div>

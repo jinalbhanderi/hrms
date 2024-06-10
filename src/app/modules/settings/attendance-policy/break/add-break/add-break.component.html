@@ -1,0 +1,141 @@
+<div class="u_settings-content u_flex u_flex-col" style="height: 100%; width: 100%;">
+    <div class="u_layout-scrollview">
+        <div class="u_scroll-section undefined"
+            style="position: relative; overflow: hidden; width: 100%; height: 100%;">
+            <div style="position: absolute; inset: 0px; overflow: scroll; margin-right: -14px; margin-bottom: -14px;">
+                <form autocomplete="off">
+                    <div class="u_content-header" id="u_content-header">
+                        <h5 class="u_flex u_align-center">Break</h5>
+                        <div class="u_flex u_align-center u_content-end"></div>
+                    </div>
+                    <div class="u_content-subheader u_b-top-none u_p-20">
+                        <h5 class="u_flex u_align-center"><span>Create Break</span></h5>
+                    </div>
+                    <div class="u_p-20">
+                        <div class="u_row">
+                            <div class="u_col-6">
+                                <div class="u_mb-25">
+                                    <div class="u_input"><input type="text" name="breakName" placeholder=" "
+                                            autocomplete="off" value=""><label>Break Name <span>*</span></label></div>
+                                </div>
+                                <div class="u_mb-25"><label class="u_label u_label_header u_mb-15">Start Time &amp; End
+                                        Time</label></div>
+                                <div class="u_mb-25">
+                                    <div class="u_row u_mb-20">
+                                        <div class="u_col-6">
+                                            <div class="u_input u_input-datepicker">
+                                                <div class="u_datepicker undefined">
+                                                    <div class="react-datepicker-wrapper">
+                                                        <div class="react-datepicker__input-container"><input
+                                                                type="text" name="startTime" placeholder=" "
+                                                                autocomplete="off" class="" value=""></div>
+                                                    </div>
+                                                </div><label>Start Time <span>*</span></label>
+                                            </div>
+                                        </div>
+                                        <div class="u_col-6">
+                                            <div class="u_input u_input-datepicker">
+                                                <div class="u_datepicker undefined">
+                                                    <div class="react-datepicker-wrapper">
+                                                        <div class="react-datepicker__input-container"><input
+                                                                type="text" name="endTime" placeholder=" "
+                                                                autocomplete="off" class="" value=""></div>
+                                                    </div>
+                                                </div><label>End Time <span>*</span></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="u_mb-25">
+                                    <div class="u_flex u_align-center">
+                                        <div class="u_checkbox undefined   "><input id="fixedBreak" type="checkbox"
+                                                label="Fixed Break Duration" name="fixedBreak"><label
+                                                for="fixedBreak"><span>Fixed Break Duration</span></label></div>
+                                    </div>
+                                </div>
+                                <div class="u_mb-25">
+                                    <div class="u_input u_input-select u_input-select-value">
+                                        <div class="u_input-select-inner u_multi-select css-2b097c-container"><span
+                                                aria-live="polite" aria-atomic="false" aria-relevant="additions text"
+                                                class="css-7pg0cj-a11yText"></span>
+                                            <div class="u_select__control css-yk16xz-control">
+                                                <div
+                                                    class="u_select__value-container u_select__value-container--is-multi css-1hwfws3">
+                                                    <div class="u_select__placeholder css-1wa3eu0-placeholder"> </div>
+                                                    <div class="css-1g6gooi">
+                                                        <div class="u_select__input" style="display: inline-block;">
+                                                            <input autocapitalize="none" autocomplete="off"
+                                                                autocorrect="off" id="react-select-140-input"
+                                                                spellcheck="false" tabindex="0" type="text"
+                                                                aria-autocomplete="list" value=""
+                                                                style="box-sizing: content-box; width: 2px; background: 0px center; border: 0px; font-size: inherit; opacity: 1; outline: 0px; padding: 0px; color: inherit;">
+                                                            <div
+                                                                style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: 14px; font-family: Mulish, sans-serif; font-weight: 500; font-style: normal; letter-spacing: normal; text-transform: none;">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="u_select__indicators css-1wy0on6"><span
+                                                        class="u_select__indicator-separator css-1okebmr-indicatorSeparator"></span>
+                                                    <div class="u_select__indicator u_select__dropdown-indicator css-tlfecz-indicatorContainer"
+                                                        aria-hidden="true"><svg height="20" width="20"
+                                                            viewBox="0 0 20 20" aria-hidden="true" focusable="false"
+                                                            class="css-8mmkcg">
+                                                            <path
+                                                                d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z">
+                                                            </path>
+                                                        </svg></div>
+                                                </div>
+                                            </div>
+                                            <div><input name="applicableShifts" type="hidden"></div>
+                                        </div><label>Applicable Shift </label>
+                                    </div>
+                                </div>
+                                <div class="u_mb-25">
+                                    <div class="u_flex u_align-center">
+                                        <div class="u_checkbox undefined   "><input id="isConsiderHalfDay"
+                                                type="checkbox"
+                                                label="Would you like to explore the option of applying this break policy for half-day work ?"
+                                                name="isConsiderHalfDay"><label for="isConsiderHalfDay"><span>Would you
+                                                    like to explore the option of applying this break policy for
+                                                    half-day work ?</span></label></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="u_col-6">
+                                <div class="u_vaccination-content">
+                                    <p class="u_font u_mb-15 u_text-bold">1. You can not delete the break Policy if the
+                                        shift is assigned to the Break Policy.</p>
+                                    <p class="u_font u_mb-15 u_text-bold">2. Start break End break :- Here you can pass
+                                        break end time more then break start time which will be considered as two day
+                                        concept.
+                                    <p class="u_font u_pl-10 u_mt-10">Eg. Break Start time 11: 00 PM current day break
+                                        end time 12 : 00 AM for very next day as its 12 AM the total break hour is one
+                                        hour.</p>
+                                    <p class="u_font u_mb-15 u_text-bold">3. If the fixed break time is more then break
+                                        end time then system will add the extra time passed in the fixed break duration
+                                        in break end time.
+                                    <p class="u_font u_pl-10 u_mt-10">Eg. Break start time is 10 AM, Break end time is
+                                        11 AM and fixed break duration is 2 Hour. So in this case break end time will be
+                                        automatically updated.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div
+                style="position: absolute; height: 6px; transition: opacity 200ms ease 0s; opacity: 0; right: 2px; bottom: 2px; left: 2px; border-radius: 3px; visibility: hidden;">
+                <div class="u_scroll-bar"
+                    style="position: relative; display: block; height: 100%; border-radius: 100px; background-color: rgb(209, 209, 209); width: 0px;">
+                </div>
+            </div>
+            <div
+                style="position: absolute; width: 6px; transition: opacity 200ms ease 0s; opacity: 0; right: 2px; bottom: 2px; top: 2px; border-radius: 3px; visibility: hidden;">
+                <div class="u_scroll-bar"
+                    style="position: relative; display: block; width: 100%; border-radius: 100px; background-color: rgb(209, 209, 209); height: 0px;">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

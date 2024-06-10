@@ -5,6 +5,7 @@ import { AssignTicketsComponent } from './assign-tickets/assign-tickets.componen
 import { FollowerTicketsComponent } from './follower-tickets/follower-tickets.component';
 import { AllTicketsComponent } from './all-tickets/all-tickets.component';
 import { HelpDashboardComponent } from './help-dashboard/help-dashboard.component';
+import { AddTicketComponent } from './add-ticket/add-ticket.component';
 
 const routes: Routes = [
   {path:'my-tickets',component:MyTicketComponent},
@@ -12,6 +13,7 @@ const routes: Routes = [
   {path:'follower-tickets',component:FollowerTicketsComponent},
   {path:'helpdesk/dashboard',component:HelpDashboardComponent},
   {path:'all-tickets',component:AllTicketsComponent},
+  {path:'add-tickets',component:AddTicketComponent},
 ];
 
 @NgModule({

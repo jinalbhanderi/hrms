@@ -6,6 +6,10 @@ import { CategoryListComponent } from './category-list/category-list.component';
 import { StatusListComponent } from './status-list/status-list.component';
 import { ActivityComponent } from './activity/activity.component';
 import { AdvanceSettingsComponent } from './advance-settings/advance-settings.component';
+import { AddCategoryComponent } from './category-list/add-category/add-category.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { AddStatusComponent } from './status-list/add-status/add-status.component';
+import { AddActivityStatusComponent } from './activity/add-activity-status/add-activity-status.component';
 
 
 @NgModule({
@@ -13,11 +17,15 @@ import { AdvanceSettingsComponent } from './advance-settings/advance-settings.co
     CategoryListComponent,
     StatusListComponent,
     ActivityComponent,
-    AdvanceSettingsComponent
+    AdvanceSettingsComponent,
+    AddCategoryComponent,
+    AddStatusComponent,
+    AddActivityStatusComponent
   ],
   imports: [
     CommonModule,
-    HelpDeskRoutingModule
+    HelpDeskRoutingModule,
+    MatDialogModule
   ]
 })
 export class HelpDeskModule { }

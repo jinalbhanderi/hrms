@@ -32,6 +32,10 @@ import { ReportComponent } from './modules/report/report.component';
 import { SettingsComponent } from './modules/settings/settings.component';
 import { SettingsModule } from './modules/settings/settings.module';
 import { SocialModule } from './modules/social/social.module';
+import { RouterModule } from '@angular/router';
+import { SocialComponent } from './modules/social/social.component';
+import { NgSelectModule } from '@ng-select/ng-select';
+import { ReimbursementListComponent } from './modules/reimbursement/reimbursement-list/reimbursement-list.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +53,8 @@ import { SocialModule } from './modules/social/social.module';
     PerformanceReportComponent,
     SettingsComponent,
     PagenotfoundComponent,
+    SocialComponent,
+    ReimbursementListComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],
@@ -71,7 +77,10 @@ import { SocialModule } from './modules/social/social.module';
     NgChartsModule,
     BrowserAnimationsModule,
     MatSelectModule,
-    SocialModule
+    SocialModule,
+    RouterModule,
+    NgSelectModule,
+    ReimbursementModule
   ],
 })
 export class AppModule {}

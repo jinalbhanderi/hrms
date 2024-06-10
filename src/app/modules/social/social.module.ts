@@ -1,12 +1,12 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-import { SocialRoutingModule } from './social-routing.module';
-import { CompanyFeedComponent } from './company-feed/company-feed.component';
-import { MyFeedComponent } from './my-feed/my-feed.component';
-import { DraftComponent } from './draft/draft.component';
+import { NgModule } from '@angular/core';
 import { BookmarksComponent } from './bookmarks/bookmarks.component';
+import { CompanyFeedComponent } from './company-feed/company-feed.component';
+import { DraftComponent } from './draft/draft.component';
 import { MentionsComponent } from './mentions/mentions.component';
+import { MyFeedComponent } from './my-feed/my-feed.component';
+import { SocialRoutingModule } from './social-routing.module';
+import { NgSelectModule } from '@ng-select/ng-select';
 
 
 @NgModule({
@@ -19,8 +19,8 @@ import { MentionsComponent } from './mentions/mentions.component';
   ],
   imports: [
     CommonModule,
-    SocialRoutingModule
-  ],
-  // exports:[CompanyFeedComponent]
+    SocialRoutingModule,
+    NgSelectModule
+  ]
 })
 export class SocialModule { }

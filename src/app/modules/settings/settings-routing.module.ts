@@ -2,9 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { SettingsComponent } from './settings.component';
 import { CompanyDetailsComponent } from './company-details/company-details.component';
-import { SubCompanyComponent } from './sub-company/sub-company.component';
 import { BankDetailsComponent } from './bank-details/bank-details.component';
-import { LocationComponent } from './location/location.component';
 import { EmailAlertComponent } from './email-alert/email-alert.component';
 import { ProductAccessComponent } from './product-access/product-access.component';
 import { AccessLevelComponent } from './access-level/access-level.component';
@@ -85,10 +83,22 @@ const routes: Routes = [
             (m) => m.OrgStructureModule
           ),
       },
+      {
+        path: 'sub-company',
+        loadChildren: () =>
+          import('./sub-company/sub-company.module').then(
+            (m) => m.SubCompanyModule
+          ),
+      },
+      {
+        path: 'location-type',
+        loadChildren: () =>
+          import('./location/location.module').then((m) => m.LocationModule),
+      },
+      // { path: 'sub-company', component: SubCompanyComponent },
       { path: 'company-details', component: CompanyDetailsComponent },
-      { path: 'sub-company', component: SubCompanyComponent },
       { path: 'bank-details', component: BankDetailsComponent },
-      { path: 'location', component: LocationComponent },
+      // { path: 'location', component: LocationComponent },
       { path: 'email-alert', component: EmailAlertComponent },
       { path: 'leave-policy', component: LeavePolicyComponent },
       { path: 'holidays-policy', component: HolidaysPolicyComponent },

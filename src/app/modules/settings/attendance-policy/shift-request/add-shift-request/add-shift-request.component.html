@@ -1,0 +1,296 @@
+<div class="u_settings-content u_flex u_flex-col" style="height: 100%; width: 100%;">
+    <div class="u_layout-scrollview">
+        <div class="u_scroll-section undefined"
+            style="position: relative; overflow: hidden; width: 100%; height: 100%;">
+            <div style="position: absolute; inset: 0px; overflow: scroll; margin-right: -14px; margin-bottom: -14px;">
+                <form autocomplete="off">
+                    <div class="u_content-header" id="u_content-header">
+                        <h5 class="u_flex u_align-center">Shift Request Policy</h5>
+                        <div class="u_flex u_align-center u_content-end"></div>
+                    </div>
+                    <div class="u_content-subheader u_b-top-none u_p-20">
+                        <h5 class="u_flex u_align-center"><span>Create Shift Request</span></h5>
+                    </div>
+                    <div class="u_p-20">
+                        <div class="u_row">
+                            <div class="u_col-6 u_mb-25">
+                                <div class="u_input"><input type="text" placeholder=" " name="name" autocomplete="off"
+                                        value=""><label>Shift Request Name <span>*</span></label></div>
+                            </div>
+                            <div class="u_col-6 u_mb-25">
+                                <div class="u_input u_input-textarea"><textarea class="u_textarea u_textarea-six-rows"
+                                        name="description" placeholder=" "></textarea><label>Shift Request Description
+                                    </label></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="u_content-subheader u_p-20">
+                        <h5>Shift Request Policy Rules</h5>
+                    </div>
+                    <div class="u_p-20">
+                        <div class="u_row">
+                            <div class="u_col-12 u_mb-20">
+                                <div class="u_label u_label-text u_flex u_align-center">
+                                    <div class="u_checkbox undefined   "><input id="isMaxReqAllowInDays" type="checkbox"
+                                            label="An employee is allowed to raise shift request for "
+                                            name="isMaxReqAllowInDays"><label for="isMaxReqAllowInDays"><span>An
+                                                employee is allowed to raise shift request for </span></label></div>
+                                    <div class="u_input u_ml-10 u_mr-10 "><input class="u_input-hours u_input-small"
+                                            placeholder="0" name="maxReqAllowInDaysCount" type="number" maxlength="3"
+                                            autocomplete="off" disabled="" value=""></div><span> number of days in a
+                                    </span>
+                                    <div class="u_input u_ml-10 u_mr-10  u_input-select u_input-select-value">
+                                        <div
+                                            class="u_input-select-inner u_input-small u_select--is-disabled css-14jk2my-container">
+                                            <span aria-live="polite" aria-atomic="false" aria-relevant="additions text"
+                                                class="css-7pg0cj-a11yText"></span>
+                                            <div
+                                                class="u_select__control u_select__control--is-disabled css-1fhf3k1-control">
+                                                <div
+                                                    class="u_select__value-container u_select__value-container--has-value css-1hwfws3">
+                                                    <div
+                                                        class="u_select__single-value u_select__single-value--is-disabled css-107lb6w-singleValue">
+                                                        Weekly</div>
+                                                    <div class="css-mry1rc">
+                                                        <div class="u_select__input" style="display: inline-block;">
+                                                            <input disabled="" autocapitalize="none" autocomplete="off"
+                                                                autocorrect="off" id="react-select-59-input"
+                                                                spellcheck="false" tabindex="0" type="text"
+                                                                aria-autocomplete="list" value=""
+                                                                style="box-sizing: content-box; width: 2px; background: 0px center; border: 0px; font-size: inherit; opacity: 1; outline: 0px; padding: 0px; color: inherit;">
+                                                            <div
+                                                                style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: 14px; font-family: Mulish, sans-serif; font-weight: 500; font-style: normal; letter-spacing: normal; text-transform: none;">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="u_select__indicators css-1wy0on6"><span
+                                                        class="u_select__indicator-separator css-109onse-indicatorSeparator"></span>
+                                                    <div class="u_select__indicator u_select__dropdown-indicator css-tlfecz-indicatorContainer"
+                                                        aria-hidden="true"><svg height="20" width="20"
+                                                            viewBox="0 0 20 20" aria-hidden="true" focusable="false"
+                                                            class="css-8mmkcg">
+                                                            <path
+                                                                d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z">
+                                                            </path>
+                                                        </svg></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="u_row">
+                            <div class="u_col-12 u_mb-20">
+                                <div class="u_label u_label-text u_flex u_align-center">
+                                    <div class="u_checkbox undefined   "><input id="isMaxReqAllowInTimes"
+                                            type="checkbox" label="An employee is allowed to raise shift request "
+                                            name="isMaxReqAllowInTimes"><label for="isMaxReqAllowInTimes"><span>An
+                                                employee is allowed to raise shift request </span></label></div>
+                                    <div class="u_input u_ml-10 u_mr-10 "><input class="u_input-hours u_input-small"
+                                            placeholder="0" type="number" maxlength="3" autocomplete="off"
+                                            name="maxReqAllowInDaysTimes" disabled="" value=""></div><span> times in a
+                                    </span>
+                                    <div class="u_input u_ml-10 u_mr-10  u_input-select u_input-select-value">
+                                        <div
+                                            class="u_input-select-inner u_input-small u_select--is-disabled css-14jk2my-container">
+                                            <span aria-live="polite" aria-atomic="false" aria-relevant="additions text"
+                                                class="css-7pg0cj-a11yText"></span>
+                                            <div
+                                                class="u_select__control u_select__control--is-disabled css-1fhf3k1-control">
+                                                <div
+                                                    class="u_select__value-container u_select__value-container--has-value css-1hwfws3">
+                                                    <div
+                                                        class="u_select__single-value u_select__single-value--is-disabled css-107lb6w-singleValue">
+                                                        Weekly</div>
+                                                    <div class="css-mry1rc">
+                                                        <div class="u_select__input" style="display: inline-block;">
+                                                            <input disabled="" autocapitalize="none" autocomplete="off"
+                                                                autocorrect="off" id="react-select-60-input"
+                                                                spellcheck="false" tabindex="0" type="text"
+                                                                aria-autocomplete="list" value=""
+                                                                style="box-sizing: content-box; width: 2px; background: 0px center; border: 0px; font-size: inherit; opacity: 1; outline: 0px; padding: 0px; color: inherit;">
+                                                            <div
+                                                                style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: 14px; font-family: Mulish, sans-serif; font-weight: 500; font-style: normal; letter-spacing: normal; text-transform: none;">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="u_select__indicators css-1wy0on6"><span
+                                                        class="u_select__indicator-separator css-109onse-indicatorSeparator"></span>
+                                                    <div class="u_select__indicator u_select__dropdown-indicator css-tlfecz-indicatorContainer"
+                                                        aria-hidden="true"><svg height="20" width="20"
+                                                            viewBox="0 0 20 20" aria-hidden="true" focusable="false"
+                                                            class="css-8mmkcg">
+                                                            <path
+                                                                d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z">
+                                                            </path>
+                                                        </svg></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="u_row">
+                            <div class="u_col-12 u_mb-20">
+                                <div class="u_label u_label-text u_flex u_align-center">
+                                    <div class="u_checkbox undefined   "><input id="isRestrictPastDateShift"
+                                            type="checkbox" label="Restrict past dated shift request to "
+                                            name="isRestrictPastDateShift"><label
+                                            for="isRestrictPastDateShift"><span>Restrict past dated shift request to
+                                            </span></label></div>
+                                    <div class="u_input u_ml-10 u_mr-10 "><input class="u_input-hours u_input-small"
+                                            placeholder="0" type="number" maxlength="3" autocomplete="off" disabled=""
+                                            name="restrictPastDateShiftCount" value=""></div><span> calendar days back
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="u_row">
+                            <div class="u_col-12 u_mb-20">
+                                <div class="u_label u_label-text u_flex u_align-center">
+                                    <div class="u_checkbox undefined   "><input id="isRestrictEmployeeOnDays"
+                                            type="checkbox" name="isRestrictEmployeeOnDays"
+                                            label="Restrict employees from raising shift request on "><label
+                                            for="isRestrictEmployeeOnDays"><span>Restrict employees from raising shift
+                                                request on </span></label></div>
+                                    <div class="u_input u_ml-10 u_mr-10  u_input-select u_input-select-value">
+                                        <div
+                                            class="u_input-select-inner u_input-small u_select--is-disabled css-14jk2my-container">
+                                            <span aria-live="polite" aria-atomic="false" aria-relevant="additions text"
+                                                class="css-7pg0cj-a11yText"></span>
+                                            <div
+                                                class="u_select__control u_select__control--is-disabled css-1fhf3k1-control">
+                                                <div
+                                                    class="u_select__value-container u_select__value-container--has-value css-1hwfws3">
+                                                    <div
+                                                        class="u_select__single-value u_select__single-value--is-disabled css-107lb6w-singleValue">
+                                                        Holidays</div>
+                                                    <div class="css-mry1rc">
+                                                        <div class="u_select__input" style="display: inline-block;">
+                                                            <input disabled="" autocapitalize="none" autocomplete="off"
+                                                                autocorrect="off" id="react-select-61-input"
+                                                                spellcheck="false" tabindex="0" type="text"
+                                                                aria-autocomplete="list" value=""
+                                                                style="box-sizing: content-box; width: 2px; background: 0px center; border: 0px; font-size: inherit; opacity: 1; outline: 0px; padding: 0px; color: inherit;">
+                                                            <div
+                                                                style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: 14px; font-family: Mulish, sans-serif; font-weight: 500; font-style: normal; letter-spacing: normal; text-transform: none;">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="u_select__indicators css-1wy0on6"><span
+                                                        class="u_select__indicator-separator css-109onse-indicatorSeparator"></span>
+                                                    <div class="u_select__indicator u_select__dropdown-indicator css-tlfecz-indicatorContainer"
+                                                        aria-hidden="true"><svg height="20" width="20"
+                                                            viewBox="0 0 20 20" aria-hidden="true" focusable="false"
+                                                            class="css-8mmkcg">
+                                                            <path
+                                                                d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z">
+                                                            </path>
+                                                        </svg></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="u_row">
+                            <div class="u_col-12 u_mb-20">
+                                <div class="u_label u_label-text u_flex u_align-center">
+                                    <div class="u_checkbox undefined   "><input id="isApplyingShiftReqDays"
+                                            type="checkbox" name="isApplyingShiftReqDays"
+                                            label="Applying for shift request requires "><label
+                                            for="isApplyingShiftReqDays"><span>Applying for shift request requires
+                                            </span></label></div>
+                                    <div class="u_input u_ml-10 u_mr-10 "><input class="u_input-hours u_input-small"
+                                            placeholder="0" name="applyingShiftReqBeforeDays" type="number"
+                                            maxlength="3" autocomplete="off" disabled="" value=""></div><span> calendar
+                                        days prior notice, containing at least </span>
+                                    <div class="u_input u_ml-10 u_mr-10 "><input class="u_input-hours u_input-small"
+                                            placeholder="0" type="number" maxlength="3" autocomplete="off"
+                                            name="applyingShiftReqAtleastWorkingDays" disabled="" value=""></div><span>
+                                        working days </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="u_row">
+                            <div class="u_ml-20 u_mb-25">
+                                <div class="u_input u_input-select">
+                                    <div class="u_input-select-inner u_multi-select css-2b097c-container"><span
+                                            aria-live="polite" aria-atomic="false" aria-relevant="additions text"
+                                            class="css-7pg0cj-a11yText"></span>
+                                        <div class="u_select__control css-yk16xz-control">
+                                            <div
+                                                class="u_select__value-container u_select__value-container--is-multi css-1hwfws3">
+                                                <div class="u_select__placeholder css-1wa3eu0-placeholder"> </div>
+                                                <div class="css-1g6gooi">
+                                                    <div class="u_select__input" style="display: inline-block;"><input
+                                                            autocapitalize="none" autocomplete="off" autocorrect="off"
+                                                            id="react-select-62-input" spellcheck="false" tabindex="0"
+                                                            type="text" aria-autocomplete="list" value=""
+                                                            style="box-sizing: content-box; width: 2px; background: 0px center; border: 0px; font-size: inherit; opacity: 1; outline: 0px; padding: 0px; color: inherit;">
+                                                        <div
+                                                            style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: 14px; font-family: Mulish, sans-serif; font-weight: 500; font-style: normal; letter-spacing: normal; text-transform: none;">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="u_select__indicators css-1wy0on6"><span
+                                                    class="u_select__indicator-separator css-1okebmr-indicatorSeparator"></span>
+                                                <div class="u_select__indicator u_select__dropdown-indicator css-tlfecz-indicatorContainer"
+                                                    aria-hidden="true"><svg height="20" width="20" viewBox="0 0 20 20"
+                                                        aria-hidden="true" focusable="false" class="css-8mmkcg">
+                                                        <path
+                                                            d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z">
+                                                        </path>
+                                                    </svg></div>
+                                            </div>
+                                        </div>
+                                        <div><input name="applicableShifts" type="hidden"></div>
+                                    </div><label>Applicable Shift <span>*</span></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="u_row ">
+                            <div class="u_col-12"><label class="u_label u_label_header u_mb-15">Does this Shift request
+                                    require an approval?</label></div>
+                            <div class="u_col-12">
+                                <div class="u_flex u_align-center u_mb-10">
+                                    <div class="u_radio-btn undefined"><input type="radio" id="approval_no"
+                                            name="approval" label="No" for="approval_no" checked=""><label
+                                            for="approval_no">No</label></div><span
+                                        class="u_rollover u_cp u_flex u_ml-10" aria-describedby="popup-3514"><svg
+                                            width="18" height="18" viewBox="0 0 36 36" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg" class=""
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <path class="u_fill"
+                                                d="M18 2c8.837 0 16 7.163 16 16s-7.163 16-16 16S2 26.837 2 18 9.163 2 18 2Zm1.6 11.2V10h-3.2v3.2h3.2Zm0 12.8v-9.6h-3.2V26h3.2Z"
+                                                fill="#4E525F"></path>
+                                        </svg></span>
+                                </div>
+                                <div class="u_flex u_align-center u_mb-20">
+                                    <div class="u_radio-btn undefined"><input type="radio" id="approval_yes"
+                                            name="approval" label="Yes" for="approval_yes"><label
+                                            for="approval_yes">Yes</label></div><span
+                                        class="u_rollover u_cp u_flex u_ml-10" aria-describedby="popup-3515"><svg
+                                            width="18" height="18" viewBox="0 0 36 36" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg" class=""
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <path class="u_fill"
+                                                d="M18 2c8.837 0 16 7.163 16 16s-7.163 16-16 16S2 26.837 2 18 9.163 2 18 2Zm1.6 11.2V10h-3.2v3.2h3.2Zm0 12.8v-9.6h-3.2V26h3.2Z"
+                                                fill="#4E525F"></path>
+                                        </svg></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

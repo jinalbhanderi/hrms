@@ -15,9 +15,14 @@ const routes: Routes = [
     children: [
       { path: 'dashboard', component: DashboardComponent },
       { path: 'inbox', component: InboxComponent },
-      { path: 'announcement', component: SocialComponent },
+      // { path: 'announcement', component: SocialComponent },
       { path: 'document', component: DocumentComponent },
       { path: 'performance-report', component: PerformanceReportComponent },
+      {
+        path: 'announcement',
+        loadChildren: () =>
+          import('../modules/social/social.module').then((m) => m.SocialModule),
+      },
       {
         path: '',
         loadChildren: () =>

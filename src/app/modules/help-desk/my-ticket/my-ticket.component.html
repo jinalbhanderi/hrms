@@ -34,34 +34,18 @@
           <div class="u_filter-content  ">
             <div class="u_filter-content-inner">
               <div class="u_assign-ticket-select">
-                <div class="u_filter u_filter-select active ">
-                  <div class=" css-2b097c-container"><span aria-live="polite" aria-atomic="false"
-                      aria-relevant="additions text" class="css-7pg0cj-a11yText"></span>
-                    <div class="u_select__control d-flex align-items-center">
-                      <div class="u_select__value-container u_select__value-container--has-value css-1hwfws3">
-                        <div class="u_select__single-value css-1uccc91-singleValue">
-                          <div class="u_flex u_align-center"><svg width="14" height="14" viewBox="0 0 36 36" fill="none"
-                              xmlns="http://www.w3.org/2000/svg" class="u_mr-8"
-                              xmlns:xlink="http://www.w3.org/1999/xlink">
-                              <path class="u_fill"
-                                d="M16.4 32.444c0-.628-.253-1.231-.703-1.676A2.416 2.416 0 0 0 14 30.074c-.636 0-1.247.25-1.697.694a2.356 2.356 0 0 0-.703 1.676h-8a1.61 1.61 0 0 1-1.131-.462A1.57 1.57 0 0 1 2 30.864V5.58c0-.419.169-.82.469-1.117A1.61 1.61 0 0 1 3.6 4h8c0 .629.253 1.232.703 1.676.45.445 1.06.694 1.697.694.636 0 1.247-.25 1.697-.694.45-.444.703-1.047.703-1.676h16c.424 0 .831.166 1.131.463.3.296.469.698.469 1.117v8.692c-1.06 0-2.078.416-2.828 1.157A3.926 3.926 0 0 0 30 18.222c0 1.048.421 2.053 1.172 2.794A4.025 4.025 0 0 0 34 22.173v8.691c0 .42-.169.821-.469 1.118a1.61 1.61 0 0 1-1.131.462h-16ZM14 15.852c.636 0 1.247-.25 1.697-.694.45-.445.703-1.048.703-1.676 0-.63-.253-1.232-.703-1.677A2.415 2.415 0 0 0 14 11.111c-.636 0-1.247.25-1.697.694a2.356 2.356 0 0 0-.703 1.677c0 .628.253 1.231.703 1.676.45.444 1.06.694 1.697.694Zm0 9.481c.636 0 1.247-.25 1.697-.694.45-.444.703-1.047.703-1.676s-.253-1.232-.703-1.676A2.415 2.415 0 0 0 14 20.593c-.636 0-1.247.25-1.697.694a2.356 2.356 0 0 0-.703 1.676c0 .629.253 1.232.703 1.676.45.445 1.06.694 1.697.694Z"
-                                fill="#007AFF"></path>
-                            </svg><span class="u_one-line">Open Tickets</span></div>
-                        </div>                        
+                  <div class="u_filter u_filter-select ">
+                    <div class=" css-2b097c-container">
+                      <span aria-live="polite" aria-atomic="false" aria-relevant="additions text" class="css-7pg0cj-a11yText"></span>
+                      <div class="dropdown-container input-bg ">
+                        <ng-select placeholder="Company">
+                          <ng-option>All Tickets</ng-option>
+                          <ng-option>Open Tickets</ng-option>
+                          <ng-option>Resolved Tickets</ng-option>
+                        </ng-select>
                       </div>
-                      <div class="u_select__indicators css-1wy0on6"><span
-                          class="u_select__indicator-separator css-1okebmr-indicatorSeparator"></span>
-                        <div class="u_select__indicator u_select__dropdown-indicator css-tlfecz-indicatorContainer"
-                          aria-hidden="true"><svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true"
-                            focusable="false" class="css-8mmkcg">
-                            <path
-                              d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z">
-                            </path>
-                          </svg></div>
-                      </div>
-                    </div><input name="ticket" type="hidden" value="openTicket">
+                    </div>
                   </div>
-                </div>
               </div>
               <div class="u_filter u_filter-department">
                 <div class="u_filter-container u_flex u_align-center u_cp u_active" aria-describedby="popup-489"><svg
@@ -295,7 +279,7 @@
                   fill="#4E525F"></path>
               </svg></span></div>
           <div class="u_filter u_filter-toggle u_ticket-filter"><span class="u_add-btn"
-              aria-describedby="popup-480"><svg width="14" height="14" viewBox="0 0 36 36" fill="none"
+              aria-describedby="popup-480" routerLink="/add-tickets"><svg width="14" height="14" viewBox="0 0 36 36" fill="none"
                 xmlns="http://www.w3.org/2000/svg" class="" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <path class="u_fill" d="M15.714 15.714V2h4.572v13.714H34v4.572H20.286V34h-4.572V20.286H2v-4.572h13.714z"
                   fill="#FFFFFF"></path>

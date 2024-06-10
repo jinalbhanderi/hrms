@@ -1,0 +1,184 @@
+<div class="u_settings-content u_flex u_flex-col" style="height: 100%; width: 100%;">
+    <div class="u_layout-scrollview">
+        <div class="u_scroll-section undefined"
+            style="position: relative; overflow: hidden; width: 100%; height: 100%;">
+            <div style="position: absolute; inset: 0px; overflow: scroll; margin-right: -14px; margin-bottom: -14px;">
+                <form class="u_company-header" autocomplete="off">
+                    <div class="u_settings-header u_p-20 " id="u_settings-header">
+                        <div class="u_settings-header-title ">
+                            <h5 class="u_mb-5">Company Details - Add</h5>
+                            <p>Add/Edit your company details.</p>
+                        </div>
+                        <div class="u_settings-header-list">
+                            <div class="u_flex u_align-center u_content-end"></div>
+                        </div>
+                    </div>
+                    <div class="u_company-common">
+                        <div class="u_px-20 u_pt-20">
+                            <div class="u_row">
+                                <div class="u_col-4 u_mb-25">
+                                    <div class="u_input"><input type="text" name="company" placeholder=" "
+                                            autocomplete="off" value=""><label>Company Name <span>*</span></label></div>
+                                </div>
+                                <div class="u_col-4 u_mb-25">
+                                    <div class="u_input"><input type="text" name="domain" placeholder=" "
+                                            autocomplete="off" value=""><label>Business Domain (Industry) </label></div>
+                                </div>
+                                <div class="u_col-4 u_mb-25">
+                                    <div class="u_input"><input type="text" name="registrationNumber" placeholder=" "
+                                            autocomplete="off" value=""><label>Registration Number </label></div>
+                                </div>
+                                <div class="u_col-4 u_mb-25">
+                                    <div class="u_input"><input type="text" name="iec" placeholder=" "
+                                            autocomplete="off" value=""><label>IEC Code </label></div>
+                                </div>
+                                <div class="u_col-4 u_mb-25">
+                                    <div class="u_input"><input type="text" name="pan" placeholder=" "
+                                            autocomplete="off" value=""><label>Company PAN </label></div>
+                                </div>
+                                <div class="u_col-4 u_mb-25">
+                                    <div class="u_input"><input type="text" name="tan" placeholder=" "
+                                            autocomplete="off" value=""><label>TAN Number </label></div>
+                                </div>
+                                <div class="u_col-4 u_mb-25">
+                                    <div class="u_input">
+                                        <div class="u_datepicker undefined">
+                                            <div class="react-datepicker-wrapper">
+                                                <div class="react-datepicker__input-container"><input type="text"
+                                                        name="startAt" placeholder=" " autocomplete="off" class=""
+                                                        value=""></div>
+                                            </div>
+                                        </div><label>Start Date </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="u_content-subheader u_p-20">
+                            <h5>Address</h5>
+                        </div>
+                        <div class="u_px-20 u_pt-20">
+                            <div class="u_row">
+                                <div class="u_col-4 u_mb-25">
+                                    <div class="u_input"><input type="text" name="address1" placeholder=" "
+                                            autocomplete="off" value=""><label>Address 1 <span>*</span></label></div>
+                                </div>
+                                <div class="u_col-4 u_mb-25">
+                                    <div class="u_input"><input type="text" name="address2" placeholder=" "
+                                            autocomplete="off" value=""><label>Address 2 </label></div>
+                                </div>
+                                <div class="u_col-4 u_mb-20">
+                                    <div class="form-group-wrapper">
+                                        <div class="form-group-main border-0 position-relative">
+                                            <ng-select placeholder="Country">
+                                                <ng-option>Kautilyam</ng-option>
+                                                <ng-option>Syfrox</ng-option>
+                                            </ng-select>
+                                            <label class="position-absolute m-0 bg-white">Country <span
+                                                    class="text-danger">*</span></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            <div class="u_col-4 u_mb-20">
+                                <div class="form-group-wrapper">
+                                    <div class="form-group-main border-0 position-relative">
+                                        <ng-select placeholder="State">
+                                            <ng-option>Kautilyam</ng-option>
+                                            <ng-option>Syfrox</ng-option>
+                                        </ng-select>
+                                        <label class="position-absolute m-0 bg-white">State <span class="text-danger">*</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="u_col-4 u_mb-20">
+                                    <div class="u_input"><input type="text" name="city" placeholder=" "
+                                            autocomplete="off" value=""><label>City <span>*</span></label></div>
+                                </div>
+                                <div class="u_col-4 u_mb-20">
+                                    <div class="u_input"><input type="text" name="zip" placeholder=" "
+                                            autocomplete="off" value=""><label>Pincode <span>*</span></label></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="u_content-subheader u_p-20">
+                            <h5>Contact Detail</h5>
+                        </div>
+                        <div class="u_px-20 u_pt-20">
+                            <div class="u_row">
+                                <div class="u_col-4 u_mb-25 ">
+                                    <div class="u_input u_input-focused">
+                                        <div class="u_flex u_country">
+                                            <div class="u_country-section "><span
+                                                    class="u_country-selected u_flex u_align-center u_cp"><i
+                                                        class="u_flag IN"></i>+91</span>
+                                                <div class="u_country-dropdown"></div>
+                                            </div>
+                                            <div class="u_form-phonenum"><input min="0" type="number" placeholder=" "
+                                                    name="phoneNumber" autocomplete="off" value=""></div>
+                                        </div><label>Primary Phone Number <span>*</span></label>
+                                    </div>
+                                </div>
+                                <div class="u_col-4 u_mb-25">
+                                    <div class="u_input u_input-focused">
+                                        <div class="u_flex u_country">
+                                            <div class="u_country-section "><span
+                                                    class="u_country-selected u_flex u_align-center u_cp"><i
+                                                        class="u_flag IN"></i>+91</span>
+                                                <div class="u_country-dropdown"></div>
+                                            </div>
+                                            <div class="u_form-phonenum"><input min="0" type="number" placeholder=" "
+                                                    name="phoneNumber" autocomplete="off" value=""></div>
+                                        </div><label>Secondary Phone Number </label>
+                                    </div>
+                                </div>
+                                <div class="u_col-4 u_mb-25">
+                                    <div class="u_input u_input-focused">
+                                        <div class="u_flex u_country">
+                                            <div class="u_country-section "><span
+                                                    class="u_country-selected u_flex u_align-center u_cp"><i
+                                                        class="u_flag IN"></i>+91</span>
+                                                <div class="u_country-dropdown"></div>
+                                            </div>
+                                            <div class="u_form-phonenum"><input min="0" type="number" placeholder=" "
+                                                    name="phoneNumber" autocomplete="off" value=""></div>
+                                        </div><label>Fax Number </label>
+                                    </div>
+                                </div>
+                                <div class="u_col-4 u_mb-25">
+                                    <div class="u_input"><input type="text" name="website" placeholder=" "
+                                            autocomplete="off" value=""><label>Website </label></div>
+                                </div>
+                                <div class="u_col-4 u_mb-25">
+                                    <div class="u_input"><input type="text" name="email" placeholder=" "
+                                            autocomplete="off" value=""><label>Email Address <span>*</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="u_content-subheader u_p-20">
+                            <h5>About Company</h5>
+                        </div>
+                        <div class="u_px-20 u_pt-20">
+                            <div class="u_row">
+                                <div class="u_col-4 u_mb-25">
+                                    <div class="u_input u_input-textarea"><textarea
+                                            class="u_textarea u_textarea-six-rows" name="overview" placeholder=" "
+                                            autocomplete="off"></textarea><label>Overview </label></div>
+                                </div>
+                                <div class="u_col-4 u_mb-25">
+                                    <div class="u_input u_input-textarea"><textarea
+                                            class="u_textarea u_textarea-six-rows" name="vision" placeholder=" "
+                                            autocomplete="off"></textarea><label>Vision </label></div>
+                                </div>
+                                <div class="u_col-4 u_mb-25">
+                                    <div class="u_input u_input-textarea"><textarea
+                                            class="u_textarea u_textarea-six-rows" name="mission" placeholder=" "
+                                            autocomplete="off"></textarea><label>Mission </label></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

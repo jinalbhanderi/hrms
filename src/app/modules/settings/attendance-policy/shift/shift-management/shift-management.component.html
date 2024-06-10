@@ -1,0 +1,803 @@
+<div class="u_settings-content u_flex u_flex-col" style="height: 100%; width: 100%;">
+    <div class="u_layout-scrollview">
+        <div class="u_scroll-section undefined"
+            style="position: relative; overflow: hidden; width: 100%; height: 100%;">
+            <div style="position: absolute; inset: 0px; overflow: scroll; margin-right: -14px; margin-bottom: -14px;">
+                <form autocomplete="off">
+                    <div class="u_content-header" id="u_content-header">
+                        <h5 class="u_flex u_align-center">Shift Management</h5>
+                        <div class="u_flex u_align-center u_content-end"></div>
+                    </div>
+                    <div class="u_content-subheader u_b-top-none u_p-20">
+                        <h5 class="u_flex u_align-center"><span>Create Shift</span></h5>
+                    </div>
+                    <div class="u_p-20">
+                        <div class="u_row">
+                            <div class="u_col-6 u_mb-25">
+                                <div class="u_input"><input type="text" name="code" placeholder=" " autocomplete="off"
+                                        value=""><label>Shift Code <span>*</span></label></div>
+                            </div>
+                            <div class="u_col-6 u_mb-25">
+                                <div class="u_input"><input type="text" placeholder=" " name="name" autocomplete="off"
+                                        value=""><label>Shift Name <span>*</span></label></div>
+                            </div>
+                            <div class="u_col-6 u_mb-25">
+                                <div class="u_input u_input-textarea"><textarea class="u_textarea u_textarea-six-rows"
+                                        name="description" placeholder=" "></textarea><label>Description </label></div>
+                            </div>
+                            <div class="u_checkbox undefined   "><input id="isDefault" type="checkbox"
+                                    label="Default Shift" name="isDefault"><label for="isDefault"><span>Default
+                                        Shift</span></label></div>
+                        </div>
+                    </div>
+                    <div class="u_content-subheader u_p-20">
+                        <h5>Advance Shift Setting</h5>
+                    </div>
+                    <div class="u_col-12 u_p-20">
+                        <div class="u_flex u_align-center u_mb-20">
+                            <div class="u_radio-btn undefined"><input type="radio" id="regular" name="regular"
+                                    label="Regular" for="regular" checked=""><label for="regular">Regular</label></div>
+                            <span class="u_rollover u_cp u_flex u_ml-10" aria-describedby="popup-2944"><svg width="18"
+                                    height="18" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    class="" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <path class="u_fill"
+                                        d="M18 2c8.837 0 16 7.163 16 16s-7.163 16-16 16S2 26.837 2 18 9.163 2 18 2Zm1.6 11.2V10h-3.2v3.2h3.2Zm0 12.8v-9.6h-3.2V26h3.2Z"
+                                        fill="#4E525F"></path>
+                                </svg></span>
+                        </div>
+                        <div class="u_flex u_align-center u_mb-20">
+                            <div class="u_radio-btn undefined"><input type="radio" id="isFlexible" name="isFlexible"
+                                    label="Flexible" for="isFlexible"><label for="isFlexible">Flexible</label></div>
+                            <span class="u_rollover u_cp u_flex u_ml-10" aria-describedby="popup-2945"><svg width="18"
+                                    height="18" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    class="" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <path class="u_fill"
+                                        d="M18 2c8.837 0 16 7.163 16 16s-7.163 16-16 16S2 26.837 2 18 9.163 2 18 2Zm1.6 11.2V10h-3.2v3.2h3.2Zm0 12.8v-9.6h-3.2V26h3.2Z"
+                                        fill="#4E525F"></path>
+                                </svg></span>
+                        </div>
+                    </div>
+                    <div class="u_content-subheader u_p-20">
+                        <h5>Configure Working Hours</h5>
+                    </div>
+                    <div class="u_p-20">
+                        <div class="u_row">
+                            <div class="u_col-12">
+                                <p class="u_small-font u_color-title u_mb-15"><strong>Note: </strong>Please Select Less
+                                    Or Equal Then Maximum Working Hours.</p>
+                                <div class="u_flex u_working-hours u_mb-20">
+                                    <div class="u_day-checkbox u_mr-15"><input type="checkbox"
+                                            id="working_sunday"><label for="working_sunday"
+                                            class="u_cp u_flex u_align-center u_content-center">s</label></div>
+                                    <div class="u_day-checkbox u_mr-15"><input type="checkbox" id="working_monday"
+                                            checked=""><label for="working_monday"
+                                            class="u_cp u_flex u_align-center u_content-center">m</label></div>
+                                    <div class="u_day-checkbox u_mr-15"><input type="checkbox"
+                                            id="working_tuesday"><label for="working_tuesday"
+                                            class="u_cp u_flex u_align-center u_content-center">t</label></div>
+                                    <div class="u_day-checkbox u_mr-15"><input type="checkbox"
+                                            id="working_wednesday"><label for="working_wednesday"
+                                            class="u_cp u_flex u_align-center u_content-center">w</label></div>
+                                    <div class="u_day-checkbox u_mr-15"><input type="checkbox"
+                                            id="working_thursday"><label for="working_thursday"
+                                            class="u_cp u_flex u_align-center u_content-center">t</label></div>
+                                    <div class="u_day-checkbox u_mr-15"><input type="checkbox"
+                                            id="working_friday"><label for="working_friday"
+                                            class="u_cp u_flex u_align-center u_content-center">f</label></div>
+                                    <div class="u_day-checkbox u_mr-15"><input type="checkbox"
+                                            id="working_saturday"><label for="working_saturday"
+                                            class="u_cp u_flex u_align-center u_content-center">s</label></div>
+                                </div>
+                                <div class="u_working-days">
+                                    <div class="u_working-days-wpr u_flex u_mb-10">
+                                        <div class="u_working-day u_flex u_mb-20 u_mr-30 u_align-baseline">
+                                            <p class="u_mr-10 u_working-day-name">monday</p>
+                                            <div class="u_flex u_align-baseline">
+                                                <div class="u_working-day-timing ">
+                                                    <div class="u_flex u_align-center">
+                                                        <div class="u_timepicker "><span class="rc-time-picker"><input
+                                                                    class="rc-time-picker-input" type="text"
+                                                                    placeholder="HH:MM AM" autocomplete="off"
+                                                                    value=""><span
+                                                                    class="rc-time-picker-icon"></span></span></div>
+                                                        <span class="u_ml-10 u_mr-20">to</span>
+                                                        <div class="u_timepicker "><span class="rc-time-picker"><input
+                                                                    class="rc-time-picker-input" type="text"
+                                                                    placeholder="HH:MM PM" autocomplete="off"
+                                                                    value=""><span
+                                                                    class="rc-time-picker-icon"></span></span></div>
+                                                    </div>
+                                                </div><span class="u_ml-5 u_cp u_icon-rollover u_working-day-copy"
+                                                    aria-describedby="popup-2962"><svg width="14" height="14"
+                                                        viewBox="0 0 36 36" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg" class=""
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <path class="u_fill"
+                                                            d="M10.321 8.4V3.6c0-.424.167-.831.463-1.131A1.57 1.57 0 0111.9 2h18.963c.42 0 .821.169 1.118.469.296.3.462.707.462 1.131V26c0 .424-.166.831-.462 1.131a1.57 1.57 0 01-1.118.469h-4.74v4.8c0 .883-.712 1.6-1.592 1.6H5.592a1.566 1.566 0 01-1.125-.465A1.602 1.602 0 014 32.4L4.005 10c0-.883.71-1.6 1.591-1.6h4.725zm-3.156 3.2L7.16 30.8h15.803V11.6H7.165zm6.317-3.2h12.642v16h3.16V5.2H13.482v3.2z"
+                                                            fill="#007AFF"></path>
+                                                    </svg></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="u_content-subheader u_p-20">
+                        <h5>Weekend Definition</h5>
+                    </div>
+                    <div class="u_p-20">
+                        <div class="u_row">
+                            <div class="u_col-12">
+                                <div class="u_shift-weekend-table u_table-resource-nowrap">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th rowspan="2" class="u_text-left">Days</th>
+                                                <th colspan="6">Weeks</th>
+                                            </tr>
+                                            <tr>
+                                                <th><span>1st</span></th>
+                                                <th><span>2nd</span></th>
+                                                <th><span>3rd</span></th>
+                                                <th><span>4th</span></th>
+                                                <th><span>5th</span></th>
+                                                <th><span class="u_flex u_align-center u_ml-30"
+                                                        style="width: 65px;">Last<div
+                                                            class="u_rollover u_cp u_flex u_ml-5"
+                                                            aria-describedby="popup-2946"><svg width="18" height="18"
+                                                                viewBox="0 0 36 36" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg" class=""
+                                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                                <path class="u_fill"
+                                                                    d="M18 2c8.837 0 16 7.163 16 16s-7.163 16-16 16S2 26.837 2 18 9.163 2 18 2Zm1.6 11.2V10h-3.2v3.2h3.2Zm0 12.8v-9.6h-3.2V26h3.2Z"
+                                                                    fill="#4E525F"></path>
+                                                            </svg></div>
+                                                        <div class="u_checkbox u_ml-5 u_checkbox-checked  "><input
+                                                                id="isSetLastDayPriority" type="checkbox" label=""
+                                                                name="isSetLastDayPriority" class="u_ml-5"
+                                                                checked=""><label
+                                                                for="isSetLastDayPriority"><span></span></label></div>
+                                                    </span></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="u_flex u_align-center u_content-between">sunday<span
+                                                            class="u_cp u_icon-rollover"
+                                                            aria-describedby="popup-2964"><svg width="14" height="14"
+                                                                viewBox="0 0 36 36" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg" class=""
+                                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                                <path class="u_fill"
+                                                                    d="M10.321 8.4V3.6c0-.424.167-.831.463-1.131A1.57 1.57 0 0111.9 2h18.963c.42 0 .821.169 1.118.469.296.3.462.707.462 1.131V26c0 .424-.166.831-.462 1.131a1.57 1.57 0 01-1.118.469h-4.74v4.8c0 .883-.712 1.6-1.592 1.6H5.592a1.566 1.566 0 01-1.125-.465A1.602 1.602 0 014 32.4L4.005 10c0-.883.71-1.6 1.591-1.6h4.725zm-3.156 3.2L7.16 30.8h15.803V11.6H7.165zm6.317-3.2h12.642v16h3.16V5.2H13.482v3.2z"
+                                                                    fill="#007AFF"></path>
+                                                            </svg></span></div>
+                                                </td>
+                                                <td class="">
+                                                    <div class="u_flex u_align-center u_content-center">
+                                                        <div class="u_checkbox undefined   "><input id="sunday_1st"
+                                                                type="checkbox" label=""><label
+                                                                for="sunday_1st"><span></span></label></div>
+                                                    </div>
+                                                </td>
+                                                <td class="">
+                                                    <div class="u_flex u_align-center u_content-center">
+                                                        <div class="u_checkbox undefined   "><input id="sunday_2nd"
+                                                                type="checkbox" label=""><label
+                                                                for="sunday_2nd"><span></span></label></div>
+                                                    </div>
+                                                </td>
+                                                <td class="">
+                                                    <div class="u_flex u_align-center u_content-center">
+                                                        <div class="u_checkbox undefined   "><input id="sunday_3rd"
+                                                                type="checkbox" label=""><label
+                                                                for="sunday_3rd"><span></span></label></div>
+                                                    </div>
+                                                </td>
+                                                <td class="">
+                                                    <div class="u_flex u_align-center u_content-center">
+                                                        <div class="u_checkbox undefined   "><input id="sunday_4th"
+                                                                type="checkbox" label=""><label
+                                                                for="sunday_4th"><span></span></label></div>
+                                                    </div>
+                                                </td>
+                                                <td class="">
+                                                    <div class="u_flex u_align-center u_content-center">
+                                                        <div class="u_checkbox undefined   "><input id="sunday_5th"
+                                                                type="checkbox" label=""><label
+                                                                for="sunday_5th"><span></span></label></div>
+                                                    </div>
+                                                </td>
+                                                <td class="">
+                                                    <div class="u_flex u_align-center u_content-center">
+                                                        <div class="u_checkbox undefined   "><input id="sunday_6th"
+                                                                type="checkbox" label=""><label
+                                                                for="sunday_6th"><span></span></label></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="u_flex u_align-center u_content-between">monday<span
+                                                            class="u_cp u_icon-rollover"
+                                                            aria-describedby="popup-2965"><svg width="14" height="14"
+                                                                viewBox="0 0 36 36" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg" class=""
+                                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                                <path class="u_fill"
+                                                                    d="M10.321 8.4V3.6c0-.424.167-.831.463-1.131A1.57 1.57 0 0111.9 2h18.963c.42 0 .821.169 1.118.469.296.3.462.707.462 1.131V26c0 .424-.166.831-.462 1.131a1.57 1.57 0 01-1.118.469h-4.74v4.8c0 .883-.712 1.6-1.592 1.6H5.592a1.566 1.566 0 01-1.125-.465A1.602 1.602 0 014 32.4L4.005 10c0-.883.71-1.6 1.591-1.6h4.725zm-3.156 3.2L7.16 30.8h15.803V11.6H7.165zm6.317-3.2h12.642v16h3.16V5.2H13.482v3.2z"
+                                                                    fill="#007AFF"></path>
+                                                            </svg></span></div>
+                                                </td>
+                                                <td class="">
+                                                    <div class="u_flex u_align-center u_content-center">
+                                                        <div class="u_checkbox undefined   "><input id="monday_1st"
+                                                                type="checkbox" label=""><label
+                                                                for="monday_1st"><span></span></label></div>
+                                                    </div>
+                                                </td>
+                                                <td class="">
+                                                    <div class="u_flex u_align-center u_content-center">
+                                                        <div class="u_checkbox undefined   "><input id="monday_2nd"
+                                                                type="checkbox" label=""><label
+                                                                for="monday_2nd"><span></span></label></div>
+                                                    </div>
+                                                </td>
+                                                <td class="">
+                                                    <div class="u_flex u_align-center u_content-center">
+                                                        <div class="u_checkbox undefined   "><input id="monday_3rd"
+                                                                type="checkbox" label=""><label
+                                                                for="monday_3rd"><span></span></label></div>
+                                                    </div>
+                                                </td>
+                                                <td class="">
+                                                    <div class="u_flex u_align-center u_content-center">
+                                                        <div class="u_checkbox undefined   "><input id="monday_4th"
+                                                                type="checkbox" label=""><label
+                                                                for="monday_4th"><span></span></label></div>
+                                                    </div>
+                                                </td>
+                                                <td class="">
+                                                    <div class="u_flex u_align-center u_content-center">
+                                                        <div class="u_checkbox undefined   "><input id="monday_5th"
+                                                                type="checkbox" label=""><label
+                                                                for="monday_5th"><span></span></label></div>
+                                                    </div>
+                                                </td>
+                                                <td class="">
+                                                    <div class="u_flex u_align-center u_content-center">
+                                                        <div class="u_checkbox undefined   "><input id="monday_6th"
+                                                                type="checkbox" label=""><label
+                                                                for="monday_6th"><span></span></label></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="u_flex u_align-center u_content-between">tuesday<span
+                                                            class="u_cp u_icon-rollover"
+                                                            aria-describedby="popup-2966"><svg width="14" height="14"
+                                                                viewBox="0 0 36 36" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg" class=""
+                                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                                <path class="u_fill"
+                                                                    d="M10.321 8.4V3.6c0-.424.167-.831.463-1.131A1.57 1.57 0 0111.9 2h18.963c.42 0 .821.169 1.118.469.296.3.462.707.462 1.131V26c0 .424-.166.831-.462 1.131a1.57 1.57 0 01-1.118.469h-4.74v4.8c0 .883-.712 1.6-1.592 1.6H5.592a1.566 1.566 0 01-1.125-.465A1.602 1.602 0 014 32.4L4.005 10c0-.883.71-1.6 1.591-1.6h4.725zm-3.156 3.2L7.16 30.8h15.803V11.6H7.165zm6.317-3.2h12.642v16h3.16V5.2H13.482v3.2z"
+                                                                    fill="#007AFF"></path>
+                                                            </svg></span></div>
+                                                </td>
+                                                <td class="">
+                                                    <div class="u_flex u_align-center u_content-center">
+                                                        <div class="u_checkbox undefined   "><input id="tuesday_1st"
+                                                                type="checkbox" label=""><label
+                                                                for="tuesday_1st"><span></span></label></div>
+                                                    </div>
+                                                </td>
+                                                <td class="">
+                                                    <div class="u_flex u_align-center u_content-center">
+                                                        <div class="u_checkbox undefined   "><input id="tuesday_2nd"
+                                                                type="checkbox" label=""><label
+                                                                for="tuesday_2nd"><span></span></label></div>
+                                                    </div>
+                                                </td>
+                                                <td class="">
+                                                    <div class="u_flex u_align-center u_content-center">
+                                                        <div class="u_checkbox undefined   "><input id="tuesday_3rd"
+                                                                type="checkbox" label=""><label
+                                                                for="tuesday_3rd"><span></span></label></div>
+                                                    </div>
+                                                </td>
+                                                <td class="">
+                                                    <div class="u_flex u_align-center u_content-center">
+                                                        <div class="u_checkbox undefined   "><input id="tuesday_4th"
+                                                                type="checkbox" label=""><label
+                                                                for="tuesday_4th"><span></span></label></div>
+                                                    </div>
+                                                </td>
+                                                <td class="">
+                                                    <div class="u_flex u_align-center u_content-center">
+                                                        <div class="u_checkbox undefined   "><input id="tuesday_5th"
+                                                                type="checkbox" label=""><label
+                                                                for="tuesday_5th"><span></span></label></div>
+                                                    </div>
+                                                </td>
+                                                <td class="">
+                                                    <div class="u_flex u_align-center u_content-center">
+                                                        <div class="u_checkbox undefined   "><input id="tuesday_6th"
+                                                                type="checkbox" label=""><label
+                                                                for="tuesday_6th"><span></span></label></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="u_flex u_align-center u_content-between">wednesday<span
+                                                            class="u_cp u_icon-rollover"
+                                                            aria-describedby="popup-2967"><svg width="14" height="14"
+                                                                viewBox="0 0 36 36" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg" class=""
+                                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                                <path class="u_fill"
+                                                                    d="M10.321 8.4V3.6c0-.424.167-.831.463-1.131A1.57 1.57 0 0111.9 2h18.963c.42 0 .821.169 1.118.469.296.3.462.707.462 1.131V26c0 .424-.166.831-.462 1.131a1.57 1.57 0 01-1.118.469h-4.74v4.8c0 .883-.712 1.6-1.592 1.6H5.592a1.566 1.566 0 01-1.125-.465A1.602 1.602 0 014 32.4L4.005 10c0-.883.71-1.6 1.591-1.6h4.725zm-3.156 3.2L7.16 30.8h15.803V11.6H7.165zm6.317-3.2h12.642v16h3.16V5.2H13.482v3.2z"
+                                                                    fill="#007AFF"></path>
+                                                            </svg></span></div>
+                                                </td>
+                                                <td class="">
+                                                    <div class="u_flex u_align-center u_content-center">
+                                                        <div class="u_checkbox undefined   "><input id="wednesday_1st"
+                                                                type="checkbox" label=""><label
+                                                                for="wednesday_1st"><span></span></label></div>
+                                                    </div>
+                                                </td>
+                                                <td class="">
+                                                    <div class="u_flex u_align-center u_content-center">
+                                                        <div class="u_checkbox undefined   "><input id="wednesday_2nd"
+                                                                type="checkbox" label=""><label
+                                                                for="wednesday_2nd"><span></span></label></div>
+                                                    </div>
+                                                </td>
+                                                <td class="">
+                                                    <div class="u_flex u_align-center u_content-center">
+                                                        <div class="u_checkbox undefined   "><input id="wednesday_3rd"
+                                                                type="checkbox" label=""><label
+                                                                for="wednesday_3rd"><span></span></label></div>
+                                                    </div>
+                                                </td>
+                                                <td class="">
+                                                    <div class="u_flex u_align-center u_content-center">
+                                                        <div class="u_checkbox undefined   "><input id="wednesday_4th"
+                                                                type="checkbox" label=""><label
+                                                                for="wednesday_4th"><span></span></label></div>
+                                                    </div>
+                                                </td>
+                                                <td class="">
+                                                    <div class="u_flex u_align-center u_content-center">
+                                                        <div class="u_checkbox undefined   "><input id="wednesday_5th"
+                                                                type="checkbox" label=""><label
+                                                                for="wednesday_5th"><span></span></label></div>
+                                                    </div>
+                                                </td>
+                                                <td class="">
+                                                    <div class="u_flex u_align-center u_content-center">
+                                                        <div class="u_checkbox undefined   "><input id="wednesday_6th"
+                                                                type="checkbox" label=""><label
+                                                                for="wednesday_6th"><span></span></label></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="u_flex u_align-center u_content-between">thursday<span
+                                                            class="u_cp u_icon-rollover"
+                                                            aria-describedby="popup-2968"><svg width="14" height="14"
+                                                                viewBox="0 0 36 36" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg" class=""
+                                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                                <path class="u_fill"
+                                                                    d="M10.321 8.4V3.6c0-.424.167-.831.463-1.131A1.57 1.57 0 0111.9 2h18.963c.42 0 .821.169 1.118.469.296.3.462.707.462 1.131V26c0 .424-.166.831-.462 1.131a1.57 1.57 0 01-1.118.469h-4.74v4.8c0 .883-.712 1.6-1.592 1.6H5.592a1.566 1.566 0 01-1.125-.465A1.602 1.602 0 014 32.4L4.005 10c0-.883.71-1.6 1.591-1.6h4.725zm-3.156 3.2L7.16 30.8h15.803V11.6H7.165zm6.317-3.2h12.642v16h3.16V5.2H13.482v3.2z"
+                                                                    fill="#007AFF"></path>
+                                                            </svg></span></div>
+                                                </td>
+                                                <td class="">
+                                                    <div class="u_flex u_align-center u_content-center">
+                                                        <div class="u_checkbox undefined   "><input id="thursday_1st"
+                                                                type="checkbox" label=""><label
+                                                                for="thursday_1st"><span></span></label></div>
+                                                    </div>
+                                                </td>
+                                                <td class="">
+                                                    <div class="u_flex u_align-center u_content-center">
+                                                        <div class="u_checkbox undefined   "><input id="thursday_2nd"
+                                                                type="checkbox" label=""><label
+                                                                for="thursday_2nd"><span></span></label></div>
+                                                    </div>
+                                                </td>
+                                                <td class="">
+                                                    <div class="u_flex u_align-center u_content-center">
+                                                        <div class="u_checkbox undefined   "><input id="thursday_3rd"
+                                                                type="checkbox" label=""><label
+                                                                for="thursday_3rd"><span></span></label></div>
+                                                    </div>
+                                                </td>
+                                                <td class="">
+                                                    <div class="u_flex u_align-center u_content-center">
+                                                        <div class="u_checkbox undefined   "><input id="thursday_4th"
+                                                                type="checkbox" label=""><label
+                                                                for="thursday_4th"><span></span></label></div>
+                                                    </div>
+                                                </td>
+                                                <td class="">
+                                                    <div class="u_flex u_align-center u_content-center">
+                                                        <div class="u_checkbox undefined   "><input id="thursday_5th"
+                                                                type="checkbox" label=""><label
+                                                                for="thursday_5th"><span></span></label></div>
+                                                    </div>
+                                                </td>
+                                                <td class="">
+                                                    <div class="u_flex u_align-center u_content-center">
+                                                        <div class="u_checkbox undefined   "><input id="thursday_6th"
+                                                                type="checkbox" label=""><label
+                                                                for="thursday_6th"><span></span></label></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="u_flex u_align-center u_content-between">friday<span
+                                                            class="u_cp u_icon-rollover"
+                                                            aria-describedby="popup-2969"><svg width="14" height="14"
+                                                                viewBox="0 0 36 36" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg" class=""
+                                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                                <path class="u_fill"
+                                                                    d="M10.321 8.4V3.6c0-.424.167-.831.463-1.131A1.57 1.57 0 0111.9 2h18.963c.42 0 .821.169 1.118.469.296.3.462.707.462 1.131V26c0 .424-.166.831-.462 1.131a1.57 1.57 0 01-1.118.469h-4.74v4.8c0 .883-.712 1.6-1.592 1.6H5.592a1.566 1.566 0 01-1.125-.465A1.602 1.602 0 014 32.4L4.005 10c0-.883.71-1.6 1.591-1.6h4.725zm-3.156 3.2L7.16 30.8h15.803V11.6H7.165zm6.317-3.2h12.642v16h3.16V5.2H13.482v3.2z"
+                                                                    fill="#007AFF"></path>
+                                                            </svg></span></div>
+                                                </td>
+                                                <td class="">
+                                                    <div class="u_flex u_align-center u_content-center">
+                                                        <div class="u_checkbox undefined   "><input id="friday_1st"
+                                                                type="checkbox" label=""><label
+                                                                for="friday_1st"><span></span></label></div>
+                                                    </div>
+                                                </td>
+                                                <td class="">
+                                                    <div class="u_flex u_align-center u_content-center">
+                                                        <div class="u_checkbox undefined   "><input id="friday_2nd"
+                                                                type="checkbox" label=""><label
+                                                                for="friday_2nd"><span></span></label></div>
+                                                    </div>
+                                                </td>
+                                                <td class="">
+                                                    <div class="u_flex u_align-center u_content-center">
+                                                        <div class="u_checkbox undefined   "><input id="friday_3rd"
+                                                                type="checkbox" label=""><label
+                                                                for="friday_3rd"><span></span></label></div>
+                                                    </div>
+                                                </td>
+                                                <td class="">
+                                                    <div class="u_flex u_align-center u_content-center">
+                                                        <div class="u_checkbox undefined   "><input id="friday_4th"
+                                                                type="checkbox" label=""><label
+                                                                for="friday_4th"><span></span></label></div>
+                                                    </div>
+                                                </td>
+                                                <td class="">
+                                                    <div class="u_flex u_align-center u_content-center">
+                                                        <div class="u_checkbox undefined   "><input id="friday_5th"
+                                                                type="checkbox" label=""><label
+                                                                for="friday_5th"><span></span></label></div>
+                                                    </div>
+                                                </td>
+                                                <td class="">
+                                                    <div class="u_flex u_align-center u_content-center">
+                                                        <div class="u_checkbox undefined   "><input id="friday_6th"
+                                                                type="checkbox" label=""><label
+                                                                for="friday_6th"><span></span></label></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="u_flex u_align-center u_content-between">saturday<span
+                                                            class="u_cp u_icon-rollover"
+                                                            aria-describedby="popup-2970"><svg width="14" height="14"
+                                                                viewBox="0 0 36 36" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg" class=""
+                                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                                <path class="u_fill"
+                                                                    d="M10.321 8.4V3.6c0-.424.167-.831.463-1.131A1.57 1.57 0 0111.9 2h18.963c.42 0 .821.169 1.118.469.296.3.462.707.462 1.131V26c0 .424-.166.831-.462 1.131a1.57 1.57 0 01-1.118.469h-4.74v4.8c0 .883-.712 1.6-1.592 1.6H5.592a1.566 1.566 0 01-1.125-.465A1.602 1.602 0 014 32.4L4.005 10c0-.883.71-1.6 1.591-1.6h4.725zm-3.156 3.2L7.16 30.8h15.803V11.6H7.165zm6.317-3.2h12.642v16h3.16V5.2H13.482v3.2z"
+                                                                    fill="#007AFF"></path>
+                                                            </svg></span></div>
+                                                </td>
+                                                <td class="">
+                                                    <div class="u_flex u_align-center u_content-center">
+                                                        <div class="u_checkbox undefined   "><input id="saturday_1st"
+                                                                type="checkbox" label=""><label
+                                                                for="saturday_1st"><span></span></label></div>
+                                                    </div>
+                                                </td>
+                                                <td class="">
+                                                    <div class="u_flex u_align-center u_content-center">
+                                                        <div class="u_checkbox undefined   "><input id="saturday_2nd"
+                                                                type="checkbox" label=""><label
+                                                                for="saturday_2nd"><span></span></label></div>
+                                                    </div>
+                                                </td>
+                                                <td class="">
+                                                    <div class="u_flex u_align-center u_content-center">
+                                                        <div class="u_checkbox undefined   "><input id="saturday_3rd"
+                                                                type="checkbox" label=""><label
+                                                                for="saturday_3rd"><span></span></label></div>
+                                                    </div>
+                                                </td>
+                                                <td class="">
+                                                    <div class="u_flex u_align-center u_content-center">
+                                                        <div class="u_checkbox undefined   "><input id="saturday_4th"
+                                                                type="checkbox" label=""><label
+                                                                for="saturday_4th"><span></span></label></div>
+                                                    </div>
+                                                </td>
+                                                <td class="">
+                                                    <div class="u_flex u_align-center u_content-center">
+                                                        <div class="u_checkbox undefined   "><input id="saturday_5th"
+                                                                type="checkbox" label=""><label
+                                                                for="saturday_5th"><span></span></label></div>
+                                                    </div>
+                                                </td>
+                                                <td class="">
+                                                    <div class="u_flex u_align-center u_content-center">
+                                                        <div class="u_checkbox undefined   "><input id="saturday_6th"
+                                                                type="checkbox" label=""><label
+                                                                for="saturday_6th"><span></span></label></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="u_content-subheader u_p-20">
+                        <h5>Rules</h5>
+                    </div>
+                    <div class="u_p-20">
+                        <div class="u_row u_row-responsive">
+                            <div class="u_col-4 u_mb-20">
+                                <div class="u_input"><input type="number" placeholder=" " step="0.01" min="0"
+                                        max="23.99" name="halfDayWorkingHour" autocomplete="off" value=""><label>Minimum
+                                        Hours (Half Day) </label></div>
+                            </div>
+                            <div class="u_col-4 u_mb-20">
+                                <div class="u_input u_input-notice"><input type="number" placeholder=" " step="0.01"
+                                        min="0" max="23.99" name="fullDayWorkingHour" autocomplete="off"
+                                        value=""><label>Minimum Hours (Full Day) </label>
+                                    <div class=" u_input-note u_ib"><span class="u_rollover u_cp u_flex"
+                                            aria-describedby="popup-2971"><svg width="18" height="18"
+                                                viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                class="" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <path class="u_fill"
+                                                    d="M18 2c8.837 0 16 7.163 16 16s-7.163 16-16 16S2 26.837 2 18 9.163 2 18 2Zm1.6 11.2V10h-3.2v3.2h3.2Zm0 12.8v-9.6h-3.2V26h3.2Z"
+                                                    fill="#4E525F"></path>
+                                            </svg></span></div>
+                                </div>
+                            </div>
+                            <div class="u_col-4 u_mb-20">
+                                <div class="u_input u_w-full u_input-notice"><input type="number" placeholder=" "
+                                        step="0.01" min="0" max="23.99" name="maxWorkingHour" autocomplete="off"
+                                        value="16"><label>Maximum Working Hours </label>
+                                    <div class=" u_input-note u_ib"><span class="u_rollover u_cp u_flex"
+                                            aria-describedby="popup-2972"><svg width="18" height="18"
+                                                viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                class="" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <path class="u_fill"
+                                                    d="M18 2c8.837 0 16 7.163 16 16s-7.163 16-16 16S2 26.837 2 18 9.163 2 18 2Zm1.6 11.2V10h-3.2v3.2h3.2Zm0 12.8v-9.6h-3.2V26h3.2Z"
+                                                    fill="#4E525F"></path>
+                                            </svg></span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="u_row u_shift-grace-time">
+                            <div class="u_col-12 u_mb-10">
+                                <div class="u_label u_label-text u_flex u_align-center">
+                                    <div class="u_checkbox u_flex-shrink   "><input id="earlyPunchGrace" type="checkbox"
+                                            label="Grace To Punch Early" name="earlyPunchGraceCheck"
+                                            class="u_flex-shrink"><label for="earlyPunchGrace"><span>Grace To Punch
+                                                Early</span></label></div>
+                                    <div class="u_input u_ml-10 u_mr-10"><input class="u_input-hours u_input-small"
+                                            pattern="[0-9]*" placeholder="0" name="earlyPunchGrace" maxlength="3"
+                                            disabled="" autocomplete="off" value=""></div><span>Minutes</span>
+                                </div>
+                            </div>
+                            <div class="u_col-12 u_mb-20">
+                                <div class="u_label u_label-text u_flex u_align-center">
+                                    <div class="u_checkbox u_flex-shrink   "><input id="maxBreak" type="checkbox"
+                                            label="Maximum Break" name="maxBreakCheck" class="u_flex-shrink"><label
+                                            for="maxBreak"><span>Maximum Break</span></label></div>
+                                    <div class="u_input u_ml-10 u_mr-10"><input class="u_input-hours u_input-small"
+                                            name="maxBreak" pattern="[0-9]*" placeholder="0" disabled="" maxlength="3"
+                                            autocomplete="off" value=""></div><span>Minutes</span><span
+                                        class="u_rollover u_cp u_flex u_ml-10" aria-describedby="popup-2947"><svg
+                                            width="18" height="18" viewBox="0 0 36 36" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg" class=""
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <path class="u_fill"
+                                                d="M18 2c8.837 0 16 7.163 16 16s-7.163 16-16 16S2 26.837 2 18 9.163 2 18 2Zm1.6 11.2V10h-3.2v3.2h3.2Zm0 12.8v-9.6h-3.2V26h3.2Z"
+                                                fill="#4E525F"></path>
+                                        </svg></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="u_row u_shift-checkout-time u_mb-15">
+                            <div class="u_col-12">
+                                <div class="u_radio-group"><label class="u_label u_label_header u_mb-15">Total hours
+                                        calculation:</label>
+                                    <div class="u_flex u_mb-15">
+                                        <div class="u_radio-btn undefined"><input type="radio" id="total_hours_every"
+                                                name="hours_calculation" label="Every Valid Clock-in &amp; Clock-out"
+                                                for="total_hours_every" value="2" checked=""><label
+                                                for="total_hours_every">Every Valid Clock-in &amp; Clock-out</label>
+                                        </div><span class="u_rollover u_cp u_flex u_ml-10"
+                                            aria-describedby="popup-2948"><svg width="18" height="18"
+                                                viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                class="" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <path class="u_fill"
+                                                    d="M18 2c8.837 0 16 7.163 16 16s-7.163 16-16 16S2 26.837 2 18 9.163 2 18 2Zm1.6 11.2V10h-3.2v3.2h3.2Zm0 12.8v-9.6h-3.2V26h3.2Z"
+                                                    fill="#4E525F"></path>
+                                            </svg></span>
+                                    </div>
+                                    <div class="u_flex u_mb-15">
+                                        <div class="u_radio-btn undefined"><input type="radio" id="total_hours_first"
+                                                name="hours_calculation" label="First Clock-in &amp; Last Clock-out"
+                                                for="total_hours_first" value="2"><label for="total_hours_first">First
+                                                Clock-in &amp; Last Clock-out</label></div><span
+                                            class="u_rollover u_cp u_flex u_ml-10" aria-describedby="popup-2949"><svg
+                                                width="18" height="18" viewBox="0 0 36 36" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg" class=""
+                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <path class="u_fill"
+                                                    d="M18 2c8.837 0 16 7.163 16 16s-7.163 16-16 16S2 26.837 2 18 9.163 2 18 2Zm1.6 11.2V10h-3.2v3.2h3.2Zm0 12.8v-9.6h-3.2V26h3.2Z"
+                                                    fill="#4E525F"></path>
+                                            </svg></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="u_row ">
+                            <div class="u_col-12"><label class="u_label u_label_header u_mb-15">Does this Attendance
+                                    request require an approval?</label></div>
+                            <div class="u_col-12">
+                                <div class="u_flex u_align-center u_mb-10">
+                                    <div class="u_radio-btn undefined"><input type="radio" id="approval_no"
+                                            name="approval" label="No" for="approval_no" checked=""><label
+                                            for="approval_no">No</label></div><span
+                                        class="u_rollover u_cp u_flex u_ml-10" aria-describedby="popup-2950"><svg
+                                            width="18" height="18" viewBox="0 0 36 36" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg" class=""
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <path class="u_fill"
+                                                d="M18 2c8.837 0 16 7.163 16 16s-7.163 16-16 16S2 26.837 2 18 9.163 2 18 2Zm1.6 11.2V10h-3.2v3.2h3.2Zm0 12.8v-9.6h-3.2V26h3.2Z"
+                                                fill="#4E525F"></path>
+                                        </svg></span>
+                                </div>
+                                <div class="u_flex u_align-center u_mb-20">
+                                    <div class="u_radio-btn undefined"><input type="radio" id="approval_yes"
+                                            name="approval" label="Yes" for="approval_yes"><label
+                                            for="approval_yes">Yes</label></div><span
+                                        class="u_rollover u_cp u_flex u_ml-10" aria-describedby="popup-2951"><svg
+                                            width="18" height="18" viewBox="0 0 36 36" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg" class=""
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <path class="u_fill"
+                                                d="M18 2c8.837 0 16 7.163 16 16s-7.163 16-16 16S2 26.837 2 18 9.163 2 18 2Zm1.6 11.2V10h-3.2v3.2h3.2Zm0 12.8v-9.6h-3.2V26h3.2Z"
+                                                fill="#4E525F"></path>
+                                        </svg></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="u_content-subheader" id="u_content-header">
+                        <h5>Default Leave Deduction</h5>
+                    </div>
+                    <div class="u_p-20">
+                        <div class="u_row">
+                            <div class="u_col-12 u_mb-10 u_flex">
+                                <div class="u_ib u_flex-shrink">
+                                    <div class="u_checkbox undefined   "><input id="isAutoLeaveDeduct" type="checkbox"
+                                            label="Do you want system to automatically deduct leave when there is no attendance logged?"
+                                            name="isAutoLeaveDeduct"><label for="isAutoLeaveDeduct"><span>Do you want
+                                                system to automatically deduct leave when there is no attendance
+                                                logged?</span></label></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="u_content-subheader u_p-20">
+                        <h5>Email Rule Setting</h5>
+                    </div>
+                    <div class="u_p-20 u_email-rule-settings">
+                        <div class="u_row">
+                            <div class="u_col-4 u_mb-10">
+                                <div class="u_flex u_align-center u_mb-10"><label class="u_label u_label_header">Absent
+                                        Email Time:</label>
+                                    <div class="u_rollover u_cp u_flex u_ml-5" aria-describedby="popup-2952"><svg
+                                            width="18" height="18" viewBox="0 0 36 36" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg" class=""
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <path class="u_fill"
+                                                d="M18 2c8.837 0 16 7.163 16 16s-7.163 16-16 16S2 26.837 2 18 9.163 2 18 2Zm1.6 11.2V10h-3.2v3.2h3.2Zm0 12.8v-9.6h-3.2V26h3.2Z"
+                                                fill="#4E525F"></path>
+                                        </svg></div>
+                                </div>
+                                <div class="u_timepicker "><span class="rc-time-picker"><input
+                                            class="rc-time-picker-input" type="text" placeholder="HH:MM AM"
+                                            autocomplete="off" value="11:00 AM"><span
+                                            class="rc-time-picker-icon"></span></span></div>
+                                <p class="u_input-error"></p>
+                            </div>
+                            <div class="u_col-12 u_mb-10">
+                                <div class="u_flex u_align-center u_mb-10"><label class="u_label u_label_header">Daily
+                                        Summary Email - Before Shift Start Time:</label>
+                                    <div class="u_rollover u_cp u_flex u_ml-5" aria-describedby="popup-2953"><svg
+                                            width="18" height="18" viewBox="0 0 36 36" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg" class=""
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <path class="u_fill"
+                                                d="M18 2c8.837 0 16 7.163 16 16s-7.163 16-16 16S2 26.837 2 18 9.163 2 18 2Zm1.6 11.2V10h-3.2v3.2h3.2Zm0 12.8v-9.6h-3.2V26h3.2Z"
+                                                fill="#4E525F"></path>
+                                        </svg></div>
+                                </div>
+                                <div class="u_timepicker "><span class="rc-time-picker"><input
+                                            class="rc-time-picker-input" type="text" placeholder="HH:MM AM"
+                                            autocomplete="off" value="08:00 AM"><span
+                                            class="rc-time-picker-icon"></span></span></div>
+                                <p class="u_input-error"></p>
+                            </div>
+                            <div class="u_col-12 u_mb-10">
+                                <div class="u_flex u_align-center u_mb-10"><label class="u_label u_label_header">Daily
+                                        Summary Email - After Shift End Time:</label>
+                                    <div class="u_rollover u_cp u_flex u_ml-5" aria-describedby="popup-2954"><svg
+                                            width="18" height="18" viewBox="0 0 36 36" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg" class=""
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <path class="u_fill"
+                                                d="M18 2c8.837 0 16 7.163 16 16s-7.163 16-16 16S2 26.837 2 18 9.163 2 18 2Zm1.6 11.2V10h-3.2v3.2h3.2Zm0 12.8v-9.6h-3.2V26h3.2Z"
+                                                fill="#4E525F"></path>
+                                        </svg></div>
+                                </div>
+                                <div class="u_timepicker "><span class="rc-time-picker"><input
+                                            class="rc-time-picker-input" type="text" placeholder="HH:MM AM"
+                                            autocomplete="off" value="07:00 PM"><span
+                                            class="rc-time-picker-icon"></span></span></div>
+                                <p class="u_input-error"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="u_content-subheader u_p-20">
+                        <h5>Reminder Setting</h5>
+                    </div>
+                    <div class="u_col-12 u_p-20">
+                        <div class="u_label u_label-text u_flex u_align-center u_mb-20">
+                            <div class="u_checkbox u_flex-shrink   "><input id="beforeTime" type="checkbox"
+                                    label="Before shift start reminder" name="isBeforeShiftStartReminder"
+                                    class="u_flex-shrink"><label for="beforeTime"><span>Before shift start
+                                        reminder</span></label></div>
+                            <div class="u_input u_ml-10 u_mr-10"><input class="u_input-hours u_input-small"
+                                    placeholder="0" name="beforeTime" disabled="" value=""></div><span>Minutes</span>
+                        </div>
+                        <div class="u_label u_label-text u_flex u_align-center u_mb-20">
+                            <div class="u_checkbox u_flex-shrink   "><input id="isAfterShiftStartReminder"
+                                    type="checkbox" label="After shift start reminder" name="isAfterShiftStartReminder"
+                                    class="u_flex-shrink"><label for="isAfterShiftStartReminder"><span>After shift start
+                                        reminder</span></label></div>
+                            <div class="u_input u_ml-10 u_mr-10"><input class="u_input-hours u_input-small"
+                                    placeholder="0" name="afterTime" disabled="" value=""></div><span>Minutes</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

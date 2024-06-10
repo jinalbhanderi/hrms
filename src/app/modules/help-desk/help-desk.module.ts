@@ -7,6 +7,8 @@ import { AssignTicketsComponent } from './assign-tickets/assign-tickets.componen
 import { FollowerTicketsComponent } from './follower-tickets/follower-tickets.component';
 import { AllTicketsComponent } from './all-tickets/all-tickets.component';
 import { HelpDashboardComponent } from './help-dashboard/help-dashboard.component';
+import { NgSelectModule } from '@ng-select/ng-select';
+import { AddTicketComponent } from './add-ticket/add-ticket.component';
 
 
 @NgModule({
@@ -15,11 +17,13 @@ import { HelpDashboardComponent } from './help-dashboard/help-dashboard.componen
     AssignTicketsComponent,
     FollowerTicketsComponent,
     AllTicketsComponent,
-    HelpDashboardComponent
+    HelpDashboardComponent,
+    AddTicketComponent,
   ],
   imports: [
     CommonModule,
-    HelpDeskRoutingModule
+    HelpDeskRoutingModule,
+    NgSelectModule
   ]
 })
 export class HelpDeskModule { }

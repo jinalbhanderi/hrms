@@ -3,8 +3,11 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-weekend',
   templateUrl: './weekend.component.html',
-  styleUrls: ['./weekend.component.css']
+  styleUrls: ['./weekend.component.css'],
 })
 export class WeekendComponent {
-
+  isSelected: boolean = false;
+  addWeekend() {
+    this.isSelected = !this.isSelected;
+  }
 }
