@@ -16832,8 +16832,30 @@ input:-webkit-autofill:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+position: absolute;
+top: 50%;
+right: 10px;
+transform: translateY(-50%);
 }
-
+// .u_input-error ng-select.ng-invalid {
+//     border: 1px solid red;
+//     border-radius: 8px;
+// }
+// .form-group-wrapper .form-group-main .ng-select.ng-invalid .ng-select-container:hover {
+//     transition: all 0.5s;
+//     border: 1px solid transparent;
+// }
+.u_input-error .ng-select.ng-invalid{
+  border: 1px solid red;
+  border-radius: 8px;
+}
+.u_input-error .ng-select.ng-invalid.ng-select-opened {
+  border: none;
+  border-color: #007aff !important ;
+}
+.u_input-error .ng-select.ng-invalid .ng-select-container:hover{
+  border-color: transparent;
+}
 .u_btn {
   display: block;
   font: normal 700 1.6rem/1.8rem "Mulish", sans-serif;
@@ -16846,7 +16868,7 @@ input:-webkit-autofill:hover {
   -webkit-user-select: none;
   user-select: none;
   overflow: hidden;
-  position: relative;
+  position: relative; 
   z-index: 0;
 }
 

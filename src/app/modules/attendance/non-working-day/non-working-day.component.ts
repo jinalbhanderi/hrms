@@ -3,8 +3,11 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-non-working-day',
   templateUrl: './non-working-day.component.html',
-  styleUrls: ['./non-working-day.component.css']
+  styleUrls: ['./non-working-day.component.css'],
 })
 export class NonWorkingDayComponent {
-
+  isSelected: boolean = false;
+  addNonWorking() {
+    this.isSelected = !this.isSelected;
+  }
 }

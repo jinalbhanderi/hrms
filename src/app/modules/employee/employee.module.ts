@@ -19,12 +19,13 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { FilterOfProbaionComponent } from './employees-probation/filter-of-probaion/filter-of-probaion.component';
 import { EmployeeExitDetailsComponent } from './employee-exits/employee-exit-details/employee-exit-details.component';
 import { AddEmployeeExitComponent } from './employee-exits/add-employee-exit/add-employee-exit.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FilterOfExitComponent } from './employee-exits/filter-of-exit/filter-of-exit.component';
 import { RevokeReasonComponent } from './employee-exits/revoke-reason/revoke-reason.component';
 import { AddAgreementComponent } from './agreement-list/add-agreement/add-agreement.component';
 import { AgreementsDetailsComponent } from './agreement-list/agreements-details/agreements-details.component';
 import { ActivityLogsOfAgreementComponent } from './agreement-list/activity-logs-of-agreement/activity-logs-of-agreement.component';
+import { DefaultComponent } from './add-new-employee/default/default.component';
 
 
 @NgModule({
@@ -49,6 +50,7 @@ import { ActivityLogsOfAgreementComponent } from './agreement-list/activity-logs
     AddAgreementComponent,
     AgreementsDetailsComponent,
     ActivityLogsOfAgreementComponent,
+    DefaultComponent,
   ],
   imports: [
     CommonModule,
@@ -56,7 +58,8 @@ import { ActivityLogsOfAgreementComponent } from './agreement-list/activity-logs
     NgSelectModule,
     MatDialogModule,
     FormsModule,
-    NgSelectModule
+    NgSelectModule,
+    ReactiveFormsModule,
   ]
 })
 export class EmployeeModule { }

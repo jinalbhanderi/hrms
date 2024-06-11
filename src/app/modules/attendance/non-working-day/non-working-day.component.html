@@ -1,160 +1,167 @@
-<div class="u_layout-list">
-  <div class="u_header-filters">
-    <div class="u_header-filters-title">
-      <h5>0 <span>Non Working Day</span></h5>
-    </div>
-    <div class="u_header-filters-list">
-      <div class="u_flex u_align-center u_content-end">
-        <div class="u_filter-content  ">
-          <div class="u_filter-content-inner">
-            <div class="u_filter u_filter-search "><span class="u_search-icon u_cp"><svg width="14" height="14"
-                  viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class=""
-                  xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <path class="u_fill"
-                    d="M33.474 30.95l-6.042-6.024a14.075 14.075 0 003.003-8.708 14.218 14.218 0 10-14.217 14.217 14.075 14.075 0 008.708-3.003l6.025 6.042a1.776 1.776 0 002.523 0 1.777 1.777 0 000-2.523zM5.554 16.219a10.663 10.663 0 1121.327 0 10.663 10.663 0 01-21.327 0z"
-                    fill="#4E525F"></path>
-                </svg></span><input type="text" tabindex="0" class="u_input" placeholder="Search" autocomplete="off"
-                value=""></div>
-            <div class="u_filter u_filter-select">
-              <div class=" css-2b097c-container"><span aria-live="polite" aria-atomic="false"
-                  aria-relevant="additions text" class="css-7pg0cj-a11yText"></span>
-                <div class="u_select__control d-flex align-items-center">
-                  <div class="u_select__value-container css-1hwfws3">
-                    <div class="u_select__single-value css-1uccc91-singleValue">
-                      <div class="u_flex u_align-center"><span class="u_text-c u_color-font">type</span></div>
+
+<ng-template #nonWorking>
+  <div class="u_layout-list">
+    <div class="u_header-filters">
+      <div class="u_header-filters-title">
+        <h5>0 <span>Non Working Day</span></h5>
+      </div>
+      <div class="u_header-filters-list">
+        <div class="u_flex u_align-center u_content-end">
+          <div class="u_filter-content  ">
+            <div class="u_filter-content-inner">
+              <div class="u_filter u_filter-search "><span class="u_search-icon u_cp"><svg width="14" height="14"
+                    viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class=""
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path class="u_fill"
+                      d="M33.474 30.95l-6.042-6.024a14.075 14.075 0 003.003-8.708 14.218 14.218 0 10-14.217 14.217 14.075 14.075 0 008.708-3.003l6.025 6.042a1.776 1.776 0 002.523 0 1.777 1.777 0 000-2.523zM5.554 16.219a10.663 10.663 0 1121.327 0 10.663 10.663 0 01-21.327 0z"
+                      fill="#4E525F"></path>
+                  </svg></span><input type="text" tabindex="0" class="u_input" placeholder="Search" autocomplete="off"
+                  value=""></div>
+              <div class="u_filter u_filter-select">
+                <div class=" css-2b097c-container"><span aria-live="polite" aria-atomic="false"
+                    aria-relevant="additions text" class="css-7pg0cj-a11yText"></span>
+                  <div class="u_select__control d-flex align-items-center">
+                    <div class="u_select__value-container css-1hwfws3">
+                      <div class="u_select__single-value css-1uccc91-singleValue">
+                        <div class="u_flex u_align-center"><span class="u_text-c u_color-font">type</span></div>
+                      </div>
                     </div>
-                  </div>
-                  <div class="u_select__indicators css-1wy0on6"><span
-                      class="u_select__indicator-separator css-1okebmr-indicatorSeparator"></span>
-                    <div class="u_select__indicator u_select__dropdown-indicator css-tlfecz-indicatorContainer"
-                      aria-hidden="true"><svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true"
-                        focusable="false" class="css-8mmkcg">
-                        <path
-                          d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z">
-                        </path>
-                      </svg></div>
-                  </div>
-                </div><input name="type" type="hidden" value="">
+                    <div class="u_select__indicators css-1wy0on6"><span
+                        class="u_select__indicator-separator css-1okebmr-indicatorSeparator"></span>
+                      <div class="u_select__indicator u_select__dropdown-indicator css-tlfecz-indicatorContainer"
+                        aria-hidden="true"><svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true"
+                          focusable="false" class="css-8mmkcg">
+                          <path
+                            d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z">
+                          </path>
+                        </svg></div>
+                    </div>
+                  </div><input name="type" type="hidden" value="">
+                </div>
               </div>
-            </div>
-            <div class="u_filter u_filter-daterange">
-              <div class="u_filter-container u_filter-daterange-active" aria-describedby="popup-635"><span
-                  class="u_calendar-icon"><svg width="14" height="14" viewBox="0 0 36 36" fill="none"
-                    xmlns="http://www.w3.org/2000/svg" class="" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <path class="u_fill"
-                      d="M31.36 34H4.637c-.143-.034-.289-.062-.43-.102C2.791 33.494 2.001 32.44 2 30.94 2 23.494 1.998 16.048 2.01 8.602c0-.389.07-.792.19-1.162.342-1.06 1.546-1.886 2.64-1.836v.337c0 1.124-.004 2.25 0 3.374.01 1.874 1.367 3.231 3.283 3.277.66.015 1.322.016 1.981 0 1.927-.05 3.286-1.42 3.29-3.306.002-1.124 0-2.25 0-3.374v-.333h9.211v3.675c.003 1.95 1.387 3.32 3.384 3.34.606.007 1.214.008 1.822 0 1.964-.023 3.342-1.385 3.348-3.307.003-1.125 0-2.25 0-3.375v-.414c.458.145.876.218 1.234.4 1.13.578 1.61 1.532 1.608 2.765-.007 7.405-.003 14.81-.004 22.214 0 .177-.003.355-.021.53-.079.746-.416 1.363-.983 1.868-.466.415-1.03.605-1.631.725ZM17.979 16.748H7.206c-.979 0-1.473.482-1.473 1.44v11.31c0 .958.496 1.44 1.475 1.44H28.72c1 0 1.487-.477 1.488-1.457V18.2c0-.979-.487-1.453-1.49-1.454h-10.74Z"
-                      fill="#007AFF"></path>
-                    <path class="u_fill"
-                      d="M24.724 6.253V3.286c.002-.863.433-1.283 1.313-1.285.575 0 1.15-.003 1.725.001.755.005 1.212.442 1.216 1.19.008 1.634.002 3.268.002 4.902 0 .417.008.834-.001 1.25-.016.735-.454 1.16-1.2 1.168a86.72 86.72 0 0 1-1.853 0c-.746-.007-1.191-.435-1.199-1.167-.01-1.031-.003-2.062-.003-3.092ZM11.216 6.258c0 1 .002 1.999 0 2.998-.002.833-.426 1.253-1.271 1.257-.564.002-1.129.002-1.693 0-.868-.003-1.286-.411-1.288-1.27-.004-1.176-.001-2.351-.001-3.528 0-.822-.004-1.644.002-2.467.005-.827.439-1.244 1.284-1.246a291.29 291.29 0 0 1 1.693 0c.836.003 1.272.433 1.274 1.26v2.996ZM18.015 18.933c.394 0 .788-.005 1.182.001.537.01.834.286.84.81.012.781.01 1.562.002 2.343-.006.516-.274.811-.795.825-.83.022-1.661.022-2.492 0-.521-.014-.788-.309-.794-.826-.009-.78-.011-1.561 0-2.342.008-.525.305-.802.843-.81.405-.007.81-.001 1.214-.001ZM20.041 27.274c0 .385.008.77-.002 1.155-.013.524-.302.812-.836.818-.799.009-1.598.008-2.395 0-.55-.006-.844-.295-.85-.838-.008-.77-.008-1.54 0-2.31.006-.538.3-.83.853-.837.788-.011 1.576-.01 2.363-.001.569.006.858.3.866.857.006.385.002.77.001 1.156ZM11.528 18.933c.405 0 .809-.007 1.214.001.497.01.792.258.806.742.024.831.023 1.665 0 2.496-.012.457-.274.72-.744.734-.85.026-1.703.027-2.554.002-.508-.015-.758-.308-.762-.816-.007-.781-.007-1.561 0-2.342.005-.534.286-.808.827-.817.404-.006.808 0 1.213 0ZM24.5 18.933c.405 0 .81-.009 1.213.002.507.012.79.286.796.783.01.802.01 1.603 0 2.404-.006.485-.262.771-.76.787-.84.025-1.682.024-2.521.001-.512-.014-.774-.29-.784-.799a57.565 57.565 0 0 1 0-2.372c.01-.546.305-.8.875-.806.393-.004.787 0 1.18 0ZM11.504 29.25c-.394 0-.788.006-1.182-.003-.544-.01-.83-.284-.835-.811a111.96 111.96 0 0 1 .001-2.373c.006-.495.28-.787.785-.798.83-.019 1.66-.018 2.49 0 .493.01.775.282.788.764.02.811.02 1.624.001 2.435-.011.514-.306.773-.834.783-.405.009-.81.002-1.214.002ZM26.512 27.256c0 .395.007.791-.002 1.186-.01.511-.29.796-.81.804-.809.01-1.618.01-2.427 0-.524-.005-.817-.273-.828-.788a52.063 52.063 0 0 1 0-2.404c.011-.512.3-.783.828-.792a68.669 68.669 0 0 1 2.427.001c.525.01.8.297.81.806.009.396.002.792.002 1.187Z"
-                      fill="#007AFF"></path>
-                  </svg></span>
-                <p> Date: 1 Jan 24 - 31 Dec 24 </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="u_filter"><span class="u_add-btn" aria-describedby="popup-636"><svg width="14" height="14"
-              viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class=""
-              xmlns:xlink="http://www.w3.org/1999/xlink">
-              <path class="u_fill" d="M15.714 15.714V2h4.572v13.714H34v4.572H20.286V34h-4.572V20.286H2v-4.572h13.714z"
-                fill="#FFFFFF"></path>
-            </svg></span></div>
-      </div>
-    </div>
-  </div>
-  <div class="u_layout-scrollview">
-    <div class="u_scroll-section " style="position: relative; overflow: hidden; width: 100%; height: 100%;">
-      <div style="position: absolute; inset: 0px; overflow: scroll; margin-right: -14px; margin-bottom: -14px;">
-        <div class="u_table-resource u_table-resource u_table-resource-nowrap u_table-resource-hover">
-          <table>
-            <thead>
-              <tr>
-                <th class="">
-                  <div class="u_ib u_cp">
-                    <div class="u_flex">Name</div>
-                  </div>
-                </th>
-                <th class="">
-                  <div class="u_ib u_cp">
-                    <div class="u_flex">Date</div>
-                  </div>
-                </th>
-                <th class="">
-                  <div class="u_ib u_cp">
-                    <div class="u_flex">Type</div>
-                  </div>
-                </th>
-                <th class="">
-                  <div class="u_ib u_cp">
-                    <div class="u_flex">Description</div>
-                  </div>
-                </th>
-                <th class="">
-                  <div class="u_ib u_cp">
-                    <div class="u_flex">Assign Employees</div>
-                  </div>
-                </th>
-                <th class="">
-                  <div class="u_ib u_cp">
-                    <div class="u_flex">Action</div>
-                  </div>
-                </th>
-              </tr>
-            </thead>
-            <tbody></tbody>
-          </table>
-          <div class="u_no-data-found u_text-center">
-            <div class="u_no-data-found-inner">
-              <div class="u_no-data-found-img"><img src="../../../../assets/images/dashboard/no-data-display.svg" alt="">
-</div>
-              <div class="u_no-data-found-text u_mt-30">
-                <h4>No data to display</h4>
+              <div class="u_filter u_filter-daterange">
+                <div class="u_filter-container u_filter-daterange-active" aria-describedby="popup-635"><span
+                    class="u_calendar-icon"><svg width="14" height="14" viewBox="0 0 36 36" fill="none"
+                      xmlns="http://www.w3.org/2000/svg" class="" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <path class="u_fill"
+                        d="M31.36 34H4.637c-.143-.034-.289-.062-.43-.102C2.791 33.494 2.001 32.44 2 30.94 2 23.494 1.998 16.048 2.01 8.602c0-.389.07-.792.19-1.162.342-1.06 1.546-1.886 2.64-1.836v.337c0 1.124-.004 2.25 0 3.374.01 1.874 1.367 3.231 3.283 3.277.66.015 1.322.016 1.981 0 1.927-.05 3.286-1.42 3.29-3.306.002-1.124 0-2.25 0-3.374v-.333h9.211v3.675c.003 1.95 1.387 3.32 3.384 3.34.606.007 1.214.008 1.822 0 1.964-.023 3.342-1.385 3.348-3.307.003-1.125 0-2.25 0-3.375v-.414c.458.145.876.218 1.234.4 1.13.578 1.61 1.532 1.608 2.765-.007 7.405-.003 14.81-.004 22.214 0 .177-.003.355-.021.53-.079.746-.416 1.363-.983 1.868-.466.415-1.03.605-1.631.725ZM17.979 16.748H7.206c-.979 0-1.473.482-1.473 1.44v11.31c0 .958.496 1.44 1.475 1.44H28.72c1 0 1.487-.477 1.488-1.457V18.2c0-.979-.487-1.453-1.49-1.454h-10.74Z"
+                        fill="#007AFF"></path>
+                      <path class="u_fill"
+                        d="M24.724 6.253V3.286c.002-.863.433-1.283 1.313-1.285.575 0 1.15-.003 1.725.001.755.005 1.212.442 1.216 1.19.008 1.634.002 3.268.002 4.902 0 .417.008.834-.001 1.25-.016.735-.454 1.16-1.2 1.168a86.72 86.72 0 0 1-1.853 0c-.746-.007-1.191-.435-1.199-1.167-.01-1.031-.003-2.062-.003-3.092ZM11.216 6.258c0 1 .002 1.999 0 2.998-.002.833-.426 1.253-1.271 1.257-.564.002-1.129.002-1.693 0-.868-.003-1.286-.411-1.288-1.27-.004-1.176-.001-2.351-.001-3.528 0-.822-.004-1.644.002-2.467.005-.827.439-1.244 1.284-1.246a291.29 291.29 0 0 1 1.693 0c.836.003 1.272.433 1.274 1.26v2.996ZM18.015 18.933c.394 0 .788-.005 1.182.001.537.01.834.286.84.81.012.781.01 1.562.002 2.343-.006.516-.274.811-.795.825-.83.022-1.661.022-2.492 0-.521-.014-.788-.309-.794-.826-.009-.78-.011-1.561 0-2.342.008-.525.305-.802.843-.81.405-.007.81-.001 1.214-.001ZM20.041 27.274c0 .385.008.77-.002 1.155-.013.524-.302.812-.836.818-.799.009-1.598.008-2.395 0-.55-.006-.844-.295-.85-.838-.008-.77-.008-1.54 0-2.31.006-.538.3-.83.853-.837.788-.011 1.576-.01 2.363-.001.569.006.858.3.866.857.006.385.002.77.001 1.156ZM11.528 18.933c.405 0 .809-.007 1.214.001.497.01.792.258.806.742.024.831.023 1.665 0 2.496-.012.457-.274.72-.744.734-.85.026-1.703.027-2.554.002-.508-.015-.758-.308-.762-.816-.007-.781-.007-1.561 0-2.342.005-.534.286-.808.827-.817.404-.006.808 0 1.213 0ZM24.5 18.933c.405 0 .81-.009 1.213.002.507.012.79.286.796.783.01.802.01 1.603 0 2.404-.006.485-.262.771-.76.787-.84.025-1.682.024-2.521.001-.512-.014-.774-.29-.784-.799a57.565 57.565 0 0 1 0-2.372c.01-.546.305-.8.875-.806.393-.004.787 0 1.18 0ZM11.504 29.25c-.394 0-.788.006-1.182-.003-.544-.01-.83-.284-.835-.811a111.96 111.96 0 0 1 .001-2.373c.006-.495.28-.787.785-.798.83-.019 1.66-.018 2.49 0 .493.01.775.282.788.764.02.811.02 1.624.001 2.435-.011.514-.306.773-.834.783-.405.009-.81.002-1.214.002ZM26.512 27.256c0 .395.007.791-.002 1.186-.01.511-.29.796-.81.804-.809.01-1.618.01-2.427 0-.524-.005-.817-.273-.828-.788a52.063 52.063 0 0 1 0-2.404c.011-.512.3-.783.828-.792a68.669 68.669 0 0 1 2.427.001c.525.01.8.297.81.806.009.396.002.792.002 1.187Z"
+                        fill="#007AFF"></path>
+                    </svg></span>
+                  <p> Date: 1 Jan 24 - 31 Dec 24 </p>
+                </div>
               </div>
             </div>
           </div>
+          <div class="u_filter"><span class="u_add-btn" aria-describedby="popup-636" (click)="addNonWorking()"><svg width="14" height="14"
+                viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class=""
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path class="u_fill" d="M15.714 15.714V2h4.572v13.714H34v4.572H20.286V34h-4.572V20.286H2v-4.572h13.714z"
+                  fill="#FFFFFF"></path>
+              </svg></span></div>
         </div>
       </div>
     </div>
+    <div class="u_layout-scrollview">
+      <div class="u_scroll-section " style="position: relative; overflow: hidden; width: 100%; height: 100%;">
+        <div style="position: absolute; inset: 0px; overflow: scroll; margin-right: -14px; margin-bottom: -14px;">
+          <div class="u_table-resource u_table-resource u_table-resource-nowrap u_table-resource-hover">
+            <table>
+              <thead>
+                <tr>
+                  <th class="">
+                    <div class="u_ib u_cp">
+                      <div class="u_flex">Name</div>
+                    </div>
+                  </th>
+                  <th class="">
+                    <div class="u_ib u_cp">
+                      <div class="u_flex">Date</div>
+                    </div>
+                  </th>
+                  <th class="">
+                    <div class="u_ib u_cp">
+                      <div class="u_flex">Type</div>
+                    </div>
+                  </th>
+                  <th class="">
+                    <div class="u_ib u_cp">
+                      <div class="u_flex">Description</div>
+                    </div>
+                  </th>
+                  <th class="">
+                    <div class="u_ib u_cp">
+                      <div class="u_flex">Assign Employees</div>
+                    </div>
+                  </th>
+                  <th class="">
+                    <div class="u_ib u_cp">
+                      <div class="u_flex">Action</div>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+            <div class="u_no-data-found u_text-center">
+              <div class="u_no-data-found-inner">
+                <div class="u_no-data-found-img"><img src="../../../../assets/images/dashboard/no-data-display.svg" alt="">
   </div>
-  <div class="">
-    <div class="u_pagination u_pagination-hidden" id="u_pagination">
-      <div class="u_pagination-record u_flex u_align-center"><span class="u_pagination-title u_mr-10">Entries</span>
-        <div class="u_pagination-record-wpr">
-          <div class=" css-2b097c-container"><span aria-live="polite" aria-atomic="false" aria-relevant="additions text"
-              class="css-7pg0cj-a11yText"></span>
-            <div class="u_record__control css-yk16xz-control">
-              <div class="u_record__value-container u_record__value-container--has-value css-1hwfws3">
-                <div class="u_record__single-value css-1uccc91-singleValue">40</div><input id="react-select-10-input"
-                  readonly="" tabindex="0" aria-autocomplete="list" class="css-62g3xt-dummyInput" value="">
-              </div>
-              <div class="u_record__indicators css-1wy0on6"><span
-                  class="u_record__indicator-separator css-1okebmr-indicatorSeparator"></span>
-                <div class="u_record__indicator u_record__dropdown-indicator css-tlfecz-indicatorContainer"
-                  aria-hidden="true"><svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true"
-                    focusable="false" class="css-8mmkcg">
-                    <path
-                      d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z">
-                    </path>
-                  </svg></div>
+                <div class="u_no-data-found-text u_mt-30">
+                  <h4>No data to display</h4>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <ul class="u_flex">
-        <li class="previous disabled"><a class="u_pagination-link u_pagination-link-previous" tabindex="0" role="button"
-            aria-disabled="true" aria-label="Previous page" rel="prev"><svg width="15" height="15" viewBox="0 0 36 36"
-              fill="none" xmlns="http://www.w3.org/2000/svg" class="" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <path class="u_fill" d="M15.11 18l12.446 12.445L24 34 8 18 24 2l3.556 3.555L15.11 18z" fill="#4E525F">
-              </path>
-            </svg></a></li>
-        <li class="next"><a class="u_pagination-link u_pagination-link-next" tabindex="0" role="button"
-            aria-disabled="false" aria-label="Next page" rel="next"><svg width="15" height="15" viewBox="0 0 36 36"
-              fill="none" xmlns="http://www.w3.org/2000/svg" class="" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <path class="u_fill" d="M20.445 18L8 5.555 11.555 2l16 16-16 16L8 30.445 20.445 18z" fill="#4E525F">
-              </path>
-            </svg></a></li>
-      </ul>
+    </div>
+    <div class="">
+      <div class="u_pagination u_pagination-hidden" id="u_pagination">
+        <div class="u_pagination-record u_flex u_align-center"><span class="u_pagination-title u_mr-10">Entries</span>
+          <div class="u_pagination-record-wpr">
+            <div class=" css-2b097c-container"><span aria-live="polite" aria-atomic="false" aria-relevant="additions text"
+                class="css-7pg0cj-a11yText"></span>
+              <div class="u_record__control css-yk16xz-control">
+                <div class="u_record__value-container u_record__value-container--has-value css-1hwfws3">
+                  <div class="u_record__single-value css-1uccc91-singleValue">40</div><input id="react-select-10-input"
+                    readonly="" tabindex="0" aria-autocomplete="list" class="css-62g3xt-dummyInput" value="">
+                </div>
+                <div class="u_record__indicators css-1wy0on6"><span
+                    class="u_record__indicator-separator css-1okebmr-indicatorSeparator"></span>
+                  <div class="u_record__indicator u_record__dropdown-indicator css-tlfecz-indicatorContainer"
+                    aria-hidden="true"><svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true"
+                      focusable="false" class="css-8mmkcg">
+                      <path
+                        d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z">
+                      </path>
+                    </svg></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul class="u_flex">
+          <li class="previous disabled"><a class="u_pagination-link u_pagination-link-previous" tabindex="0" role="button"
+              aria-disabled="true" aria-label="Previous page" rel="prev"><svg width="15" height="15" viewBox="0 0 36 36"
+                fill="none" xmlns="http://www.w3.org/2000/svg" class="" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path class="u_fill" d="M15.11 18l12.446 12.445L24 34 8 18 24 2l3.556 3.555L15.11 18z" fill="#4E525F">
+                </path>
+              </svg></a></li>
+          <li class="next"><a class="u_pagination-link u_pagination-link-next" tabindex="0" role="button"
+              aria-disabled="false" aria-label="Next page" rel="next"><svg width="15" height="15" viewBox="0 0 36 36"
+                fill="none" xmlns="http://www.w3.org/2000/svg" class="" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path class="u_fill" d="M20.445 18L8 5.555 11.555 2l16 16-16 16L8 30.445 20.445 18z" fill="#4E525F">
+                </path>
+              </svg></a></li>
+        </ul>
+      </div>
     </div>
   </div>
-</div>
+
+</ng-template>
+<ng-container *ngIf="isSelected; else nonWorking">
+  <app-add-non-working-day></app-add-non-working-day>
+</ng-container>

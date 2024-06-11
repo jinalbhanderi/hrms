@@ -24,6 +24,17 @@ import { NonWorkingDayComponent } from './non-working-day/non-working-day.compon
 import { WorkingDayComponent } from './working-day/working-day.component';
 import { ShiftCalendarComponent } from './shift-calendar/shift-calendar.component';
 import { TimesheetComponent } from './my-attendance/timesheet/timesheet.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { AddWorkLogComponent } from './my-status-report/add-work-log/add-work-log.component';
+import { ReportSummaryComponent } from './my-status-report/report-summary/report-summary.component';
+import { ApplyShiftRequestComponent } from './my-shift-change-requests/apply-shift-request/apply-shift-request.component';
+import { ApplyOnDutyComponent } from './my-on-duty-request/apply-on-duty/apply-on-duty.component';
+import { AddRequestComponent } from './shift-change-requests/add-request/add-request.component';
+import { CreatePolicyComponent } from './present-defaults/create-policy/create-policy.component';
+import { AddNonWorkingDayComponent } from './non-working-day/add-non-working-day/add-non-working-day.component';
+import { AddWorkingDayComponent } from './working-day/add-working-day/add-working-day.component';
+import { PenaltyReprocessComponent } from './penalty-reprocess/penalty-reprocess.component';
+import { AddPenaltyReprocessComponent } from './penalty-reprocess/add-penalty-reprocess/add-penalty-reprocess.component';
 
 
 @NgModule({
@@ -49,11 +60,22 @@ import { TimesheetComponent } from './my-attendance/timesheet/timesheet.componen
     NonWorkingDayComponent,
     WorkingDayComponent,
     ShiftCalendarComponent,
-    TimesheetComponent
+    TimesheetComponent,
+    AddWorkLogComponent,
+    ReportSummaryComponent,
+    ApplyShiftRequestComponent,
+    ApplyOnDutyComponent,
+    AddRequestComponent,
+    CreatePolicyComponent,
+    AddNonWorkingDayComponent,
+    AddWorkingDayComponent,
+    PenaltyReprocessComponent,
+    AddPenaltyReprocessComponent
   ],
   imports: [
     CommonModule,
     AttendanceRoutingModule,
+    MatDialogModule
     
   ]
 })
