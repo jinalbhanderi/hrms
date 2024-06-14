@@ -38,4 +38,7 @@ export class ProfileComponent {
       console.error('Error showing modal:', error);
     }
   }
+
+
+  
 }

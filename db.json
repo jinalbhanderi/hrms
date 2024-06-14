@@ -1,0 +1,505 @@
+{
+  "employees": [
+    {
+      "id": "9eaf",
+      "dp": null,
+      "startProcess": "",
+      "sendWelcomeKit": "",
+      "sendEmail": "",
+      "onboardingField": null,
+      "companyName": {
+        "$ngOptionLabel": "Syfrox",
+        "disabled": false
+      },
+      "legalEntityCompany": {
+        "$ngOptionLabel": "Kautilyam",
+        "disabled": false
+      },
+      "employeeId": "",
+      "displayName": "",
+      "firstName": "Test",
+      "middleName": "",
+      "lastName": "Demo",
+      "gender": {
+        "$ngOptionLabel": "Male",
+        "disabled": false
+      },
+      "maritalStatus": null,
+      "dob": "",
+      "bloodGroup": null,
+      "ledgerCode": "",
+      "moNumber": "91-8320381325",
+      "userName": "",
+      "workEmail": "test@kautilyam.com",
+      "password": "",
+      "joiningDate": {
+        "year": 2024,
+        "month": 6,
+        "day": 3
+      },
+      "location": {
+        "$ngOptionLabel": "Surat",
+        "disabled": false
+      },
+      "jobTitle": {
+        "$ngOptionLabel": "Jr.Angular Developer",
+        "disabled": false
+      },
+      "category": {
+        "$ngOptionLabel": "Employee",
+        "disabled": false
+      },
+      "department": {
+        "$ngOptionLabel": "Research And Development",
+        "disabled": false
+      },
+      "subDepartment": null,
+      "reportingManager": null,
+      "lineManager": null,
+      "lineManager2": null,
+      "employmentStatus": {
+        "$ngOptionLabel": "Full Time",
+        "disabled": false
+      },
+      "comments": "",
+      "startDate": null,
+      "endDate": null,
+      "compensationPeriod": "",
+      "newSalary": "",
+      "payFrequency": null,
+      "noticePeriod": "",
+      "compPeriod": "",
+      "salaryMode": "",
+      "compensationDescription": "",
+      "isLeaveBonusBenefit": false,
+      "applyBonus": false,
+      "taxRegime": "",
+      "skipFromPayroll": false,
+      "payrollType": false,
+      "isEPF": false,
+      "isESIC": false,
+      "businessUnit": null,
+      "costCenter": null,
+      "bands": null,
+      "segment": null,
+      "hub": null,
+      "territory": null,
+      "region": null,
+      "timezone": null,
+      "leavePolicy": "",
+      "documentPolicy": null,
+      "costCenterData": null,
+      "overtimePolicy": null,
+      "holiday": null,
+      "clockInPolicy": null,
+      "compOffPolicy": null,
+      "weekendPolicy": null,
+      "penalisationPolicy": null,
+      "onDutyPolicy": null,
+      "isAssignWorkDiary": false,
+      "deviceList": null
+    },
+    {
+      "id": "605f",
+      "dp": null,
+      "startProcess": "",
+      "sendWelcomeKit": "",
+      "sendEmail": "",
+      "onboardingField": null,
+      "companyName": {
+        "$ngOptionLabel": "Kautilyam",
+        "disabled": false
+      },
+      "legalEntityCompany": {
+        "$ngOptionLabel": "Kautilyam",
+        "disabled": false
+      },
+      "displayName": "",
+      "firstName": "Abcd",
+      "middleName": "www",
+      "lastName": "www",
+      "gender": {
+        "$ngOptionLabel": "Male",
+        "disabled": false
+      },
+      "maritalStatus": null,
+      "dob": "",
+      "bloodGroup": null,
+      "ledgerCode": "",
+      "moNumber": "123654789",
+      "userName": "",
+      "workEmail": "",
+      "password": "",
+      "joiningDate": {
+        "year": 2024,
+        "month": 6,
+        "day": 3
+      },
+      "location": {
+        "$ngOptionLabel": "Surat",
+        "disabled": false
+      },
+      "jobTitle": {
+        "$ngOptionLabel": "Sr.Angular Developer",
+        "disabled": false
+      },
+      "category": {
+        "$ngOptionLabel": "Employee",
+        "disabled": false
+      },
+      "department": {
+        "$ngOptionLabel": "Research And Development",
+        "disabled": false
+      },
+      "subDepartment": null,
+      "reportingManager": null,
+      "lineManager": null,
+      "lineManager2": null,
+      "employmentStatus": {
+        "$ngOptionLabel": "Full Time",
+        "disabled": false
+      },
+      "comments": "",
+      "startDate": null,
+      "endDate": null,
+      "compensationPeriod": "",
+      "newSalary": "",
+      "payFrequency": null,
+      "noticePeriod": "",
+      "compPeriod": "",
+      "salaryMode": "",
+      "compensationDescription": "",
+      "isLeaveBonusBenefit": false,
+      "applyBonus": false,
+      "taxRegime": "",
+      "skipFromPayroll": false,
+      "payrollType": false,
+      "isEPF": false,
+      "isESIC": false,
+      "businessUnit": null,
+      "costCenter": null,
+      "bands": null,
+      "segment": null,
+      "hub": null,
+      "territory": null,
+      "region": null,
+      "timezone": null,
+      "leavePolicy": "",
+      "documentPolicy": null,
+      "costCenterData": null,
+      "overtimePolicy": null,
+      "holiday": null,
+      "clockInPolicy": null,
+      "compOffPolicy": null,
+      "weekendPolicy": null,
+      "penalisationPolicy": null,
+      "onDutyPolicy": null,
+      "isAssignWorkDiary": false,
+      "deviceList": null
+    },
+    {
+      "id": "2dcb",
+      "dp": null,
+      "startProcess": "",
+      "sendWelcomeKit": "",
+      "sendEmail": "",
+      "onboardingField": null,
+      "companyName": {
+        "$ngOptionLabel": "Kautilyam",
+        "disabled": false
+      },
+      "legalEntityCompany": {
+        "$ngOptionLabel": "Kautilyam",
+        "disabled": false
+      },
+      "displayName": "",
+      "firstName": "sdzcxv",
+      "middleName": "",
+      "lastName": "rgdf",
+      "gender": {
+        "$ngOptionLabel": "Male",
+        "disabled": false
+      },
+      "maritalStatus": null,
+      "dob": "",
+      "bloodGroup": null,
+      "ledgerCode": "",
+      "moNumber": "987456321",
+      "userName": "",
+      "workEmail": "",
+      "password": "",
+      "joiningDate": {
+        "year": 2024,
+        "month": 6,
+        "day": 4
+      },
+      "location": {
+        "$ngOptionLabel": "Ahmedabad",
+        "disabled": false
+      },
+      "jobTitle": {
+        "$ngOptionLabel": "Hr Manager",
+        "disabled": false
+      },
+      "category": {
+        "$ngOptionLabel": "Employee",
+        "disabled": false
+      },
+      "department": {
+        "$ngOptionLabel": "Human Resource",
+        "disabled": false
+      },
+      "subDepartment": null,
+      "reportingManager": null,
+      "lineManager": null,
+      "lineManager2": null,
+      "employmentStatus": {
+        "$ngOptionLabel": "Full Time",
+        "disabled": false
+      },
+      "comments": "",
+      "startDate": null,
+      "endDate": null,
+      "compensationPeriod": "",
+      "newSalary": "",
+      "payFrequency": null,
+      "noticePeriod": "",
+      "compPeriod": "",
+      "salaryMode": "",
+      "compensationDescription": "",
+      "isLeaveBonusBenefit": false,
+      "applyBonus": false,
+      "taxRegime": "",
+      "skipFromPayroll": false,
+      "payrollType": false,
+      "isEPF": false,
+      "isESIC": false,
+      "businessUnit": null,
+      "costCenter": null,
+      "bands": null,
+      "segment": null,
+      "hub": null,
+      "territory": null,
+      "region": null,
+      "timezone": null,
+      "leavePolicy": "",
+      "documentPolicy": null,
+      "costCenterData": null,
+      "overtimePolicy": null,
+      "holiday": null,
+      "clockInPolicy": null,
+      "compOffPolicy": null,
+      "weekendPolicy": null,
+      "penalisationPolicy": null,
+      "onDutyPolicy": null,
+      "isAssignWorkDiary": false,
+      "deviceList": null
+    },
+    {
+      "id": "af13",
+      "dp": null,
+      "startProcess": "",
+      "sendWelcomeKit": "",
+      "sendEmail": "",
+      "onboardingField": null,
+      "companyName": {
+        "$ngOptionLabel": "Kautilyam",
+        "disabled": false
+      },
+      "legalEntityCompany": {
+        "$ngOptionLabel": "Kautilyam",
+        "disabled": false
+      },
+      "displayName": "",
+      "firstName": "Abhishek",
+      "middleName": "",
+      "lastName": "Mayani",
+      "gender": {
+        "$ngOptionLabel": "Male",
+        "disabled": false
+      },
+      "maritalStatus": null,
+      "dob": "",
+      "bloodGroup": null,
+      "ledgerCode": "",
+      "moNumber": "",
+      "userName": "",
+      "workEmail": "",
+      "password": "",
+      "joiningDate": {
+        "year": 2024,
+        "month": 6,
+        "day": 4
+      },
+      "location": {
+        "$ngOptionLabel": "Surat",
+        "disabled": false
+      },
+      "jobTitle": {
+        "$ngOptionLabel": "Financial Officer",
+        "disabled": false
+      },
+      "category": {
+        "$ngOptionLabel": "Employee",
+        "disabled": false
+      },
+      "department": {
+        "$ngOptionLabel": "Finance",
+        "disabled": false
+      },
+      "subDepartment": null,
+      "reportingManager": null,
+      "lineManager": null,
+      "lineManager2": null,
+      "employmentStatus": {
+        "$ngOptionLabel": "Full Time",
+        "disabled": false
+      },
+      "comments": "",
+      "startDate": null,
+      "endDate": null,
+      "compensationPeriod": "",
+      "newSalary": "",
+      "payFrequency": null,
+      "noticePeriod": "",
+      "compPeriod": "",
+      "salaryMode": "",
+      "compensationDescription": "",
+      "isLeaveBonusBenefit": false,
+      "applyBonus": false,
+      "taxRegime": "",
+      "skipFromPayroll": false,
+      "payrollType": false,
+      "isEPF": false,
+      "isESIC": false,
+      "businessUnit": null,
+      "costCenter": null,
+      "bands": null,
+      "segment": null,
+      "hub": null,
+      "territory": null,
+      "region": null,
+      "timezone": null,
+      "leavePolicy": "",
+      "documentPolicy": null,
+      "costCenterData": null,
+      "overtimePolicy": null,
+      "holiday": null,
+      "clockInPolicy": null,
+      "compOffPolicy": null,
+      "weekendPolicy": null,
+      "penalisationPolicy": null,
+      "onDutyPolicy": null,
+      "isAssignWorkDiary": false,
+      "deviceList": null
+    },
+    {
+      "id": "17f2",
+      "dp": {
+        "year": 2024,
+        "month": 6,
+        "day": 3
+      },
+      "startProcess": "",
+      "sendWelcomeKit": "",
+      "sendEmail": "",
+      "onboardingField": null,
+      "companyName": {
+        "$ngOptionLabel": "Kautilyam",
+        "disabled": false
+      },
+      "legalEntityCompany": {
+        "$ngOptionLabel": "Kautilyam",
+        "disabled": false
+      },
+      "displayName": "",
+      "firstName": "Test2",
+      "middleName": "test",
+      "lastName": "test",
+      "gender": {
+        "$ngOptionLabel": "Male",
+        "disabled": false
+      },
+      "maritalStatus": {
+        "$ngOptionLabel": "Unmarried",
+        "disabled": false
+      },
+      "dob": "",
+      "bloodGroup": {
+        "$ngOptionLabel": "O+",
+        "disabled": false
+      },
+      "ledgerCode": "1236",
+      "moNumber": "",
+      "userName": "Test",
+      "workEmail": "test2@gmail.com",
+      "password": "test123",
+      "joiningDate": {
+        "year": 2024,
+        "month": 3,
+        "day": 8
+      },
+      "location": {
+        "$ngOptionLabel": "Ahmedabad",
+        "disabled": false
+      },
+      "jobTitle": {
+        "$ngOptionLabel": "Sr.Angular Developer",
+        "disabled": false
+      },
+      "category": {
+        "$ngOptionLabel": "Employee",
+        "disabled": false
+      },
+      "department": {
+        "$ngOptionLabel": "Research And Development",
+        "disabled": false
+      },
+      "subDepartment": null,
+      "reportingManager": null,
+      "lineManager": null,
+      "lineManager2": null,
+      "employmentStatus": {
+        "$ngOptionLabel": "Intern",
+        "disabled": false
+      },
+      "comments": "",
+      "startDate": null,
+      "endDate": null,
+      "compensationPeriod": "",
+      "newSalary": "",
+      "payFrequency": null,
+      "noticePeriod": "",
+      "compPeriod": "",
+      "salaryMode": "",
+      "compensationDescription": "",
+      "isLeaveBonusBenefit": false,
+      "applyBonus": false,
+      "taxRegime": "",
+      "skipFromPayroll": false,
+      "payrollType": false,
+      "isEPF": false,
+      "isESIC": false,
+      "businessUnit": null,
+      "costCenter": null,
+      "bands": null,
+      "segment": null,
+      "hub": null,
+      "territory": null,
+      "region": null,
+      "timezone": null,
+      "leavePolicy": "",
+      "documentPolicy": null,
+      "costCenterData": null,
+      "overtimePolicy": null,
+      "holiday": null,
+      "clockInPolicy": null,
+      "compOffPolicy": null,
+      "weekendPolicy": null,
+      "penalisationPolicy": null,
+      "onDutyPolicy": null,
+      "isAssignWorkDiary": false,
+      "deviceList": null
+    }
+  ]
+}

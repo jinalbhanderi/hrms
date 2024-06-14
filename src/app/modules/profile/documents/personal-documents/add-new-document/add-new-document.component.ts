@@ -40,7 +40,6 @@ export class AddNewDocumentComponent {
   data: boolean = false;
   changeData(event: any) {
     this.data = true;
-    debugger;
     this.item = event;
   }
 }

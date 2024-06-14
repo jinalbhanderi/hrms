@@ -19,7 +19,6 @@ export class ForgotPasswordComponent {
   }
 
   onSubmit(): void {
-    debugger;
     this.submitted = true;
 
     if (this.accountForm.invalid) {

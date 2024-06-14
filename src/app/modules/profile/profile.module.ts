@@ -40,6 +40,7 @@ import { FormsModule } from '@angular/forms';
     NgSelectModule,
     MatDialogModule,
     MatTabsModule,
-  FormsModule]
+    FormsModule,
+  ],
 })
 export class ProfileModule {}

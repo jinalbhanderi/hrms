@@ -1,7 +1,14 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import {
+  FormBuilder,
+  FormControl,
+  FormGroup,
+  Validators,
+} from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
 import { DefaultComponent } from './default/default.component';
+import { NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
+import { EmployeeService } from 'src/app/core/services/employee.service';
 
 @Component({
   selector: 'app-add-new-employee',
@@ -15,15 +22,30 @@ export class AddNewEmployeeComponent {
   employeeForm!: FormGroup<any>;
   submitted = false;
   showTemplateDetails: boolean = false;
+  model!: NgbDateStruct;
+  employees: any[] = [];
+  currentId: number = 0;
 
-  constructor(private fb: FormBuilder, public dialog: MatDialog) {}
+  constructor(
+    private fb: FormBuilder,
+    public dialog: MatDialog,
+    private employeeService: EmployeeService
+  ) {}
 
   ngOnInit(): void {
+    this.createEmployeeForm();
+  }
+
+  createEmployeeForm() {
     this.employeeForm = this.fb.group({
+      dp: [null],
+      startProcess: [''],
+      sendWelcomeKit: [''],
+      sendEmail: [''],
       onboardingField: [null],
       companyName: [null, Validators.required],
       legalEntityCompany: [null, Validators.required],
-      employeeId: ['1136'],
+      employeeId: [{ value: this.generateId(), disabled: true }],
       displayName: [''],
       firstName: ['', Validators.required],
       middleName: [''],
@@ -37,7 +59,7 @@ export class AddNewEmployeeComponent {
       userName: [''],
       workEmail: [''],
       password: [''],
-      joiningDate: ['', Validators.required],
+      joiningDate: [Validators.required],
       location: [null, Validators.required],
       jobTitle: [null, Validators.required],
       category: [null],
@@ -48,8 +70,8 @@ export class AddNewEmployeeComponent {
       lineManager2: [null],
       employmentStatus: [null, Validators.required],
       comments: [''],
-      startDate: [''], // You can add validators if needed
-      endDate: [''], // You can add validators if needed
+      startDate: [],
+      endDate: [],
       compensationPeriod: [''],
       newSalary: [''],
       payFrequency: [null],
@@ -88,13 +110,8 @@ export class AddNewEmployeeComponent {
     });
   }
 
-  onSubmit() {
-    if (this.employeeForm.valid) {
-      console.log(this.employeeForm.value);
-    } else {
-      this.employeeForm.markAllAsTouched();
-    }
-    this.submitted = true;
+  generateId(): number {
+    return this.currentId++;
   }
 
   onSendWelcomeKitChange(event: Event) {
@@ -125,5 +142,22 @@ export class AddNewEmployeeComponent {
       console.log('The dialog was closed');
     });
   }
-  selectedDate = new FormControl(new Date());
+
+  addEmployee() {
+    if (this.employeeForm.valid) {
+      this.employeeService.addEmployee(this.employeeForm.value).subscribe(
+        (employee) => {
+          console.log('Employee added successfully:', employee);
+          this.employees.push(employee);
+          // alert('Employee Data Add successfully');
+          this.employeeForm.reset();
+        },
+        (error) => {
+          console.error('Error adding employee:', error);
+        }
+      );
+    } else {
+      this.employeeForm.markAllAsTouched();
+    }
+  }
 }

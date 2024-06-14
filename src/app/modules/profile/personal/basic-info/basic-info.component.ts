@@ -2,6 +2,7 @@ import { Component, EventEmitter } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
 import { ActivityLogComponent } from './activity-log/activity-log.component';
+import { EmployeeService } from 'src/app/core/services/employee.service';
 
 @Component({
   selector: 'app-basic-info',
@@ -13,6 +14,28 @@ export class BasicInfoComponent {
   isCheckboxChecked: boolean = false;
   isESIChecked: boolean = false;
   selectedCity: any;
+  showNestedCheckboxes: boolean = false;
+  employeeData: any;
+
+  cities = [
+    { id: 1, name: 'Vilnius' },
+    { id: 2, name: 'Kaunas' },
+    { id: 3, name: 'Pavilnys', disabled: true },
+    { id: 4, name: 'Pabradė' },
+    { id: 5, name: 'Klaipėda' },
+  ];
+
+  constructor(
+    public dialog: MatDialog,
+    private employeeService: EmployeeService
+  ) {}
+
+  ngOnInit(): void {
+    this.employeeService.currentEmployeeData.subscribe((employee) => {
+      this.employeeData = employee;
+      console.log('basic data', this.employeeData);
+    });
+  }
 
   toggleCheckbox() {
     this.isCheckboxChecked = !this.isCheckboxChecked;
@@ -24,8 +47,6 @@ export class BasicInfoComponent {
     this.isESIChecked = !this.isESIChecked;
   }
 
-  showNestedCheckboxes: boolean = false;
-
   toggleNestedCheckboxes(event: any) {
     this.showNestedCheckboxes = event.target.checked;
   }
@@ -33,29 +54,8 @@ export class BasicInfoComponent {
     this.showPopup = false;
   }
 
-  out = new EventEmitter();
-  constructor(public dialog: MatDialog) {}
-  cities = [
-    { id: 1, name: 'Vilnius' },
-    { id: 2, name: 'Kaunas' },
-    { id: 3, name: 'Pavilnys', disabled: true },
-    { id: 4, name: 'Pabradė' },
-    { id: 5, name: 'Klaipėda' },
-  ];
-
-  toppings = new FormControl('');
-  toppingList: string[] = [
-    'Extra cheese',
-    'Mushroom',
-    'Onion',
-    'Pepperoni',
-    'Sausage',
-    'Tomato',
-  ];
-
   openModal(): void {
     const dialogRef = this.dialog.open(ActivityLogComponent, {});
-
     dialogRef.afterClosed().subscribe((result) => {
       console.log('The dialog was closed');
     });

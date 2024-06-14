@@ -36,6 +36,7 @@ import { RouterModule } from '@angular/router';
 import { SocialComponent } from './modules/social/social.component';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { ReimbursementListComponent } from './modules/reimbursement/reimbursement-list/reimbursement-list.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -80,7 +81,8 @@ import { ReimbursementListComponent } from './modules/reimbursement/reimbursemen
     SocialModule,
     RouterModule,
     NgSelectModule,
-    ReimbursementModule
+    ReimbursementModule,
+    HttpClientModule
   ],
 })
 export class AppModule {}

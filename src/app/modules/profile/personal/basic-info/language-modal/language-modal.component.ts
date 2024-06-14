@@ -194,7 +194,6 @@ export class LanguageModalComponent {
   ];
 
   closeModal() {
-    debugger;
     this.close.emit();
   }
 }

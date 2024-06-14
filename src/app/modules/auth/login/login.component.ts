@@ -27,7 +27,6 @@ export class LoginComponent {
   }
 
   onSubmit(): void {
-    debugger;
     this.submitted = true;
 
     if (this.accountForm.invalid) {
