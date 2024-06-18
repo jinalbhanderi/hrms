@@ -1,19 +1,26 @@
 <div class="u_profile-layout-wpr">
-  <div class="u_scroll-section undefined" style="position: relative; overflow: hidden; width: 100%; height: 100%;">
+  <div class="u_scroll-section undefined"  style="position: relative; overflow: hidden; width: 100%; height: 100%;">
     <div style="position: absolute; inset: 0px; overflow: auto;">
-      <form autocomplete="off">
+      <form autocomplete="off" [formGroup]="employeeForm" (ngSubmit)="saveChanges()">,
         <div class="u_content-header">
           <div class="u_flex u_align-center">
             <h5>Basic Info</h5>
           </div>
-          <div class="u_flex u_align-center"></div>
+          <div class="u_flex u_align-center">
+            <div class="u_flex u_ml-20">
+              <button type="button" class="u_btn white small u_btn__white" (click)="discardChanges()"
+                *ngIf="formChanged">discard</button>
+              <button type="submit" class="u_btn u_ml-10 blue small u_ml-10 u_btn__blue"
+                *ngIf="formChanged">save</button>
+            </div>
+          </div>
         </div>
         <div class="u_content-form u_p-20">
           <div class="u_row">
             <div class="u_col-4 u_mb-25">
               <div class="form-group-wrapper">
                 <div class="form-group-main border-0 position-relative">
-                  <ng-select placeholder="Company Name">
+                  <ng-select placeholder="Company Name" formControlName="companyName">
                     <ng-option>Kautilyam</ng-option>
                     <ng-option>Syfrox</ng-option>
                   </ng-select>
@@ -24,7 +31,7 @@
             <div class="u_col-4 u_mb-25">
               <div class="form-group-wrapper">
                 <div class="form-group-main border-0 position-relative">
-                  <ng-select placeholder="Legal Entity Company Name">
+                  <ng-select placeholder="Legal Entity Company Name" formControlName="legalEntityCompany">
                     <ng-option>Kautilyam</ng-option>
                     <ng-option>Syfrox</ng-option>
                   </ng-select>
@@ -34,24 +41,33 @@
               </div>
             </div>
             <div class="u_col-4 u_mb-25">
-              <div class="u_input"><input type="text" placeholder=" " name="employeeId" autocomplete="off"
-                  value="1015"><label>Employee ID
-                  <span>*</span></label></div>
+              <div class="u_input"><input type="text" placeholder=" " autocomplete="off" value="1015"
+                  formControlName="employeeId">
+                <label>Employee ID <span>*</span></label>
+              </div>
             </div>
             <div class="u_col-4 u_mb-25">
-              <div class="u_input u_input-datepicker u_input-date-select">
-                <div class="u_datepicker ">
-                  <div class="react-datepicker-wrapper">
-                    <div class="react-datepicker__input-container"><input type="text" name="joiningDate" placeholder=" "
-                        autocomplete="off" class value="12/04/2022"></div>
-                  </div>
+              <div class="u_input u_input-password"
+                [class.u_input-error]="(submitted || employeeForm.get('joiningDate')?.touched) && employeeForm.get('joiningDate')?.invalid">
+                <input placeholder="" formControlName="joiningDate" ngbDatepicker #joiningDatePicker="ngbDatepicker"
+                  (click)="joiningDatePicker.toggle()" autocomplete="off" />
+                <label>Joining Date (Effective Date) <span>*</span></label>
+                <div class=" u_input-note u_ib">
+                  <span class="u_rollover u_cp u_flex" aria-describedby="popup-3740">
+                    <i class="fa-regular fa-calendar-days text-secondary fs-3"></i>
+                  </span>
                 </div>
-                <label>Joining Date <span>*</span></label>
+                <span
+                  *ngIf="(submitted || employeeForm.get('joiningDate')?.touched) && employeeForm.get('joiningDate')?.invalid"
+                  class="u_required u_required-icon u_cp" aria-describedby="popup-12163">
+                  <i class="fa-solid fa-triangle-exclamation text-white fs-2"></i>
+                </span>
               </div>
             </div>
             <div class="u_col-4 u_mb-25">
               <div class="u_input u_input-password">
-                <input type="text" placeholder=" " name="displayName" autocomplete="off" value="Abhishek Mayani">
+                <input type="text" placeholder=" " autocomplete="off" value="Abhishek Mayani"
+                  formControlName="displayName">
                 <label>Display Name</label>
                 <div class="u_input-note u_ib fs-3">
                   <i class="bi bi-info-circle-fill text-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
@@ -61,7 +77,8 @@
             </div>
             <div class="u_col-4 u_mb-25">
               <div class="u_input u_input-password">
-                <input type="text" placeholder=" " name="firstName" autocomplete="off" value="Abhishek"><label>First
+                <input type="text" placeholder=" " autocomplete="off" value="Abhishek"
+                  formControlName="firstName"><label>First
                   Name
                   <span>*</span></label>
                 <div class=" u_input-note u_ib fs-3">
@@ -71,8 +88,8 @@
               </div>
             </div>
             <div class="u_col-4 u_mb-25">
-              <div class="u_input u_input-password"><input type="text" placeholder=" " name="middleName"
-                  autocomplete="off" value="Mansukhbhai"><label>Middle Name
+              <div class="u_input u_input-password"><input type="text" placeholder=" " autocomplete="off"
+                  value="Mansukhbhai" formControlName="middleName"><label>Middle Name
                 </label>
                 <div class="u_input-note u_ib fs-3">
                   <i class="bi bi-info-circle-fill text-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
@@ -82,7 +99,7 @@
             </div>
             <div class="u_col-4 u_mb-25">
               <div class="u_input u_input-password">
-                <input type="text" placeholder=" " name="lastName" autocomplete="off" value="Mayani">
+                <input type="text" placeholder=" " autocomplete="off" value="Mayani" formControlName="lastName">
                 <label>Last Name <span>*</span></label>
                 <div class="u_input-note u_ib fs-3">
                   <i class="bi bi-info-circle-fill text-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
@@ -91,20 +108,21 @@
               </div>
             </div>
             <div class="u_col-4 u_mb-25">
-              <div class="u_input u_input-datepicker u_input-date-select">
-                <div class="u_datepicker ">
-                  <div class="react-datepicker-wrapper">
-                    <div class="react-datepicker__input-container"><input type="text" name="dob" placeholder=" "
-                        autocomplete="off" class value="10/06/1999"></div>
-                  </div>
-                </div>
+              <div class="u_input u_input-password">
+                <input class="" placeholder="" formControlName="dob" ngbDatepicker #dp="ngbDatepicker"
+                  (click)="dp.toggle()" autocomplete="off" />
                 <label>Date of Birth <span>*</span></label>
+                <div class=" u_input-note u_ib">
+                  <span class="u_rollover u_cp u_flex" aria-describedby="popup-3740">
+                    <i class="fa-regular fa-calendar-days text-secondary fs-3"></i>
+                  </span>
+                </div>
               </div>
             </div>
             <div class="u_col-4 u_mb-25">
               <div class="form-group-wrapper">
                 <div class="form-group-main border-0 position-relative">
-                  <ng-select placeholder="Marital Status">
+                  <ng-select placeholder="Marital Status" formControlName="maritalStatus">
                     <ng-option>Married</ng-option>
                     <ng-option>Unmarried</ng-option>
                   </ng-select>
@@ -115,7 +133,7 @@
             <div class="u_col-4 u_mb-25">
               <div class="form-group-wrapper">
                 <div class="form-group-main border-0 position-relative">
-                  <ng-select placeholder="Gender">
+                  <ng-select placeholder="Gender" formControlName="gender">
                     <ng-option>Male</ng-option>
                     <ng-option>Female</ng-option>
                     <ng-option value>Other</ng-option>
@@ -126,18 +144,20 @@
               </div>
             </div>
             <div class="u_col-4 u_mb-25">
-              <div class="u_input"><input type="text" placeholder=" " name="bornPlace" autocomplete="off"
-                  value="Surat"><label>Place of Birth
+              <div class="u_input"><input type="text" placeholder=" " autocomplete="off" value="Surat"
+                  formControlName="bornPlace"><label>Place of Birth
                 </label></div>
             </div>
             <div class="u_col-4 u_mb-25">
-              <div class="u_input"><input type="text" placeholder=" " name="nationality" autocomplete="off"
-                  value="Indian"><label>Nationality </label></div>
+              <div class="u_input">
+                <input type="text" placeholder=" " autocomplete="off" value="Indian" formControlName="nationality">
+                <label>Nationality </label>
+              </div>
             </div>
             <div class="u_col-4 u_mb-25">
               <div class="form-group-wrapper">
                 <div class="form-group-main border-0 position-relative">
-                  <ng-select placeholder="Blood Group">
+                  <ng-select placeholder="Blood Group" formControlName="bloodGroup">
                     <ng-option>O-</ng-option>
                     <ng-option>O+</ng-option>
                     <ng-option>A+</ng-option>
@@ -153,33 +173,68 @@
               </div>
             </div>
             <div class="u_col-4 u_mb-25">
-              <div class="u_input"><input type="text" placeholder=" " name="ledgerCode" autocomplete="off"
-                  value><label>Ledger
+              <div class="u_input"><input type="text" placeholder=" " autocomplete="off"
+                  formControlName="ledgerCode"><label>Ledger
                   Code </label></div>
             </div>
           </div>
+
           <h4 class="u_mb-15 mb-3">Known Language</h4>
-          <div class="u_row"></div>
-          <button class="u_btn__dashed" type="button" (click)="openPopup()">
+          <div class="u_row" formArrayName="languages">
+            <div class="u_col-4 u_mb-10 u_mb-15" *ngFor="let lang of languagesForms.controls;let i = index"
+              [formGroupName]="i">
+              <div class="u_input u_known-lang u_input-focused">
+                <div class="u_flex u_align-center u_content-between u_mb-15">
+                  <h4>{{ lang.get('language')?.value }}</h4>
+                  <div class="u_known-lang-btns u_flex u_align-center">
+                    <span class="u_icon-round u_cp" aria-describedby="popup-1809" (click)="editLanguage(i)">
+                      <i class="ri-pencil-fill fs-2 text-primary m-0"></i>
+                    </span>
+                    <span class="u_icon-round u_ml-10 u_cp" aria-describedby="popup-1810" (click)="deleteLanguage(i)">
+                      <i class="ri-delete-bin-6-fill fs-2 text-primary"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="u_known-lang-wpr">
+                  <div class="u_known-lang-desc">
+                    <p>Reading</p>
+                    <span>{{ lang.get('reading')?.value?.$ngOptionLabel }}</span>
+                  </div>
+                  <div class="u_known-lang-desc">
+                    <p>Speaking</p>
+                    <span>{{ lang.get('speaking')?.value?.$ngOptionLabel }}</span>
+                  </div>
+                  <div class="u_known-lang-desc">
+                    <p>Writing</p>
+                    <span>{{ lang.get('writing')?.value?.$ngOptionLabel }}</span>
+                  </div>
+                  <div class="u_known-lang-desc">
+                    <p>Understanding</p>
+                    <span>{{ lang.get('understanding')?.value?.$ngOptionLabel }}</span>
+                  </div>
+                </div>
+                <label>Known Language <span>*</span></label>
+              </div>
+            </div>
+          </div>
+          <button class="u_btn__dashed" type="button" (click)="openLanguageModal()">
             <i class="bi bi-plus-lg fs-3 text-primary u_mr-10"></i>
             Add New
           </button>
         </div>
-        <app-language-modal *ngIf="showPopup" (close)="closePopup()"></app-language-modal>
         <div class>
           <div class="u_content-subheader u_p-20">
             <h5 class="u_flex u_align-center"><span class="u_mr-10">Statutory
                 Components</span>
               <div class="u_rollover u_cp u_lh-0" aria-describedby="popup-504">
-                <i class="fa-solid fa-circle-question text-secondary"
+                <i class="fa-solid fa-circle-question text-secondary m-2"
                   title="Enable the necessary benefits and tax applicable for this employee."
                   data-bs-toggle="tooltip"></i>
               </div>
               <div class="u_mr-10 u_filter">
                 <div class="u_icon-rollover u_filters-icon u_cp" aria-describedby="popup-505" (click)="openModal()">
-                  <i class="fa-solid fa-clock-rotate-left text-secondary p-2 " 
-                  title="View Activity Log"
-                  data-bs-toggle="tooltip"></i>
+                  <i class="fa-solid fa-clock-rotate-left text-secondary p-2 " title="View Activity Log"
+                    data-bs-toggle="tooltip"></i>
                 </div>
               </div>
             </h5>
@@ -197,56 +252,60 @@
               <div class="u_col-12 u_mb-15">
                 <div class="u_row">
                   <div class="u_col-4 u_mb-25">
-                    <div class="u_input"><input type="text" placeholder=" " name="pfNumber" autocomplete="off"
-                        value><label>PF Account Number </label></div>
+                    <div class="u_input"><input type="text" placeholder=" " autocomplete="off"><label>PF Account
+                        Number </label></div>
                   </div>
                   <div class="u_col-4 u_mb-25">
-                    <div class="u_input"><input type="text" placeholder=" " name="uanNumber" autocomplete="off"
-                        value><label>UAN Number </label></div>
+                    <div class="u_input"><input type="text" placeholder=" " autocomplete="off">
+                      <label>UAN Number
+                      </label>
+                    </div>
                   </div>
                 </div>
-                <div class="u_checkbox undefined   "><input id="abrySchemeEligible" type="checkbox"
-                    name="abrySchemeEligible" label="Eligible for ABRY Scheme"><label
+                <div class="u_checkbox undefined">
+                  <input id="abrySchemeEligible" type="checkbox" label="Eligible for ABRY Scheme"><label
                     for="abrySchemeEligible"><span>Eligible for ABRY
-                      Scheme</span></label></div>
+                      Scheme</span></label>
+                </div>
               </div>
               <div class="u_col-12">
                 <h6 class="u_mb-15">Employer Contribution Rate</h6>
                 <div class="u_label u_label-text u_mb-15 u_flex u_align-center">
-                  <div class="u_radio-btn undefined"><input type="radio" id="isRestrictEmployerEPFContribution"
-                      name="isRestrictEmployerEPFContribution" label for="isRestrictEmployerEPFContribution"
-                      checked><label for="isRestrictEmployerEPFContribution"></label></div>
+                  <div class="u_radio-btn undefined"><input type="radio" id="isRestrictEmployerEPFContribution" label
+                      for="isRestrictEmployerEPFContribution" checked><label
+                      for="isRestrictEmployerEPFContribution"></label></div>
                   <div class="u_input u_ml-10 u_mr-10"><input type="number" class="u_input-hours u_input-small"
                       placeholder="0" autocomplete="off" disabled value="12"></div>
                   <p>% of Actual PF Wage</p>
                 </div>
                 <div class="u_label u_label-text u_mb-15 u_flex u_align-center">
                   <div class="u_radio-btn undefined"><input type="radio" id="isRestrictEmployerEPFContribution1"
-                      name="isRestrictEmployerEPFContribution" label="Restrict Contribution  to"
-                      for="isRestrictEmployerEPFContribution1"><label for="isRestrictEmployerEPFContribution1">Restrict
+                      label="Restrict Contribution  to" for="isRestrictEmployerEPFContribution1"><label
+                      for="isRestrictEmployerEPFContribution1">Restrict
                       Contribution to</label></div>
                   <div class="u_input u_ml-10 u_mr-10"><input type="number" class="u_input-hours u_input-small"
-                      placeholder="0" autocomplete="off" name="actual-days2" disabled value="15000"></div>
+                      placeholder="0" autocomplete="off" disabled value="15000"></div>
                   <p>PF Wages</p>
                 </div>
               </div>
               <div class="u_col-12 u_mb-15">
                 <h6 class="u_mb-15">Employee Contribution Rate</h6>
                 <div class="u_label u_label-text u_mb-15 u_flex u_align-center">
-                  <div class="u_radio-btn undefined"><input type="radio" id="isRestrictEmployeeEPFContribution"
-                      name="isRestrictEmployeeEPFContribution" label for="isRestrictEmployeeEPFContribution"
-                      checked><label for="isRestrictEmployeeEPFContribution"></label></div>
+                  <div class="u_radio-btn undefined"><input type="radio" id="isRestrictEmployeeEPFContribution" label
+                      for="isRestrictEmployeeEPFContribution" checked><label
+                      for="isRestrictEmployeeEPFContribution"></label></div>
                   <div class="u_input u_ml-10 u_mr-10"><input type="number" class="u_input-hours u_input-small"
-                      placeholder="0" autocomplete="off" name="employer" disabled value="12"></div>
+                      placeholder="0" autocomplete="off" disabled value="12"></div>
                   <p>% of Actual PF Wage</p>
                 </div>
                 <div class="u_label u_label-text u_mb-15 u_flex u_align-center">
-                  <div class="u_radio-btn undefined"><input type="radio" id="isRestrictEmployeeEPFContribution1"
-                      name="isRestrictEmployeeEPFContribution" label="Restrict Contribution to"
-                      for="isRestrictEmployeeEPFContribution1"><label for="isRestrictEmployeeEPFContribution1">Restrict
-                      Contribution to</label></div>
+                  <div class="u_radio-btn undefined">
+                    <input type="radio" id="isRestrictEmployeeEPFContribution1" label="Restrict Contribution to"
+                      for="isRestrictEmployeeEPFContribution1">
+                    <label for="isRestrictEmployeeEPFContribution1">Restrict Contribution to</label>
+                  </div>
                   <div class="u_input u_ml-10 u_mr-10"><input type="number" class="u_input-hours u_input-small"
-                      placeholder="0" autocomplete="off" name="employer1" disabled value="15000"></div>
+                      placeholder="0" autocomplete="off" disabled value="15000"></div>
                   <p>PF Wages</p>
                 </div>
               </div>
@@ -279,22 +338,21 @@
             <div *ngIf="isESIChecked">
               <div class="u_row u_align-center">
                 <div class="u_col-4 u_mb-15">
-                  <div class="u_input"><input type="text" placeholder=" " name="esiNumber" autocomplete="off"
-                      value><label>ESIC Insurance Number </label></div>
+                  <div class="u_input"><input type="text" placeholder=" " autocomplete="off" value><label>ESIC Insurance
+                      Number </label></div>
                 </div>
               </div>
               <div class="u_row">
                 <div class="u_col-12 u_mb-15">
                   <div class="u_checkbox undefined   "><input id="isESICEmployerCountCTC" type="checkbox"
-                      name="isESICEmployerCountCTC" label="Employer count will be counted from CTC"><label
-                      for="isESICEmployerCountCTC"><span>Employer count will be
+                      label="Employer count will be counted from CTC"><label for="isESICEmployerCountCTC"><span>Employer
+                        count will be
                         counted from CTC</span></label></div>
                 </div>
               </div>
               <div class="u_row">
                 <div class="u_col-12">
                   <div class="u_checkbox undefined   "><input id="isIgnoreESICEligibleAmount" type="checkbox"
-                      name="isIgnoreESICEligibleAmount"
                       label="Enable this option if you want to ignore the limit of ESIC based on the eligible CTC amount of employee"><label
                       for="isIgnoreESICEligibleAmount"><span>Enable this option
                         if you want to ignore the limit of ESIC
@@ -329,26 +387,25 @@
                     <div class="u_select__value-container u_select__value-container--has-value css-1hwfws3">
                       <div class="u_select__single-value css-1uccc91-singleValue">Old</div>
                       <div class="css-1g6gooi">
-                        <div class="u_select__input" style="display: inline-block;"><input autocapitalize="none"
-                            autocomplete="off" autocorrect="off" id="react-select-18-input" spellcheck="false"
-                            tabindex="0" type="text" aria-autocomplete="list" value
-                            style="box-sizing: content-box; width: 2px; background: 0px center; border: 0px; font-size: inherit; opacity: 1; outline: 0px; padding: 0px; color: inherit;">
-                          <div style="
-                              position: absolute;
-                              top: 0px;
-                              left: 0px;
-                              visibility: hidden;
-                              height: 0px;
-                              overflow: scroll;
-                              white-space: pre;
-                              font-size: 14px;
-                              font-family: Mulish, sans-serif;
-                              font-weight: 500;
-                              font-style: normal;
-                              letter-spacing: normal;
-                              text-transform: none;
-                            "></div>
-                        </div>
+                      <div class="u_select__input" style="display: inline-block;"><input autocapitalize="none" autocomplete="off"
+                          autocorrect="off" id="react-select-18-input" spellcheck="false" tabindex="0" type="text" aria-autocomplete="list"
+                          value
+                          style="box-sizing: content-box; width: 2px; background: 0px center; border: 0px; font-size: inherit; opacity: 1; outline: 0px; padding: 0px; color: inherit;">
+                        <div style="
+                                                    position: absolute;
+                                                    top: 0px;
+                                                    left: 0px;
+                                                    visibility: hidden;
+                                                    height: 0px;
+                                                    overflow: scroll;
+                                                    white-space: pre;
+                                                    font-size: 14px;
+                                                    font-family: Mulish, sans-serif;
+                                                    font-weight: 500;
+                                                    font-style: normal;
+                                                    letter-spacing: normal;
+                                                    text-transform: none;
+                                                  "></div>  </div>
                       </div>
                     </div>
                     <div class="u_select__indicators css-1wy0on6">
@@ -373,19 +430,19 @@
                           </path>
                         </svg></div>
                     </div>
-                  </div><input name="regime" type="hidden" value="1">
+                  </div><input type="hidden" value="1">
                 </div><label>Tax
                   Regime </label>
               </div>
             </div>
             <div class="u_col-4">
               <div class="u_flex u_align-center">
-                <div class="u_checkbox undefined   "><input id="skipFromPayroll" type="checkbox" name="skipFromPayroll"
+                <div class="u_checkbox undefined   "><input id="skipFromPayroll" type="checkbox"
                     label="Skip from payroll" value="false"><label for="skipFromPayroll"><span>Skip
                       from payroll</span></label></div>
                 <div class="u_flex u_align-center">
-                  <div class="u_checkbox u_ml-15   "><input id="payrollType" type="checkbox" name="payrollType"
-                      label="Import Payroll" class="u_ml-15" value="1"><label for="payrollType"><span>Import
+                  <div class="u_checkbox u_ml-15   "><input id="payrollType" type="checkbox" label="Import Payroll"
+                      class="u_ml-15" value="1"><label for="payrollType"><span>Import
                         Payroll</span></label></div>
                   <div class="u_rollover u_cp u_flex u_ml-10" aria-describedby="popup-6583"><svg width="18" height="18"
                       viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class

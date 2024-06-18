@@ -9,7 +9,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { DefaultComponent } from './default/default.component';
 import { NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
 import { EmployeeService } from 'src/app/core/services/employee.service';
-
+import { Location } from '@angular/common';
 @Component({
   selector: 'app-add-new-employee',
   templateUrl: './add-new-employee.component.html',
@@ -24,35 +24,45 @@ export class AddNewEmployeeComponent {
   showTemplateDetails: boolean = false;
   model!: NgbDateStruct;
   employees: any[] = [];
-  currentId: number = 0;
+  currentId: number = 1000;
 
   constructor(
     private fb: FormBuilder,
     public dialog: MatDialog,
-    private employeeService: EmployeeService
+    private employeeService: EmployeeService,
+    private location: Location
   ) {}
 
   ngOnInit(): void {
+    this.initializeId();
     this.createEmployeeForm();
+  }
+
+  initializeId() {
+    const storedId = localStorage.getItem('currentId');
+    if (storedId) {
+      this.currentId = parseInt(storedId, 10); // Retrieve stored currentId from localStorage
+    } else {
+      localStorage.setItem('currentId', this.currentId.toString()); // Initialize localStorage with default currentId
+    }
   }
 
   createEmployeeForm() {
     this.employeeForm = this.fb.group({
-      dp: [null],
       startProcess: [''],
       sendWelcomeKit: [''],
       sendEmail: [''],
       onboardingField: [null],
       companyName: [null, Validators.required],
       legalEntityCompany: [null, Validators.required],
-      employeeId: [{ value: this.generateId(), disabled: true }],
+      employeeId: [{ value: this.currentId, disabled: true }],
       displayName: [''],
       firstName: ['', Validators.required],
       middleName: [''],
       lastName: ['', Validators.required],
       gender: [null],
       maritalStatus: [null],
-      dob: [''],
+      dob: [],
       bloodGroup: [null],
       ledgerCode: [''],
       moNumber: [''],
@@ -145,12 +155,14 @@ export class AddNewEmployeeComponent {
 
   addEmployee() {
     if (this.employeeForm.valid) {
-      this.employeeService.addEmployee(this.employeeForm.value).subscribe(
+      const newEmployee = { ...this.employeeForm.getRawValue() };
+      this.employeeService.addEmployee(newEmployee).subscribe(
         (employee) => {
           console.log('Employee added successfully:', employee);
           this.employees.push(employee);
-          // alert('Employee Data Add successfully');
-          this.employeeForm.reset();
+          this.currentId++;
+          localStorage.setItem('currentId', this.currentId.toString());
+          this.employeeForm.reset({ employeeId: this.currentId });
         },
         (error) => {
           console.error('Error adding employee:', error);
@@ -159,5 +171,8 @@ export class AddNewEmployeeComponent {
     } else {
       this.employeeForm.markAllAsTouched();
     }
+  }
+  onCancelClick(): void {
+    this.location.back(); // Navigate back to previous location
   }
 }

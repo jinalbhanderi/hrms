@@ -1,38 +1,37 @@
-<div id="popup-root" >
-  <div data-testid="overlay" data-popup="modal" class="popup-overlay " tabindex="-1"
-    style="position: fixed; inset: 0px; display: flex; z-index: 1001; pointer-events: auto;">
-    <div class="popup-content " role="dialog" id="popup-8779"
-      style="position: relative; margin: auto; z-index: 1001; pointer-events: auto;">
+<div id="popup-root">
+  <div data-testid="overlay" data-popup="modal" class="popup-overlay " tabindex="-1">
+    <div class="popup-content " role="dialog" id="popup-8779">
       <div class="u_side-modal active ">
         <div class="u_modal-overlay"></div>
-        <div class="u_side-modal-layout" style="max-width: 800px;">
+        <div class="u_side-modal-layout">
           <div class="u_side-modal-header u_flex u_align-center u_content-between" id="u_side-modal-header">
             <div class="u_task-header-left">
               <h4>Known Language</h4>
             </div>
             <div class="u_task-header-right u_flex u_align-center">
-              <div class="u_close-btn__blue"  (click)="closeModal()">
-                <i class="bi bi-x-lg text-primary fs-3 fw-bold" ></i>
+              <div class="u_close-btn__blue" (click)="cancel()">
+                <i class="bi bi-x-lg text-primary fs-3 fw-bold"></i>
               </div>
             </div>
           </div>
-          <div class="u_side-modal-body" id="u_side-modal-body" style="max-height: calc(575px);">
-            <form class="u_add-language">
+          <div class="u_side-modal-body" id="u_side-modal-body">
+            <form class="u_add-language" (ngSubmit)="saveAndClose()" [formGroup]="languageForm">
               <div class="u_p-20">
                 <div class="u_row">
                   <div class="u_col-6 u_mb-25">
                     <div class="form-group-wrapper">
                       <div class="form-group-main border-0 position-relative">
-                      <ng-select [items]="languages" bindLabel="label" placeholder="Select a language">
-                      </ng-select>
-                        <label class="position-absolute m-0 bg-white">Language <span class="text-danger">*</span></label>
+                        <ng-select [items]="languages" placeholder="Select a language" formControlName="language">
+                        </ng-select>
+                        <label class="position-absolute m-0 bg-white">Language <span
+                            class="text-danger">*</span></label>
                       </div>
                     </div>
                   </div>
                   <div class="u_col-6 u_mb-25">
                     <div class="form-group-wrapper">
                       <div class="form-group-main border-0 position-relative">
-                        <ng-select placeholder="Reading">
+                        <ng-select placeholder="Reading" formControlName="reading">
                           <ng-option>Poor</ng-option>
                           <ng-option>Good</ng-option>
                           <ng-option>Excellent</ng-option>
@@ -44,19 +43,20 @@
                   <div class="u_col-6 u_mb-25">
                     <div class="form-group-wrapper">
                       <div class="form-group-main border-0 position-relative">
-                        <ng-select placeholder="Speaking">
+                        <ng-select placeholder="Speaking" formControlName="speaking">
                           <ng-option>Poor</ng-option>
                           <ng-option>Good</ng-option>
                           <ng-option>Excellent</ng-option>
                         </ng-select>
-                        <label class="position-absolute m-0 bg-white">Speaking <span class="text-danger">*</span></label>
+                        <label class="position-absolute m-0 bg-white">Speaking <span
+                            class="text-danger">*</span></label>
                       </div>
                     </div>
                   </div>
                   <div class="u_col-6 u_mb-25">
                     <div class="form-group-wrapper">
                       <div class="form-group-main border-0 position-relative">
-                        <ng-select placeholder="Writing">
+                        <ng-select placeholder="Writing" formControlName="writing">
                           <ng-option>Poor</ng-option>
                           <ng-option>Good</ng-option>
                           <ng-option>Excellent</ng-option>
@@ -68,21 +68,23 @@
                   <div class="u_col-6 u_mb-10">
                     <div class="form-group-wrapper">
                       <div class="form-group-main border-0 position-relative">
-                        <ng-select placeholder="Understanding">
+                        <ng-select placeholder="Understanding" formControlName="understanding">
                           <ng-option>Poor</ng-option>
                           <ng-option>Good</ng-option>
                           <ng-option>Excellent</ng-option>
                         </ng-select>
-                        <label class="position-absolute m-0 bg-white">Understanding <span class="text-danger">*</span></label>
+                        <label class="position-absolute m-0 bg-white">Understanding <span
+                            class="text-danger">*</span></label>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="u_modal-buttons">
-                <button type="submit" class="u_btn white small u_btn__white" (click)="closeModal()">cancel</button>
-                <button type="submit" class="u_btn u_btn__smallBtn u_btn__blue " (click)="closeModal()"> Save &amp; New</button>
-                <button type="submit" class="u_btn blue small u_btn__blue" (click)="closeModal()">save</button></div>
+                <button type="button" class="u_btn white small u_btn__white" (click)="cancel()">Cancel</button>
+                <!-- <button type="submit" class="u_btn u_btn__smallBtn u_btn__blue">Save & New</button> -->
+                <button type="submit" class="u_btn blue small u_btn__blue">Save</button>
+              </div>
             </form>
           </div>
           <div class="u_side-modal-footer" id="u_side-modal-footer"></div>

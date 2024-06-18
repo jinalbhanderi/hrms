@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
   templateUrl: './employee-list.component.html',
   styleUrls: ['./employee-list.component.css'],
 })
+
 export class EmployeeListComponent {
   selectedOption: string = '';
   employees!: any[];
@@ -17,7 +18,7 @@ export class EmployeeListComponent {
   constructor(
     public dialog: MatDialog,
     private employeeService: EmployeeService,
-   private router:Router
+    private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -30,11 +31,11 @@ export class EmployeeListComponent {
       console.log('The dialog was closed');
     });
   }
+
   getEmployeeData() {
     this.employeeService.getEmployeeData().subscribe(
       (data) => {
         this.employees = data;
-        console.log('Employees:', this.employees);
         this.sortByFirstName();
       },
       (error) => {
@@ -50,11 +51,12 @@ export class EmployeeListComponent {
       return 0;
     });
   }
+
   getEmployeeIdData(eId: any) {
-    this.employeeService.getEmployeeDataById(eId).subscribe((res: any) => {
-      this.employeeService.changeEmployeeData(res);
-      console.log("emlyee-a" ,res);    
-      this.router.navigate([`employees/${eId}/personal/basic-info`]);
+    this.employeeService.getEmployeeDataById(eId).subscribe(() => {
+      this.router.navigate([`employees/personal/${eId}/basic-info`], {
+        queryParams: { id: eId },
+      });
     });
   }
 }

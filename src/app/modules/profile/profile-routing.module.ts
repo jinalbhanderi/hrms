@@ -1,15 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ProfileComponent } from './profile.component';
+import { PagenotfoundComponent } from '../pagenotfound/pagenotfound.component';
+import { BankInfoComponent } from './bank-info/bank-info.component';
 import { EmergencyContactComponent } from './emergency-contact/emergency-contact.component';
 import { EmpOrgStructureComponent } from './emp-org-structure/emp-org-structure.component';
-import { BankInfoComponent } from './bank-info/bank-info.component';
+import { MyAssetsComponent } from './my-assets/my-assets.component';
+import { ProfileUpdateRequestComponent } from './profile-update-request/profile-update-request.component';
+import { ProfileComponent } from './profile.component';
 import { SettingsComponent } from './settings/settings.component';
 import { SignatureComponent } from './signature/signature.component';
-import { ProfileUpdateRequestComponent } from './profile-update-request/profile-update-request.component';
-import { FeedbackComponent } from './feedback/feedback.component';
-import { MyAssetsComponent } from './my-assets/my-assets.component';
-import { PagenotfoundComponent } from '../pagenotfound/pagenotfound.component';
 
 const routes: Routes = [
   {

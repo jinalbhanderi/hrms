@@ -13,6 +13,8 @@ import { EducationComponent } from './education/education.component';
 import { PreviousEmployerComponent } from './previous-employer/previous-employer.component';
 import { ActivityLogComponent } from './basic-info/activity-log/activity-log.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { NgbDatepickerModule } from '@ng-bootstrap/ng-bootstrap';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatSelectModule,
     FormsModule,
     ReactiveFormsModule,
-    MatDialogModule
+    MatDialogModule,
+    NgbDatepickerModule,
+    ToastrModule.forRoot(),
   ],
 })
 export class PersonalModule {}

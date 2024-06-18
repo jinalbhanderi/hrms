@@ -47,7 +47,7 @@
           </span>
         </div>
         <div class="u_filter">
-          <span class="u_add-btn" aria-describedby="popup-18292" routerLink="add-new-employee">
+          <span class="u_add-btn" aria-describedby="popup-18292" routerLink="/add-new-employee">
             <i class="fa-solid fa-plus text-white fs-3 m-2"></i>
           </span>
         </div>
@@ -132,6 +132,7 @@
             </thead>
             <tbody *ngFor="let employee of employees">
               <tr>
+                <!-- {{employee| json}} -->
                 <td class="u_table-profile u_table-ename u_ws-initial">
                   <div class="u_flex u_align-center">
                     <div class="u_cp u_flex-shrink" aria-describedby="popup-18332">
@@ -155,18 +156,18 @@
                 <td class>
                   <div class="u_ib">
                     <div class="u_tag u_tag-linear " style="border-color: rgb(96, 177, 88)">
-                      <p style="color: rgb(96, 177, 88)">{{employee.employmentStatus.$ngOptionLabel}}</p>
+                      <p style="color: rgb(96, 177, 88)">{{employee.employmentStatus?.$ngOptionLabel}}</p>
                     </div>
                   </div>
                 </td>
                 <td>{{employee.joiningDate.day}} {{employee.joiningDate.month}} ,{{employee.joiningDate.year}}
                 </td>
-                <td>{{employee.jobTitle.$ngOptionLabel}}</td>
-                <td>{{employee.category.$ngOptionLabel}}</td>
-                <td>{{employee.department.$ngOptionLabel}}</td>
-                <td>{{employee.companyName.$ngOptionLabel}}</td>
-                <td>{{employee.gender.$ngOptionLabel}}</td>
-                <td>{{employee.location.$ngOptionLabel}}</td>
+                <td>{{employee.jobTitle?.$ngOptionLabel}}</td>
+                <td>{{employee.category?.$ngOptionLabel}}</td>
+                <td>{{employee.department?.$ngOptionLabel}}</td>
+                <td>{{employee.companyName?.$ngOptionLabel}}</td>
+                <td>{{employee.gender?.$ngOptionLabel}}</td>
+                <td>{{employee.location?.$ngOptionLabel}}</td>
                 <td>
                   <div class="u_table-resource-action">
                     <div class="u_cp u_table-resource-menu">
@@ -180,7 +181,8 @@
                       </span>
                     </div>
                     <div class="u_table-resource-buttons">
-                      <span class="u_icon-rollover u_cp u_ml-5" aria-describedby="popup-18333" (click)="getEmployeeIdData(employee.id)">
+                      <span class="u_icon-rollover u_cp u_ml-5" aria-describedby="popup-18333"
+                        (click)="getEmployeeIdData(employee.id)">
                         <i class="ri-pencil-fill fs-2 m-2 text-primary"></i>
                       </span>
                       <span class="u_icon-rollover u_cp u_ml-5" aria-describedby="popup-18334">
@@ -197,4 +199,3 @@
     </div>
   </div>
 </div>
-

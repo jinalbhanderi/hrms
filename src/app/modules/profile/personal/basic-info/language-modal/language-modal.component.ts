@@ -1,4 +1,14 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Inject, Input, Output } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
+
+interface Language {
+  language: string;
+  reading?: string;
+  speaking?: string;
+  writing?: string;
+  understanding?: string;
+}
 
 @Component({
   selector: 'app-language-modal',
@@ -6,7 +16,9 @@ import { Component, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./language-modal.component.css'],
 })
 export class LanguageModalComponent {
-  @Output() close = new EventEmitter<void>();
+  @Input() language: Language | undefined;
+  @Output() saveLanguage = new EventEmitter<Language>();
+
   languages = [
     'Abkhaz',
     'Afar',
@@ -193,7 +205,40 @@ export class LanguageModalComponent {
     'Zulu',
   ];
 
-  closeModal() {
-    this.close.emit();
+  languageForm: FormGroup;
+
+  constructor(
+    private fb: FormBuilder,
+    private dialogRef: MatDialogRef<LanguageModalComponent>,
+    @Inject(MAT_DIALOG_DATA) public data: Language
+  ) {
+    // Initialize the form with optional fields handled properly
+    this.languageForm = this.fb.group({
+      language: [data?.language || '', Validators.required],
+      reading: [data?.reading || '', Validators.required],
+      speaking: [data?.speaking || '', Validators.required],
+      writing: [data?.writing || '', Validators.required],
+      understanding: [data?.understanding || '', Validators.required],
+    });
+  }
+
+  saveAndClose(): void {
+    if (this.languageForm.valid) {
+      const formData: Language = {
+        language: this.languageForm.value.language,
+        reading: this.languageForm.value.reading || null, // Handle optional fields correctly
+        speaking: this.languageForm.value.speaking || null,
+        writing: this.languageForm.value.writing || null,
+        understanding: this.languageForm.value.understanding || null,
+      };
+      this.saveLanguage.emit(formData); // Emit form data to parent component
+      this.dialogRef.close();
+    } else {
+      console.error('Form is invalid. Cannot save language data.');
+    }
+  }
+
+  cancel(): void {
+    this.dialogRef.close();
   }
 }

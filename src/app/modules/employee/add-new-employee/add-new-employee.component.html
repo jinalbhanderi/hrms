@@ -8,8 +8,8 @@
               <div class="u_content-header" id="u_content-header">
                 <h3>Add New Employee</h3>
                 <div class="u_flex u_align-center ">
-                  <button type="button" class="u_btn white small u_btn__white">Cancel</button>
-                  <button type="submit" class="u_btn u_ml-10 blue small u_ml-10 u_btn__blue">Save</button>
+                  <button type="button" class="u_btn white small u_btn__white" (click)="onCancelClick()">Cancel</button>
+                  <button utton type="submit" class="u_btn u_ml-10 blue small u_ml-10 u_btn__blue">Save</button>
                 </div>
               </div>
               <div class="u_p-15">
@@ -107,7 +107,7 @@
                     </div>
                     <div class="u_col-4 u_mb-25">
                       <div class="form-group-wrapper"
-                        [class.u_input-error]="(submitted || employeeForm.get('companyName')?.touched) && employeeForm.get('companyName')?.invalid">
+                        [class.u_input-error]="(submitted || employeeForm.get('legalEntityCompany')?.touched) && employeeForm.get('legalEntityCompany')?.invalid">
                         <div class="form-group-main border-0 position-relative">
                           <ng-select placeholder="Legal Entity Company" formControlName="legalEntityCompany">
                             <ng-option>Kautilyam</ng-option>
@@ -220,7 +220,7 @@
                     </div>
                     <div class="u_col-4 u_mb-25">
                       <div class="u_input u_input-password">
-                        <input class="" placeholder="" formControlName="dp" ngbDatepicker #dp="ngbDatepicker"
+                        <input class="" placeholder="" formControlName="dob" ngbDatepicker #dp="ngbDatepicker"
                           (click)="dp.toggle()" autocomplete="off" />
                         <label>Date of Birth <span>*</span></label>
                         <div class=" u_input-note u_ib">
@@ -513,13 +513,11 @@
               <div>
                 <div class="u_content-form u_px-20 u_pt-20">
                   <div class="u_row">
-                    <div class="u_mb-25 u_col-4">
-                      <div class="u_input u_input-datepicker">
-                        <div class="react-datepicker__input-container">
-                          <input ngbDatepicker #startDate="ngbDatepicker" (click)="startDate.toggle()"
-                            autocomplete="off" formControlName="startDate">
-                        </div>
-                        <label>Start Date</label>
+                    <div class="u_col-4 u_mb-25">
+                      <div class="u_input u_input-password">
+                        <input class="" placeholder="" formControlName="startDate" ngbDatepicker
+                          #startDate="ngbDatepicker" (click)="startDate.toggle()" autocomplete="off" />
+                        <label>Start Date <span>*</span></label>
                         <div class=" u_input-note u_ib">
                           <span class="u_rollover u_cp u_flex" aria-describedby="popup-3740">
                             <i class="fa-regular fa-calendar-days text-secondary fs-3"></i>
@@ -527,13 +525,11 @@
                         </div>
                       </div>
                     </div>
-                    <div class="u_mb-25 u_col-4">
-                      <div class="u_input u_input-datepicker">
-                        <div class="react-datepicker__input-container">
-                          <input ngbDatepicker #endDate="ngbDatepicker" (click)="endDate.toggle()" autocomplete="off"
-                            formControlName="endDate">
-                        </div>
-                        <label>End Date</label>
+                    <div class="u_col-4 u_mb-25">
+                      <div class="u_input u_input-password">
+                        <input class="" placeholder="" formControlName="endDate" ngbDatepicker #endDate="ngbDatepicker"
+                          (click)="endDate.toggle()" autocomplete="off" />
+                        <label>End Date <span>*</span></label>
                         <div class=" u_input-note u_ib">
                           <span class="u_rollover u_cp u_flex" aria-describedby="popup-3740">
                             <i class="fa-regular fa-calendar-days text-secondary fs-3"></i>
