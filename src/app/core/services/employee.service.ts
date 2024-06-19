@@ -24,7 +24,6 @@ export class EmployeeService {
   }
 
   getEmployeeData(): Observable<any> {
-    debugger;
     return this.http.get<any[]>(`${this.apiUrl}/${this.employeeUrl}`);
   }
 
@@ -61,4 +60,6 @@ export class EmployeeService {
         })
       );
   }
+
+ 
 }

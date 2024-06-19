@@ -33,7 +33,6 @@ export class BasicInfoComponent {
   languages: Language[] = [];
   formChanged: boolean = false;
   submitted = false;
-
   private subscription!: Subscription;
 
   cities = [
@@ -48,7 +47,8 @@ export class BasicInfoComponent {
     public dialog: MatDialog,
     private employeeService: EmployeeService,
     private route: ActivatedRoute,
-    private fb: FormBuilder
+    private fb: FormBuilder,
+
   ) {
     this.employeeForm = this.fb.group({
       companyName: ['', Validators.required],
@@ -131,8 +131,9 @@ export class BasicInfoComponent {
       this.getEmployeeData();
     }
     this.employeeForm.valueChanges.subscribe(() => {
-      this.formChanged = this.employeeForm.dirty; // Update formChanged based on dirty state
+      this.formChanged = this.employeeForm.dirty; 
     });
+    
   }
   ngOnDestroy(): void {
     if (this.subscription) {
@@ -150,7 +151,6 @@ export class BasicInfoComponent {
   }
 
   getEmployeeData(): void {
-    debugger;
     this.subscription = this.employeeService
       .getEmployeeDataById(this.employeeId)
       .subscribe((res: any) => {
@@ -177,7 +177,6 @@ export class BasicInfoComponent {
           department: res.department,
           location: res.location,
         });
-        debugger;
         if (res?.languages) {
           const languageArray = this.employeeForm.get('languages') as FormArray;
           languageArray.clear();

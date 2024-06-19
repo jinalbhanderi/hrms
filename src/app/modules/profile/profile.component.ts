@@ -1,20 +1,31 @@
 import { isPlatformBrowser } from '@angular/common';
-import { Component, Inject, PLATFORM_ID } from '@angular/core';
+import { Component, Inject, OnInit, PLATFORM_ID } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { EditProfileComponent } from './edit-profile/edit-profile.component';
+import { ActivatedRoute, NavigationExtras, Router } from '@angular/router';
 
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
   styleUrls: ['./profile.component.css'],
 })
-export class ProfileComponent {
+export class ProfileComponent implements OnInit {
   public modalOpen: boolean = false;
+  employeeId: any;
 
   constructor(
     @Inject(PLATFORM_ID) private platformId: Object,
-    private modalService: NgbModal
+    private modalService: NgbModal,
+    private route: ActivatedRoute,
+    private router: Router
   ) {}
+
+  ngOnInit(): void {
+    this.route.queryParams.subscribe((params) => {
+      this.employeeId = params['id'] || null;
+    });
+  }
+
   editProfile() {
     try {
       if (isPlatformBrowser(this.platformId)) {
@@ -39,6 +50,19 @@ export class ProfileComponent {
     }
   }
 
+  getQueryParams(): { id?: string } {
+    return this.employeeId ? { id: this.employeeId } : {};
+  }
 
-  
+  getRouterLinkPath(path: string) {
+    debugger
+    const queryParams = this.getQueryParams();
+    const navigationExtras: NavigationExtras = {
+      queryParams,
+    };
+     this.router.navigate([`/employees/${path}`], {
+       queryParams: { id: navigationExtras?.queryParams?.['id'] },
+     });
+  }
+
 }

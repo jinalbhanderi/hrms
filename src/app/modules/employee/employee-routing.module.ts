@@ -33,7 +33,7 @@ const routes: Routes = [
 
     children: [
       {
-        path: 'personal/:id',
+        path: 'personal',
         loadChildren: () =>
           import('../profile/personal/personal.module').then(
             (m) => m.PersonalModule

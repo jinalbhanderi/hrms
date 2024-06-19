@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { FilterComponent } from './filter/filter.component';
 import { EmployeeService } from 'src/app/core/services/employee.service';
@@ -9,8 +9,7 @@ import { Router } from '@angular/router';
   templateUrl: './employee-list.component.html',
   styleUrls: ['./employee-list.component.css'],
 })
-
-export class EmployeeListComponent {
+export class EmployeeListComponent implements OnInit {
   selectedOption: string = '';
   employees!: any[];
   employeeData: any;
@@ -54,8 +53,9 @@ export class EmployeeListComponent {
 
   getEmployeeIdData(eId: any) {
     this.employeeService.getEmployeeDataById(eId).subscribe(() => {
-      this.router.navigate([`employees/personal/${eId}/basic-info`], {
+      this.router.navigate(['employees/personal/basic-info'], {
         queryParams: { id: eId },
+        queryParamsHandling: 'merge',
       });
     });
   }

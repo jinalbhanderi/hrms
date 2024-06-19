@@ -1,7 +1,7 @@
 <div class="u_profile-layout-wpr">
-  <div class="u_scroll-section" style="position: relative; overflow: hidden; width: 100%; height: 100%;">
-    <div style="position: absolute; inset: 0px; overflow: auto;">
-      <form [formGroup]="familyForm">
+  <div class="u_scroll-section">
+    <div>
+      <form [formGroup]="familyInfo" (ngSubmit)="saveFamilyInfo()">
         <div class="u_content-header">
           <h5>Family Information</h5>
         </div>
@@ -12,65 +12,13 @@
                 <div class="form-group-main border-0 position-relative">
                   <ng-select formControlName="relationship" [placeholder]="'Relationship'"
                     (change)="onRelationshipChange($event)">
-                    <ng-option *ngFor="let rel of relationships" [value]="rel">{{ rel }}</ng-option>
-                  </ng-select>
+                    <ng-option *ngFor="let rel of relationships" [value]="rel">{{ rel }}</ng-option></ng-select>
                   <label class="position-absolute m-0 bg-white">Relationship <span class="text-danger">*</span></label>
                 </div>
               </div>
             </div>
           </div>
-          <div *ngIf="showAdditionalFields">
-            <div class="u_row u_mb-5">
-              <div class="u_col-4 u_mb-25">
-                <div class="u_input">
-                  <input type="text" formControlName="name" placeholder=" " autocomplete="off">
-                  <label>Name <span>*</span></label>
-                </div>
-              </div>
-              <div class="u_col-4 u_mb-25">
-                <div class="u_input u_input-datepicker">
-                  <div class="u_datepicker undefined">
-                    <div class="react-datepicker-wrapper">
-                      <div class="react-datepicker__input-container">
-                        <input type="text" formControlName="dob" placeholder=" " autocomplete="off">
-                      </div>
-                    </div>
-                  </div>
-                  <label>Date of Birth </label>
-                </div>
-              </div>
-              <div class="u_col-4 u_mb-25">
-                <div class="u_input">
-                  <input type="text" formControlName="occupation" placeholder=" " autocomplete="off">
-                  <label>Occupation </label>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </form>
-    </div>
-  </div>
-</div><div class="u_profile-layout-wpr">
-  <div class="u_scroll-section" style="position: relative; overflow: hidden; width: 100%; height: 100%;">
-    <div style="position: absolute; inset: 0px; overflow: auto;">
-      <form [formGroup]="familyForm">
-        <div class="u_content-header">
-          <h5>Family Information</h5>
-        </div>
-        <div class="u_content-form u_p-20">
-          <div class="u_row u_mb-5">
-            <div class="u_col-4 u_mb-25">
-              <div class="form-group-wrapper">
-                <div class="form-group-main border-0 position-relative">
-                  <ng-select formControlName="relationship" [placeholder]="'Relationship'"
-                    (change)="onRelationshipChange($event)">
-                    <ng-option *ngFor="let rel of relationships" [value]="rel">{{ rel }}</ng-option>
-                  </ng-select>
-                  <label class="position-absolute m-0 bg-white">Relationship <span class="text-danger">*</span></label>
-                </div>
-              </div>
-            </div>
+          <span *ngIf="showAdditionalFields">
             <div class="u_col-4 u_mb-25">
               <div class="u_input">
                 <input type="text" formControlName="name" placeholder=" " autocomplete="off">
@@ -95,7 +43,7 @@
                 <label>Occupation </label>
               </div>
             </div>
-          </div>
+          </span>
         </div>
       </form>
     </div>

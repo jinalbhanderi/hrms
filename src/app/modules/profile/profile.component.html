@@ -39,29 +39,36 @@
               <p>Personal</p>
             </label>
             <ul class="u_sidemenu-item-list p-0">
-              <li routerLinkActive="u_sidemenu-item-list-active" routerLink="personal/basic-info">Basic Info</li>
-              <li routerLinkActive="u_sidemenu-item-list-active" routerLink="personal/family-info">Family Info</li>
-              <li routerLinkActive="u_sidemenu-item-list-active" routerLink="personal/contact">Contact & Social Links
+              <li routerLinkActive="u_sidemenu-item-list-active" (click)="getRouterLinkPath('personal/basic-info')">
+                Basic Info</li>
+              <li routerLinkActive="u_sidemenu-item-list-active" (click)="getRouterLinkPath('personal/family-info')">
+                Family Info</li>
+              <li routerLinkActive="u_sidemenu-item-list-active" (click)="getRouterLinkPath('personal/contact')">Contact
+                & Social Links
               </li>
-              <li routerLinkActive="u_sidemenu-item-list-active" routerLink="personal/address">Address</li>
-              <li routerLinkActive="u_sidemenu-item-list-active" routerLink="personal/education">Education</li>
-              <li routerLinkActive="u_sidemenu-item-list-active" routerLink="personal/previous-employer">Previous
+              <li routerLinkActive="u_sidemenu-item-list-active" (click)="getRouterLinkPath('personal/address')">Address
+              </li>
+              <li routerLinkActive="u_sidemenu-item-list-active" (click)="getRouterLinkPath('personal/education')">
+                Education</li>
+              <li routerLinkActive="u_sidemenu-item-list-active"
+                (click)="getRouterLinkPath('personal/previous-employer')">Previous
                 Employer</li>
-              <li routerLinkActive="u_sidemenu-item-list-active" routerLink="personal/health-benefit">Health Benefit
+              <li routerLinkActive="u_sidemenu-item-list-active" (click)="getRouterLinkPath('personal/health-benefit')">
+                Health Benefit
               </li>
-              <li routerLinkActive="u_sidemenu-item-list-active" routerLink="personal/vaccination-status">Vaccination
+              <li routerLinkActive="u_sidemenu-item-list-active"
+                (click)="getRouterLinkPath('personal/vaccination-status')">Vaccination
                 Status</li>
             </ul>
           </li>
-          <li routerLink="emergency-contact" routerLinkActive="u_sidemenu-item-active">
+          <li routerLinkActive="u_sidemenu-item-active" (click)="getRouterLinkPath('emergency-contact')">
             <div class="u_sidemenu-item">
               <p>Emergency Contact</p>
             </div>
           </li>
-          <li routerLink="emp-org-structure" routerLinkActive="u_sidemenu-item-active">
+          <li routerLinkActive="u_sidemenu-item-active" (click)="getRouterLinkPath('emp-org-structure')">
             <div class="u_sidemenu-item">
-              <p>Org
-                Structure</p>
+              <p>Org Structure</p>
             </div>
           </li>
           <li class="u_sidemenu-has-list" routerLinkActive="u_sidemenu-item-active">
@@ -70,25 +77,31 @@
               <p>Job</p>
             </label>
             <ul class="u_sidemenu-item-list p-0">
-              <li routerLinkActive="u_sidemenu-item-list-active" routerLink="job/info">Job Information</li>
-              <li routerLinkActive="u_sidemenu-item-list-active" routerLink="job/agreement-info">Agreement</li>
-              <li routerLinkActive="u_sidemenu-item-list-active" routerLink="job/compensation">Compensation</li>
-              <li routerLinkActive="u_sidemenu-item-list-active" routerLink="job/resignation">Employee Exit</li>
-              <li routerLinkActive="u_sidemenu-item-list-active" routerLink="job/history">Employment History</li>
-              <li routerLinkActive="u_sidemenu-item-list-active" routerLink="job/probation">Internship / Probation</li>
+              <li routerLinkActive="u_sidemenu-item-list-active" (click)="getRouterLinkPath('job/info')">Job Information
+              </li>
+              <li routerLinkActive="u_sidemenu-item-list-active" (click)="getRouterLinkPath('job/agreement-info')">
+                Agreement</li>
+              <li routerLinkActive="u_sidemenu-item-list-active" (click)="getRouterLinkPath('job/compensation')">
+                Compensation</li>
+              <li routerLinkActive="u_sidemenu-item-list-active" (click)="getRouterLinkPath('job/resignation')">Employee
+                Exit</li>
+              <li routerLinkActive="u_sidemenu-item-list-active" (click)="getRouterLinkPath('job/history')">Employment
+                History</li>
+              <li routerLinkActive="u_sidemenu-item-list-active" (click)="getRouterLinkPath('job/probation')">Internship
+                / Probation</li>
             </ul>
           </li>
-          <li routerLink="bank-info" routerLinkActive="u_sidemenu-item-active">
+          <li routerLinkActive="u_sidemenu-item-active" (click)="getRouterLinkPath('bank-info')">
             <div class="u_sidemenu-item">
               <p>Bank info</p>
             </div>
           </li>
-          <li routerLink="policy" routerLinkActive="u_sidemenu-item-active">
+          <li routerLinkActive="u_sidemenu-item-active" (click)="getRouterLinkPath('policy')">
             <div class="u_sidemenu-item">
               <p>Settings</p>
             </div>
           </li>
-          <li routerLink="signature" routerLinkActive="u_sidemenu-item-active">
+          <li routerLinkActive="u_sidemenu-item-active" (click)="getRouterLinkPath('signature')">
             <div class="u_sidemenu-item">
               <p>Signature</p>
             </div>
@@ -99,24 +112,27 @@
               <p>Documents</p>
             </label>
             <ul class="u_sidemenu-item-list p-0">
-              <li routerLinkActive="u_sidemenu-item-list-active" routerLink="documents/personal">Personal Documents</li>
-              <li routerLinkActive="u_sidemenu-item-list-active" routerLink="documents/official">Official Documents</li>
-              <li routerLinkActive="u_sidemenu-item-list-active" routerLink="documents/other">Other Documents</li>
+              <li routerLinkActive="u_sidemenu-item-list-active" (click)="getRouterLinkPath('documents/personal')">
+                Personal Documents</li>
+              <li routerLinkActive="u_sidemenu-item-list-active" (click)="getRouterLinkPath('documents/official')">
+                Official Documents</li>
+              <li routerLinkActive="u_sidemenu-item-list-active" (click)="getRouterLinkPath('documents/other')">Other
+                Documents</li>
             </ul>
           </li>
-          <li routerLink="profile-update-request" routerLinkActive="u_sidemenu-item-active">
+          <li routerLinkActive="u_sidemenu-item-active" (click)="getRouterLinkPath('profile-update-request')">
             <div class="u_sidemenu-item">
               <p>Profile Update
                 Requests</p>
             </div>
           </li>
-          <li routerLink="feedback" routerLinkActive="u_sidemenu-item-active">
+          <li routerLinkActive="u_sidemenu-item-active" (click)="getRouterLinkPath('feedback')">
             <div class="u_sidemenu-item">
               <p>Timeline &amp;
                 Feedback</p>
             </div>
           </li>
-          <li routerLink="assets" routerLinkActive="u_sidemenu-item-active">
+          <li routerLinkActive="u_sidemenu-item-active" (click)="getRouterLinkPath('assets')">
             <div class="u_sidemenu-item">
               <p>My Assets</p>
             </div>
@@ -127,8 +143,10 @@
               <p>My Finance</p>
             </label>
             <ul class="u_sidemenu-item-list p-0">
-              <li routerLinkActive="u_sidemenu-item-list-active" routerLink="my-finance/tax-regime">Tax Regime</li>
-              <li routerLinkActive="u_sidemenu-item-list-active" routerLink="my-finance/salary-template">Salary Template
+              <li routerLinkActive="u_sidemenu-item-list-active" (click)="getRouterLinkPath('my-finance/tax-regime')">
+                Tax Regime</li>
+              <li routerLinkActive="u_sidemenu-item-list-active"
+                (click)="getRouterLinkPath('my-finance/salary-template')">Salary Template
               </li>
             </ul>
           </li>
