@@ -140,27 +140,27 @@
                         <div class="u_avatar-content "
                           style="background-color: rgb(96, 177, 88); width: 36px; height: 36px;">
                           <span class="u_m-auto">{{ employee.firstName ?
-                            employee.firstName.charAt(0) : '' }}{{ employee.lastName ?
-                            employee.lastName.charAt(0) : '' }}
+                            employee?.firstName.charAt(0) : '' }}{{ employee?.lastName ?
+                            employee?.lastName.charAt(0) : '' }}
                           </span>
                         </div>
                       </div>
                     </div>
                     <div class="u_flex u_align-center">
-                      <span class="u_one-line u_color-blue u_table-label u_cp u_pl-10">{{employee.firstName}}</span>
+                      <span class="u_one-line u_color-blue u_table-label u_cp u_pl-10">{{employee?.firstName}}</span>
                     </div>
                   </div>
                 </td>
-                <td class>{{employee.employeeId}}</td>
-                <td class>{{employee.workEmail}}</td>
+                <td class>{{employee?.employeeId}}</td>
+                <td class>{{employee?.workEmail}}</td>
                 <td class>
                   <div class="u_ib">
                     <div class="u_tag u_tag-linear " style="border-color: rgb(96, 177, 88)">
-                      <p style="color: rgb(96, 177, 88)">{{employee.employmentStatus?.$ngOptionLabel}}</p>
+                      <p style="color: rgb(96, 177, 88)">{{employee?.employmentStatus?.$ngOptionLabel}}</p>
                     </div>
                   </div>
                 </td>
-                <td>{{employee.joiningDate.day}} {{employee.joiningDate.month}} ,{{employee.joiningDate.year}}
+                <td>{{employee.joiningDate?.day}} {{employee.joiningDate?.month}} ,{{employee.joiningDate?.year}}
                 </td>
                 <td>{{employee.jobTitle?.$ngOptionLabel}}</td>
                 <td>{{employee.category?.$ngOptionLabel}}</td>

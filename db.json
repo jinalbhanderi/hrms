@@ -43,8 +43,8 @@
       "sendWelcomeKit": "",
       "sendEmail": "",
       "onboardingField": null,
-      "moNumber": "",
-      "userName": "",
+      "moNumber": 9874563211,
+      "userName": "ssss",
       "workEmail": "Abhishek@gmail.com",
       "password": "",
       "location": {
@@ -148,7 +148,12 @@
           }
         }
       ],
-      "id": "1ceb"
+      "id": "1ceb",
+      "homePhoneNo": 9874563212,
+      "personalEmail": "sssss",
+      "linkdinUrl": "iuikuhjk",
+      "twitterUrl": "yghknm,",
+      "skyupId": "ujkhn m,.."
     },
     {
       "id": "148b",
@@ -498,6 +503,186 @@
       "isAssignWorkDiary": false,
       "deviceList": null,
       "id": "c988"
+    },
+    {
+      "companyName": {
+        "$ngOptionLabel": "Kautilyam",
+        "disabled": false
+      },
+      "legalEntityCompany": {
+        "$ngOptionLabel": "Kautilyam",
+        "disabled": false
+      },
+      "employeeId": 1008,
+      "joiningDate": {
+        "year": 2024,
+        "month": 6,
+        "day": 12
+      },
+      "displayName": "",
+      "firstName": "dcxv",
+      "middleName": "",
+      "lastName": "rgxfdbcv n",
+      "dob": null,
+      "maritalStatus": {
+        "$ngOptionLabel": "Unmarried",
+        "disabled": false
+      },
+      "gender": {
+        "$ngOptionLabel": "Female",
+        "disabled": false
+      },
+      "bornPlace": "efdsvx",
+      "bloodGroup": null,
+      "ledgerCode": "",
+      "startProcess": "",
+      "sendWelcomeKit": "",
+      "sendEmail": "",
+      "onboardingField": null,
+      "moNumber": "",
+      "userName": "",
+      "workEmail": "",
+      "password": "",
+      "location": {
+        "$ngOptionLabel": "Surat",
+        "disabled": false
+      },
+      "jobTitle": {
+        "$ngOptionLabel": "Financial Officer",
+        "disabled": false
+      },
+      "category": null,
+      "department": {
+        "$ngOptionLabel": "Human Resource",
+        "disabled": false
+      },
+      "subDepartment": null,
+      "reportingManager": null,
+      "lineManager": null,
+      "lineManager2": null,
+      "employmentStatus": {
+        "$ngOptionLabel": "Probation",
+        "disabled": false
+      },
+      "comments": "",
+      "startDate": null,
+      "endDate": null,
+      "compensationPeriod": "",
+      "newSalary": "",
+      "payFrequency": null,
+      "noticePeriod": "",
+      "compPeriod": "",
+      "salaryMode": "",
+      "compensationDescription": "",
+      "isLeaveBonusBenefit": false,
+      "applyBonus": false,
+      "taxRegime": "",
+      "skipFromPayroll": false,
+      "payrollType": false,
+      "isEPF": false,
+      "isESIC": false,
+      "businessUnit": null,
+      "costCenter": null,
+      "bands": null,
+      "segment": null,
+      "hub": null,
+      "territory": null,
+      "region": null,
+      "timezone": null,
+      "leavePolicy": "",
+      "documentPolicy": null,
+      "costCenterData": null,
+      "overtimePolicy": null,
+      "holiday": null,
+      "clockInPolicy": null,
+      "compOffPolicy": null,
+      "weekendPolicy": null,
+      "penalisationPolicy": null,
+      "onDutyPolicy": null,
+      "isAssignWorkDiary": false,
+      "deviceList": null,
+      "languages": [],
+      "id": "ae16"
+    }
+  ],
+  "familyInfo": [
+    {
+      "id": "6826",
+      "empId": "1ceb",
+      "relationship": {
+        "$ngOptionLabel": "Sister",
+        "disabled": false
+      },
+      "name": "Test",
+      "dob": "2024-06-04",
+      "occupation": "Test",
+      "employeeId": "1ceb"
+    }
+  ],
+  "address": [
+    {
+      "empId": "1ceb",
+      "id": "18c4",
+      "addressOne": "gujrat",
+      "addressTwo": "gujrat",
+      "city": "Testddd",
+      "country": "Barbados",
+      "state": "Congo",
+      "pincode": 123654,
+      "pAddressOne": "Test",
+      "pAddressTwo": "Test",
+      "pcity": "Test",
+      "pCountry": "Canada",
+      "pState": "Barbados",
+      "ppcode": 987456
+    }
+  ],
+  "education": [
+    {
+      "id": "eef0",
+      "educations": [
+        {
+          "empId": "1ceb",
+          "id": null,
+          "degree": {
+            "$ngOptionLabel": "Bachelor",
+            "disabled": false
+          },
+          "university": "UNI",
+          "specialization": "SPE",
+          "startMonthYear": {
+            "year": 2024,
+            "month": 6,
+            "day": 24
+          },
+          "endMonthYear": {
+            "year": 2027,
+            "month": 6,
+            "day": 21
+          }
+        },
+        {
+          "empId": "1ceb",
+          "id": null,
+          "degree": {
+            "$ngOptionLabel": "Master",
+            "disabled": false
+          },
+          "university": "Uni",
+          "specialization": "spe",
+          "startMonthYear": {
+            "year": 2024,
+            "month": 5,
+            "day": 27
+          },
+          "endMonthYear": {
+            "year": 2024,
+            "month": 6,
+            "day": 6
+          }
+        }
+      ],
+      "employeeId": "1ceb"
     }
   ]
 }

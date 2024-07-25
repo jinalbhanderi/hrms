@@ -55,14 +55,14 @@ export class ProfileComponent implements OnInit {
   }
 
   getRouterLinkPath(path: string) {
-    debugger
     const queryParams = this.getQueryParams();
-    const navigationExtras: NavigationExtras = {
-      queryParams,
-    };
-     this.router.navigate([`/employees/${path}`], {
-       queryParams: { id: navigationExtras?.queryParams?.['id'] },
-     });
+    if (queryParams.id) {
+      const navigationExtras: NavigationExtras = {
+        queryParams: { id: queryParams.id },
+      };
+      this.router.navigate([`/employees/${path}`], navigationExtras);
+    } else {
+      this.router.navigate([`/profile/${path}`]);
+    }
   }
-
 }

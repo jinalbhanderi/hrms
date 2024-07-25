@@ -1,4 +1,6 @@
 export const ApiUrl = {
   employee: 'employees',
-  empFamilyUrl:'empployess/family-info'
+  empFamilyUrl: 'familyInfo',
+  empAddress: 'address',
+  empAducationUrl:'education'
 };

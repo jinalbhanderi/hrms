@@ -4,46 +4,50 @@
       <form [formGroup]="familyInfo" (ngSubmit)="saveFamilyInfo()">
         <div class="u_content-header">
           <h5>Family Information</h5>
+          <div class="u_flex">
+            <button type="button" class="u_btn white small u_btn__white" (click)="discardChanges()"
+              *ngIf="formChanged">Discard</button>
+            <button type="submit" class="u_btn u_ml-10 blue small u_ml-10 u_btn__blue" *ngIf="formChanged">Save</button>
+          </div>
         </div>
         <div class="u_content-form u_p-20">
           <div class="u_row u_mb-5">
             <div class="u_col-4 u_mb-25">
               <div class="form-group-wrapper">
                 <div class="form-group-main border-0 position-relative">
-                  <ng-select formControlName="relationship" [placeholder]="'Relationship'"
-                    (change)="onRelationshipChange($event)">
-                    <ng-option *ngFor="let rel of relationships" [value]="rel">{{ rel }}</ng-option></ng-select>
+                  <ng-select formControlName="relationship" placeholder="Relationship">
+                    <ng-option *ngFor="let rel of relationships">{{ rel }}</ng-option>
+                  </ng-select>
                   <label class="position-absolute m-0 bg-white">Relationship <span class="text-danger">*</span></label>
                 </div>
               </div>
             </div>
-          </div>
-          <span *ngIf="showAdditionalFields">
-            <div class="u_col-4 u_mb-25">
+            <div class="u_col-4 u_mb-25" *ngIf="showAdditionalFields">
               <div class="u_input">
                 <input type="text" formControlName="name" placeholder=" " autocomplete="off">
                 <label>Name <span>*</span></label>
               </div>
             </div>
-            <div class="u_col-4 u_mb-25">
+            <div class="u_col-4 u_mb-25" *ngIf="showAdditionalFields">
               <div class="u_input u_input-datepicker">
                 <div class="u_datepicker undefined">
                   <div class="react-datepicker-wrapper">
                     <div class="react-datepicker__input-container">
-                      <input type="text" formControlName="dob" placeholder=" " autocomplete="off">
+                      <input type="text" formControlName="dob" placeholder=" " autocomplete="off" ngbDatepicker
+                        #dob="ngbDatepicker" (click)="dob.toggle()">
                     </div>
                   </div>
                 </div>
                 <label>Date of Birth </label>
               </div>
             </div>
-            <div class="u_col-4 u_mb-25">
+            <div class="u_col-4 u_mb-25" *ngIf="showAdditionalFields">
               <div class="u_input">
                 <input type="text" formControlName="occupation" placeholder=" " autocomplete="off">
                 <label>Occupation </label>
               </div>
             </div>
-          </span>
+          </div>
         </div>
       </form>
     </div>

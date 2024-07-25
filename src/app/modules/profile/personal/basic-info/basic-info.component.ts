@@ -138,7 +138,7 @@ export class BasicInfoComponent {
   ngOnDestroy(): void {
     if (this.subscription) {
       this.subscription.unsubscribe();
-    }
+    } 
   }
 
   formatDate(date: any): NgbDateStruct | null {

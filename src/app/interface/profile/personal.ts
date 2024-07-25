@@ -1,3 +1,14 @@
+import { NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
+
+export interface FamilyInfo {
+  empId: any;
+  id: number | null;
+  relationship: string | null;
+  name: string;
+  dob: NgbDateStruct | null;
+  occupation: string;
+}
+
 export interface EmployeeForm {
   dp: any;
   startProcess: string;
@@ -67,4 +78,23 @@ export interface EmployeeForm {
   onDutyPolicy: string | null;
   isAssignWorkDiary: boolean;
   deviceList: string | null;
+}
+
+// src/app/core/interfaces/address.interface.ts
+
+export interface Address {
+  empId: any;
+  id?: string | null;
+  addressOne: string;
+  addressTwo: string;
+  city: string;
+  country: string;
+  state: string;
+  pincode: string;
+  pAddressOne: string;
+  pAddressTwo: string;
+  pcity: string;
+  pCountry: string;
+  pState: string;
+  ppcode: string;
 }

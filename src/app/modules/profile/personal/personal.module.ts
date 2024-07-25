@@ -14,7 +14,8 @@ import { PreviousEmployerComponent } from './previous-employer/previous-employer
 import { ActivityLogComponent } from './basic-info/activity-log/activity-log.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { NgbDatepickerModule } from '@ng-bootstrap/ng-bootstrap';
-import { ToastrModule } from 'ngx-toastr';
+import { ContactComponent } from './contact/contact.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { ToastrModule } from 'ngx-toastr';
     EducationComponent,
     PreviousEmployerComponent,
     ActivityLogComponent,
+    ContactComponent
   ],
   imports: [
     CommonModule,
@@ -37,7 +39,7 @@ import { ToastrModule } from 'ngx-toastr';
     ReactiveFormsModule,
     MatDialogModule,
     NgbDatepickerModule,
-    ToastrModule.forRoot(),
+    HttpClientModule,
   ],
 })
 export class PersonalModule {}
