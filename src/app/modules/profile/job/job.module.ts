@@ -19,6 +19,8 @@ import { ProbationStatusComponent } from './probation/probation-status/probation
 import { EditJobInformationComponent } from './info/edit-job-information/edit-job-information.component';
 import { ViewSalaryComponent } from './compensation/view-salary/view-salary.component';
 import { ViewSalaryDataComponent } from './compensation/view-salary-data/view-salary-data.component';
+import { NgSelectModule } from '@ng-select/ng-select';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -44,6 +46,8 @@ import { ViewSalaryDataComponent } from './compensation/view-salary-data/view-sa
     JobRoutingModule,
     // BrowserAnimationsModule,
     MatDialogModule,
+    NgSelectModule,
+    FormsModule
   ],
 })
 export class JobModule {}

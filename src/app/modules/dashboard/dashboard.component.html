@@ -37,11 +37,11 @@
                 <div class="u_hrms-time-inner">
                   <div class="u_hrms-time-total u_hrms-time-total__current">
                     <span>Current Time</span>
-                    <h5>08:09:17</h5>
+                    <h5 class="mb-0">08:09:17</h5>
                   </div>
                   <div class="u_hrms-time-total u_hrms-time-total__break">
                     <span>Break Time</span>
-                    <h5>00:00:00</h5>
+                    <h5 class="mb-0">00:00:00</h5>
                   </div>
                 </div>
               </div>
@@ -89,8 +89,7 @@
                             <div class="fc-scroller" style="overflow: hidden">
                               <table
                                 role="presentation"
-                                class="fc-col-header"
-                                style="width: 348px">
+                                class="fc-col-header">
                                 <thead role="presentation">
                                   <tr role="row">
                                     <th
@@ -175,12 +174,10 @@
                               class="fc-scroller fc-scroller-liquid-absolute"
                               style="overflow: hidden auto">
                               <div
-                                class="fc-daygrid-body fc-daygrid-body-unbalanced"
-                                style="width: 348px">
+                                class="fc-daygrid-body fc-daygrid-body-unbalanced">
                                 <table
                                   role="presentation"
-                                  class="fc-scrollgrid-sync-table"
-                                  style="width: 348px; height: 227px">
+                                  class="fc-scrollgrid-sync-table table-calender">
                                   <tbody role="presentation">
                                     <tr role="row">
                                       <td
@@ -1270,13 +1267,13 @@
     <div class="u_row u_h-full">
       <div class="u_scroll-section "
         style="position: relative; overflow: hidden; width: 100%; height: 100%">
-        <div style="position: absolute; inset: 0px; overflow: auto">
+        <div style="position: absolute; inset: 0px; overflow: auto;">
           <div class="u_flex u_flex-wrap">
             <div class="u_col-6 u_pb-20">
               <div class="u_dashboard-row u_dashboard-largerow u_h-full">
                 <div class="u_dashboard-row-header u_content-between false">
                   <div class="u_flex u_align-center">
-                    <h3>Notice Board (0)</h3>
+                    <h3 class="mb-0">Notice Board (0)</h3>
                   </div>
                 </div>
                 <div
@@ -1341,7 +1338,7 @@
             <div class="u_col-6 u_pb-20">
               <div class="u_dashboard-row u_dashboard-largerow">
                 <div class="u_dashboard-row-header">
-                  <h3>My Tasks</h3>
+                  <h3 class="mb-0">My Tasks</h3>
                 </div>
                 <div class="u_dashboard-row-body u_h-full u_table-tasks">
                   <div class="u_scroll-section " style="
@@ -1412,7 +1409,7 @@
               <div
                 class="u_dashboard-row u_dashboard-largerow u_dashboard-time-chart">
 
-                <div class="u_dashboard-row-body u_h-full">
+                <div class="u_dashboard-row-body u_h-full p-4">
                   <canvas baseChart [data]="barChartData"
                     [options]="barChartOptions" [plugins]="barChartPlugins"
                     [legend]="barChartLegend" [type]="'bar'">
@@ -1424,11 +1421,11 @@
             <div class="u_col-6 u_pb-20">
               <div class="resposne u_dashboard-row u_dashboard-largerow">
                 <div class="u_dashboard-row-header u_dashboard-row-filter">
-                  <h3>
+                  <h3 class="mb-0">
                     Mood Survey
                     <span class="u_font-12 u_color-title">0 Responses</span>
                   </h3>
-                  <p class="u_view-all">
+                  <p class="u_view-all mb-0">
                     View
                     <i class="fa-solid fa-caret-right fs-3 ms-3"></i>
                   </p>
@@ -1634,7 +1631,7 @@
               <div class="u_minh-145 u_mb-20">
                 <div class="u_dashboard-row u_dashboard-largerow">
                   <div class="u_dashboard-row-header">
-                    <h3>My Attendance</h3>
+                    <h3 class="mb-0">My Attendance</h3>
                     <p class="u_view-all" routerLink="/my-attendance">
                       View<i class="fa-solid fa-caret-right fs-3 ms-3"></i>
                     </p>
@@ -1660,7 +1657,7 @@
               <div class="u_minh-145">
                 <div class="u_dashboard-row u_dashboard-largerow">
                   <div class="u_dashboard-row-header">
-                    <h3>My Leave</h3>
+                    <h3 class="mb-0">My Leave</h3>
                     <p class="u_view-all" routerLink="/add">
                       Apply Leave <i
                         class="fa-solid fa-caret-right fs-3 ms-3"></i>
@@ -1676,22 +1673,23 @@
                       <div style="
                           position: absolute;
                           inset: 0px;
-                          overflow: auto;
-
-                          margin-bottom: -5px;
+                          overflow-x: auto;
+                          overflow-y: hidden;
+                          margin-right: 2px;
+                          margin-bottom: 4px;
                         ">
                         <div class="u_dashboard-row-leave">
                           <div class="u_dashboard-leave">
-                            <h5>PL</h5>
+                            <h5 class="mb-0">PL</h5>
                             <div class="u_flex">
                               <div class="u_dash-attendance">
                                 <p>Balance</p>
-                                <h3>1</h3>
+                                <h3 class="mb-0">1</h3>
                               </div>
                               <div class="u_dash-attendance">
                                 <p>Booked</p>
                                 <h3
-                                  class="u_flex u_align-center u_content-center">
+                                  class="u_flex u_align-center u_content-center mb-0">
                                   0<span class="u_ml-10 u_flex"
                                     aria-describedby="popup-3099"><i
                                       class="bi bi-info-circle-fill text-secondaryll text-secondary"></i>
@@ -1701,16 +1699,16 @@
                             </div>
                           </div>
                           <div class="u_dashboard-leave">
-                            <h5>UPL</h5>
+                            <h5 class="mb-0">UPL</h5>
                             <div class="u_flex">
                               <div class="u_dash-attendance">
                                 <p>Balance</p>
-                                <h3>Unlimited</h3>
+                                <h3 class="mb-0">Unlimited</h3>
                               </div>
                               <div class="u_dash-attendance">
                                 <p>Booked</p>
                                 <h3
-                                  class="u_flex u_align-center u_content-center">
+                                  class="u_flex u_align-center u_content-center mb-0">
                                   0<span class="u_ml-10 u_flex"
                                     aria-describedby="popup-3100"><i
                                       class="bi bi-info-circle-fill text-secondaryll text-secondary"></i></span>
@@ -1719,16 +1717,16 @@
                             </div>
                           </div>
                           <div class="u_dashboard-leave">
-                            <h5>HL</h5>
+                            <h5 class="mb-0">HL</h5>
                             <div class="u_flex">
                               <div class="u_dash-attendance">
                                 <p>Balance</p>
-                                <h3>4</h3>
+                                <h3 class="mb-0">4</h3>
                               </div>
                               <div class="u_dash-attendance">
                                 <p>Booked</p>
                                 <h3
-                                  class="u_flex u_align-center u_content-center">
+                                  class="u_flex u_align-center u_content-center mb-0">
                                   0<span class="u_ml-10 u_flex"
                                     aria-describedby="popup-3101"><i
                                       class="bi bi-info-circle-fill text-secondaryll text-secondary"></i></span>
@@ -1789,7 +1787,7 @@
               <div class="u_minh-145 u_mb-20">
                 <div class="u_dashboard-row u_dashboard-largerow">
                   <div class="u_dashboard-row-header">
-                    <h3>Attendance Status</h3>
+                    <h3 class="mb-0">Attendance Status</h3>
                     <p class="u_view-all" routerLink="/attendance">
                       View <i class="fa-solid fa-caret-right fs-3 ms-3"></i>
                     </p>
@@ -1816,7 +1814,7 @@
                 <div
                   class="u_dashboard-row u_dashboard-largerow u_dashboard-payroll">
                   <div class="u_dashboard-row-header">
-                    <h3>Next Payroll</h3>
+                    <h3 class="mb-0">Next Payroll</h3>
                     <p class="u_view-all">
                       View <i class="fa-solid fa-caret-right fs-3 ms-3"></i>
                     </p>
@@ -1841,7 +1839,7 @@
                       <div
                         class="u_projects-progress u_projects-progress-danger"
                         data-percentage="9">
-                       
+
                         <p class="u_percentage">Overdue 9 days</p>
                       </div>
                     </div>
@@ -1852,10 +1850,10 @@
             <div class="u_col-3 u_pb-20">
               <div class="u_dashboard-row u_dashboard-largerow">
                 <div class="u_dashboard-row-header u_dashboard-row-filter">
-                  <h3>
+                  <h3 class="mb-0">
                     On Leave <span class="u_color-title u_font-12">(7)</span>
                   </h3>
-                  <p class="u_view-all" (click)="showModal()">
+                  <p class="u_view-all mb-0" (click)="showModal()">
                     View
                     <i class="fa-solid fa-caret-right fs-3 ms-3"></i>
                   </p>
@@ -1888,7 +1886,7 @@
                           position: absolute;
                           inset: 0px;
                           overflow: auto;
-                          margin-right: -4px;
+                          margin-right: 2px;
                         ">
                         <li>
                           <div class="u_users-birthday-name">
@@ -2131,7 +2129,7 @@
             <div class="u_col-3 u_pb-20">
               <div class="u_dashboard-row u_dashboard-largerow">
                 <div class="u_dashboard-row-header">
-                  <h3>
+                  <h3 class="mb-0">
                     Absent Today
                     <span class="u_color-title u_font-12">(3)</span>
                   </h3>
@@ -2267,7 +2265,7 @@
             <div class="u_col-3 u_pb-20">
               <div class="u_dashboard-row u_dashboard-largerow">
                 <div class="u_dashboard-row-header">
-                  <h3>
+                  <h3 class="mb-0">
                     Upcoming Increment
                     <span class="u_font-12 u_color-title">(0)</span>
                   </h3>
@@ -2288,7 +2286,7 @@
             <div class="u_col-3 u_pb-20">
               <div class="u_dashboard-row u_dashboard-largerow">
                 <div class="u_dashboard-row-header">
-                  <h3>
+                  <h3 class="mb-0">
                     Agreement End
                     <span class="u_font-12 u_color-title">(0)</span>
                   </h3>
@@ -2309,7 +2307,7 @@
             <div class="u_col-3 u_pb-20">
               <div class="u_dashboard-row u_dashboard-largerow">
                 <div class="u_dashboard-row-header">
-                  <h3>
+                  <h3 class="mb-0">
                     Employee Exits
                     <span class="u_font-12 u_color-title">(0)</span>
                   </h3>
@@ -2330,7 +2328,7 @@
             <div class="u_col-3 u_pb-20">
               <div class="u_dashboard-row u_dashboard-largerow">
                 <div class="u_dashboard-row-header">
-                  <h3>
+                  <h3 class="mb-0">
                     Requests for Approval
                     <span class="u_font-12 u_color-title">(1)</span>
                   </h3>
@@ -2421,7 +2419,7 @@
             <div class="u_col-3 u_pb-20">
               <div class="u_dashboard-row u_dashboard-largerow">
                 <div class="u_dashboard-row-header">
-                  <h3>
+                  <h3 class="mb-0">
                     Upcoming Holiday
                     <span class="u_font-12 u_color-title">(0)</span>
                   </h3>
@@ -2443,7 +2441,7 @@
             <div class="u_col-3 u_pb-20">
               <div class="u_dashboard-row u_dashboard-largerow">
                 <div class="u_dashboard-row-header">
-                  <h3 class="u_flex-align">
+                  <h3 class="u_flex-align mb-0">
                     Birthday In This Month
                     <span class="u_color-title u_font-12 u_pl-5">()</span><span
                       class="u_pl-5"><i
@@ -2560,10 +2558,10 @@
             <div class="u_col-3 u_pb-20">
               <div class="u_dashboard-row u_dashboard-largerow">
                 <div class="u_dashboard-row-header u_px-15">
-                  <h3>
+                  <h3 class="mb-0">
                     New Joinees <span class="u_font-12 u_color-title">(1)</span>
                   </h3>
-                  <p class="u_view-all">
+                  <p class="u_view-all mb-0">
                     View <i class="fa-solid fa-caret-right fs-3 ms-3"></i>
                   </p>
                   <div class="u_pl-10">
@@ -2653,7 +2651,7 @@
             <div class="u_col-3 u_pb-20">
               <div class="u_dashboard-row u_dashboard-largerow">
                 <div class="u_dashboard-row-header">
-                  <h3>
+                  <h3 class="mb-0">
                     Quick Links
                     <span class="u_font-12 u_color-title">(0)</span>
                   </h3>
@@ -2671,7 +2669,7 @@
             <div class="u_col-3 u_pb-20">
               <div class="u_dashboard-row u_dashboard-largerow">
                 <div class="u_dashboard-row-header">
-                  <h3>
+                  <h3 class="mb-0">
                     Work Anniversary
                     <span class="u_font-12 u_color-title">()</span>
                   </h3>
@@ -2763,7 +2761,7 @@
               <div>
                 <div class="u_dashboard-row u_dashboard-largerow">
                   <div class="u_dashboard-row-header">
-                    <h3 class>
+                    <h3 class="mb-0">
                       Recent Social Post
                       <span class="u_font-12 u_color-title">(5)</span>
                     </h3>
@@ -2780,7 +2778,7 @@
                           height: 100%;
                         ">
                         <div
-                          style="position: absolute; inset: 0px; overflow: auto">
+                          style="position: absolute; inset: 0px; overflow: auto; margin-right:2px;">
                           <li>
                             <div class="u_users-birthday-name">
                               <div class="u_round-icon"
@@ -2790,7 +2788,8 @@
                                     background-color: rgba(255, 167, 0, 0.1);
                                     color: rgb(255, 167, 0);
                                   ">
-                                  <img src="/assets/images/dashboard/celebrate.svg">
+                                  <img
+                                    src="/assets/images/dashboard/celebrate.svg">
                                 </div>
                               </div>
                               <div class="u_users-details">
@@ -2868,7 +2867,8 @@
                                     background-color: rgba(0, 122, 255, 0.1);
                                     color: rgb(0, 122, 255);
                                   ">
-                                  <img src="/assets/images/dashboard/celebrate.svg">
+                                  <img
+                                    src="/assets/images/dashboard/celebrate.svg">
                                 </div>
                               </div>
                               <div class="u_users-details">
@@ -2892,7 +2892,8 @@
                                     background-color: rgba(96, 177, 88, 0.1);
                                     color: rgb(96, 177, 88);
                                   ">
-                                  <img src="/assets/images/dashboard/celebrate.svg">
+                                  <img
+                                    src="/assets/images/dashboard/celebrate.svg">
                                 </div>
                               </div>
                               <div class="u_users-details">
@@ -2919,7 +2920,7 @@
             <div class="u_col-3 u_pb-20">
               <div class="u_dashboard-row u_dashboard-largerow">
                 <div class="u_dashboard-row-header">
-                  <h3>
+                  <h3 class="mb-0">
                     Internship &amp; Probation
                     <span class="u_font-12 u_color-title">(1)</span>
                   </h3>

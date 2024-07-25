@@ -3,181 +3,202 @@
     <ul class="u_sidemenu p-0">
       <div
         class="u_scroll-section "
-        style="position: relative; overflow: hidden; width: 100%; height: 100%">
-        <div style="position: absolute; inset: 0px; overflow: auto">
-          <li class="u_sidemenu-has-list"
+        style="position: relative; overflow: hidden; width: 100%; height: 100%"
+        class="accordion" id="accordionExample">
+        <div style="position: absolute; inset: 0px; overflow: auto"
+          class="accordion-item">
+          <li class="u_sidemenu-has-list accordion-header"
             routerLinkActive="u_sidemenu-item-active">
-            <input type="checkbox" id="documents" class="u_sidemenu-checkbox">
-            <label class="u_sidemenu-item w-100" for="documents">
+            <div class="u_sidemenu-item new_sidemenu w-100 "
+              data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
               <p>Employee</p>
-            </label>
-            <ul class="u_sidemenu-item-list">
-              <li
-                routerLinkActive="u_sidemenu-item-list-active"
-                routerLink="employee/import-sub-company">
-                Import Sub Company
-              </li>
-              <li
-                routerLinkActive="u_sidemenu-item-list-active "
-                routerLink="employee/import-employee">
-                Import Employee
-              </li>
-              <li
-                routerLinkActive="u_sidemenu-item-list-active "
-                routerLink="employee/import-location">
-                Import Location
-              </li>
-              <li
-                routerLinkActive="u_sidemenu-item-list-active "
-                routerLink="employee/import-employee-exit">
-                Import Employee Exit
-              </li>
-              <li
-                routerLinkActive="u_sidemenu-item-list-active "
-                routerLink="employee/update-employee">
-                Update Employee
-              </li>
-              <li
-                routerLinkActive="u_sidemenu-item-list-active "
-                routerLink="employee/import-statutory">
-                Import Statutory
-              </li>
-              <li
-                routerLinkActive="u_sidemenu-item-list-active "
-                routerLink="employee/import-personal-document">
-                Import Personal Document
-              </li>
-            </ul>
+            </div>
+            <div id="collapseOne" class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample">
+              <ul class="u_sidemenu-item-list p-0 accordion-body">
+                <li
+                  routerLinkActive="u_sidemenu-item-list-active"
+                  routerLink="employee/import-sub-company">
+                  Import Sub Company
+                </li>
+                <li
+                  routerLinkActive="u_sidemenu-item-list-active "
+                  routerLink="employee/import-employee">
+                  Import Employee
+                </li>
+                <li
+                  routerLinkActive="u_sidemenu-item-list-active "
+                  routerLink="employee/import-location">
+                  Import Location
+                </li>
+                <li
+                  routerLinkActive="u_sidemenu-item-list-active "
+                  routerLink="employee/import-employee-exit">
+                  Import Employee Exit
+                </li>
+                <li
+                  routerLinkActive="u_sidemenu-item-list-active "
+                  routerLink="employee/update-employee">
+                  Update Employee
+                </li>
+                <li
+                  routerLinkActive="u_sidemenu-item-list-active "
+                  routerLink="employee/import-statutory">
+                  Import Statutory
+                </li>
+                <li
+                  routerLinkActive="u_sidemenu-item-list-active "
+                  routerLink="employee/import-personal-document">
+                  Import Personal Document
+                </li>
+              </ul>
+            </div>
           </li>
-          <li class="u_sidemenu-has-list"
+          <li class="u_sidemenu-has-list accordion-header"
             routerLinkActive="u_sidemenu-item-active">
-            <input type="checkbox" id="leave" class="u_sidemenu-checkbox">
-            <label class="u_sidemenu-item w-100" for="leave">
+            <div class="u_sidemenu-item new_sidemenu w-100 "
+              data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+              aria-expanded="true" aria-controls="collapseTwo">
               <p>Leave</p>
-            </label>
-            <ul class="u_sidemenu-item-list">
-              <li
-                routerLinkActive="u_sidemenu-item-list-active "
-                routerLink="leave/import-leave">
-                Import Leave Balance
-              </li>
-              <li
-                routerLinkActive="u_sidemenu-item-list-active "
-                routerLink="leave/import-leave-policy">
-                Import Leave Policy
-              </li>
-            </ul>
+            </div>
+            <div id="collapseTwo" class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample">
+              <ul class="u_sidemenu-item-list p-0 accordion-body">
+                <li
+                  routerLinkActive="u_sidemenu-item-list-active "
+                  routerLink="leave/import-leave">
+                  Import Leave Balance
+                </li>
+                <li
+                  routerLinkActive="u_sidemenu-item-list-active "
+                  routerLink="leave/import-leave-policy">
+                  Import Leave Policy
+                </li>
+              </ul>
+            </div>
           </li>
-          <li class="u_sidemenu-has-list" routerLinkActive="u_sidemenu-item-active">
-            <input type="checkbox" id="fields" class="u_sidemenu-checkbox">
-            <label class="u_sidemenu-item w-100" for="fields">
+          <li class="u_sidemenu-has-list accordion-header"
+            routerLinkActive="u_sidemenu-item-active">
+            <div class="u_sidemenu-item new_sidemenu w-100 "
+              data-bs-toggle="collapse" data-bs-target="#collapseThree"
+              aria-expanded="true" aria-controls="collapseThree">
               <p>Employee Fields</p>
-            </label>
-            <ul class="u_sidemenu-item-list">
-              <li
-                routerLinkActive="u_sidemenu-item-list-active "
-                routerLink="employee-field/category">
-                Category
-              </li>
-              <li
-                routerLinkActive="u_sidemenu-item-list-active "
-                routerLink="employee-field/department">
-                Department
-              </li>
-              <li
-                routerLinkActive="u_sidemenu-item-list-active "
-                routerLink="employee-field/sub-department">
-                Sub Department
-              </li>
-              <li
-                routerLinkActive="u_sidemenu-item-list-active "
-                routerLink="employee-field/job-title">
-                Job Title
-              </li>
-              <li
-                routerLinkActive="u_sidemenu-item-list-active "
-                routerLink="employee-field/personal-document">
-                Personal Document
-              </li>
-              <li
-                routerLinkActive="u_sidemenu-item-list-active "
-                routerLink="employee-field/degree">
-                Degree
-              </li>
-              <li
-                routerLinkActive="u_sidemenu-item-list-active "
-                routerLink="employee-field/relationship">
-                Relationship
-              </li>
-              <li
-                routerLinkActive="u_sidemenu-item-list-active "
-                routerLink="employee-field/employee-status">
-                Employment Status
-              </li>
-              <li
-                routerLinkActive="u_sidemenu-item-list-active "
-                routerLink="employee-field/employee-exit">
-                Employee Exit
-              </li>
-              <li
-                routerLinkActive="u_sidemenu-item-list-active "
-                routerLink="employee-field/location-activity">
-                Location Activity
-              </li>
-              <li
-                routerLinkActive="u_sidemenu-item-list-active "
-                routerLink="employee-field/letter-type">
-                Letter Type
-              </li>
-            </ul>
+            </div>
+            <div id="collapseThree" class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample">
+              <ul class="u_sidemenu-item-list p-0 accordion-body">
+                <li
+                  routerLinkActive="u_sidemenu-item-list-active "
+                  routerLink="employee-field/category">
+                  Category
+                </li>
+                <li
+                  routerLinkActive="u_sidemenu-item-list-active "
+                  routerLink="employee-field/department">
+                  Department
+                </li>
+                <li
+                  routerLinkActive="u_sidemenu-item-list-active "
+                  routerLink="employee-field/sub-department">
+                  Sub Department
+                </li>
+                <li
+                  routerLinkActive="u_sidemenu-item-list-active "
+                  routerLink="employee-field/job-title">
+                  Job Title
+                </li>
+                <li
+                  routerLinkActive="u_sidemenu-item-list-active "
+                  routerLink="employee-field/personal-document">
+                  Personal Document
+                </li>
+                <li
+                  routerLinkActive="u_sidemenu-item-list-active "
+                  routerLink="employee-field/degree">
+                  Degree
+                </li>
+                <li
+                  routerLinkActive="u_sidemenu-item-list-active "
+                  routerLink="employee-field/relationship">
+                  Relationship
+                </li>
+                <li
+                  routerLinkActive="u_sidemenu-item-list-active "
+                  routerLink="employee-field/employee-status">
+                  Employment Status
+                </li>
+                <li
+                  routerLinkActive="u_sidemenu-item-list-active "
+                  routerLink="employee-field/employee-exit">
+                  Employee Exit
+                </li>
+                <li
+                  routerLinkActive="u_sidemenu-item-list-active "
+                  routerLink="employee-field/location-activity">
+                  Location Activity
+                </li>
+                <li
+                  routerLinkActive="u_sidemenu-item-list-active "
+                  routerLink="employee-field/letter-type">
+                  Letter Type
+                </li>
+              </ul>
+            </div>
           </li>
-          <li class="u_sidemenu-has-list" routerLinkActive="u_sidemenu-item-active">
-            <input type="checkbox" id="structure" class="u_sidemenu-checkbox">
-            <label class="u_sidemenu-item w-100" for="structure">
+          <li class="u_sidemenu-has-list accordion-header"
+            routerLinkActive="u_sidemenu-item-active">
+
+            <div class="u_sidemenu-item new_sidemenu w-100 "
+              data-bs-toggle="collapse" data-bs-target="#collapseFour"
+              aria-expanded="true" aria-controls="collapseFour">
               <p>Org Structure</p>
-            </label>
-            <ul class="u_sidemenu-item-list">
-              <li
-                routerLinkActive="u_sidemenu-item-list-active "
-                routerLink="org-structure/business-unit">
-                Business Unit
-              </li>
-              <li
-                routerLinkActive="u_sidemenu-item-list-active "
-                routerLink="org-structure/cost-center">
-                Cost Center
-              </li>
-              <li
-                routerLinkActive="u_sidemenu-item-list-active "
-                routerLink="org-structure/bands">
-                Bands
-              </li>
-              <li
-                routerLinkActive="u_sidemenu-item-list-active "
-                routerLink="org-structure/segment">
-                Segment
-              </li>
-              <li
-                routerLinkActive="u_sidemenu-item-list-active "
-                routerLink="org-structure/hub">
-                Hub
-              </li>
-              <li
-                routerLinkActive="u_sidemenu-item-list-active "
-                routerLink="org-structure/region">
-                Region
-              </li>
-              <li
-                routerLinkActive="u_sidemenu-item-list-active "
-                routerLink="org-structure/territory">
-                Territory
-              </li>
-              <li
-                routerLinkActive="u_sidemenu-item-list-active "
-                routerLink="org-structure/zone">
-                Zone
-              </li>
-            </ul>
+            </div>
+            <div id="collapseFour" class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample">
+              <ul class="u_sidemenu-item-list p-0 accordion-body">
+                <li
+                  routerLinkActive="u_sidemenu-item-list-active "
+                  routerLink="org-structure/business-unit">
+                  Business Unit
+                </li>
+                <li
+                  routerLinkActive="u_sidemenu-item-list-active "
+                  routerLink="org-structure/cost-center">
+                  Cost Center
+                </li>
+                <li
+                  routerLinkActive="u_sidemenu-item-list-active "
+                  routerLink="org-structure/bands">
+                  Bands
+                </li>
+                <li
+                  routerLinkActive="u_sidemenu-item-list-active "
+                  routerLink="org-structure/segment">
+                  Segment
+                </li>
+                <li
+                  routerLinkActive="u_sidemenu-item-list-active "
+                  routerLink="org-structure/hub">
+                  Hub
+                </li>
+                <li
+                  routerLinkActive="u_sidemenu-item-list-active "
+                  routerLink="org-structure/region">
+                  Region
+                </li>
+                <li
+                  routerLinkActive="u_sidemenu-item-list-active "
+                  routerLink="org-structure/territory">
+                  Territory
+                </li>
+                <li
+                  routerLinkActive="u_sidemenu-item-list-active "
+                  routerLink="org-structure/zone">
+                  Zone
+                </li>
+              </ul>
+            </div>
           </li>
         </div>
       </div>

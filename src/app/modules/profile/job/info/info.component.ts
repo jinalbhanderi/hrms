@@ -1,16 +1,22 @@
-import { Component } from '@angular/core';
+import { Component, Injectable } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { AddJobInformationComponent } from './add-job-information/add-job-information.component';
 import { ActivityLogsComponent } from './activity-logs/activity-logs.component';
 import { EditJobInformationComponent } from './edit-job-information/edit-job-information.component';
+import { NgSelectModule } from '@ng-select/ng-select';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-info',
   templateUrl: './info.component.html',
   styleUrls: ['./info.component.css'],
 })
+
 export class InfoComponent {
-  constructor(public dialog: MatDialog) {}
+  constructor(public dialog: MatDialog) {
+  }
+
 
   openModal(): void {
     const dialogRef = this.dialog.open(AddJobInformationComponent, {});
@@ -31,4 +37,6 @@ export class InfoComponent {
       console.log('The dialog was closed');
     });
   }
+
+
 }

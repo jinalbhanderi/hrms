@@ -58,12 +58,11 @@ import { SettlementListComponent } from './settlement-list/settlement-list.compo
     NgSelectModule,
     MatDialogModule,
     FormsModule,
-    NgSelectModule,
     ReactiveFormsModule,
     NgbDatepickerModule,
     NgbAlertModule,
     NgbModule,
-    
+
   ],
 })
 export class EmployeeModule {}

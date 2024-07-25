@@ -4,8 +4,8 @@
       <div class="u_settings-left-sidebar ">
         <ul class="u_sidemenu p-0">
           <div class="u_scroll-section auto-scroll"
-            style="position: relative; overflow: hidden; width: 100%; height: 100%;">
-            <div style="position: absolute; inset: 0px;" class="auto-scroll">
+            style="position: relative; overflow: hidden; width: 100%; height: 100%;" class="accordion" id="accordionExample">
+            <div style="position: absolute; inset: 0px;" class="auto-scroll accordion-item">
               <li routerLinkActive="u_sidemenu-item-active" routerLink="company-details">
                 <div class="u_sidemenu-item">
                   <p>Company details </p>
@@ -21,110 +21,125 @@
                   <p>Bank details</p>
                 </div>
               </li>
-              <li class="u_sidemenu-has-list" routerLinkActive="u_sidemenu-item-active">
-                <input type="checkbox" id="location" class="u_sidemenu-checkbox">
-                <label class="u_sidemenu-item w-100" for="location">
-                  <p>Location</p>
-                </label>
-                <ul class="u_sidemenu-item-list">
-                  <li routerLink="location-type/location" routerLinkActive="u_sidemenu-item-list-active">Location</li>
-                  <li routerLink="location-type/location-billing-type" routerLinkActive="u_sidemenu-item-list-active">
-                    Location Billing Type</li>
-                </ul>
+              <li class="u_sidemenu-has-list accordion-header" routerLinkActive="u_sidemenu-item-active">
+                <div class="u_sidemenu-item new_sidemenu w-100 "
+                data-bs-toggle="collapse" data-bs-target="#collapseLocation"
+                aria-expanded="true" aria-controls="collapseLocation">
+                <p>Location</p>
+              </div>
+                <div id="collapseLocation" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <ul class="u_sidemenu-item-list p-0 accordion-body">
+                    <li routerLink="location-type/location" routerLinkActive="u_sidemenu-item-list-active">Location</li>
+                    <li routerLink="location-type/location-billing-type" routerLinkActive="u_sidemenu-item-list-active">
+                      Location Billing Type</li>
+                  </ul>
+                </div>
               </li>
-              <li class="u_sidemenu-has-list" routerLinkActive="u_sidemenu-item-active">
-                <input type="checkbox" id="general" class="u_sidemenu-checkbox">
-                <label class="u_sidemenu-item w-100" for="general">
-                  <p>General Settings</p>
-                </label>
-                <ul class="u_sidemenu-item-list">
-                  <li routerLink="general/basic" routerLinkActive="u_sidemenu-item-list-active">Basic</li>
-                  <li routerLink="general/ip-restrictions" routerLinkActive="u_sidemenu-item-list-active">IP
-                    Restrictions</li>
-                  <li routerLink="general/logged-in-ip" routerLinkActive="u_sidemenu-item-list-active">Login
-                    Restrictions</li>
-                  <li routerLink="general/profile-update-settings" routerLinkActive="u_sidemenu-item-list-active">
-                    Profile
-                    Update Requests</li>
-                  <li routerLink="general/insurance-type" routerLinkActive="u_sidemenu-item-list-active">Insurance
-                    Type</li>
-                </ul>
+              <li class="u_sidemenu-has-list accordion-header" routerLinkActive="u_sidemenu-item-active">
+                <div class="u_sidemenu-item new_sidemenu w-100 "
+                data-bs-toggle="collapse" data-bs-target="#collapseGeneral"
+                aria-expanded="true" aria-controls="collapseGeneral">
+                <p>General Settings</p>
+              </div>
+                <div id="collapseGeneral" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <ul class="u_sidemenu-item-list p-0 accordion-body">
+                    <li routerLink="general/basic" routerLinkActive="u_sidemenu-item-list-active">Basic</li>
+                    <li routerLink="general/ip-restrictions" routerLinkActive="u_sidemenu-item-list-active">IP
+                      Restrictions</li>
+                    <li routerLink="general/logged-in-ip" routerLinkActive="u_sidemenu-item-list-active">Login
+                      Restrictions</li>
+                    <li routerLink="general/profile-update-settings" routerLinkActive="u_sidemenu-item-list-active">
+                      Profile
+                      Update Requests</li>
+                    <li routerLink="general/insurance-type" routerLinkActive="u_sidemenu-item-list-active">Insurance
+                      Type</li>
+                  </ul>
+                </div>
               </li>
               <li routerLink="email-alert" routerLinkActive="u_sidemenu-item-active">
                 <div class="u_sidemenu-item">
                   <p>Email Alert</p>
                 </div>
               </li>
-              <li class="u_sidemenu-has-list" routerLinkActive="u_sidemenu-item-active">
-                <input type="checkbox" id="employee-fields" class="u_sidemenu-checkbox">
-                <label class="u_sidemenu-item w-100" for="employee-fields">
-                  <p>Employee fields</p>
-                </label>
-                <ul class="u_sidemenu-item-list">
-                  <li routerLink="employee-fields/category" routerLinkActive="u_sidemenu-item-list-active">Category</li>
-                  <li routerLink="employee-fields/department" routerLinkActive="u_sidemenu-item-list-active">Department
-                  </li>
-                  <li routerLink="employee-fields/sub-department" routerLinkActive="u_sidemenu-item-list-active">Sub
-                    Department</li>
-                  <li routerLink="employee-fields/job-title" routerLinkActive="u_sidemenu-item-list-active">Job
-                    Title</li>
-                  <li routerLink="employee-fields/documents" routerLinkActive="u_sidemenu-item-list-active">Personal
-                    Documents</li>
-                  <li routerLink="employee-fields/degree" routerLinkActive="u_sidemenu-item-list-active">Degree</li>
-                  <li routerLink="employee-fields/relationship" routerLinkActive="u_sidemenu-item-list-active">
-                    Relationship</li>
-                  <li routerLink="employee-fields/status" routerLinkActive="u_sidemenu-item-list-active">Employment
-                    Status</li>
-                  <li routerLink="employee-fields/location-activity" routerLinkActive="u_sidemenu-item-list-active">
-                    Location
-                    Activity</li>
-                  <li routerLink="employee-fields/letter-type" routerLinkActive="u_sidemenu-item-list-active">Letter
-                    Type</li>
-                </ul>
+              <li class="u_sidemenu-has-list accordion-header" routerLinkActive="u_sidemenu-item-active">
+                <div class="u_sidemenu-item new_sidemenu w-100 "
+                data-bs-toggle="collapse" data-bs-target="#collapseFields"
+                aria-expanded="true" aria-controls="collapseFields">
+                <p>Employee fields</p>
+              </div>
+                <div id="collapseFields" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <ul class="u_sidemenu-item-list p-0 accordion-body">
+                    <li routerLink="employee-fields/category" routerLinkActive="u_sidemenu-item-list-active">Category</li>
+                    <li routerLink="employee-fields/department" routerLinkActive="u_sidemenu-item-list-active">Department
+                    </li>
+                    <li routerLink="employee-fields/sub-department" routerLinkActive="u_sidemenu-item-list-active">Sub
+                      Department</li>
+                    <li routerLink="employee-fields/job-title" routerLinkActive="u_sidemenu-item-list-active">Job
+                      Title</li>
+                    <li routerLink="employee-fields/documents" routerLinkActive="u_sidemenu-item-list-active">Personal
+                      Documents</li>
+                    <li routerLink="employee-fields/degree" routerLinkActive="u_sidemenu-item-list-active">Degree</li>
+                    <li routerLink="employee-fields/relationship" routerLinkActive="u_sidemenu-item-list-active">
+                      Relationship</li>
+                    <li routerLink="employee-fields/status" routerLinkActive="u_sidemenu-item-list-active">Employment
+                      Status</li>
+                    <li routerLink="employee-fields/location-activity" routerLinkActive="u_sidemenu-item-list-active">
+                      Location
+                      Activity</li>
+                    <li routerLink="employee-fields/letter-type" routerLinkActive="u_sidemenu-item-list-active">Letter
+                      Type</li>
+                  </ul>
+                </div>
               </li>
-              <li class="u_sidemenu-has-list" routerLinkActive="u_sidemenu-item-active">
-                <input type="checkbox" id="attendance" class="u_sidemenu-checkbox">
-                <label class="u_sidemenu-item w-100" for="attendance">
-                  <p>Attendance Policy</p>
-                </label>
-                <ul class="u_sidemenu-item-list">
-                  <li routerLink="shift/shift" routerLinkActive="u_sidemenu-item-list-active">Shift
-                    Policy</li>
-                  <li routerLink="shift/shift-request" routerLinkActive="u_sidemenu-item-list-active">Shift Request
-                    Policy</li>
-                  <li routerLink="shift/weekend" routerLinkActive="u_sidemenu-item-list-active">Weekend
-                    Policy</li>
-                  <li routerLink="shift/break" routerLinkActive="u_sidemenu-item-list-active">Break
-                    Policy</li>
-                  <li routerLink="shift/penalisation" routerLinkActive="u_sidemenu-item-list-active">Penalisation
-                    Policy</li>
-                  <li routerLink="shift/scheduler" routerLinkActive="u_sidemenu-item-list-active">Shift
-                    Scheduler</li>
-                  <li routerLink="shift/geo-fencing" routerLinkActive="u_sidemenu-item-list-active">Geo
-                    Fencing</li>
-                  <li routerLink="shift/wfh-od" routerLinkActive="u_sidemenu-item-list-active">On Duty
-                    Policy</li>
-                  <li routerLink="shift/clock-in-method" routerLinkActive="u_sidemenu-item-list-active">Clock In
-                    Method</li>
-                  <li routerLink="shift/attendance-type" routerLinkActive="u_sidemenu-item-list-active">Attendance
-                    Type</li>
-                  <li routerLink="shift/attendance-setting" routerLinkActive="u_sidemenu-item-list-active">Attendance
-                    Settings</li>
-                  <li routerLink="shift/biometrics" routerLinkActive="u_sidemenu-item-list-active">Biometrics
-                    Device</li>
-                </ul>
+              <li class="u_sidemenu-has-list accordion-header" routerLinkActive="u_sidemenu-item-active">
+                <div class="u_sidemenu-item new_sidemenu w-100 "
+                data-bs-toggle="collapse" data-bs-target="#collapseAttendance"
+                aria-expanded="true" aria-controls="collapseAttendance">
+                <p>Attendance Policy</p>
+              </div>
+                <div id="collapseAttendance" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <ul class="u_sidemenu-item-list p-0 accordion-body">
+                    <li routerLink="shift/shift" routerLinkActive="u_sidemenu-item-list-active">Shift
+                      Policy</li>
+                    <li routerLink="shift/shift-request" routerLinkActive="u_sidemenu-item-list-active">Shift Request
+                      Policy</li>
+                    <li routerLink="shift/weekend" routerLinkActive="u_sidemenu-item-list-active">Weekend
+                      Policy</li>
+                    <li routerLink="shift/break" routerLinkActive="u_sidemenu-item-list-active">Break
+                      Policy</li>
+                    <li routerLink="shift/penalisation" routerLinkActive="u_sidemenu-item-list-active">Penalisation
+                      Policy</li>
+                    <li routerLink="shift/scheduler" routerLinkActive="u_sidemenu-item-list-active">Shift
+                      Scheduler</li>
+                    <li routerLink="shift/geo-fencing" routerLinkActive="u_sidemenu-item-list-active">Geo
+                      Fencing</li>
+                    <li routerLink="shift/wfh-od" routerLinkActive="u_sidemenu-item-list-active">On Duty
+                      Policy</li>
+                    <li routerLink="shift/clock-in-method" routerLinkActive="u_sidemenu-item-list-active">Clock In
+                      Method</li>
+                    <li routerLink="shift/attendance-type" routerLinkActive="u_sidemenu-item-list-active">Attendance
+                      Type</li>
+                    <li routerLink="shift/attendance-setting" routerLinkActive="u_sidemenu-item-list-active">Attendance
+                      Settings</li>
+                    <li routerLink="shift/biometrics" routerLinkActive="u_sidemenu-item-list-active">Biometrics
+                      Device</li>
+                  </ul>
+                </div>
               </li>
-              <li class="u_sidemenu-has-list" routerLinkActive="u_sidemenu-item-active">
-                <input type="checkbox" id="overtime" class="u_sidemenu-checkbox">
-                <label class="u_sidemenu-item w-100" for="overtime">
-                  <p>Overtime policy</p>
-                </label>
-                <ul class="u_sidemenu-item-list">
-                  <li routerLink="ot-policy/policy" routerLinkActive="u_sidemenu-item-list-active">Overtime
-                    policy</li>
-                  <li routerLink="ot-policy/pay-codes" routerLinkActive="u_sidemenu-item-list-active">Pay
-                    Codes</li>
-                </ul>
+              <li class="u_sidemenu-has-list accordion-header" routerLinkActive="u_sidemenu-item-active">
+                <div class="u_sidemenu-item new_sidemenu w-100 "
+                data-bs-toggle="collapse" data-bs-target="#collapseOvertime"
+                aria-expanded="true" aria-controls="collapseOvertime">
+                <p>Overtime policy</p>
+              </div>
+                <div id="collapseOvertime" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <ul class="u_sidemenu-item-list p-0 accordion-body">
+                    <li routerLink="ot-policy/policy" routerLinkActive="u_sidemenu-item-list-active">Overtime
+                      policy</li>
+                    <li routerLink="ot-policy/pay-codes" routerLinkActive="u_sidemenu-item-list-active">Pay
+                      Codes</li>
+                  </ul>
+                </div>
               </li>
               <li routerLink="leave-policy" routerLinkActive="u_sidemenu-item-active">
                 <div class="u_sidemenu-item">
@@ -146,74 +161,89 @@
                   <p>Policy Documents</p>
                 </div>
               </li>
-              <li class="u_sidemenu-has-list" routerLinkActive="u_sidemenu-item-active">
-                <input type="checkbox" id="onboarding" class="u_sidemenu-checkbox">
-                <label class="u_sidemenu-item w-100" for="onboarding">
-                  <p>Onboarding Setting</p>
-                </label>
-                <ul class="u_sidemenu-item-list">
-                  <li routerLink="onboarding-setting/onboarding-fields" routerLinkActive="u_sidemenu-item-list-active">
-                    Onboarding
-                    Fields</li>
-                  <li routerLink="onboarding-setting/onboarding-templates"
-                    routerLinkActive="u_sidemenu-item-list-active">Onboarding
-                    Templates</li>
-                </ul>
+              <li class="u_sidemenu-has-list accordion-header" routerLinkActive="u_sidemenu-item-active">
+                <div class="u_sidemenu-item new_sidemenu w-100 "
+                data-bs-toggle="collapse" data-bs-target="#collapseOnboarding"
+                aria-expanded="true" aria-controls="collapseOnboarding">
+                <p>Onboarding Setting</p>
+              </div>
+                <div id="collapseOnboarding" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <ul class="u_sidemenu-item-list p-0 accordion-body">
+                    <li routerLink="onboarding-setting/onboarding-fields" routerLinkActive="u_sidemenu-item-list-active">
+                      Onboarding
+                      Fields</li>
+                    <li routerLink="onboarding-setting/onboarding-templates"
+                      routerLinkActive="u_sidemenu-item-list-active">Onboarding
+                      Templates</li>
+                  </ul>
+                </div>
               </li>
-              <li class="u_sidemenu-has-list" routerLinkActive="u_sidemenu-item-active">
-                <input type="checkbox" id="employee-exit" class="u_sidemenu-checkbox">
-                <label class="u_sidemenu-item w-100" for="employee-exit">
-                  <p>Employee Exit</p>
-                </label>
-                <ul class="u_sidemenu-item-list">
-                  <li routerLink="employee-exit/reasons" routerLinkActive="u_sidemenu-item-list-active">Employee Exit
-                    Reason</li>
-                  <li routerLink="employee-exit/employee-exit-task-list" routerLinkActive="u_sidemenu-item-list-active">
-                    Employee
-                    Exit Task List</li>
-                  <li routerLink="employee-exit/employee-exit-setting" routerLinkActive="u_sidemenu-item-list-active">
-                    Setting</li>
-                </ul>
+              <li class="u_sidemenu-has-list accordion-header" routerLinkActive="u_sidemenu-item-active">
+                <div class="u_sidemenu-item new_sidemenu w-100 "
+                data-bs-toggle="collapse" data-bs-target="#collapseEmployee"
+                aria-expanded="true" aria-controls="collapseEmployee">
+                <p>Employee Exit</p>
+              </div>
+                <div id="collapseEmployee" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <ul class="u_sidemenu-item-list p-0 accordion-body">
+                    <li routerLink="employee-exit/reasons" routerLinkActive="u_sidemenu-item-list-active">Employee Exit
+                      Reason</li>
+                    <li routerLink="employee-exit/employee-exit-task-list" routerLinkActive="u_sidemenu-item-list-active">
+                      Employee
+                      Exit Task List</li>
+                    <li routerLink="employee-exit/employee-exit-setting" routerLinkActive="u_sidemenu-item-list-active">
+                      Setting</li>
+                  </ul>
+                </div>
               </li>
-              <li class="u_sidemenu-has-list" routerLinkActive="u_sidemenu-item-active">
-                <input type="checkbox" id="feedback" class="u_sidemenu-checkbox">
-                <label class="u_sidemenu-item w-100" for="feedback">
-                  <p>Feedback Settings</p>
-                </label>
-                <ul class="u_sidemenu-item-list">
-                  <li routerLink="feedback/praise-settings" routerLinkActive="u_sidemenu-item-list-active">Badge</li>
-                  <li routerLink="feedback/core-value" routerLinkActive="u_sidemenu-item-list-active">Core Value</li>
-                  <li routerLink="feedback/feedback-type" routerLinkActive="u_sidemenu-item-list-active">Feedback Type
-                  </li>
-                </ul>
+              <li class="u_sidemenu-has-list accordion-header" routerLinkActive="u_sidemenu-item-active">
+                <div class="u_sidemenu-item new_sidemenu w-100 "
+                data-bs-toggle="collapse" data-bs-target="#collapseFeedback"
+                aria-expanded="true" aria-controls="collapseFeedback">
+                <p>Feedback Settings</p>
+                </div>
+                <div id="collapseFeedback" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <ul class="u_sidemenu-item-list p-0 accordion-body">
+                    <li routerLink="feedback/praise-settings" routerLinkActive="u_sidemenu-item-list-active">Badge</li>
+                    <li routerLink="feedback/core-value" routerLinkActive="u_sidemenu-item-list-active">Core Value</li>
+                    <li routerLink="feedback/feedback-type" routerLinkActive="u_sidemenu-item-list-active">Feedback Type
+                    </li>
+                  </ul>
+                </div>
               </li>
-              <li class="u_sidemenu-has-list" routerLinkActive="u_sidemenu-item-active">
-                <input type="checkbox" id="help-desk" class="u_sidemenu-checkbox">
-                <label class="u_sidemenu-item w-100" for="help-desk">
-                  <p>Help Desk Settings</p>
-                </label>
-                <ul class="u_sidemenu-item-list">
-                  <li routerLink="help-desk/category-list" routerLinkActive="u_sidemenu-item-list-active">Category List
-                  </li>
-                  <li routerLink="help-desk/status-list" routerLinkActive="u_sidemenu-item-list-active">Status List</li>
-                  <li routerLink="help-desk/activity" routerLinkActive="u_sidemenu-item-list-active">Activity List</li>
-                  <li routerLink="help-desk/advance-settings" routerLinkActive="u_sidemenu-item-list-active">Advance
-                    Settings</li>
-                </ul>
+              <li class="u_sidemenu-has-list accordion-header" routerLinkActive="u_sidemenu-item-active">
+                <div class="u_sidemenu-item new_sidemenu w-100 "
+                data-bs-toggle="collapse" data-bs-target="#collapseDesk"
+                aria-expanded="true" aria-controls="collapseDesk">
+                <p>Help Desk Settings</p>
+              </div>
+                <div id="collapseDesk" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <ul class="u_sidemenu-item-list p-0 accordion-body">
+                    <li routerLink="help-desk/category-list" routerLinkActive="u_sidemenu-item-list-active">Category List
+                    </li>
+                    <li routerLink="help-desk/status-list" routerLinkActive="u_sidemenu-item-list-active">Status List</li>
+                    <li routerLink="help-desk/activity" routerLinkActive="u_sidemenu-item-list-active">Activity List</li>
+                    <li routerLink="help-desk/advance-settings" routerLinkActive="u_sidemenu-item-list-active">Advance
+                      Settings</li>
+                  </ul>
+                </div>
               </li>
-              <li class="u_sidemenu-has-list" routerLinkActive="u_sidemenu-item-active">
-                <input type="checkbox" id="reimbursement" class="u_sidemenu-checkbox">
-                <label class="u_sidemenu-item w-100" for="reimbursement">
-                  <p>Reimbursement Settings</p>
-                </label>
-                <ul class="u_sidemenu-item-list">
-                  <li routerLink="reimbursement-setting/reimbursement-type"
-                    routerLinkActive="u_sidemenu-item-list-active">Reimbursement
-                    Type</li>
-                  <li routerLink="reimbursement-setting/approval-chain" routerLinkActive="u_sidemenu-item-list-active">
-                    Approval
-                    Chain</li>
-                </ul>
+              <li class="u_sidemenu-has-list accordion-header" routerLinkActive="u_sidemenu-item-active">
+                <div class="u_sidemenu-item new_sidemenu w-100 "
+                data-bs-toggle="collapse" data-bs-target="#collapseReimbursement"
+                aria-expanded="true" aria-controls="collapseReimbursement">
+                <p>Reimbursement Settings</p>
+              </div>
+                <div id="collapseReimbursement" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <ul class="u_sidemenu-item-list p-0 accordion-body">
+                    <li routerLink="reimbursement-setting/reimbursement-type"
+                      routerLinkActive="u_sidemenu-item-list-active">Reimbursement
+                      Type</li>
+                    <li routerLink="reimbursement-setting/approval-chain" routerLinkActive="u_sidemenu-item-list-active">
+                      Approval
+                      Chain</li>
+                  </ul>
+                </div>
               </li>
               <li routerLink="access-level" routerLinkActive="u_sidemenu-item-active">
                 <div class="u_sidemenu-item">
@@ -225,23 +255,26 @@
                   <p>Product Access</p>
                 </div>
               </li>
-              <li class="u_sidemenu-has-list" routerLinkActive="u_sidemenu-item-active">
-                <input type="checkbox" id="structure" class="u_sidemenu-checkbox">
-                <label class="u_sidemenu-item w-100" for="structure">
-                  <p>Org Structure</p>
-                </label>
-                <ul class="u_sidemenu-item-list">
-                  <li routerLink="org-structure/zone" routerLinkActive="u_sidemenu-item-list-active">Zone</li>
-                  <li routerLink="org-structure/business-unit" routerLinkActive="u_sidemenu-item-list-active">Business
-                    unit</li>
-                  <li routerLink="org-structure/cost-center" routerLinkActive="u_sidemenu-item-list-active">Cost Center
-                  </li>
-                  <li routerLink="org-structure/bands" routerLinkActive="u_sidemenu-item-list-active">Bands</li>
-                  <li routerLink="org-structure/segment" routerLinkActive="u_sidemenu-item-list-active">Segment</li>
-                  <li routerLink="org-structure/hub" routerLinkActive="u_sidemenu-item-list-active">Hub</li>
-                  <li routerLink="org-structure/territory" routerLinkActive="u_sidemenu-item-list-active">Territory</li>
-                  <li routerLink="org-structure/region" routerLinkActive="u_sidemenu-item-list-active">Region</li>
-                </ul>
+              <li class="u_sidemenu-has-list accordion-header" routerLinkActive="u_sidemenu-item-active">
+                <div class="u_sidemenu-item new_sidemenu w-100 "
+                data-bs-toggle="collapse" data-bs-target="#collapseStructure"
+                aria-expanded="true" aria-controls="collapseStructure">
+                <p>Org Structure</p>
+              </div>
+                <div id="collapseStructure" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <ul class="u_sidemenu-item-list p-0 accordion-body">
+                    <li routerLink="org-structure/zone" routerLinkActive="u_sidemenu-item-list-active">Zone</li>
+                    <li routerLink="org-structure/business-unit" routerLinkActive="u_sidemenu-item-list-active">Business
+                      unit</li>
+                    <li routerLink="org-structure/cost-center" routerLinkActive="u_sidemenu-item-list-active">Cost Center
+                    </li>
+                    <li routerLink="org-structure/bands" routerLinkActive="u_sidemenu-item-list-active">Bands</li>
+                    <li routerLink="org-structure/segment" routerLinkActive="u_sidemenu-item-list-active">Segment</li>
+                    <li routerLink="org-structure/hub" routerLinkActive="u_sidemenu-item-list-active">Hub</li>
+                    <li routerLink="org-structure/territory" routerLinkActive="u_sidemenu-item-list-active">Territory</li>
+                    <li routerLink="org-structure/region" routerLinkActive="u_sidemenu-item-list-active">Region</li>
+                  </ul>
+                </div>
               </li>
             </div>
           </div>

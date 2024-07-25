@@ -5,6 +5,7 @@ import { LocationRoutingModule } from './location-routing.module';
 import { LocationComponent } from './location/location.component';
 import { LocationBillingTypeComponent } from './location-billing-type/location-billing-type.component';
 import { AddLocationComponent } from './location/add-location/add-location.component';
+import { NgSelectModule } from '@ng-select/ng-select';
 
 
 @NgModule({
@@ -15,7 +16,7 @@ import { AddLocationComponent } from './location/add-location/add-location.compo
   ],
   imports: [
     CommonModule,
-    LocationRoutingModule
+    LocationRoutingModule, NgSelectModule
   ]
 })
 export class LocationModule { }

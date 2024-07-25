@@ -6,6 +6,8 @@ import { PayCodesComponent } from './pay-codes/pay-codes.component';
 import { PolicyComponent } from './policy/policy.component';
 import { CreateOvertimeComponent } from './policy/create-overtime/create-overtime.component';
 import { CreatePayCodeComponent } from './pay-codes/create-pay-code/create-pay-code.component';
+import { NgSelectModule } from '@ng-select/ng-select';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -17,7 +19,9 @@ import { CreatePayCodeComponent } from './pay-codes/create-pay-code/create-pay-c
   ],
   imports: [
     CommonModule,
-    OvertimePolicyRoutingModule
+    OvertimePolicyRoutingModule,
+    NgSelectModule,
+    FormsModule
   ]
 })
 export class OvertimePolicyModule { }

@@ -1,17 +1,18 @@
-<div class="u_layout-list">
+<div class="u_layout-list directory-wrap">
   <div class="u_header-filters" id="u_header-filters">
     <div class="u_header-filters-title">
-      <h5>0 Profile Update Requests</h5>
+      <h5 class="mb-0">0 Profile Update Requests</h5>
     </div>
     <div class="u_header-filters-list">
-      <div class="u_flex u_align-center u_content-end">
+      <div class="filter-list-directory u_flex u_align-center u_content-end">
         <div class="u_filter-content">
           <div class="u_filter-content-inner">
             <div class="u_filter u_filter-select active">
               <div class="u_filter u_filter-select ">
                 <div class="css-2b097c-container">
                   <div class="dropdown-container input-bg">
-                    <ng-select [(ngModel)]="selectedStatus" (change)="onStatusChange($event)"
+                    <ng-select [(ngModel)]="selectedStatus"
+                      (change)="onStatusChange($event)"
                       placeholder="Employment Request">
                       <ng-option [value]="'Pending'">Pending</ng-option>
                       <ng-option [value]="'Approved'">Approved</ng-option>
@@ -39,41 +40,44 @@
     </div>
   </div>
   <div class="u_layout-scrollview">
-    <div class="u_scroll-section" style="position: relative; overflow: hidden; width: 100%; height: 100%">
-      <div style="position: absolute; inset: 0px; overflow: scroll; margin-right: -14px; margin-bottom: -14px;">
-        <div class="u_table-resource u_table-resource-nowrap u_table-resource-hover u_table-profile-request">
+    <div class="u_scroll-section"
+      style="position: relative; overflow: hidden; width: 100%; height: 100%">
+      <div
+        style="position: absolute; inset: 0px; overflow: scroll; margin-right: -14px; margin-bottom: -14px;">
+        <div
+          class="u_table-resource u_table-resource-nowrap u_table-resource-hover u_table-profile-request">
           <ng-container *ngIf="selectedStatus === 'Pending'">
             <div
               class="u_table-resource u_table-resource u_table-resource-nowrap u_table-resource-hover u_table-profile-request">
               <table>
                 <thead>
                   <tr>
-                    <th class="">
+                    <th class>
                       <div class="u_ib u_cp">
                         <div class="u_flex">Employee Name</div>
                       </div>
                     </th>
-                    <th class="">
+                    <th class>
                       <div class="u_ib u_cp">
                         <div class="u_flex">Exit Type</div>
                       </div>
                     </th>
-                    <th class="">
+                    <th class>
                       <div class="u_ib u_cp">
                         <div class="u_flex">Notice Of Exit</div>
                       </div>
                     </th>
-                    <th class="">
+                    <th class>
                       <div class="u_ib u_cp">
                         <div class="u_flex">Last Working Day</div>
                       </div>
                     </th>
-                    <th class="">
+                    <th class>
                       <div class="u_ib u_cp">
                         <div class="u_flex">Status</div>
                       </div>
                     </th>
-                    <th class="">
+                    <th class>
                       <div class="u_ib u_cp">
                         <div class="u_flex">Actions</div>
                       </div>
@@ -85,7 +89,9 @@
               <div class="u_no-data-found u_text-center">
                 <div class="u_no-data-found-inner">
                   <div class="u_no-data-found-img">
-                    <img src="../../../../assets/images/dashboard/no-data-display.svg" alt="">
+                    <img
+                      src="../../../../assets/images/dashboard/no-data-display.svg"
+                      alt>
                   </div>
                   <div class="u_no-data-found-text u_mt-30">
                     <h4>No data to display</h4>
@@ -100,37 +106,37 @@
               <table>
                 <thead>
                   <tr>
-                    <th class="">
+                    <th class>
                       <div class="u_ib u_cp">
                         <div class="u_flex">Employee Name</div>
                       </div>
                     </th>
-                    <th class="">
+                    <th class>
                       <div class="u_ib u_cp">
                         <div class="u_flex">Exit Type</div>
                       </div>
                     </th>
-                    <th class="">
+                    <th class>
                       <div class="u_ib u_cp">
                         <div class="u_flex">Notice Of Exit</div>
                       </div>
                     </th>
-                    <th class="">
+                    <th class>
                       <div class="u_ib u_cp">
                         <div class="u_flex">Last Working Day</div>
                       </div>
                     </th>
-                    <th class="">
+                    <th class>
                       <div class="u_ib u_cp">
                         <div class="u_flex">Note</div>
                       </div>
                     </th>
-                    <th class="">
+                    <th class>
                       <div class="u_ib u_cp">
                         <div class="u_flex">Status</div>
                       </div>
                     </th>
-                    <th class="">
+                    <th class>
                       <div class="u_ib u_cp">
                         <div class="u_flex">Actions</div>
                       </div>
@@ -142,7 +148,9 @@
               <div class="u_no-data-found u_text-center">
                 <div class="u_no-data-found-inner">
                   <div class="u_no-data-found-img">
-                    <img src="../../../../assets/images/dashboard/no-data-display.svg" alt="">
+                    <img
+                      src="../../../../assets/images/dashboard/no-data-display.svg"
+                      alt>
 
                   </div>
                   <div class="u_no-data-found-text u_mt-30">
@@ -158,37 +166,37 @@
               <table>
                 <thead>
                   <tr>
-                    <th class="">
+                    <th class>
                       <div class="u_ib u_cp">
                         <div class="u_flex">Employee Name</div>
                       </div>
                     </th>
-                    <th class="">
+                    <th class>
                       <div class="u_ib u_cp">
                         <div class="u_flex">Exit Type</div>
                       </div>
                     </th>
-                    <th class="">
+                    <th class>
                       <div class="u_ib u_cp">
                         <div class="u_flex">Notice Of Exit</div>
                       </div>
                     </th>
-                    <th class="">
+                    <th class>
                       <div class="u_ib u_cp">
                         <div class="u_flex">Last Working Day</div>
                       </div>
                     </th>
-                    <th class="">
+                    <th class>
                       <div class="u_ib u_cp">
                         <div class="u_flex">Note</div>
                       </div>
                     </th>
-                    <th class="">
+                    <th class>
                       <div class="u_ib u_cp">
                         <div class="u_flex">Status</div>
                       </div>
                     </th>
-                    <th class="">
+                    <th class>
                       <div class="u_ib u_cp">
                         <div class="u_flex">Actions</div>
                       </div>
@@ -200,7 +208,9 @@
               <div class="u_no-data-found u_text-center">
                 <div class="u_no-data-found-inner">
                   <div class="u_no-data-found-img">
-                    <img src="../../../../assets/images/dashboard/no-data-display.svg" alt="">
+                    <img
+                      src="../../../../assets/images/dashboard/no-data-display.svg"
+                      alt>
 
                   </div>
                   <div class="u_no-data-found-text u_mt-30">
@@ -216,37 +226,37 @@
               <table>
                 <thead>
                   <tr>
-                    <th class="">
+                    <th class>
                       <div class="u_ib u_cp">
                         <div class="u_flex">Employee Name</div>
                       </div>
                     </th>
-                    <th class="">
+                    <th class>
                       <div class="u_ib u_cp">
                         <div class="u_flex">Exit Type</div>
                       </div>
                     </th>
-                    <th class="">
+                    <th class>
                       <div class="u_ib u_cp">
                         <div class="u_flex">Notice Of Exit</div>
                       </div>
                     </th>
-                    <th class="">
+                    <th class>
                       <div class="u_ib u_cp">
                         <div class="u_flex">Last Working Day</div>
                       </div>
                     </th>
-                    <th class="">
+                    <th class>
                       <div class="u_ib u_cp">
                         <div class="u_flex">Note</div>
                       </div>
                     </th>
-                    <th class="">
+                    <th class>
                       <div class="u_ib u_cp">
                         <div class="u_flex">Status</div>
                       </div>
                     </th>
-                    <th class="">
+                    <th class>
                       <div class="u_ib u_cp">
                         <div class="u_flex">Actions</div>
                       </div>
@@ -255,48 +265,61 @@
                 </thead>
                 <tbody>
                   <tr class="undefined ">
-                    <td class="">
+                    <td class>
                       <div class="u_ea-user-name u_unread">
-                        <div class="u_cp u_flex-shrink" aria-describedby="popup-9928">
+                        <div class="u_cp u_flex-shrink"
+                          aria-describedby="popup-9928">
                           <div class="u_avatar "><img draggable="false"
                               src="https://thumbor.superworks.com/unsafe/48x48/filters:quality(80)/https://files.superworks.com/profileImages/cnhgzy4yN2.jpeg"
-                              alt="Nikunj" class="u_avatar-image undefined" style="width: 36px; height: 36px;"></div>
-                        </div><span class="u_one-line u_pl-10 u_color-title">Nikunj Malani</span>
+                              alt="Nikunj" class="u_avatar-image undefined"
+                              style="width: 36px; height: 36px;"></div>
+                        </div><span
+                          class="u_one-line u_pl-10 u_color-title">Nikunj
+                          Malani</span>
                       </div>
                     </td>
-                    <td class="">Employee wants to resign</td>
-                    <td class="">Sat 25 May, 2024</td>
-                    <td class="">Sat 25 May, 2024</td>
+                    <td class>Employee wants to resign</td>
+                    <td class>Sat 25 May, 2024</td>
+                    <td class>Sat 25 May, 2024</td>
                     <td class="u_table-profile-comment"><span
                         class="u_two-line u_table-two-line u_word-break-word">Hsgdgjx</span>
                     </td>
-                    <td class="">
+                    <td class>
                       <div class="u_flex u_align-center">
-                        <div class="u_tag u_tag-linear undefined" style="border-color: rgb(96, 177, 88);">
+                        <div class="u_tag u_tag-linear undefined"
+                          style="border-color: rgb(96, 177, 88);">
                           <p style="color: rgb(96, 177, 88);">Revoked</p>
                         </div>
                       </div>
                     </td>
-                    <td class="">
+                    <td class>
                       <div class="u_table-resource-action">
                         <div class="u_cp u_table-resource-menu"><span
-                            class="u_more-menu-icon u_flex u_align-center u_content-end"><svg width="20" height="20"
-                              viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class=""
+                            class="u_more-menu-icon u_flex u_align-center u_content-end"><svg
+                              width="20" height="20"
+                              viewBox="0 0 36 36" fill="none"
+                              xmlns="http://www.w3.org/2000/svg" class
                               xmlns:xlink="http://www.w3.org/1999/xlink">
                               <path class="u_fill"
                                 d="M5.2 15c1.767 0 3.2 1.393 3.2 3.111 0 1.718-1.433 3.111-3.2 3.111-1.767 0-3.2-1.393-3.2-3.11C2 16.391 3.433 15 5.2 15zM18 15c1.767 0 3.2 1.393 3.2 3.111 0 1.718-1.433 3.111-3.2 3.111-1.767 0-3.2-1.393-3.2-3.11C14.8 16.391 16.233 15 18 15zM30.8 15c1.767 0 3.2 1.393 3.2 3.111 0 1.718-1.433 3.111-3.2 3.111-1.767 0-3.2-1.393-3.2-3.11 0-1.72 1.433-3.112 3.2-3.112z"
                                 fill="#4E525F"></path>
                             </svg></span></div>
-                        <div class="u_table-resource-buttons"><span class="u_icon-rollover u_cp u_ml-5 "
-                            aria-describedby="popup-9929"><svg width="16" height="16" viewBox="0 0 36 36" fill="none"
-                              xmlns="http://www.w3.org/2000/svg" class="" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <div class="u_table-resource-buttons"><span
+                            class="u_icon-rollover u_cp u_ml-5 "
+                            aria-describedby="popup-9929"><svg width="16"
+                              height="16" viewBox="0 0 36 36" fill="none"
+                              xmlns="http://www.w3.org/2000/svg" class
+                              xmlns:xlink="http://www.w3.org/1999/xlink">
                               <path class="u_fill"
                                 d="M18.8 3C13.2 3 8.24 6.022 5.68 10.635L2 6.977v10.339h10.4l-4.48-4.454C10 8.885 14 6.182 18.8 6.182c6.56 0 12 5.407 12 11.93 0 6.52-5.44 11.929-12 11.929-5.28 0-9.6-3.34-11.36-7.953H4.08c1.76 6.362 7.68 11.134 14.72 11.134 8.48 0 15.2-6.84 15.2-15.11C34 9.84 27.12 3 18.8 3zm-2.4 7.953v8.113l7.52 4.453 1.28-2.067-6.4-3.818v-6.68h-2.4z"
                                 fill="#007AFF"></path>
                             </svg></span>
-                          <div class="u_unread" aria-describedby="popup-9930"><span
-                              class="u_icon-rollover u_cp u_ml-5"><svg width="16" height="16" viewBox="0 0 36 36"
-                                fill="none" xmlns="http://www.w3.org/2000/svg" class=""
+                          <div class="u_unread"
+                            aria-describedby="popup-9930"><span
+                              class="u_icon-rollover u_cp u_ml-5"><svg
+                                width="16" height="16" viewBox="0 0 36 36"
+                                fill="none" xmlns="http://www.w3.org/2000/svg"
+                                class
                                 xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <path class="u_fill"
                                   d="M18 2C9.16 2 2 9.16 2 18c0 2.1.41 4.18 1.21 6.12.81 1.95 1.99 3.71 3.48 5.19L2 34h16c8.84 0 16-7.16 16-16S26.84 2 18 2Zm-7.11 17.78c-.98 0-1.78-.8-1.78-1.78s.8-1.78 1.78-1.78 1.78.8 1.78 1.78-.8 1.78-1.78 1.78Zm7.11 0c-.98 0-1.78-.8-1.78-1.78s.8-1.78 1.78-1.78 1.78.8 1.78 1.78-.8 1.78-1.78 1.78Zm7.11 0c-.98 0-1.78-.8-1.78-1.78s.8-1.78 1.78-1.78 1.78.8 1.78 1.78-.8 1.78-1.78 1.78Z"

@@ -1,11 +1,11 @@
-<div class="u_layout-list">
+<div class="u_layout-list directory-wrap">
   <div class="u_header-filters" id="u_header-filters">
     <div class="u_header-filters-title">
-      <h5> 55 <span>
+      <h5 class="mb-0"> 55 <span>
           Employees</span></h5>
     </div>
     <div class="u_header-filters-list">
-      <div class="u_flex u_align-center u_content-end">
+      <div class="filter-list-directory u_flex u_align-center u_content-end">
         <div class="u_filter-content  ">
           <div class="u_filter-content-inner">
             <div class="u_filter u_filter-search">
@@ -14,13 +14,15 @@
                   <div class=" u_select__control search-new css-yk16xz-control">
                     <div class=" css-1hwfws3">
                       <div class="css-1g6gooi">
-                        <div class="u_select__input" style="display: inline-block;">
+                        <div class="u_select__input"
+                          style="display: inline-block;">
                           <input type="text" name="Search" placeholder="Search">
                         </div>
                       </div>
                     </div>
                     <div class="u_select__indicators css-1wy0on6">
-                      <span class="u_select__indicator-separator css-1okebmr-indicatorSeparator"></span>
+                      <span
+                        class="u_select__indicator-separator css-1okebmr-indicatorSeparator"></span>
                     </div>
                   </div><input name="search" type="hidden" value>
                 </div>
@@ -29,9 +31,10 @@
             <div class="u_filter u_filter-select active ">
               <div class=" css-2b097c-container">
                 <div class="u_select__control css-yk16xz-control d-flex">
-                  <div class=" u_select__value-container--has-value css-1hwfws3">
+                  <div
+                    class=" u_select__value-container--has-value css-1hwfws3">
                     <div class="u_select__single-value css-1uccc91-singleValue">
-                      <div class=" employee-new-opt u_flex u_align-center">
+                      <div class=" employee-new-opt u_flex u_align-center ">
                         <ng-select placeholder="Name">
                           <ng-option>Name</ng-option>
                           <ng-option>Department</ng-option>
@@ -64,66 +67,82 @@
     </div>
   </div>
   <div class="u_layout-scrollview">
-    <div class="u_scroll-section undefined" >
-        <div class="u_employee-grid-section">
-          <div class="u_content-subheader u_sticky-top u_p-20">
-            <h5 class="u_text-c u_w-full">A</h5>
-          </div>
-          <div class="u_px-20 u_pt-20" *ngFor="let employee of employees">
-            <div class="u_employee-grid">
-              <div class="u_employee-view ">
-                <div class="u_employee-view-header">
-                  <div class="u_employee-view-header-logo u_cp">
-                    <div class="u_avatar ">
-                      <div class="u_avatar-content "
-                        style="background-color: rgb(140, 100, 255); width: 60px; height: 60px;">
-                        <span class="u_m-auto" style="font-size: 2rem; line-height: 2rem;">
-                          {{ employee.firstName ? employee.firstName.charAt(0) : '' }}{{ employee.lastName ?
-                          employee.lastName.charAt(0) : '' }}
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="u_employee-view-header-title u_employee-view-header-box u_pl-10 u_cp">
-                    <div>
-                      <h4 class="u_text-bold">{{employee.firstName}} {{employee.lastName}}</h4>
-                      <div class="u_employee-view-header-title-department u_one-line">Angular,
-                        &amp; Dotnet Developer</div>
+    <div class="u_scroll-section undefined">
+      <div class="u_employee-grid-section employe-dire-wrapper">
+        <div class="u_content-subheader u_sticky-top u_p-20">
+          <h5 class="u_text-c u_w-full">A</h5>
+        </div>
+        <div class="employe-dire-wrap u_px-20 u_pt-20"
+          *ngFor="let employee of employees">
+          <div class="u_employee-grid">
+            <div class="u_employee-view ">
+              <div class="u_employee-view-header">
+                <div class="u_employee-view-header-logo u_cp">
+                  <div class="u_avatar ">
+                    <div class="u_avatar-content "
+                      style="background-color: rgb(140, 100, 255); width: 60px; height: 60px;">
+                      <span class="u_m-auto"
+                        style="font-size: 2rem; line-height: 2rem;">
+                        {{ employee.firstName ? employee.firstName.charAt(0) :
+                        '' }}{{ employee.lastName ?
+                        employee.lastName.charAt(0) : '' }}
+                      </span>
                     </div>
                   </div>
                 </div>
-                <ul class="u_employee-view-decription u_relative u_last-child">
-                  <li>
-                    <div class="u_flex-shrink">
-                      <i class="ri-briefcase-4-fill fs-2 me-2"></i>
-                    </div>
-                    <span class="u_one-line u_text-c">{{employee.department.$ngOptionLabel}}</span>
-                  </li>
-                  <li>
-                    <div class="u_flex-shrink"><i class="ri-mail-fill fs-3 me-2"></i></div>
-                    <div class="u_table-long-text"><a href="mailto:abhik.patel@syfrox.com" class="u_one-line"
-                        target="_blank" aria-describedby="popup-11459">{{employee.workEmail}}</a></div>
-                  </li>
-                  <li>
-                    <div class="u_flex-shrink"><i class="fa-solid fa-phone fs-3 me-2"></i>
-                    </div>
-                    <a href="tel:+91-8980381325" class="u_one-line" target="_blank">{{employee.moNumber}}</a>
-                  </li>
-                  <li>
-                    <div class="u_flex-shrink">
-                      <i class="ri-user-location-fill fs-3 me-2"></i>
-                    </div><span class="u_one-line u_text-c">{{employee.location.$ngOptionLabel}}</span>
-                  </li>
-                  <li>
-                    <div class="u_flex-shrink">
-                      <i class="ri-user-location-fill fs-3 me-2"></i>
-                    </div><span class="u_text-c" aria-describedby="popup-11460">Previous
-                      Experience: {{employee.employmentStatus.$ngOptionLabel}}</span>
-                  </li>
-                </ul>
+                <div
+                  class="u_employee-view-header-title u_employee-view-header-box u_pl-10 u_cp">
+                  <div>
+                    <h4 class="u_text-bold">{{employee.firstName}}
+                      {{employee.lastName}}</h4>
+                    <div
+                      class="u_employee-view-header-title-department u_one-line">Angular,
+                      &amp; Dotnet Developer</div>
+                  </div>
+                </div>
               </div>
+              <ul class="u_employee-view-decription u_relative u_last-child">
+                <li>
+                  <div class="u_flex-shrink">
+                    <i class="ri-briefcase-4-fill fs-3 me-2"></i>
+                  </div>
+                  <span
+                    class="u_one-line u_text-c">{{employee.department.$ngOptionLabel}}</span>
+                </li>
+                <li>
+                  <div class="u_flex-shrink"><i
+                      class="ri-mail-fill fs-3 me-2"></i></div>
+                  <div class="u_table-long-text"><a
+                      href="mailto:abhik.patel@syfrox.com" class="u_one-line"
+                      target="_blank"
+                      aria-describedby="popup-11459">{{employee.workEmail}}</a></div>
+                </li>
+                <li>
+                  <div class="u_flex-shrink"><i
+                      class="fa-solid fa-phone fs-3 me-2"></i>
+                  </div>
+                  <a href="tel:+91-8980381325" class="u_one-line"
+                    target="_blank">{{employee.moNumber}}</a>
+                </li>
+                <li>
+                  <div class="u_flex-shrink">
+                    <i class="ri-user-location-fill fs-3 me-2"></i>
+                  </div><span
+                    class="u_one-line u_text-c">{{employee.location.$ngOptionLabel}}</span>
+                </li>
+                <li>
+                  <div class="u_flex-shrink">
+                    <i class="ri-user-location-fill fs-3 me-2"></i>
+                  </div><span class="u_text-c"
+                    aria-describedby="popup-11460">Previous
+                    Experience:
+                    {{employee.employmentStatus.$ngOptionLabel}}</span>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
+      </div>
     </div>
   </div>
+</div>

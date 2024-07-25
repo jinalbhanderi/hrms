@@ -1,4 +1,5 @@
-<div class="u_project-header u_flex u_align-center u_content-between" id="u_project-header">
+<div class="u_project-header u_flex u_align-center u_content-between"
+  id="u_project-header">
   <div class="u_header-breadcruFmb-wpr u_flex u_align-center">
     <button class="u_hrms-sidebar-toggle"><span></span></button>
     <div class="u_flex u_align-center u_header-breadcrumb">
@@ -6,7 +7,8 @@
         <li class="u_py-5">
           <!-- {{ currentRoute }} -->
           <ng-container *ngFor="let part of routeParts; let i = index">
-            <span [ngClass]="{'last-part': i === routeParts.length - 1, 'light-part': i !== routeParts.length - 1}">
+            <span
+              [ngClass]="{'last-part': i === routeParts.length - 1, 'light-part': i !== routeParts.length - 1}">
               {{ part }}
             </span>
             <ng-container *ngIf="i < routeParts.length - 1"> / </ng-container>
@@ -17,9 +19,12 @@
   </div>
   <div class="u_global-search u_flex u_align-center ">
     <span class="u_icon-rollover u_header-breadcrumb-arrow u_mr-10 u_cp">
-      <svg width="16" height="16" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class
+      <svg width="16" height="16" viewBox="0 0 36 36" fill="none"
+        xmlns="http://www.w3.org/2000/svg" class
         xmlns:xlink="http://www.w3.org/1999/xlink">
-        <path class="u_fill" d="M15.11 18l12.446 12.445L24 34 8 18 24 2l3.556 3.555L15.11 18z" fill="#007AFF">
+        <path class="u_fill"
+          d="M15.11 18l12.446 12.445L24 34 8 18 24 2l3.556 3.555L15.11 18z"
+          fill="#007AFF">
         </path>
       </svg>
     </span>
@@ -27,14 +32,10 @@
       <form autocomplete="off">
         <div class="u_filter u_filter-search ">
           <span class="u_search-icon u_cp">
-            <svg width="14" height="14" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class
-              xmlns:xlink="http://www.w3.org/1999/xlink">
-              <path class="u_fill"
-                d="M33.474 30.95l-6.042-6.024a14.075 14.075 0 003.003-8.708 14.218 14.218 0 10-14.217 14.217 14.075 14.075 0 008.708-3.003l6.025 6.042a1.776 1.776 0 002.523 0 1.777 1.777 0 000-2.523zM5.554 16.219a10.663 10.663 0 1121.327 0 10.663 10.663 0 01-21.327 0z"
-                fill="#4E525F"></path>
-            </svg>
+            <i class="ri-search-line fs-4"></i>
           </span>
-          <input type="text" tabindex="0" class="u_input" placeholder="Search for Menu &amp; Employees..."
+          <input type="text" tabindex="0" class="u_input"
+            placeholder="Search for Menu &amp; Employees..."
             autocomplete="off" value>
         </div>
       </form>
@@ -44,7 +45,8 @@
     <div class="u_flex u_align-center u_project-menuicon">
       <div class="u_project-menuicon-inner u_global-search-input__mobile">
         <span class="u_cp">
-          <svg width="18" height="18" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class
+          <svg width="18" height="18" viewBox="0 0 36 36" fill="none"
+            xmlns="http://www.w3.org/2000/svg" class
             xmlns:xlink="http://www.w3.org/1999/xlink">
             <path class="u_fill"
               d="M33.474 30.95l-6.042-6.024a14.075 14.075 0 003.003-8.708 14.218 14.218 0 10-14.217 14.217 14.075 14.075 0 008.708-3.003l6.025 6.042a1.776 1.776 0 002.523 0 1.777 1.777 0 000-2.523zM5.554 16.219a10.663 10.663 0 1121.327 0 10.663 10.663 0 01-21.327 0z"
@@ -62,7 +64,8 @@
       <div class="u_project-menuicon-inner">
         <div class="u_widget">
           <div class="u_panel-btns">
-            <span class="u_time-icon u_time-icon__running" aria-describedby="popup-1" (click)="toggleModal()"
+            <span class="u_time-icon u_time-icon__running"
+              aria-describedby="popup-1" (click)="toggleModal()"
               ngbTooltip="HRMS Clock In/Out">
               <i class="bi-alarm-fill text-success fs-3"></i>
             </span>
@@ -73,11 +76,16 @@
       <div class="u_project-menuicon-inner">
         <div class="u_filter" aria-describedby="popup-5">
           <div class="dropdown">
-            <span class="u_flex u_cp dropdown-toggle no-arrow text-nowrap d-block" id="dropdownMenuButton" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false" ngbTooltip="Add Employee">
-              <i class="fa-solid fa-user-plus fs-3 text-secondary text-nowrap d-block"></i>
+            <span
+              class="u_flex u_cp dropdown-toggle no-arrow text-nowrap d-block"
+              id="dropdownMenuButton" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false"
+              ngbTooltip="Add Employee">
+              <i
+                class="fa-solid fa-user-plus fs-3 text-secondary text-nowrap d-block"></i>
             </span>
-            <div class="dropdown-menu dropdown-menu-left" aria-labelledby="dropdownMenuButton">
+            <div class="dropdown-menu dropdown-menu-left"
+              aria-labelledby="dropdownMenuButton">
               <!-- Dropdown items -->
               <a class="dropdown-item" routerLink="/add-new-employee">Add
                 Employee</a>
@@ -99,7 +107,8 @@
       </div>
       <div class="u_pr-15 u_relative">
         <div class="u_project-menuicon-inner">
-          <span class="u_flex u_cp" aria-describedby="popup-7" ngbTooltip="Notificaton">
+          <span class="u_flex u_cp" aria-describedby="popup-7"
+            ngbTooltip="Notificaton">
             <i class="fa-solid fa-bell fs-3 text-secondary"></i>
           </span>
         </div>

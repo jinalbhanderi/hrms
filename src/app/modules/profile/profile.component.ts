@@ -1,6 +1,6 @@
 import { isPlatformBrowser } from '@angular/common';
 import { Component, Inject, OnInit, PLATFORM_ID } from '@angular/core';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import {  NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { EditProfileComponent } from './edit-profile/edit-profile.component';
 import { ActivatedRoute, NavigationExtras, Router } from '@angular/router';
 
@@ -17,8 +17,8 @@ export class ProfileComponent implements OnInit {
     @Inject(PLATFORM_ID) private platformId: Object,
     private modalService: NgbModal,
     private route: ActivatedRoute,
-    private router: Router
-  ) {}
+    private router: Router,
+  ) {  }
 
   ngOnInit(): void {
     this.route.queryParams.subscribe((params) => {
@@ -55,14 +55,13 @@ export class ProfileComponent implements OnInit {
   }
 
   getRouterLinkPath(path: string) {
-    debugger
     const queryParams = this.getQueryParams();
     const navigationExtras: NavigationExtras = {
       queryParams,
     };
-     this.router.navigate([`/employees/${path}`], {
-       queryParams: { id: navigationExtras?.queryParams?.['id'] },
-     });
+    this.router.navigate([`/employees/${path}`], {
+      queryParams: { id: navigationExtras?.queryParams?.['id'] },
+    });
   }
 
 }

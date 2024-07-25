@@ -2,100 +2,122 @@
   <div class="u_settings-left-sidebar ">
     <ul class="u_sidemenu p-0">
       <div class="u_scroll-section auto-scroll"
-        style="position: relative; overflow: hidden; width: 100%; height: 100%;">
-        <div style="position: absolute; inset: 0px;" class="auto-scroll">
-          <li class="u_sidemenu-has-list"
+        style="position: relative; overflow: hidden; width: 100%; height: 100%;" class="accordion" id="accordionExample">
+        <div style="position: absolute; inset: 0px;" class="auto-scroll accordion-item">
+          <li class="u_sidemenu-has-list accordion-header"
             routerLinkActive="u_sidemenu-item-active">
-            <input type="checkbox" id="attendance" class="u_sidemenu-checkbox">
+            <!-- <input type="checkbox" id="attendance" class="u_sidemenu-checkbox">
             <label class="u_sidemenu-item w-100" for="attendance">
               <p>Attendance Report</p>
-            </label>
-            <ul class="u_sidemenu-item-list">
-              <li routerLinkActive="u_sidemenu-item-list-active"
-                routerLink="attendance-report/daily-attendance">Daily
-                Attendance</li>
-              <li routerLinkActive="u_sidemenu-item-list-active"
-                routerLink="attendance-report/daily-attendance-location">Daily
-                Attendance by Location</li>
-              <li routerLinkActive="u_sidemenu-item-list-active"
-                routerLink="attendance-report/early-clock-out">Early Clock Out
-                Summary</li>
-              <li routerLinkActive="u_sidemenu-item-list-active"
-                routerLink="attendance-report/late-in">Late IN Summary</li>
-              <li routerLinkActive="u_sidemenu-item-list-active"
-                routerLink="attendance-report/daily-attendance-with-break">Daily
-                Attendance Report with Break</li>
-              <li routerLinkActive="u_sidemenu-item-list-active"
-                routerLink="attendance-report/daily-attendance-by-department">Daily
-                Attendance By Location By Department</li>
-              <li routerLinkActive="u_sidemenu-item-list-active"
-                routerLink="attendance-report/regularization-report">Regularization
-                Report</li>
-              <li routerLinkActive="u_sidemenu-item-list-active"
-                routerLink="attendance-report/attendance-verification-report">Attendance
-                Verification Report</li>
-              <li routerLinkActive="u_sidemenu-item-list-active"
-                routerLink="attendance-report/attendance-type-report">Attendance
-                Type Report</li>
-              <li routerLinkActive="u_sidemenu-item-list-active"
-                routerLink="attendance-report/overtime-report">Overtime
-                Report</li>
-              <li routerLinkActive="u_sidemenu-item-list-active"
-                routerLink="attendance-report/break-hour-report">Break Hour
-                Report</li>
-            </ul>
+            </label> -->
+            <div class="u_sidemenu-item new_sidemenu w-100 "
+              data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              <p>Attendance Report</p>
+            </div>
+            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <ul class="u_sidemenu-item-list p-0 accordion-body">
+                <li routerLinkActive="u_sidemenu-item-list-active"
+                  routerLink="attendance-report/daily-attendance">Daily
+                  Attendance</li>
+                <li routerLinkActive="u_sidemenu-item-list-active"
+                  routerLink="attendance-report/daily-attendance-location">Daily
+                  Attendance by Location</li>
+                <li routerLinkActive="u_sidemenu-item-list-active"
+                  routerLink="attendance-report/early-clock-out">Early Clock Out
+                  Summary</li>
+                <li routerLinkActive="u_sidemenu-item-list-active"
+                  routerLink="attendance-report/late-in">Late IN Summary</li>
+                <li routerLinkActive="u_sidemenu-item-list-active"
+                  routerLink="attendance-report/daily-attendance-with-break">Daily
+                  Attendance Report with Break</li>
+                <li routerLinkActive="u_sidemenu-item-list-active"
+                  routerLink="attendance-report/daily-attendance-by-department">Daily
+                  Attendance By Location By Department</li>
+                <li routerLinkActive="u_sidemenu-item-list-active"
+                  routerLink="attendance-report/regularization-report">Regularization
+                  Report</li>
+                <li routerLinkActive="u_sidemenu-item-list-active"
+                  routerLink="attendance-report/attendance-verification-report">Attendance
+                  Verification Report</li>
+                <li routerLinkActive="u_sidemenu-item-list-active"
+                  routerLink="attendance-report/attendance-type-report">Attendance
+                  Type Report</li>
+                <li routerLinkActive="u_sidemenu-item-list-active"
+                  routerLink="attendance-report/overtime-report">Overtime
+                  Report</li>
+                <li routerLinkActive="u_sidemenu-item-list-active"
+                  routerLink="attendance-report/break-hour-report">Break Hour
+                  Report</li>
+              </ul>
+            </div>
           </li>
-          <li class="u_sidemenu-has-list"
+          <li class="u_sidemenu-has-list accordion-header"
             routerLinkActive="u_sidemenu-item-active">
-            <input type="checkbox" id="leave-report"
+            <!-- <input type="checkbox" id="leave-report"
               class="u_sidemenu-checkbox">
             <label class="u_sidemenu-item w-100" for="leave-report">
               <p>Leave Report</p>
-            </label>
-            <ul class="u_sidemenu-item-list">
-              <li routerLinkActive="u_sidemenu-item-list-active"
-                routerLink="leave-report/daily-leave">Daily Leave Report </li>
-              <li routerLinkActive="u_sidemenu-item-list-active"
-                routerLink="leave-report/leave-booked-balanced">Leave Booked
-                &amp; Balanced</li>
-              <li routerLinkActive="u_sidemenu-item-list-active"
-                routerLink="leave-report/leave-type">Leave Type Wise</li>
-              <li routerLinkActive="u_sidemenu-item-list-active"
-                routerLink="leave-report/leave-enhancement">Leave Encashment
-                Report</li>
-              <li routerLinkActive="u_sidemenu-item-list-active"
-                routerLink="leave-report/comp-off-report">Comp-Off Report</li>
-            </ul>
+            </label> -->
+            <div class="u_sidemenu-item new_sidemenu w-100 "
+              data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+              aria-expanded="true" aria-controls="collapseTwo">
+              <p>Leave Report</p>
+            </div>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <ul class="u_sidemenu-item-list p-0 accordion-body">
+                <li routerLinkActive="u_sidemenu-item-list-active"
+                  routerLink="leave-report/daily-leave">Daily Leave Report </li>
+                <li routerLinkActive="u_sidemenu-item-list-active"
+                  routerLink="leave-report/leave-booked-balanced">Leave Booked
+                  &amp; Balanced</li>
+                <li routerLinkActive="u_sidemenu-item-list-active"
+                  routerLink="leave-report/leave-type">Leave Type Wise</li>
+                <li routerLinkActive="u_sidemenu-item-list-active"
+                  routerLink="leave-report/leave-enhancement">Leave Encashment
+                  Report</li>
+                <li routerLinkActive="u_sidemenu-item-list-active"
+                  routerLink="leave-report/comp-off-report">Comp-Off Report</li>
+              </ul>
+            </div>
+            
           </li>
-          <li class="u_sidemenu-has-list"
+          <li class="u_sidemenu-has-list accordion-header"
             routerLinkActive="u_sidemenu-item-active">
-            <input type="checkbox" id="custom-report"
+            <!-- <input type="checkbox" id="custom-report"
               class="u_sidemenu-checkbox">
             <label class="u_sidemenu-item w-100" for="custom-report">
               <p>Custom Report</p>
-            </label>
-            <ul class="u_sidemenu-item-list">
-              <li routerLinkActive="u_sidemenu-item-list-active"
-                routerLink="custom-report/department-detail">Department
-                Detail</li>
-              <li routerLinkActive="u_sidemenu-item-list-active"
-                routerLink="custom-report/designation-detail">Job Title
-                Detail</li>
-              <li routerLinkActive="u_sidemenu-item-list-active"
-                routerLink="custom-report/location-wise">Location Wise</li>
-              <li routerLinkActive="u_sidemenu-item-list-active"
-                routerLink="custom-report/gender-wise">Gender Wise</li>
-              <li routerLinkActive="u_sidemenu-item-list-active"
-                routerLink="custom-report/department">Location Wise
-                Department</li>
-              <li routerLinkActive="u_sidemenu-item-list-active"
-                routerLink="custom-report/sub-department">Location Wise Sub
-                Department</li>
-              <li routerLinkActive="u_sidemenu-item-list-active"
-                routerLink="custom-report/zone">Zone Report</li>
-              <li routerLinkActive="u_sidemenu-item-list-active"
-                routerLink="custom-report/inbox-audit-log">Inbox Audit Log</li>
-            </ul>
+            </label> -->
+            <div class="u_sidemenu-item new_sidemenu w-100 "
+              data-bs-toggle="collapse" data-bs-target="#collapseThree"
+              aria-expanded="true" aria-controls="collapseThree">
+              <p>Custom Report</p>
+            </div>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <ul class="u_sidemenu-item-list p-0 accordion-body">
+                <li routerLinkActive="u_sidemenu-item-list-active"
+                  routerLink="custom-report/department-detail">Department
+                  Detail</li>
+                <li routerLinkActive="u_sidemenu-item-list-active"
+                  routerLink="custom-report/designation-detail">Job Title
+                  Detail</li>
+                <li routerLinkActive="u_sidemenu-item-list-active"
+                  routerLink="custom-report/location-wise">Location Wise</li>
+                <li routerLinkActive="u_sidemenu-item-list-active"
+                  routerLink="custom-report/gender-wise">Gender Wise</li>
+                <li routerLinkActive="u_sidemenu-item-list-active"
+                  routerLink="custom-report/department">Location Wise
+                  Department</li>
+                <li routerLinkActive="u_sidemenu-item-list-active"
+                  routerLink="custom-report/sub-department">Location Wise Sub
+                  Department</li>
+                <li routerLinkActive="u_sidemenu-item-list-active"
+                  routerLink="custom-report/zone">Zone Report</li>
+                <li routerLinkActive="u_sidemenu-item-list-active"
+                  routerLink="custom-report/inbox-audit-log">Inbox Audit Log</li>
+              </ul>
+            </div>
           </li>
           <li routerLink="attendance-summary-report"
             routerLinkActive="u_sidemenu-item-active">
@@ -133,76 +155,97 @@
               <p>Company Hours Report</p>
             </div>
           </li>
-          <li class="u_sidemenu-has-list"
+          <li class="u_sidemenu-has-list accordion-header"
             routerLinkActive="u_sidemenu-item-active">
-            <input type="checkbox" id="employee-report"
+            <!-- <input type="checkbox" id="employee-report"
               class="u_sidemenu-checkbox">
             <label class="u_sidemenu-item w-100" for="employee-report">
               <p>Employee Report</p>
-            </label>
-            <ul class="u_sidemenu-item-list">
-              <li routerLinkActive="u_sidemenu-item-list-active"
-                routerLink="employee-report/status">Status</li>
-              <li routerLinkActive="u_sidemenu-item-list-active"
-                routerLink="employee-report/new-joinee">New Joinee</li>
-              <li routerLinkActive="u_sidemenu-item-list-active"
-                routerLink="employee-report/personal-info">Employee
-                Information</li>
-              <li routerLinkActive="u_sidemenu-item-list-active"
-                routerLink="employee-report/personal-document">Personal Document
-                Report</li>
-              <li routerLinkActive="u_sidemenu-item-list-active"
-                routerLink="employee-report/employee-exit">Employee Exit
-                Report</li>
-              <li routerLinkActive="u_sidemenu-item-list-active"
-                routerLink="employee-report/emergency-contact">Emergency
-                Contact</li>
-              <li routerLinkActive="u_sidemenu-item-list-active"
-                routerLink="employee-report/statutory">Statutory Report</li>
-              <li routerLinkActive="u_sidemenu-item-list-active"
-                routerLink="employee-report/covid-report">Vaccination
-                Status</li>
-              <li routerLinkActive="u_sidemenu-item-list-active"
-                routerLink="employee-report/health-benefit-report">Health
-                Benefit Report</li>
-            </ul>
+            </label> -->
+            <div class="u_sidemenu-item new_sidemenu w-100 "
+              data-bs-toggle="collapse" data-bs-target="#collapseFour"
+              aria-expanded="true" aria-controls="collapseFour">
+              <p>Employee Report</p>
+            </div>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <ul class="u_sidemenu-item-list p-0 accordion-body">
+                <li routerLinkActive="u_sidemenu-item-list-active"
+                  routerLink="employee-report/status">Status</li>
+                <li routerLinkActive="u_sidemenu-item-list-active"
+                  routerLink="employee-report/new-joinee">New Joinee</li>
+                <li routerLinkActive="u_sidemenu-item-list-active"
+                  routerLink="employee-report/personal-info">Employee
+                  Information</li>
+                <li routerLinkActive="u_sidemenu-item-list-active"
+                  routerLink="employee-report/personal-document">Personal Document
+                  Report</li>
+                <li routerLinkActive="u_sidemenu-item-list-active"
+                  routerLink="employee-report/employee-exit">Employee Exit
+                  Report</li>
+                <li routerLinkActive="u_sidemenu-item-list-active"
+                  routerLink="employee-report/emergency-contact">Emergency
+                  Contact</li>
+                <li routerLinkActive="u_sidemenu-item-list-active"
+                  routerLink="employee-report/statutory">Statutory Report</li>
+                <li routerLinkActive="u_sidemenu-item-list-active"
+                  routerLink="employee-report/covid-report">Vaccination
+                  Status</li>
+                <li routerLinkActive="u_sidemenu-item-list-active"
+                  routerLink="employee-report/health-benefit-report">Health
+                  Benefit Report</li>
+              </ul>
+            </div>
           </li>
-          <li class="u_sidemenu-has-list"
+          <li class="u_sidemenu-has-list accordion-header"
             routerLinkActive="u_sidemenu-item-active">
-            <input type="checkbox" id="employee-statistics"
+            <!-- <input type="checkbox" id="employee-statistics"
               class="u_sidemenu-checkbox">
             <label class="u_sidemenu-item w-100" for="employee-statistics">
               <p>Employee Statistics</p>
-            </label>
-            <ul class="u_sidemenu-item-list">
-              <li routerLinkActive="u_sidemenu-item-list-active"
-                routerLink="employee-statistics/payroll">Statistics Report</li>
-              <li routerLinkActive="u_sidemenu-item-list-active"
-                routerLink="employee-statistics/login">Login Report</li>
-            </ul>
+            </label> -->
+            <div class="u_sidemenu-item new_sidemenu w-100 "
+              data-bs-toggle="collapse" data-bs-target="#collapseFive"
+              aria-expanded="true" aria-controls="collapseFive">
+              <p>Employee Statistics</p>
+            </div>
+            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <ul class="u_sidemenu-item-list p-0 accordion-body">
+                <li routerLinkActive="u_sidemenu-item-list-active"
+                  routerLink="employee-statistics/payroll">Statistics Report</li>
+                <li routerLinkActive="u_sidemenu-item-list-active"
+                  routerLink="employee-statistics/login">Login Report</li>
+              </ul>
+            </div>
           </li>
-          <li class="u_sidemenu-has-list"
+          <li class="u_sidemenu-has-list accordion-header"
             routerLinkActive="u_sidemenu-item-active">
-            <input type="checkbox" id="bio" class="u_sidemenu-checkbox">
+            <!-- <input type="checkbox" id="bio" class="u_sidemenu-checkbox">
             <label class="u_sidemenu-item w-100" for="bio">
               <p>Bio Metric Report</p>
-            </label>
-            <ul class="u_sidemenu-item-list">
-              <li routerLinkActive="u_sidemenu-item-list-active"
-                routerLink="biometric-report/info">Total Punches</li>
-              <li routerLinkActive="u_sidemenu-item-list-active"
-                routerLink="biometric-report/punches">Fail Punches</li>
-              <li routerLinkActive="u_sidemenu-item-list-active"
-                routerLink="biometric-report/assign">Assign Report</li>
-              <li routerLinkActive="u_sidemenu-item-list-active"
-                routerLink="biometric-report/records">Records Report</li>
-              <li routerLinkActive="u_sidemenu-item-list-active"
-                routerLink="biometric-report/device">Employee Present By Device
-                Report</li>
-              <li routerLinkActive="u_sidemenu-item-list-active"
-                routerLink="biometric-report/location">Employee Present By
-                Location Report</li>
-            </ul>
+            </label> -->
+            <div class="u_sidemenu-item new_sidemenu w-100 "
+              data-bs-toggle="collapse" data-bs-target="#collapseSix"
+              aria-expanded="true" aria-controls="collapseSix">
+              <p>Bio Metric Report</p>
+            </div>
+            <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <ul class="u_sidemenu-item-list p-0 accordion-body">
+                <li routerLinkActive="u_sidemenu-item-list-active"
+                  routerLink="biometric-report/info">Total Punches</li>
+                <li routerLinkActive="u_sidemenu-item-list-active"
+                  routerLink="biometric-report/punches">Fail Punches</li>
+                <li routerLinkActive="u_sidemenu-item-list-active"
+                  routerLink="biometric-report/assign">Assign Report</li>
+                <li routerLinkActive="u_sidemenu-item-list-active"
+                  routerLink="biometric-report/records">Records Report</li>
+                <li routerLinkActive="u_sidemenu-item-list-active"
+                  routerLink="biometric-report/device">Employee Present By Device
+                  Report</li>
+                <li routerLinkActive="u_sidemenu-item-list-active"
+                  routerLink="biometric-report/location">Employee Present By
+                  Location Report</li>
+              </ul>
+            </div>
           </li>
         </div>
       </div>
